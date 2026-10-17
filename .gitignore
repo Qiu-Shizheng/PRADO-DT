@@ -16,3 +16,6 @@ data/*
 *.ckpt
 checkpoints/
 external/
+build/
+dist/
+.pytest_cache/
