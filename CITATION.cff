@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+message: "If PRADO-DT contributes to your work, please cite this software and the accompanying manuscript."
+title: "PRADO-DT: prior-anchored residual adaptation for dose-time OOD transfer"
+version: 0.1.0
+date-released: 2026-10-17
+repository-code: "https://github.com/Qiu-Shizheng/PRADO-DT"
+license: MIT
+authors:
+  - name: "Qiu-Shizheng"
+keywords:
+  - single-cell perturbation
+  - drug response
+  - dose response
+  - out-of-distribution generalization
+  - transcriptomics

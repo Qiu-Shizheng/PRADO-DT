@@ -1,0 +1,4 @@
+# Minimal CPU install. The core reference implementation uses only Python.
+numpy>=1.23
+# Optional H5AD support: anndata>=0.9 h5py>=3.8
+# Optional PyTorch modules: torch>=2.0
