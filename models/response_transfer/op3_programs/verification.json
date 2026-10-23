@@ -1,0 +1,9 @@
+{
+  "public_fit_matches_research_selection": true,
+  "checkpoint_replay_max_error": {
+    "Donor_1_predictions": 4.440892098500626e-16,
+    "Donor_2_predictions": 8.881784197001252e-16,
+    "Donor_3_predictions": 8.881784197001252e-16,
+    "pooled_donors_predictions": 8.881784197001252e-16
+  }
+}

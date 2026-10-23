@@ -5,7 +5,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Python](https://img.shields.io/badge/Python-3.9%2B-blue.svg)](pyproject.toml)
 
-ContextDose predicts treatment responses by combining shared source responses with evidence about their consistency. It estimates reliability for an entire compound response and for individual response genes, then selects their mixture using held-out source cell types.
+ContextDose predicts treatment responses by combining shared source responses with evidence about their consistency. It estimates reliability for compounds, individual genes and coordinated response programmes learned from the source data. Held-out source contexts select how much each component contributes.
 
 This repository provides runnable CPU models, a NumPy training API, matched input examples and an optional neural reference implementation. The Python package is `prado-dt`.
 
@@ -37,6 +37,7 @@ The example uses a source control to demonstrate the file format. For your exper
 |---|---:|---|
 | [OP3 response transfer](models/response_transfer/op3) | 5,317 | B, T and NK source cells; myeloid evaluation from shared donors |
 | [OP3 refined response transfer](models/response_transfer/op3_refined) | 5,317 | Wider source-only reliability search with analytic response scaling |
+| [OP3 gene and programme model](models/response_transfer/op3_programs) | 5,317 | Parallel gene and learned-programme reliability, with source-only selection |
 | [Cellarity response transfer](models/response_transfer/primary) | 13,290 | Six cultured source lines; four primary-cell populations |
 | [Glioblastoma expression](models/expression) | 512 | A172 fitting, T98G selection and U87MG evaluation |
 
@@ -93,11 +94,26 @@ contextdose-fit \
 
 The fixed search selects the reliability penalty, compound–gene mixture and response scale by leaving out source contexts. It writes the fitted model and all candidate validation scores. Target treated expression is not an input to this interface.
 
+To fit the gene and programme architecture, install its SciPy fitting dependency and select the programme search:
+
+```bash
+python -m pip install -e '.[programs]'
+contextdose-fit \
+  --source-effects source_effects.npz \
+  --input-scale "log1p CPM across the declared gene panel" \
+  --search programs \
+  --output models/my_programme_model
+```
+
+The programme basis is learned anew inside each source-validation fold. Selection includes a gene-only option. Saved programme models use the same `contextdose-predict` command and require only NumPy for inference.
+
 ## Evaluation
 
 In the OP3 development task, the hierarchical gate has MSE **0.074658** and mean response Pearson correlation **0.224**, compared with **0.075912** and **0.193** for the separately selected compound-only gate. The comparison uses 127 drugs and the same 5,317 response genes. Cellarity effects vary by population. The [model guide](docs/response_transfer.md) reports the complete population comparison and scope.
 
 The optional refined OP3 model has MSE **0.074393** and response correlation **0.225**, compared with **0.075823** for a compound-only model selected using the same wider search. Use `--search extended` with `contextdose-fit` to apply this fitting procedure to your own source profiles. The original model and default search remain available for reproduction.
+
+The gene and programme model has MSE **0.073151** and response correlation **0.252**, a **3.52%** MSE reduction relative to the extended compound-only model on these same conditions. This result evaluates transfer between cell types represented in shared donors. Jointly unseen donors require a separate evaluation design, described in the benchmark guide.
 
 The [matched benchmark evidence](docs/benchmark_evidence.md) includes complete scGPT and Nicheformer encoder adaptations, random-initialisation controls, joint donor/cell-type transfer and gene-set response analysis.
 

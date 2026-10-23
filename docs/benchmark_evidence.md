@@ -15,6 +15,9 @@ The OP3 task predicts responses to known compounds in myeloid cells using B, T a
 | Global response with analytic scaling | 0.077398 | 0.1932 |
 | Compound-only gate, extended search | 0.075823 | 0.1932 |
 | ContextDose, extended search | 0.074393 | 0.2251 |
+| ContextDose, gene and programme components | **0.073151** | **0.2517** |
+
+The programme model learns coordinated response patterns inside each source-validation fold. The selected OP3 model has 32 programmes and equal gene and programme contributions. It reduces MSE by 3.52% relative to the extended compound-only gate and by 1.67% relative to the gene-only model. A separately selected low-rank response model gives MSE 0.077050. The trained programme model and a source-only fitting interface are included in this package.
 
 ## Encoder comparison
 
@@ -24,11 +27,39 @@ Training duration and response amplitude are selected by leave-one-source-cell-t
 
 ## Donor transfer
 
-A separate evaluation withholds one donor and the myeloid cell type jointly. Source responses use only the other two donors. ContextDose reduces MSE relative to the compound-only gate by 0.15%, 0.12% and 0.32% across 119, 120 and 123 compounds, respectively. Only the third paired 95% interval excludes zero. These folds share training donors and are not independent studies.
+A separate evaluation withholds one donor and the myeloid cell type jointly. Source responses use only the other two donors. Source validation also withholds one donor and one source cell type, giving six validation folds. Conditions require complete support in the source donor–cell-type groups.
+
+| Held-out donor | Conditions | Gene and programme MSE | Compound-only MSE |
+|---|---:|---:|---:|
+| First | 107 | 0.130812 | 0.131768 |
+| Second | 115 | 0.123658 | 0.124374 |
+| Third | 116 | 0.155570 | 0.155762 |
+
+Only the first paired 95% interval excludes zero. Cell-type-only source validation gives mixed programme-model results. The two validation designs have different source-complete condition sets, so their absolute scores cannot isolate the effect of validation alone. These folds share training donors and are not independent studies.
 
 ## Gene-set responses
 
-Forty-seven Hallmark gene sets contain at least ten genes on the measured panel. Their mean response error is 0.012082 for ContextDose and 0.013088 for the compound-only gate. Mean per-compound correlation across these sets increases from 0.512 to 0.540. Gene sets are retained according to annotation coverage, independently of performance. These scores describe coordinated expression responses, not causal pathway activity.
+Forty-seven Hallmark gene sets contain at least ten genes on the measured panel. Their mean response error is 0.010078 for the programme model, 0.012649 for the extended compound-only gate and 0.011931 for the gene-only gate. This is a 20.3% reduction relative to compound-only weighting. The paired difference is −0.002571, with a 95% compound-bootstrap interval from −0.003886 to −0.001406. Mean per-compound correlation across these sets increases from 0.512 to 0.544. Gene sets are retained according to annotation coverage, independently of performance. These scores describe coordinated expression responses, not causal pathway activity.
+
+## Independent interferon-response study
+
+The [Kang study](https://doi.org/10.1038/nbt.4042) measures matched untreated and interferon-beta-stimulated immune cells from eight donors. Published singlet labels and fixed quality criteria retain 23,981 cells. Each fold excludes the evaluation donor's stimulated cells and all stimulated monocytes. B, CD4 T, CD8 T and natural killer cells from the other seven donors provide source responses. Untreated target monocytes remain available. The 2,000-gene panel is selected from source controls separately in each fold.
+
+ContextDose uses the gene-gate parameters fixed in the OP3 extended search, with source effects estimated within the new study. This tests transfer of weighting parameters for a known stimulus. The programme search selects the gene-only option in this single-stimulus setting. Both fixed OP3 recipes and all source-selected variants are retained in the accompanying result table.
+
+| Predictor | CD14 monocyte MSE | CD16 monocyte MSE | CD14 response Pearson | CD16 response Pearson |
+|---|---:|---:|---:|---:|
+| ContextDose, fixed extended OP3 parameters | **0.051356** | 0.042364 | 0.789 | 0.777 |
+| Compound-only gate | 0.052678 | 0.042690 | 0.788 | 0.777 |
+| Source mean | 0.054077 | 0.043450 | 0.788 | 0.777 |
+| scGen | 0.055909 | 0.040419 | **0.808** | 0.809 |
+| scVIDR | 0.053375 | **0.038652** | 0.804 | **0.809** |
+
+[scGen](https://github.com/theislab/scgen) and [scVIDR](https://github.com/BhattacharyaLab/scVIDR) use their native variational architectures and objectives: two 800-unit hidden layers, 100 latent coordinates, at most 100 epochs, and source-only validation. Each family has eight donor folds and three initialisations, giving 48 completed fits. All checkpoint reloads reproduce predictions exactly. Mean-response scores use the three-fit ensemble. Distribution scores average individual fits.
+
+ContextDose has lower CD14 MSE than scGen, with a paired donor-bootstrap difference of −0.004553 (95% interval −0.006480 to −0.002210). The difference against scVIDR includes zero. scVIDR is more accurate for CD16 MSE and both native models have higher response correlations. ContextDose has lower squared MMD than both native models in both populations under the declared source-PCA distribution metric. All 42 Hallmark sets meeting coverage requirements in every fold are included.
+
+The eight donor folds share source training donors. Treatment and control were sequenced in separate lanes in the original study. [Complete mean scores](benchmarks/ifnb_summary.tsv), [donor scores](benchmarks/ifnb_donor_results.tsv), [initialisation results](benchmarks/ifnb_native_seed_results.tsv) and [paired intervals](benchmarks/ifnb_paired_intervals.json) accompany this comparison.
 
 ## Data verification
 

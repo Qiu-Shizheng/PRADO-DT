@@ -1,4 +1,4 @@
-"""PRADO-DT: prior-anchored residual adaptation for dose-time OOD transfer."""
+"""ContextDose: source-selected models for cellular response transfer."""
 
 from .core import (LinearRegressor, conformal_radius, condition_features,
                    feature_map, mse, pearson_rows)

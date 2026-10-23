@@ -1,0 +1,6719 @@
+{
+  "selected_parameters": {
+    "reliability": 10.0,
+    "gene_gate_mix": 0.25,
+    "scale": 1.5215308674910468,
+    "source_relative_mse": 0.878413114367274
+  },
+  "program_parameters": {
+    "rank": 32,
+    "program_reliability": 10.0,
+    "program_gate_mix": 1.0,
+    "program_blend": 0.5,
+    "scale": 1.2625640527725168,
+    "source_relative_mse": 0.8361980033323977
+  },
+  "source_validation_relative_mse": 0.8361980033323977,
+  "source_selection": {
+    "gene_families": {
+      "global": {
+        "reliability": 0.0,
+        "gene_gate_mix": 0.0,
+        "scale": 0.2560929138777298,
+        "source_relative_mse": 0.9178275363066768
+      },
+      "compound": {
+        "reliability": 7.498942093324558,
+        "gene_gate_mix": 0.0,
+        "scale": 1.735478771535042,
+        "source_relative_mse": 0.8920378600643384
+      },
+      "gene": {
+        "reliability": 10.0,
+        "gene_gate_mix": 0.25,
+        "scale": 1.5215308674910468,
+        "source_relative_mse": 0.878413114367274
+      }
+    },
+    "program_model": {
+      "rank": 32,
+      "program_reliability": 10.0,
+      "program_gate_mix": 1.0,
+      "program_blend": 0.5,
+      "scale": 1.2625640527725168,
+      "source_relative_mse": 0.8361980033323977
+    },
+    "lowrank_baseline": {
+      "rank": 4,
+      "program_reliability": 0.0,
+      "program_gate_mix": 0.0,
+      "program_blend": 1.0,
+      "scale": 0.5524193577160798,
+      "source_relative_mse": 0.896601478463435
+    },
+    "gene_grid": [
+      {
+        "reliability": 0.0,
+        "gene_gate_mix": 0.0,
+        "scale": 0.2560929138777298,
+        "source_relative_mse": 0.9178275363066768
+      },
+      {
+        "reliability": 0.001,
+        "gene_gate_mix": 0.0,
+        "scale": 0.2563168642066814,
+        "source_relative_mse": 0.9178051916057932
+      },
+      {
+        "reliability": 0.001,
+        "gene_gate_mix": 0.125,
+        "scale": 0.2563255434228815,
+        "source_relative_mse": 0.9177992309410583
+      },
+      {
+        "reliability": 0.001,
+        "gene_gate_mix": 0.25,
+        "scale": 0.25633415034341706,
+        "source_relative_mse": 0.917793293246463
+      },
+      {
+        "reliability": 0.001,
+        "gene_gate_mix": 0.375,
+        "scale": 0.2563426849621151,
+        "source_relative_mse": 0.9177873785266754
+      },
+      {
+        "reliability": 0.001,
+        "gene_gate_mix": 0.5,
+        "scale": 0.2563511472729251,
+        "source_relative_mse": 0.917781486786325
+      },
+      {
+        "reliability": 0.001,
+        "gene_gate_mix": 0.625,
+        "scale": 0.25635953726991856,
+        "source_relative_mse": 0.9177756180300024
+      },
+      {
+        "reliability": 0.001,
+        "gene_gate_mix": 0.75,
+        "scale": 0.25636785494728964,
+        "source_relative_mse": 0.917769772262259
+      },
+      {
+        "reliability": 0.001,
+        "gene_gate_mix": 0.875,
+        "scale": 0.25637610029935487,
+        "source_relative_mse": 0.9177639494876072
+      },
+      {
+        "reliability": 0.001,
+        "gene_gate_mix": 1.0,
+        "scale": 0.25638427332055297,
+        "source_relative_mse": 0.9177581497105207
+      },
+      {
+        "reliability": 0.001333521432163324,
+        "gene_gate_mix": 0.0,
+        "scale": 0.2563915494207987,
+        "source_relative_mse": 0.9177977462626509
+      },
+      {
+        "reliability": 0.001333521432163324,
+        "gene_gate_mix": 0.125,
+        "scale": 0.2564029744926701,
+        "source_relative_mse": 0.9177898162149416
+      },
+      {
+        "reliability": 0.001333521432163324,
+        "gene_gate_mix": 0.25,
+        "scale": 0.2564142889966654,
+        "source_relative_mse": 0.9177819212400505
+      },
+      {
+        "reliability": 0.001333521432163324,
+        "gene_gate_mix": 0.375,
+        "scale": 0.2564254929207496,
+        "source_relative_mse": 0.9177740613473571
+      },
+      {
+        "reliability": 0.001333521432163324,
+        "gene_gate_mix": 0.5,
+        "scale": 0.2564365862531735,
+        "source_relative_mse": 0.91776623654615
+      },
+      {
+        "reliability": 0.001333521432163324,
+        "gene_gate_mix": 0.625,
+        "scale": 0.25644756898247395,
+        "source_relative_mse": 0.9177584468456266
+      },
+      {
+        "reliability": 0.001333521432163324,
+        "gene_gate_mix": 0.75,
+        "scale": 0.25645844109747423,
+        "source_relative_mse": 0.9177506922548934
+      },
+      {
+        "reliability": 0.001333521432163324,
+        "gene_gate_mix": 0.875,
+        "scale": 0.25646920258728345,
+        "source_relative_mse": 0.9177429727829657
+      },
+      {
+        "reliability": 0.001333521432163324,
+        "gene_gate_mix": 1.0,
+        "scale": 0.2564798534412971,
+        "source_relative_mse": 0.9177352884387684
+      },
+      {
+        "reliability": 0.0017782794100389228,
+        "gene_gate_mix": 0.0,
+        "scale": 0.2564911382966257,
+        "source_relative_mse": 0.9177878232515663
+      },
+      {
+        "reliability": 0.0017782794100389228,
+        "gene_gate_mix": 0.125,
+        "scale": 0.2565061374385364,
+        "source_relative_mse": 0.9177772830168197
+      },
+      {
+        "reliability": 0.0017782794100389228,
+        "gene_gate_mix": 0.25,
+        "scale": 0.25652096761602516,
+        "source_relative_mse": 0.9177667962767537
+      },
+      {
+        "reliability": 0.0017782794100389228,
+        "gene_gate_mix": 0.375,
+        "scale": 0.25653562880587977,
+        "source_relative_mse": 0.9177563630501384
+      },
+      {
+        "reliability": 0.0017782794100389228,
+        "gene_gate_mix": 0.5,
+        "scale": 0.25655012098555563,
+        "source_relative_mse": 0.9177459833555319
+      },
+      {
+        "reliability": 0.0017782794100389228,
+        "gene_gate_mix": 0.625,
+        "scale": 0.256564444133176,
+        "source_relative_mse": 0.9177356572112804
+      },
+      {
+        "reliability": 0.0017782794100389228,
+        "gene_gate_mix": 0.75,
+        "scale": 0.2565785982275319,
+        "source_relative_mse": 0.9177253846355176
+      },
+      {
+        "reliability": 0.0017782794100389228,
+        "gene_gate_mix": 0.875,
+        "scale": 0.2565925832480823,
+        "source_relative_mse": 0.9177151656461652
+      },
+      {
+        "reliability": 0.0017782794100389228,
+        "gene_gate_mix": 1.0,
+        "scale": 0.2566063991749542,
+        "source_relative_mse": 0.9177050002609323
+      },
+      {
+        "reliability": 0.0023713737056616554,
+        "gene_gate_mix": 0.0,
+        "scale": 0.2566239324985095,
+        "source_relative_mse": 0.9177746004985823
+      },
+      {
+        "reliability": 0.0023713737056616554,
+        "gene_gate_mix": 0.125,
+        "scale": 0.2566435597055147,
+        "source_relative_mse": 0.9177606072144961
+      },
+      {
+        "reliability": 0.0023713737056616554,
+        "gene_gate_mix": 0.25,
+        "scale": 0.25666292894217607,
+        "source_relative_mse": 0.9177466954242793
+      },
+      {
+        "reliability": 0.0023713737056616554,
+        "gene_gate_mix": 0.375,
+        "scale": 0.25668204016433693,
+        "source_relative_mse": 0.917732865165317
+      },
+      {
+        "reliability": 0.0023713737056616554,
+        "gene_gate_mix": 0.5,
+        "scale": 0.2567008933293961,
+        "source_relative_mse": 0.9177191164745012
+      },
+      {
+        "reliability": 0.0023713737056616554,
+        "gene_gate_mix": 0.625,
+        "scale": 0.25671948839630765,
+        "source_relative_mse": 0.9177054493882306
+      },
+      {
+        "reliability": 0.0023713737056616554,
+        "gene_gate_mix": 0.75,
+        "scale": 0.2567378253255813,
+        "source_relative_mse": 0.9176918639424096
+      },
+      {
+        "reliability": 0.0023713737056616554,
+        "gene_gate_mix": 0.875,
+        "scale": 0.2567559040792829,
+        "source_relative_mse": 0.9176783601724492
+      },
+      {
+        "reliability": 0.0023713737056616554,
+        "gene_gate_mix": 1.0,
+        "scale": 0.25677372462103404,
+        "source_relative_mse": 0.9176649381132653
+      },
+      {
+        "reliability": 0.0031622776601683794,
+        "gene_gate_mix": 0.0,
+        "scale": 0.25680099918324106,
+        "source_relative_mse": 0.9177569850693331
+      },
+      {
+        "reliability": 0.0031622776601683794,
+        "gene_gate_mix": 0.125,
+        "scale": 0.2568265816295566,
+        "source_relative_mse": 0.9177384338690336
+      },
+      {
+        "reliability": 0.0031622776601683794,
+        "gene_gate_mix": 0.25,
+        "scale": 0.25685177060319814,
+        "source_relative_mse": 0.9177200066503682
+      },
+      {
+        "reliability": 0.0031622776601683794,
+        "gene_gate_mix": 0.375,
+        "scale": 0.25687656602166126,
+        "source_relative_mse": 0.9177017034873773
+      },
+      {
+        "reliability": 0.0031622776601683794,
+        "gene_gate_mix": 0.5,
+        "scale": 0.25690096780605587,
+        "source_relative_mse": 0.9176835244529571
+      },
+      {
+        "reliability": 0.0031622776601683794,
+        "gene_gate_mix": 0.625,
+        "scale": 0.2569249758811066,
+        "source_relative_mse": 0.9176654696188576
+      },
+      {
+        "reliability": 0.0031622776601683794,
+        "gene_gate_mix": 0.75,
+        "scale": 0.2569485901751537,
+        "source_relative_mse": 0.9176475390556826
+      },
+      {
+        "reliability": 0.0031622776601683794,
+        "gene_gate_mix": 0.875,
+        "scale": 0.25697181062015323,
+        "source_relative_mse": 0.9176297328328883
+      },
+      {
+        "reliability": 0.0031622776601683794,
+        "gene_gate_mix": 1.0,
+        "scale": 0.2569946371516776,
+        "source_relative_mse": 0.9176120510187824
+      },
+      {
+        "reliability": 0.004216965034285822,
+        "gene_gate_mix": 0.0,
+        "scale": 0.25703709080350207,
+        "source_relative_mse": 0.9177335253962093
+      },
+      {
+        "reliability": 0.004216965034285822,
+        "gene_gate_mix": 0.125,
+        "scale": 0.25707027753777684,
+        "source_relative_mse": 0.9177089736461255
+      },
+      {
+        "reliability": 0.004216965034285822,
+        "gene_gate_mix": 0.25,
+        "scale": 0.2571028647670879,
+        "source_relative_mse": 0.9176846102400257
+      },
+      {
+        "reliability": 0.004216965034285822,
+        "gene_gate_mix": 0.375,
+        "scale": 0.2571348523409495,
+        "source_relative_mse": 0.9176604353235562
+      },
+      {
+        "reliability": 0.004216965034285822,
+        "gene_gate_mix": 0.5,
+        "scale": 0.2571662401172533,
+        "source_relative_mse": 0.9176364490397131
+      },
+      {
+        "reliability": 0.004216965034285822,
+        "gene_gate_mix": 0.625,
+        "scale": 0.25719702796227023,
+        "source_relative_mse": 0.9176126515288385
+      },
+      {
+        "reliability": 0.004216965034285822,
+        "gene_gate_mix": 0.75,
+        "scale": 0.2572272157506515,
+        "source_relative_mse": 0.9175890429286194
+      },
+      {
+        "reliability": 0.004216965034285822,
+        "gene_gate_mix": 0.875,
+        "scale": 0.25725680336542933,
+        "source_relative_mse": 0.9175656233740838
+      },
+      {
+        "reliability": 0.004216965034285822,
+        "gene_gate_mix": 1.0,
+        "scale": 0.2572857906980177,
+        "source_relative_mse": 0.9175423929975991
+      },
+      {
+        "reliability": 0.005623413251903491,
+        "gene_gate_mix": 0.0,
+        "scale": 0.2573518697210428,
+        "source_relative_mse": 0.9177022962029757
+      },
+      {
+        "reliability": 0.005623413251903491,
+        "gene_gate_mix": 0.125,
+        "scale": 0.25739467519639464,
+        "source_relative_mse": 0.9176698686604468
+      },
+      {
+        "reliability": 0.005623413251903491,
+        "gene_gate_mix": 0.25,
+        "scale": 0.2574365683057153,
+        "source_relative_mse": 0.917637726780607
+      },
+      {
+        "reliability": 0.005623413251903491,
+        "gene_gate_mix": 0.375,
+        "scale": 0.2574775487836315,
+        "source_relative_mse": 0.917605870847644
+      },
+      {
+        "reliability": 0.005623413251903491,
+        "gene_gate_mix": 0.5,
+        "scale": 0.25751761638413223,
+        "source_relative_mse": 0.9175743011396256
+      },
+      {
+        "reliability": 0.005623413251903491,
+        "gene_gate_mix": 0.625,
+        "scale": 0.2575567708805715,
+        "source_relative_mse": 0.9175430179284915
+      },
+      {
+        "reliability": 0.005623413251903491,
+        "gene_gate_mix": 0.75,
+        "scale": 0.2575950120656692,
+        "source_relative_mse": 0.9175120214800456
+      },
+      {
+        "reliability": 0.005623413251903491,
+        "gene_gate_mix": 0.875,
+        "scale": 0.2576323397515107,
+        "source_relative_mse": 0.9174813120539499
+      },
+      {
+        "reliability": 0.005623413251903491,
+        "gene_gate_mix": 1.0,
+        "scale": 0.2576687537695463,
+        "source_relative_mse": 0.9174508899037169
+      },
+      {
+        "reliability": 0.007498942093324558,
+        "gene_gate_mix": 0.0,
+        "scale": 0.2577715377861248,
+        "source_relative_mse": 0.917660748521864
+      },
+      {
+        "reliability": 0.007498942093324558,
+        "gene_gate_mix": 0.125,
+        "scale": 0.2578263686327041,
+        "source_relative_mse": 0.9176180198988939
+      },
+      {
+        "reliability": 0.007498942093324558,
+        "gene_gate_mix": 0.25,
+        "scale": 0.2578798126789036,
+        "source_relative_mse": 0.9175757238046126
+      },
+      {
+        "reliability": 0.007498942093324558,
+        "gene_gate_mix": 0.375,
+        "scale": 0.257931869479751,
+        "source_relative_mse": 0.9175338607881538
+      },
+      {
+        "reliability": 0.007498942093324558,
+        "gene_gate_mix": 0.5,
+        "scale": 0.25798253863487536,
+        "source_relative_mse": 0.9174924313845609
+      },
+      {
+        "reliability": 0.007498942093324558,
+        "gene_gate_mix": 0.625,
+        "scale": 0.25803181978850476,
+        "source_relative_mse": 0.917451436114766
+      },
+      {
+        "reliability": 0.007498942093324558,
+        "gene_gate_mix": 0.75,
+        "scale": 0.25807971262946144,
+        "source_relative_mse": 0.9174108754855697
+      },
+      {
+        "reliability": 0.007498942093324558,
+        "gene_gate_mix": 0.875,
+        "scale": 0.258126216891153,
+        "source_relative_mse": 0.9173707499896218
+      },
+      {
+        "reliability": 0.007498942093324558,
+        "gene_gate_mix": 1.0,
+        "scale": 0.2581713323515591,
+        "source_relative_mse": 0.917331060105404
+      },
+      {
+        "reliability": 0.01,
+        "gene_gate_mix": 0.0,
+        "scale": 0.2583310033071148,
+        "source_relative_mse": 0.9176055157848632
+      },
+      {
+        "reliability": 0.01,
+        "gene_gate_mix": 0.125,
+        "scale": 0.2584006488134082,
+        "source_relative_mse": 0.9175493671329666
+      },
+      {
+        "reliability": 0.01,
+        "gene_gate_mix": 0.25,
+        "scale": 0.25846818903847063,
+        "source_relative_mse": 0.917493872219116
+      },
+      {
+        "reliability": 0.01,
+        "gene_gate_mix": 0.375,
+        "scale": 0.2585336232958275,
+        "source_relative_mse": 0.9174390320919802
+      },
+      {
+        "reliability": 0.01,
+        "gene_gate_mix": 0.5,
+        "scale": 0.25859695100134783,
+        "source_relative_mse": 0.9173848477678922
+      },
+      {
+        "reliability": 0.01,
+        "gene_gate_mix": 0.625,
+        "scale": 0.25865817167321004,
+        "source_relative_mse": 0.9173313202307938
+      },
+      {
+        "reliability": 0.01,
+        "gene_gate_mix": 0.75,
+        "scale": 0.2587172849318559,
+        "source_relative_mse": 0.9172784504321817
+      },
+      {
+        "reliability": 0.01,
+        "gene_gate_mix": 0.875,
+        "scale": 0.25877429049993234,
+        "source_relative_mse": 0.9172262392910605
+      },
+      {
+        "reliability": 0.01,
+        "gene_gate_mix": 1.0,
+        "scale": 0.2588291882022198,
+        "source_relative_mse": 0.9171746876938975
+      },
+      {
+        "reliability": 0.01333521432163324,
+        "gene_gate_mix": 0.0,
+        "scale": 0.25907676002339,
+        "source_relative_mse": 0.9175321659002496
+      },
+      {
+        "reliability": 0.01333521432163324,
+        "gene_gate_mix": 0.125,
+        "scale": 0.2591643148492021,
+        "source_relative_mse": 0.9174586113772968
+      },
+      {
+        "reliability": 0.01333521432163324,
+        "gene_gate_mix": 0.25,
+        "scale": 0.25924867769423826,
+        "source_relative_mse": 0.9173860431650588
+      },
+      {
+        "reliability": 0.01333521432163324,
+        "gene_gate_mix": 0.375,
+        "scale": 0.2593298476611701,
+        "source_relative_mse": 0.9173144632376561
+      },
+      {
+        "reliability": 0.01333521432163324,
+        "gene_gate_mix": 0.5,
+        "scale": 0.25940782408647306,
+        "source_relative_mse": 0.9172438734952537
+      },
+      {
+        "reliability": 0.01333521432163324,
+        "gene_gate_mix": 0.625,
+        "scale": 0.259482606540226,
+        "source_relative_mse": 0.9171742757639194
+      },
+      {
+        "reliability": 0.01333521432163324,
+        "gene_gate_mix": 0.75,
+        "scale": 0.25955419482586994,
+        "source_relative_mse": 0.9171056717954944
+      },
+      {
+        "reliability": 0.01333521432163324,
+        "gene_gate_mix": 0.875,
+        "scale": 0.2596225889799235,
+        "source_relative_mse": 0.9170380632674797
+      },
+      {
+        "reliability": 0.01333521432163324,
+        "gene_gate_mix": 1.0,
+        "scale": 0.25968778927165703,
+        "source_relative_mse": 0.9169714517829336
+      },
+      {
+        "reliability": 0.01778279410038923,
+        "gene_gate_mix": 0.0,
+        "scale": 0.2600707075208959,
+        "source_relative_mse": 0.9174348891660687
+      },
+      {
+        "reliability": 0.01778279410038923,
+        "gene_gate_mix": 0.125,
+        "scale": 0.26017937755771686,
+        "source_relative_mse": 0.9173388701246198
+      },
+      {
+        "reliability": 0.01778279410038923,
+        "gene_gate_mix": 0.25,
+        "scale": 0.2602832137401196,
+        "source_relative_mse": 0.9172443365914479
+      },
+      {
+        "reliability": 0.01778279410038923,
+        "gene_gate_mix": 0.375,
+        "scale": 0.2603822153695913,
+        "source_relative_mse": 0.9171512922176989
+      },
+      {
+        "reliability": 0.01778279410038923,
+        "gene_gate_mix": 0.5,
+        "scale": 0.2604763822790023,
+        "source_relative_mse": 0.9170597404859773
+      },
+      {
+        "reliability": 0.01778279410038923,
+        "gene_gate_mix": 0.625,
+        "scale": 0.26056571483167296,
+        "source_relative_mse": 0.9169696847100164
+      },
+      {
+        "reliability": 0.01778279410038923,
+        "gene_gate_mix": 0.75,
+        "scale": 0.2606502139202966,
+        "source_relative_mse": 0.916881128034393
+      },
+      {
+        "reliability": 0.01778279410038923,
+        "gene_gate_mix": 0.875,
+        "scale": 0.2607298809657209,
+        "source_relative_mse": 0.9167940734342918
+      },
+      {
+        "reliability": 0.01778279410038923,
+        "gene_gate_mix": 1.0,
+        "scale": 0.2608047179155871,
+        "source_relative_mse": 0.916708523715315
+      },
+      {
+        "reliability": 0.023713737056616554,
+        "gene_gate_mix": 0.0,
+        "scale": 0.26139521322770704,
+        "source_relative_mse": 0.9173061140466711
+      },
+      {
+        "reliability": 0.023713737056616554,
+        "gene_gate_mix": 0.125,
+        "scale": 0.26152792988439655,
+        "source_relative_mse": 0.917181257961175
+      },
+      {
+        "reliability": 0.023713737056616554,
+        "gene_gate_mix": 0.25,
+        "scale": 0.26165333396090285,
+        "source_relative_mse": 0.9170586357790427
+      },
+      {
+        "reliability": 0.023713737056616554,
+        "gene_gate_mix": 0.375,
+        "scale": 0.26177142655162944,
+        "source_relative_mse": 0.9169382541044289
+      },
+      {
+        "reliability": 0.023713737056616554,
+        "gene_gate_mix": 0.5,
+        "scale": 0.26188220995134287,
+        "source_relative_mse": 0.9168201191588381
+      },
+      {
+        "reliability": 0.023713737056616554,
+        "gene_gate_mix": 0.625,
+        "scale": 0.2619856876512597,
+        "source_relative_mse": 0.9167042367804665
+      },
+      {
+        "reliability": 0.023713737056616554,
+        "gene_gate_mix": 0.75,
+        "scale": 0.2620818643346559,
+        "source_relative_mse": 0.9165906124237044
+      },
+      {
+        "reliability": 0.023713737056616554,
+        "gene_gate_mix": 0.875,
+        "scale": 0.26217074587200306,
+        "source_relative_mse": 0.9164792511587962
+      },
+      {
+        "reliability": 0.023713737056616554,
+        "gene_gate_mix": 1.0,
+        "scale": 0.26225233931563424,
+        "source_relative_mse": 0.9163701576716612
+      },
+      {
+        "reliability": 0.03162277660168379,
+        "gene_gate_mix": 0.0,
+        "scale": 0.26315980642124054,
+        "source_relative_mse": 0.9171360493404476
+      },
+      {
+        "reliability": 0.03162277660168379,
+        "gene_gate_mix": 0.125,
+        "scale": 0.2633185376035629,
+        "source_relative_mse": 0.9169743916634425
+      },
+      {
+        "reliability": 0.03162277660168379,
+        "gene_gate_mix": 0.25,
+        "scale": 0.26346621562886713,
+        "source_relative_mse": 0.9168160891487851
+      },
+      {
+        "reliability": 0.03162277660168379,
+        "gene_gate_mix": 0.375,
+        "scale": 0.26360284827147223,
+        "source_relative_mse": 0.9166611534018967
+      },
+      {
+        "reliability": 0.03162277660168379,
+        "gene_gate_mix": 0.5,
+        "scale": 0.26372844599709017,
+        "source_relative_mse": 0.9165095951629769
+      },
+      {
+        "reliability": 0.03162277660168379,
+        "gene_gate_mix": 0.625,
+        "scale": 0.2638430219474772,
+        "source_relative_mse": 0.916361424306161
+      },
+      {
+        "reliability": 0.03162277660168379,
+        "gene_gate_mix": 0.75,
+        "scale": 0.26394659192352066,
+        "source_relative_mse": 0.916216649839214
+      },
+      {
+        "reliability": 0.03162277660168379,
+        "gene_gate_mix": 0.875,
+        "scale": 0.26403917436678315,
+        "source_relative_mse": 0.9160752799037591
+      },
+      {
+        "reliability": 0.03162277660168379,
+        "gene_gate_mix": 1.0,
+        "scale": 0.26412079033953423,
+        "source_relative_mse": 0.9159373217760319
+      },
+      {
+        "reliability": 0.042169650342858224,
+        "gene_gate_mix": 0.0,
+        "scale": 0.2655100086967281,
+        "source_relative_mse": 0.9169121654499308
+      },
+      {
+        "reliability": 0.042169650342858224,
+        "gene_gate_mix": 0.125,
+        "scale": 0.2656946016449691,
+        "source_relative_mse": 0.9167038324225903
+      },
+      {
+        "reliability": 0.042169650342858224,
+        "gene_gate_mix": 0.25,
+        "scale": 0.26586249638360815,
+        "source_relative_mse": 0.9165005345890531
+      },
+      {
+        "reliability": 0.042169650342858224,
+        "gene_gate_mix": 0.375,
+        "scale": 0.26601372081300934,
+        "source_relative_mse": 0.9163022915590835
+      },
+      {
+        "reliability": 0.042169650342858224,
+        "gene_gate_mix": 0.5,
+        "scale": 0.2661483088112773,
+        "source_relative_mse": 0.916109120994997
+      },
+      {
+        "reliability": 0.042169650342858224,
+        "gene_gate_mix": 0.625,
+        "scale": 0.2662663001768208,
+        "source_relative_mse": 0.9159210386128602
+      },
+      {
+        "reliability": 0.042169650342858224,
+        "gene_gate_mix": 0.75,
+        "scale": 0.2663677405659361,
+        "source_relative_mse": 0.9157380581854595
+      },
+      {
+        "reliability": 0.042169650342858224,
+        "gene_gate_mix": 0.875,
+        "scale": 0.26645268142553896,
+        "source_relative_mse": 0.9155601915470212
+      },
+      {
+        "reliability": 0.042169650342858224,
+        "gene_gate_mix": 1.0,
+        "scale": 0.26652117992117447,
+        "source_relative_mse": 0.9153874485996586
+      },
+      {
+        "reliability": 0.056234132519034905,
+        "gene_gate_mix": 0.0,
+        "scale": 0.2686389475404161,
+        "source_relative_mse": 0.916618654256949
+      },
+      {
+        "reliability": 0.056234132519034905,
+        "gene_gate_mix": 0.125,
+        "scale": 0.2688452624851998,
+        "source_relative_mse": 0.9163515026020864
+      },
+      {
+        "reliability": 0.056234132519034905,
+        "gene_gate_mix": 0.25,
+        "scale": 0.2690263552884875,
+        "source_relative_mse": 0.9160919058730818
+      },
+      {
+        "reliability": 0.056234132519034905,
+        "gene_gate_mix": 0.375,
+        "scale": 0.269182308693444,
+        "source_relative_mse": 0.9158398953667841
+      },
+      {
+        "reliability": 0.056234132519034905,
+        "gene_gate_mix": 0.5,
+        "scale": 0.2693132185556259,
+        "source_relative_mse": 0.9155954980204822
+      },
+      {
+        "reliability": 0.056234132519034905,
+        "gene_gate_mix": 0.625,
+        "scale": 0.2694191936360266,
+        "source_relative_mse": 0.9153587364273887
+      },
+      {
+        "reliability": 0.056234132519034905,
+        "gene_gate_mix": 0.75,
+        "scale": 0.26950035537892886,
+        "source_relative_mse": 0.915129628857848
+      },
+      {
+        "reliability": 0.056234132519034905,
+        "gene_gate_mix": 0.875,
+        "scale": 0.2695568376751907,
+        "source_relative_mse": 0.9149081892861478
+      },
+      {
+        "reliability": 0.056234132519034905,
+        "gene_gate_mix": 1.0,
+        "scale": 0.26958878661161867,
+        "source_relative_mse": 0.9146944274228088
+      },
+      {
+        "reliability": 0.07498942093324558,
+        "gene_gate_mix": 0.0,
+        "scale": 0.2728025749763934,
+        "source_relative_mse": 0.9162359528402407
+      },
+      {
+        "reliability": 0.07498942093324558,
+        "gene_gate_mix": 0.125,
+        "scale": 0.273019557944028,
+        "source_relative_mse": 0.9158951557171451
+      },
+      {
+        "reliability": 0.07498942093324558,
+        "gene_gate_mix": 0.25,
+        "scale": 0.2731984336705188,
+        "source_relative_mse": 0.9155657001625511
+      },
+      {
+        "reliability": 0.07498942093324558,
+        "gene_gate_mix": 0.375,
+        "scale": 0.27333942560917607,
+        "source_relative_mse": 0.915247631696407
+      },
+      {
+        "reliability": 0.07498942093324558,
+        "gene_gate_mix": 0.5,
+        "scale": 0.27344278548654904,
+        "source_relative_mse": 0.9149409861462032
+      },
+      {
+        "reliability": 0.07498942093324558,
+        "gene_gate_mix": 0.625,
+        "scale": 0.27350879258120964,
+        "source_relative_mse": 0.9146457897300798
+      },
+      {
+        "reliability": 0.07498942093324558,
+        "gene_gate_mix": 0.75,
+        "scale": 0.2735377529591369,
+        "source_relative_mse": 0.9143620591578668
+      },
+      {
+        "reliability": 0.07498942093324558,
+        "gene_gate_mix": 0.875,
+        "scale": 0.27352999866870337,
+        "source_relative_mse": 0.9140898017494204
+      },
+      {
+        "reliability": 0.07498942093324558,
+        "gene_gate_mix": 1.0,
+        "scale": 0.27348588689835135,
+        "source_relative_mse": 0.9138290155695643
+      },
+      {
+        "reliability": 0.1,
+        "gene_gate_mix": 0.0,
+        "scale": 0.2783395282574276,
+        "source_relative_mse": 0.9157404871321937
+      },
+      {
+        "reliability": 0.1,
+        "gene_gate_mix": 0.125,
+        "scale": 0.27854470653343566,
+        "source_relative_mse": 0.9153080413374582
+      },
+      {
+        "reliability": 0.1,
+        "gene_gate_mix": 0.25,
+        "scale": 0.27869226858812934,
+        "source_relative_mse": 0.9148926448667745
+      },
+      {
+        "reliability": 0.1,
+        "gene_gate_mix": 0.375,
+        "scale": 0.278782784344948,
+        "source_relative_mse": 0.9144943527262045
+      },
+      {
+        "reliability": 0.1,
+        "gene_gate_mix": 0.5,
+        "scale": 0.2788168832047531,
+        "source_relative_mse": 0.9141131985694515
+      },
+      {
+        "reliability": 0.1,
+        "gene_gate_mix": 0.625,
+        "scale": 0.2787952516116064,
+        "source_relative_mse": 0.9137491950555489
+      },
+      {
+        "reliability": 0.1,
+        "gene_gate_mix": 0.75,
+        "scale": 0.2787186305084562,
+        "source_relative_mse": 0.913402334260173
+      },
+      {
+        "reliability": 0.1,
+        "gene_gate_mix": 0.875,
+        "scale": 0.2785878126964474,
+        "source_relative_mse": 0.9130725881373251
+      },
+      {
+        "reliability": 0.1,
+        "gene_gate_mix": 1.0,
+        "scale": 0.2784036401116343,
+        "source_relative_mse": 0.9127599090279597
+      },
+      {
+        "reliability": 0.1333521432163324,
+        "gene_gate_mix": 0.0,
+        "scale": 0.2856969357403472,
+        "source_relative_mse": 0.9151048890397758
+      },
+      {
+        "reliability": 0.1333521432163324,
+        "gene_gate_mix": 0.125,
+        "scale": 0.2858495647931011,
+        "source_relative_mse": 0.9145589925527882
+      },
+      {
+        "reliability": 0.1333521432163324,
+        "gene_gate_mix": 0.25,
+        "scale": 0.2859149790020657,
+        "source_relative_mse": 0.9140387829482596
+      },
+      {
+        "reliability": 0.1333521432163324,
+        "gene_gate_mix": 0.375,
+        "scale": 0.28589457574406146,
+        "source_relative_mse": 0.9135442958115622
+      },
+      {
+        "reliability": 0.1333521432163324,
+        "gene_gate_mix": 0.5,
+        "scale": 0.28578987292539687,
+        "source_relative_mse": 0.9130755202807762
+      },
+      {
+        "reliability": 0.1333521432163324,
+        "gene_gate_mix": 0.625,
+        "scale": 0.2856025010334354,
+        "source_relative_mse": 0.9126324004228891
+      },
+      {
+        "reliability": 0.1333521432163324,
+        "gene_gate_mix": 0.75,
+        "scale": 0.28533419497643914,
+        "source_relative_mse": 0.91221483675864
+      },
+      {
+        "reliability": 0.1333521432163324,
+        "gene_gate_mix": 0.875,
+        "scale": 0.2849867857702578,
+        "source_relative_mse": 0.9118226879204872
+      },
+      {
+        "reliability": 0.1333521432163324,
+        "gene_gate_mix": 1.0,
+        "scale": 0.2845621921288043,
+        "source_relative_mse": 0.911455772427856
+      },
+      {
+        "reliability": 0.1778279410038923,
+        "gene_gate_mix": 0.0,
+        "scale": 0.29546381281555695,
+        "source_relative_mse": 0.9142990515483221
+      },
+      {
+        "reliability": 0.1778279410038923,
+        "gene_gate_mix": 0.125,
+        "scale": 0.2954944948970357,
+        "source_relative_mse": 0.9136132612052786
+      },
+      {
+        "reliability": 0.1778279410038923,
+        "gene_gate_mix": 0.25,
+        "scale": 0.29539294896251844,
+        "source_relative_mse": 0.9129662895690799
+      },
+      {
+        "reliability": 0.1778279410038923,
+        "gene_gate_mix": 0.375,
+        "scale": 0.2951625016972687,
+        "source_relative_mse": 0.9123580575407864
+      },
+      {
+        "reliability": 0.1778279410038923,
+        "gene_gate_mix": 0.5,
+        "scale": 0.2948067096070721,
+        "source_relative_mse": 0.9117883867730895
+      },
+      {
+        "reliability": 0.1778279410038923,
+        "gene_gate_mix": 0.625,
+        "scale": 0.2943293339998794,
+        "source_relative_mse": 0.911257004581321
+      },
+      {
+        "reliability": 0.1778279410038923,
+        "gene_gate_mix": 0.75,
+        "scale": 0.2937343159182573,
+        "source_relative_mse": 0.9107635492132631
+      },
+      {
+        "reliability": 0.1778279410038923,
+        "gene_gate_mix": 0.875,
+        "scale": 0.2930257512497117,
+        "source_relative_mse": 0.9103075754090502
+      },
+      {
+        "reliability": 0.1778279410038923,
+        "gene_gate_mix": 1.0,
+        "scale": 0.29220786622400724,
+        "source_relative_mse": 0.9098885601838155
+      },
+      {
+        "reliability": 0.23713737056616552,
+        "gene_gate_mix": 0.0,
+        "scale": 0.3084141626631717,
+        "source_relative_mse": 0.9132924677965909
+      },
+      {
+        "reliability": 0.23713737056616552,
+        "gene_gate_mix": 0.125,
+        "scale": 0.30820908358872595,
+        "source_relative_mse": 0.9124344976463334
+      },
+      {
+        "reliability": 0.23713737056616552,
+        "gene_gate_mix": 0.25,
+        "scale": 0.30780314547525706,
+        "source_relative_mse": 0.9116354089077008
+      },
+      {
+        "reliability": 0.23713737056616552,
+        "gene_gate_mix": 0.375,
+        "scale": 0.30720408605550137,
+        "source_relative_mse": 0.9108947473666968
+      },
+      {
+        "reliability": 0.23713737056616552,
+        "gene_gate_mix": 0.5,
+        "scale": 0.3064200347927729,
+        "source_relative_mse": 0.910211852074341
+      },
+      {
+        "reliability": 0.23713737056616552,
+        "gene_gate_mix": 0.625,
+        "scale": 0.3054594374864117,
+        "source_relative_mse": 0.9095858718442382
+      },
+      {
+        "reliability": 0.23713737056616552,
+        "gene_gate_mix": 0.75,
+        "scale": 0.304330983307261,
+        "source_relative_mse": 0.9090157823675479
+      },
+      {
+        "reliability": 0.23713737056616552,
+        "gene_gate_mix": 0.875,
+        "scale": 0.30304353501276987,
+        "source_relative_mse": 0.9085004036684854
+      },
+      {
+        "reliability": 0.23713737056616552,
+        "gene_gate_mix": 1.0,
+        "scale": 0.30160606296286546,
+        "source_relative_mse": 0.9080384176448462
+      },
+      {
+        "reliability": 0.31622776601683794,
+        "gene_gate_mix": 0.0,
+        "scale": 0.3255625990306197,
+        "source_relative_mse": 0.9120582627459637
+      },
+      {
+        "reliability": 0.31622776601683794,
+        "gene_gate_mix": 0.125,
+        "scale": 0.3249394048964082,
+        "source_relative_mse": 0.9109882389719782
+      },
+      {
+        "reliability": 0.31622776601683794,
+        "gene_gate_mix": 0.25,
+        "scale": 0.3240104373558104,
+        "source_relative_mse": 0.9100078921274861
+      },
+      {
+        "reliability": 0.31622776601683794,
+        "gene_gate_mix": 0.375,
+        "scale": 0.3227933541134884,
+        "source_relative_mse": 0.9091157465473361
+      },
+      {
+        "reliability": 0.31622776601683794,
+        "gene_gate_mix": 0.5,
+        "scale": 0.3213063238049143,
+        "source_relative_mse": 0.9083099115857532
+      },
+      {
+        "reliability": 0.31622776601683794,
+        "gene_gate_mix": 0.625,
+        "scale": 0.319567810992761,
+        "source_relative_mse": 0.9075881340546443
+      },
+      {
+        "reliability": 0.31622776601683794,
+        "gene_gate_mix": 0.75,
+        "scale": 0.31759637865849333,
+        "source_relative_mse": 0.9069478504523535
+      },
+      {
+        "reliability": 0.31622776601683794,
+        "gene_gate_mix": 0.875,
+        "scale": 0.31541050990807834,
+        "source_relative_mse": 0.9063862380059652
+      },
+      {
+        "reliability": 0.31622776601683794,
+        "gene_gate_mix": 1.0,
+        "scale": 0.3130284498954856,
+        "source_relative_mse": 0.9059002637128598
+      },
+      {
+        "reliability": 0.4216965034285822,
+        "gene_gate_mix": 0.0,
+        "scale": 0.3482364240666565,
+        "source_relative_mse": 0.9105790372014514
+      },
+      {
+        "reliability": 0.4216965034285822,
+        "gene_gate_mix": 0.125,
+        "scale": 0.34690688357623095,
+        "source_relative_mse": 0.9092470164093645
+      },
+      {
+        "reliability": 0.4216965034285822,
+        "gene_gate_mix": 0.25,
+        "scale": 0.3451107876038898,
+        "source_relative_mse": 0.9080521269835046
+      },
+      {
+        "reliability": 0.4216965034285822,
+        "gene_gate_mix": 0.375,
+        "scale": 0.3428877868115003,
+        "source_relative_mse": 0.9069903652959141
+      },
+      {
+        "reliability": 0.4216965034285822,
+        "gene_gate_mix": 0.5,
+        "scale": 0.34027761475261176,
+        "source_relative_mse": 0.9060569397602939
+      },
+      {
+        "reliability": 0.4216965034285822,
+        "gene_gate_mix": 0.625,
+        "scale": 0.33731951964202705,
+        "source_relative_mse": 0.9052464284495219
+      },
+      {
+        "reliability": 0.4216965034285822,
+        "gene_gate_mix": 0.75,
+        "scale": 0.3340517844532792,
+        "source_relative_mse": 0.9045529279219661
+      },
+      {
+        "reliability": 0.4216965034285822,
+        "gene_gate_mix": 0.875,
+        "scale": 0.3305113345300358,
+        "source_relative_mse": 0.9039701905105302
+      },
+      {
+        "reliability": 0.4216965034285822,
+        "gene_gate_mix": 1.0,
+        "scale": 0.3267334288733938,
+        "source_relative_mse": 0.9034917482530161
+      },
+      {
+        "reliability": 0.5623413251903491,
+        "gene_gate_mix": 0.0,
+        "scale": 0.37816988565724,
+        "source_relative_mse": 0.9088539856617909
+      },
+      {
+        "reliability": 0.5623413251903491,
+        "gene_gate_mix": 0.125,
+        "scale": 0.3756813773634033,
+        "source_relative_mse": 0.9071966187746752
+      },
+      {
+        "reliability": 0.5623413251903491,
+        "gene_gate_mix": 0.25,
+        "scale": 0.3724793821869545,
+        "source_relative_mse": 0.905749691598575
+      },
+      {
+        "reliability": 0.5623413251903491,
+        "gene_gate_mix": 0.375,
+        "scale": 0.36865169356220134,
+        "source_relative_mse": 0.9045033220236258
+      },
+      {
+        "reliability": 0.5623413251903491,
+        "gene_gate_mix": 0.5,
+        "scale": 0.3642833052473904,
+        "source_relative_mse": 0.9034462600988153
+      },
+      {
+        "reliability": 0.5623413251903491,
+        "gene_gate_mix": 0.625,
+        "scale": 0.35945507709194024,
+        "source_relative_mse": 0.902566333792415
+      },
+      {
+        "reliability": 0.5623413251903491,
+        "gene_gate_mix": 0.75,
+        "scale": 0.35424277217295314,
+        "source_relative_mse": 0.9018508399555449
+      },
+      {
+        "reliability": 0.5623413251903491,
+        "gene_gate_mix": 0.875,
+        "scale": 0.3487164245654347,
+        "source_relative_mse": 0.9012868764014664
+      },
+      {
+        "reliability": 0.5623413251903491,
+        "gene_gate_mix": 1.0,
+        "scale": 0.34293998972320167,
+        "source_relative_mse": 0.9008616150778395
+      },
+      {
+        "reliability": 0.7498942093324558,
+        "gene_gate_mix": 0.0,
+        "scale": 0.41762910036315615,
+        "source_relative_mse": 0.9069057601976
+      },
+      {
+        "reliability": 0.7498942093324558,
+        "gene_gate_mix": 0.125,
+        "scale": 0.41327185044897286,
+        "source_relative_mse": 0.9048422020366387
+      },
+      {
+        "reliability": 0.7498942093324558,
+        "gene_gate_mix": 0.25,
+        "scale": 0.4078213872066113,
+        "source_relative_mse": 0.9031023837984604
+      },
+      {
+        "reliability": 0.7498942093324558,
+        "gene_gate_mix": 0.375,
+        "scale": 0.4014696377642869,
+        "source_relative_mse": 0.901663378392045
+      },
+      {
+        "reliability": 0.7498942093324558,
+        "gene_gate_mix": 0.5,
+        "scale": 0.3943941308168881,
+        "source_relative_mse": 0.9005002536121417
+      },
+      {
+        "reliability": 0.7498942093324558,
+        "gene_gate_mix": 0.625,
+        "scale": 0.3867555091027428,
+        "source_relative_mse": 0.8995872466415821
+      },
+      {
+        "reliability": 0.7498942093324558,
+        "gene_gate_mix": 0.75,
+        "scale": 0.378696384798836,
+        "source_relative_mse": 0.8988986896339568
+      },
+      {
+        "reliability": 0.7498942093324558,
+        "gene_gate_mix": 0.875,
+        "scale": 0.3703412293453775,
+        "source_relative_mse": 0.8984097019684425
+      },
+      {
+        "reliability": 0.7498942093324558,
+        "gene_gate_mix": 1.0,
+        "scale": 0.36179700969392337,
+        "source_relative_mse": 0.8980966771222471
+      },
+      {
+        "reliability": 1.0,
+        "gene_gate_mix": 0.0,
+        "scale": 0.4695800709826389,
+        "source_relative_mse": 0.9047846014464863
+      },
+      {
+        "reliability": 1.0,
+        "gene_gate_mix": 0.125,
+        "scale": 0.4622386366464654,
+        "source_relative_mse": 0.9022121697904524
+      },
+      {
+        "reliability": 1.0,
+        "gene_gate_mix": 0.25,
+        "scale": 0.453220472935192,
+        "source_relative_mse": 0.9001381832647085
+      },
+      {
+        "reliability": 1.0,
+        "gene_gate_mix": 0.375,
+        "scale": 0.4429400258510829,
+        "source_relative_mse": 0.8985118755104715
+      },
+      {
+        "reliability": 1.0,
+        "gene_gate_mix": 0.5,
+        "scale": 0.4317581768674561,
+        "source_relative_mse": 0.8972806590862792
+      },
+      {
+        "reliability": 1.0,
+        "gene_gate_mix": 0.625,
+        "scale": 0.4199802928164746,
+        "source_relative_mse": 0.8963929595274096
+      },
+      {
+        "reliability": 1.0,
+        "gene_gate_mix": 0.75,
+        "scale": 0.40785837361826294,
+        "source_relative_mse": 0.8958001052835791
+      },
+      {
+        "reliability": 1.0,
+        "gene_gate_mix": 0.875,
+        "scale": 0.3955956714808006,
+        "source_relative_mse": 0.8954574513163132
+      },
+      {
+        "reliability": 1.0,
+        "gene_gate_mix": 1.0,
+        "scale": 0.38335254039848704,
+        "source_relative_mse": 0.8953249232671094
+      },
+      {
+        "reliability": 1.333521432163324,
+        "gene_gate_mix": 0.0,
+        "scale": 0.5379173600592384,
+        "source_relative_mse": 0.9025670556673648
+      },
+      {
+        "reliability": 1.333521432163324,
+        "gene_gate_mix": 0.125,
+        "scale": 0.5258308292536921,
+        "source_relative_mse": 0.8993577304596978
+      },
+      {
+        "reliability": 1.333521432163324,
+        "gene_gate_mix": 0.25,
+        "scale": 0.5111752968739145,
+        "source_relative_mse": 0.896914656874363
+      },
+      {
+        "reliability": 1.333521432163324,
+        "gene_gate_mix": 0.375,
+        "scale": 0.4948341895469543,
+        "source_relative_mse": 0.8951297358692775
+      },
+      {
+        "reliability": 1.333521432163324,
+        "gene_gate_mix": 0.5,
+        "scale": 0.4775175552014054,
+        "source_relative_mse": 0.893897113024024
+      },
+      {
+        "reliability": 1.333521432163324,
+        "gene_gate_mix": 0.625,
+        "scale": 0.4597742534369491,
+        "source_relative_mse": 0.8931192448760802
+      },
+      {
+        "reliability": 1.333521432163324,
+        "gene_gate_mix": 0.75,
+        "scale": 0.44201376454859637,
+        "source_relative_mse": 0.8927098795877266
+      },
+      {
+        "reliability": 1.333521432163324,
+        "gene_gate_mix": 0.875,
+        "scale": 0.42453093135747644,
+        "source_relative_mse": 0.8925949521788457
+      },
+      {
+        "reliability": 1.333521432163324,
+        "gene_gate_mix": 1.0,
+        "scale": 0.4075297350221869,
+        "source_relative_mse": 0.8927122099728789
+      },
+      {
+        "reliability": 1.7782794100389228,
+        "gene_gate_mix": 0.0,
+        "scale": 0.627777142146363,
+        "source_relative_mse": 0.9003478061238812
+      },
+      {
+        "reliability": 1.7782794100389228,
+        "gene_gate_mix": 0.125,
+        "scale": 0.608148936860016,
+        "source_relative_mse": 0.8963473599326223
+      },
+      {
+        "reliability": 1.7782794100389228,
+        "gene_gate_mix": 0.25,
+        "scale": 0.5846051572930583,
+        "source_relative_mse": 0.8935194550092501
+      },
+      {
+        "reliability": 1.7782794100389228,
+        "gene_gate_mix": 0.375,
+        "scale": 0.5590007088420579,
+        "source_relative_mse": 0.891641985176129
+      },
+      {
+        "reliability": 1.7782794100389228,
+        "gene_gate_mix": 0.5,
+        "scale": 0.5326760823230664,
+        "source_relative_mse": 0.8905117590284427
+      },
+      {
+        "reliability": 1.7782794100389228,
+        "gene_gate_mix": 0.625,
+        "scale": 0.5065465576248973,
+        "source_relative_mse": 0.8899552177169033
+      },
+      {
+        "reliability": 1.7782794100389228,
+        "gene_gate_mix": 0.75,
+        "scale": 0.48120190347940456,
+        "source_relative_mse": 0.8898304868370974
+      },
+      {
+        "reliability": 1.7782794100389228,
+        "gene_gate_mix": 0.875,
+        "scale": 0.45699560813907764,
+        "source_relative_mse": 0.8900249479254531
+      },
+      {
+        "reliability": 1.7782794100389228,
+        "gene_gate_mix": 1.0,
+        "scale": 0.43411648834104005,
+        "source_relative_mse": 0.8904509920419719
+      },
+      {
+        "reliability": 2.371373705661655,
+        "gene_gate_mix": 0.0,
+        "scale": 0.7459655053742834,
+        "source_relative_mse": 0.8982256826711896
+      },
+      {
+        "reliability": 2.371373705661655,
+        "gene_gate_mix": 0.125,
+        "scale": 0.7143238367511925,
+        "source_relative_mse": 0.8932579235849668
+      },
+      {
+        "reliability": 2.371373705661655,
+        "gene_gate_mix": 0.25,
+        "scale": 0.6767919774690935,
+        "source_relative_mse": 0.8900694534499369
+      },
+      {
+        "reliability": 2.371373705661655,
+        "gene_gate_mix": 0.375,
+        "scale": 0.6371910073178654,
+        "source_relative_mse": 0.8882196332975982
+      },
+      {
+        "reliability": 2.371373705661655,
+        "gene_gate_mix": 0.5,
+        "scale": 0.597916165964063,
+        "source_relative_mse": 0.8873378232409063
+      },
+      {
+        "reliability": 2.371373705661655,
+        "gene_gate_mix": 0.625,
+        "scale": 0.5603368231348892,
+        "source_relative_mse": 0.8871354842378355
+      },
+      {
+        "reliability": 2.371373705661655,
+        "gene_gate_mix": 0.75,
+        "scale": 0.525145550724573,
+        "source_relative_mse": 0.8873980007560308
+      },
+      {
+        "reliability": 2.371373705661655,
+        "gene_gate_mix": 0.875,
+        "scale": 0.4926154419859848,
+        "source_relative_mse": 0.8879701464688784
+      },
+      {
+        "reliability": 2.371373705661655,
+        "gene_gate_mix": 1.0,
+        "scale": 0.4627735899269026,
+        "source_relative_mse": 0.8887416389617523
+      },
+      {
+        "reliability": 3.1622776601683795,
+        "gene_gate_mix": 0.0,
+        "scale": 0.901541400438363,
+        "source_relative_mse": 0.8962875914409554
+      },
+      {
+        "reliability": 3.1622776601683795,
+        "gene_gate_mix": 0.125,
+        "scale": 0.8506846813342015,
+        "source_relative_mse": 0.890166740441971
+      },
+      {
+        "reliability": 3.1622776601683795,
+        "gene_gate_mix": 0.25,
+        "scale": 0.791208485809947,
+        "source_relative_mse": 0.8867114362477919
+      },
+      {
+        "reliability": 3.1622776601683795,
+        "gene_gate_mix": 0.375,
+        "scale": 0.7307869358669771,
+        "source_relative_mse": 0.8850787664657587
+      },
+      {
+        "reliability": 3.1622776601683795,
+        "gene_gate_mix": 0.5,
+        "scale": 0.6733807588142073,
+        "source_relative_mse": 0.8846300527311441
+      },
+      {
+        "reliability": 3.1622776601683795,
+        "gene_gate_mix": 0.625,
+        "scale": 0.620698153714347,
+        "source_relative_mse": 0.8849212889050823
+      },
+      {
+        "reliability": 3.1622776601683795,
+        "gene_gate_mix": 0.75,
+        "scale": 0.5732182761214822,
+        "source_relative_mse": 0.885657476592364
+      },
+      {
+        "reliability": 3.1622776601683795,
+        "gene_gate_mix": 0.875,
+        "scale": 0.5308075846246563,
+        "source_relative_mse": 0.8866474852838401
+      },
+      {
+        "reliability": 3.1622776601683795,
+        "gene_gate_mix": 1.0,
+        "scale": 0.49306147295748387,
+        "source_relative_mse": 0.8877694013296147
+      },
+      {
+        "reliability": 4.216965034285822,
+        "gene_gate_mix": 0.0,
+        "scale": 1.1066043117760191,
+        "source_relative_mse": 0.8945952945050949
+      },
+      {
+        "reliability": 4.216965034285822,
+        "gene_gate_mix": 0.125,
+        "scale": 1.0248567974467666,
+        "source_relative_mse": 0.8871497705487856
+      },
+      {
+        "reliability": 4.216965034285822,
+        "gene_gate_mix": 0.25,
+        "scale": 0.9311699468439573,
+        "source_relative_mse": 0.8836263330848457
+      },
+      {
+        "reliability": 4.216965034285822,
+        "gene_gate_mix": 0.375,
+        "scale": 0.84043400639731,
+        "source_relative_mse": 0.8824751029963063
+      },
+      {
+        "reliability": 4.216965034285822,
+        "gene_gate_mix": 0.5,
+        "scale": 0.7584636849406287,
+        "source_relative_mse": 0.8826649649690412
+      },
+      {
+        "reliability": 4.216965034285822,
+        "gene_gate_mix": 0.625,
+        "scale": 0.686638077999307,
+        "source_relative_mse": 0.8835712354219258
+      },
+      {
+        "reliability": 4.216965034285822,
+        "gene_gate_mix": 0.75,
+        "scale": 0.6244702770764855,
+        "source_relative_mse": 0.8848313829126078
+      },
+      {
+        "reliability": 4.216965034285822,
+        "gene_gate_mix": 0.875,
+        "scale": 0.5708313771301256,
+        "source_relative_mse": 0.8862397655236754
+      },
+      {
+        "reliability": 4.216965034285822,
+        "gene_gate_mix": 1.0,
+        "scale": 0.5244802502200923,
+        "source_relative_mse": 0.8876818878072439
+      },
+      {
+        "reliability": 5.62341325190349,
+        "gene_gate_mix": 0.0,
+        "scale": 1.377350393505977,
+        "source_relative_mse": 0.8931788602927017
+      },
+      {
+        "reliability": 5.62341325190349,
+        "gene_gate_mix": 0.125,
+        "scale": 1.2456831156688857,
+        "source_relative_mse": 0.8842894930947723
+      },
+      {
+        "reliability": 5.62341325190349,
+        "gene_gate_mix": 0.25,
+        "scale": 1.0992564525511355,
+        "source_relative_mse": 0.8810353138457586
+      },
+      {
+        "reliability": 5.62341325190349,
+        "gene_gate_mix": 0.375,
+        "scale": 0.9656321582557731,
+        "source_relative_mse": 0.8806898342376499
+      },
+      {
+        "reliability": 5.62341325190349,
+        "gene_gate_mix": 0.5,
+        "scale": 0.8516791505552425,
+        "source_relative_mse": 0.8817101070014015
+      },
+      {
+        "reliability": 5.62341325190349,
+        "gene_gate_mix": 0.625,
+        "scale": 0.7566554938503693,
+        "source_relative_mse": 0.8833056573217792
+      },
+      {
+        "reliability": 5.62341325190349,
+        "gene_gate_mix": 0.75,
+        "scale": 0.6777175271455746,
+        "source_relative_mse": 0.8850878801611067
+      },
+      {
+        "reliability": 5.62341325190349,
+        "gene_gate_mix": 0.875,
+        "scale": 0.6118658015761776,
+        "source_relative_mse": 0.8868713893169509
+      },
+      {
+        "reliability": 5.62341325190349,
+        "gene_gate_mix": 1.0,
+        "scale": 0.5565140735320948,
+        "source_relative_mse": 0.8885720348387829
+      },
+      {
+        "reliability": 7.498942093324558,
+        "gene_gate_mix": 0.0,
+        "scale": 1.735478771535042,
+        "source_relative_mse": 0.8920378600643384
+      },
+      {
+        "reliability": 7.498942093324558,
+        "gene_gate_mix": 0.125,
+        "scale": 1.52280352692625,
+        "source_relative_mse": 0.8816923497571924
+      },
+      {
+        "reliability": 7.498942093324558,
+        "gene_gate_mix": 0.25,
+        "scale": 1.2965097953005265,
+        "source_relative_mse": 0.879200914283012
+      },
+      {
+        "reliability": 7.498942093324558,
+        "gene_gate_mix": 0.375,
+        "scale": 1.1044006360266627,
+        "source_relative_mse": 0.8800020605336438
+      },
+      {
+        "reliability": 7.498942093324558,
+        "gene_gate_mix": 0.5,
+        "scale": 0.9506876297623607,
+        "source_relative_mse": 0.8819852592090125
+      },
+      {
+        "reliability": 7.498942093324558,
+        "gene_gate_mix": 0.625,
+        "scale": 0.8288873032050158,
+        "source_relative_mse": 0.8842723913394449
+      },
+      {
+        "reliability": 7.498942093324558,
+        "gene_gate_mix": 0.75,
+        "scale": 0.7316772769569095,
+        "source_relative_mse": 0.8865169564278553
+      },
+      {
+        "reliability": 7.498942093324558,
+        "gene_gate_mix": 0.875,
+        "scale": 0.6530947836803918,
+        "source_relative_mse": 0.8885939845239162
+      },
+      {
+        "reliability": 7.498942093324558,
+        "gene_gate_mix": 1.0,
+        "scale": 0.5886704874498957,
+        "source_relative_mse": 0.8904698908754425
+      },
+      {
+        "reliability": 10.0,
+        "gene_gate_mix": 0.0,
+        "scale": 2.0,
+        "source_relative_mse": 0.8921318670753041
+      },
+      {
+        "reliability": 10.0,
+        "gene_gate_mix": 0.125,
+        "scale": 1.8656780325309124,
+        "source_relative_mse": 0.8795110464623804
+      },
+      {
+        "reliability": 10.0,
+        "gene_gate_mix": 0.25,
+        "scale": 1.5215308674910468,
+        "source_relative_mse": 0.878413114367274
+      },
+      {
+        "reliability": 10.0,
+        "gene_gate_mix": 0.375,
+        "scale": 1.2531783718929692,
+        "source_relative_mse": 0.8806473897009759
+      },
+      {
+        "reliability": 10.0,
+        "gene_gate_mix": 0.5,
+        "scale": 1.0525197185840112,
+        "source_relative_mse": 0.8836239957021566
+      },
+      {
+        "reliability": 10.0,
+        "gene_gate_mix": 0.625,
+        "scale": 0.9013380951568605,
+        "source_relative_mse": 0.8865233491346587
+      },
+      {
+        "reliability": 10.0,
+        "gene_gate_mix": 0.75,
+        "scale": 0.785115219359375,
+        "source_relative_mse": 0.8891205187807044
+      },
+      {
+        "reliability": 10.0,
+        "gene_gate_mix": 0.875,
+        "scale": 0.6937800303911753,
+        "source_relative_mse": 0.8913845388528263
+      },
+      {
+        "reliability": 10.0,
+        "gene_gate_mix": 1.0,
+        "scale": 0.620508237641846,
+        "source_relative_mse": 0.8933438906572082
+      },
+      {
+        "reliability": 13.33521432163324,
+        "gene_gate_mix": 0.0,
+        "scale": 2.0,
+        "source_relative_mse": 0.9000549398631619
+      },
+      {
+        "reliability": 13.33521432163324,
+        "gene_gate_mix": 0.125,
+        "scale": 2.0,
+        "source_relative_mse": 0.8798246294785397
+      },
+      {
+        "reliability": 13.33521432163324,
+        "gene_gate_mix": 0.25,
+        "scale": 1.7697656479629174,
+        "source_relative_mse": 0.8789527947518462
+      },
+      {
+        "reliability": 13.33521432163324,
+        "gene_gate_mix": 0.375,
+        "scale": 1.4070924536091851,
+        "source_relative_mse": 0.8827709176064314
+      },
+      {
+        "reliability": 13.33521432163324,
+        "gene_gate_mix": 0.5,
+        "scale": 1.15396490072712,
+        "source_relative_mse": 0.8866475549851885
+      },
+      {
+        "reliability": 13.33521432163324,
+        "gene_gate_mix": 0.625,
+        "scale": 0.9721310489635007,
+        "source_relative_mse": 0.8900088535502905
+      },
+      {
+        "reliability": 13.33521432163324,
+        "gene_gate_mix": 0.75,
+        "scale": 0.8369666261344834,
+        "source_relative_mse": 0.8928180156563984
+      },
+      {
+        "reliability": 13.33521432163324,
+        "gene_gate_mix": 0.875,
+        "scale": 0.7333076784087593,
+        "source_relative_mse": 0.8951547992369793
+      },
+      {
+        "reliability": 13.33521432163324,
+        "gene_gate_mix": 1.0,
+        "scale": 0.6516514669790372,
+        "source_relative_mse": 0.8971098279828487
+      },
+      {
+        "reliability": 17.78279410038923,
+        "gene_gate_mix": 0.0,
+        "scale": 2.0,
+        "source_relative_mse": 0.9128618545263673
+      },
+      {
+        "reliability": 17.78279410038923,
+        "gene_gate_mix": 0.125,
+        "scale": 2.0,
+        "source_relative_mse": 0.8868887588363908
+      },
+      {
+        "reliability": 17.78279410038923,
+        "gene_gate_mix": 0.25,
+        "scale": 2.0,
+        "source_relative_mse": 0.881067125250869
+      },
+      {
+        "reliability": 17.78279410038923,
+        "gene_gate_mix": 0.375,
+        "scale": 1.560599732425334,
+        "source_relative_mse": 0.8863905359873987
+      },
+      {
+        "reliability": 17.78279410038923,
+        "gene_gate_mix": 0.5,
+        "scale": 1.2520170831728754,
+        "source_relative_mse": 0.8909606339140981
+      },
+      {
+        "reliability": 17.78279410038923,
+        "gene_gate_mix": 0.625,
+        "scale": 1.0397108828905501,
+        "source_relative_mse": 0.8945906570976705
+      },
+      {
+        "reliability": 17.78279410038923,
+        "gene_gate_mix": 0.75,
+        "scale": 0.8864071953646813,
+        "source_relative_mse": 0.897464239361512
+      },
+      {
+        "reliability": 17.78279410038923,
+        "gene_gate_mix": 0.875,
+        "scale": 0.7712057834299157,
+        "source_relative_mse": 0.8997678875215965
+      },
+      {
+        "reliability": 17.78279410038923,
+        "gene_gate_mix": 1.0,
+        "scale": 0.6817924681214137,
+        "source_relative_mse": 0.9016443353086396
+      },
+      {
+        "reliability": 23.71373705661655,
+        "gene_gate_mix": 0.0,
+        "scale": 2.0,
+        "source_relative_mse": 0.9270708978390939
+      },
+      {
+        "reliability": 23.71373705661655,
+        "gene_gate_mix": 0.125,
+        "scale": 2.0,
+        "source_relative_mse": 0.8975718888847715
+      },
+      {
+        "reliability": 23.71373705661655,
+        "gene_gate_mix": 0.25,
+        "scale": 2.0,
+        "source_relative_mse": 0.8867323523658626
+      },
+      {
+        "reliability": 23.71373705661655,
+        "gene_gate_mix": 0.375,
+        "scale": 1.7083334299639108,
+        "source_relative_mse": 0.8913862749578387
+      },
+      {
+        "reliability": 23.71373705661655,
+        "gene_gate_mix": 0.5,
+        "scale": 1.3442434601101796,
+        "source_relative_mse": 0.8963706003581041
+      },
+      {
+        "reliability": 23.71373705661655,
+        "gene_gate_mix": 0.625,
+        "scale": 1.1029547109695959,
+        "source_relative_mse": 0.9000681954253893
+      },
+      {
+        "reliability": 23.71373705661655,
+        "gene_gate_mix": 0.75,
+        "scale": 0.9328703743647289,
+        "source_relative_mse": 0.9028730765423183
+      },
+      {
+        "reliability": 23.71373705661655,
+        "gene_gate_mix": 0.875,
+        "scale": 0.8071388707755789,
+        "source_relative_mse": 0.9050573149156813
+      },
+      {
+        "reliability": 23.71373705661655,
+        "gene_gate_mix": 1.0,
+        "scale": 0.7106875349542802,
+        "source_relative_mse": 0.9067996070186601
+      },
+      {
+        "reliability": 31.622776601683793,
+        "gene_gate_mix": 0.0,
+        "scale": 2.0,
+        "source_relative_mse": 0.9406959176983478
+      },
+      {
+        "reliability": 31.622776601683793,
+        "gene_gate_mix": 0.125,
+        "scale": 2.0,
+        "source_relative_mse": 0.9094978628291267
+      },
+      {
+        "reliability": 31.622776601683793,
+        "gene_gate_mix": 0.25,
+        "scale": 2.0,
+        "source_relative_mse": 0.8953444443368709
+      },
+      {
+        "reliability": 31.622776601683793,
+        "gene_gate_mix": 0.375,
+        "scale": 1.845881191604452,
+        "source_relative_mse": 0.8975212686530264
+      },
+      {
+        "reliability": 31.622776601683793,
+        "gene_gate_mix": 0.5,
+        "scale": 1.4289847983236388,
+        "source_relative_mse": 0.9026226781061977
+      },
+      {
+        "reliability": 31.622776601683793,
+        "gene_gate_mix": 0.625,
+        "scale": 1.1611861760741997,
+        "source_relative_mse": 0.9062094804580224
+      },
+      {
+        "reliability": 31.622776601683793,
+        "gene_gate_mix": 0.75,
+        "scale": 0.9760244115820749,
+        "source_relative_mse": 0.9088410794700266
+      },
+      {
+        "reliability": 31.622776601683793,
+        "gene_gate_mix": 0.875,
+        "scale": 0.8408895957119027,
+        "source_relative_mse": 0.9108446029753654
+      },
+      {
+        "reliability": 31.622776601683793,
+        "gene_gate_mix": 1.0,
+        "scale": 0.7381503110475203,
+        "source_relative_mse": 0.9124169985992644
+      },
+      {
+        "reliability": 42.169650342858226,
+        "gene_gate_mix": 0.0,
+        "scale": 2.0,
+        "source_relative_mse": 0.9527698370267021
+      },
+      {
+        "reliability": 42.169650342858226,
+        "gene_gate_mix": 0.125,
+        "scale": 2.0,
+        "source_relative_mse": 0.9212846736132712
+      },
+      {
+        "reliability": 42.169650342858226,
+        "gene_gate_mix": 0.25,
+        "scale": 2.0,
+        "source_relative_mse": 0.9051973820365945
+      },
+      {
+        "reliability": 42.169650342858226,
+        "gene_gate_mix": 0.375,
+        "scale": 1.9702610588423524,
+        "source_relative_mse": 0.9044862017615408
+      },
+      {
+        "reliability": 42.169650342858226,
+        "gene_gate_mix": 0.5,
+        "scale": 1.5053719854458418,
+        "source_relative_mse": 0.9094393293968216
+      },
+      {
+        "reliability": 42.169650342858226,
+        "gene_gate_mix": 0.625,
+        "scale": 1.2141186047491712,
+        "source_relative_mse": 0.9127790179722461
+      },
+      {
+        "reliability": 42.169650342858226,
+        "gene_gate_mix": 0.75,
+        "scale": 1.0157281441161559,
+        "source_relative_mse": 0.9151668658439588
+      },
+      {
+        "reliability": 42.169650342858226,
+        "gene_gate_mix": 0.875,
+        "scale": 0.8723362287354441,
+        "source_relative_mse": 0.9169534832657986
+      },
+      {
+        "reliability": 42.169650342858226,
+        "gene_gate_mix": 1.0,
+        "scale": 0.7640451945592293,
+        "source_relative_mse": 0.9183382994482179
+      },
+      {
+        "reliability": 56.23413251903491,
+        "gene_gate_mix": 0.0,
+        "scale": 2.0,
+        "source_relative_mse": 0.9629567490686414
+      },
+      {
+        "reliability": 56.23413251903491,
+        "gene_gate_mix": 0.125,
+        "scale": 2.0,
+        "source_relative_mse": 0.932211948229834
+      },
+      {
+        "reliability": 56.23413251903491,
+        "gene_gate_mix": 0.25,
+        "scale": 2.0,
+        "source_relative_mse": 0.915253411484256
+      },
+      {
+        "reliability": 56.23413251903491,
+        "gene_gate_mix": 0.375,
+        "scale": 2.0,
+        "source_relative_mse": 0.9120811388319074
+      },
+      {
+        "reliability": 56.23413251903491,
+        "gene_gate_mix": 0.5,
+        "scale": 1.5732072976261966,
+        "source_relative_mse": 0.9165537057289445
+      },
+      {
+        "reliability": 56.23413251903491,
+        "gene_gate_mix": 0.625,
+        "scale": 1.2617634909767859,
+        "source_relative_mse": 0.9195584555476509
+      },
+      {
+        "reliability": 56.23413251903491,
+        "gene_gate_mix": 0.75,
+        "scale": 1.0519817873531359,
+        "source_relative_mse": 0.9216648225567375
+      },
+      {
+        "reliability": 56.23413251903491,
+        "gene_gate_mix": 0.875,
+        "scale": 0.9014313319712924,
+        "source_relative_mse": 0.9232201316231672
+      },
+      {
+        "reliability": 56.23413251903491,
+        "gene_gate_mix": 1.0,
+        "scale": 0.7882816336697049,
+        "source_relative_mse": 0.9244143360161774
+      },
+      {
+        "reliability": 74.98942093324558,
+        "gene_gate_mix": 0.0,
+        "scale": 2.0,
+        "source_relative_mse": 0.9712739311984784
+      },
+      {
+        "reliability": 74.98942093324558,
+        "gene_gate_mix": 0.125,
+        "scale": 2.0,
+        "source_relative_mse": 0.9419699236829739
+      },
+      {
+        "reliability": 74.98942093324558,
+        "gene_gate_mix": 0.25,
+        "scale": 2.0,
+        "source_relative_mse": 0.9249212165689896
+      },
+      {
+        "reliability": 74.98942093324558,
+        "gene_gate_mix": 0.375,
+        "scale": 2.0,
+        "source_relative_mse": 0.9201278098565255
+      },
+      {
+        "reliability": 74.98942093324558,
+        "gene_gate_mix": 0.5,
+        "scale": 1.6327834594253894,
+        "source_relative_mse": 0.9237319925790023
+      },
+      {
+        "reliability": 74.98942093324558,
+        "gene_gate_mix": 0.625,
+        "scale": 1.304335637217849,
+        "source_relative_mse": 0.9263589982567527
+      },
+      {
+        "reliability": 74.98942093324558,
+        "gene_gate_mix": 0.75,
+        "scale": 1.0848833951505958,
+        "source_relative_mse": 0.9281733051187802
+      },
+      {
+        "reliability": 74.98942093324558,
+        "gene_gate_mix": 0.875,
+        "scale": 0.9281844688878544,
+        "source_relative_mse": 0.9294997123526032
+      },
+      {
+        "reliability": 74.98942093324558,
+        "gene_gate_mix": 1.0,
+        "scale": 0.8108096837519069,
+        "source_relative_mse": 0.9305109796587537
+      },
+      {
+        "reliability": 100.0,
+        "gene_gate_mix": 0.0,
+        "scale": 2.0,
+        "source_relative_mse": 0.9779108782007411
+      },
+      {
+        "reliability": 100.0,
+        "gene_gate_mix": 0.125,
+        "scale": 2.0,
+        "source_relative_mse": 0.950486288423177
+      },
+      {
+        "reliability": 100.0,
+        "gene_gate_mix": 0.25,
+        "scale": 2.0,
+        "source_relative_mse": 0.9338943921676766
+      },
+      {
+        "reliability": 100.0,
+        "gene_gate_mix": 0.375,
+        "scale": 2.0,
+        "source_relative_mse": 0.9281351894342403
+      },
+      {
+        "reliability": 100.0,
+        "gene_gate_mix": 0.5,
+        "scale": 1.6847033199299624,
+        "source_relative_mse": 0.9307843242090345
+      },
+      {
+        "reliability": 100.0,
+        "gene_gate_mix": 0.625,
+        "scale": 1.3421745691881017,
+        "source_relative_mse": 0.9330267728632867
+      },
+      {
+        "reliability": 100.0,
+        "gene_gate_mix": 0.75,
+        "scale": 1.1145964013794503,
+        "source_relative_mse": 0.9345583663948318
+      },
+      {
+        "reliability": 100.0,
+        "gene_gate_mix": 0.875,
+        "scale": 0.9526503327179052,
+        "source_relative_mse": 0.9356698495616533
+      },
+      {
+        "reliability": 100.0,
+        "gene_gate_mix": 1.0,
+        "scale": 0.8316173450342692,
+        "source_relative_mse": 0.9365128224700806
+      },
+      {
+        "reliability": 133.3521432163324,
+        "gene_gate_mix": 0.0,
+        "scale": 2.0,
+        "source_relative_mse": 0.9831210974480028
+      },
+      {
+        "reliability": 133.3521432163324,
+        "gene_gate_mix": 0.125,
+        "scale": 2.0,
+        "source_relative_mse": 0.9578147708046922
+      },
+      {
+        "reliability": 133.3521432163324,
+        "gene_gate_mix": 0.25,
+        "scale": 2.0,
+        "source_relative_mse": 0.942040984236821
+      },
+      {
+        "reliability": 133.3521432163324,
+        "gene_gate_mix": 0.375,
+        "scale": 2.0,
+        "source_relative_mse": 0.9357997377443891
+      },
+      {
+        "reliability": 133.3521432163324,
+        "gene_gate_mix": 0.5,
+        "scale": 1.729735562885559,
+        "source_relative_mse": 0.9375668608397139
+      },
+      {
+        "reliability": 133.3521432163324,
+        "gene_gate_mix": 0.625,
+        "scale": 1.3756891504360786,
+        "source_relative_mse": 0.9394432136782138
+      },
+      {
+        "reliability": 133.3521432163324,
+        "gene_gate_mix": 0.75,
+        "scale": 1.1413287819740037,
+        "source_relative_mse": 0.9407143195384793
+      },
+      {
+        "reliability": 133.3521432163324,
+        "gene_gate_mix": 0.875,
+        "scale": 0.9749218971556843,
+        "source_relative_mse": 0.9416317805491419
+      },
+      {
+        "reliability": 133.3521432163324,
+        "gene_gate_mix": 1.0,
+        "scale": 0.8507295004445286,
+        "source_relative_mse": 0.9423249328848734
+      },
+      {
+        "reliability": 177.82794100389228,
+        "gene_gate_mix": 0.0,
+        "scale": 2.0,
+        "source_relative_mse": 0.9871630116907244
+      },
+      {
+        "reliability": 177.82794100389228,
+        "gene_gate_mix": 0.125,
+        "scale": 2.0,
+        "source_relative_mse": 0.9640676479662063
+      },
+      {
+        "reliability": 177.82794100389228,
+        "gene_gate_mix": 0.25,
+        "scale": 2.0,
+        "source_relative_mse": 0.9493314227148411
+      },
+      {
+        "reliability": 177.82794100389228,
+        "gene_gate_mix": 0.375,
+        "scale": 2.0,
+        "source_relative_mse": 0.9429543359366289
+      },
+      {
+        "reliability": 177.82794100389228,
+        "gene_gate_mix": 0.5,
+        "scale": 1.7687140937610197,
+        "source_relative_mse": 0.9439784478641924
+      },
+      {
+        "reliability": 177.82794100389228,
+        "gene_gate_mix": 0.625,
+        "scale": 1.4053218725498255,
+        "source_relative_mse": 0.945522534173207
+      },
+      {
+        "reliability": 177.82794100389228,
+        "gene_gate_mix": 0.75,
+        "scale": 1.1653199719339793,
+        "source_relative_mse": 0.9465623563916474
+      },
+      {
+        "reliability": 177.82794100389228,
+        "gene_gate_mix": 0.875,
+        "scale": 0.9951258097387706,
+        "source_relative_mse": 0.947309941049981
+      },
+      {
+        "reliability": 177.82794100389228,
+        "gene_gate_mix": 1.0,
+        "scale": 0.8682065867090679,
+        "source_relative_mse": 0.947873181078905
+      },
+      {
+        "reliability": 237.13737056616552,
+        "gene_gate_mix": 0.0,
+        "scale": 2.0,
+        "source_relative_mse": 0.9902714171040293
+      },
+      {
+        "reliability": 237.13737056616552,
+        "gene_gate_mix": 0.125,
+        "scale": 2.0,
+        "source_relative_mse": 0.9693772220668369
+      },
+      {
+        "reliability": 237.13737056616552,
+        "gene_gate_mix": 0.25,
+        "scale": 2.0,
+        "source_relative_mse": 0.9557932090588404
+      },
+      {
+        "reliability": 237.13737056616552,
+        "gene_gate_mix": 0.375,
+        "scale": 2.0,
+        "source_relative_mse": 0.9495193780800397
+      },
+      {
+        "reliability": 237.13737056616552,
+        "gene_gate_mix": 0.5,
+        "scale": 1.802471376314188,
+        "source_relative_mse": 0.949954712470345
+      },
+      {
+        "reliability": 237.13737056616552,
+        "gene_gate_mix": 0.625,
+        "scale": 1.4315239704415865,
+        "source_relative_mse": 0.9512078169498844
+      },
+      {
+        "reliability": 237.13737056616552,
+        "gene_gate_mix": 0.75,
+        "scale": 1.1868295354180773,
+        "source_relative_mse": 0.9520481097944615
+      },
+      {
+        "reliability": 237.13737056616552,
+        "gene_gate_mix": 0.875,
+        "scale": 1.013415977440411,
+        "source_relative_mse": 0.9526505524204388
+      },
+      {
+        "reliability": 237.13737056616552,
+        "gene_gate_mix": 1.0,
+        "scale": 0.8841401158234456,
+        "source_relative_mse": 0.9531035416012695
+      },
+      {
+        "reliability": 316.2277660168379,
+        "gene_gate_mix": 0.0,
+        "scale": 2.0,
+        "source_relative_mse": 0.9926466047063877
+      },
+      {
+        "reliability": 316.2277660168379,
+        "gene_gate_mix": 0.125,
+        "scale": 2.0,
+        "source_relative_mse": 0.9738753035758702
+      },
+      {
+        "reliability": 316.2277660168379,
+        "gene_gate_mix": 0.25,
+        "scale": 2.0,
+        "source_relative_mse": 0.9614832592198255
+      },
+      {
+        "reliability": 316.2277660168379,
+        "gene_gate_mix": 0.375,
+        "scale": 2.0,
+        "source_relative_mse": 0.9554704716382533
+      },
+      {
+        "reliability": 316.2277660168379,
+        "gene_gate_mix": 0.5,
+        "scale": 1.8317921828876946,
+        "source_relative_mse": 0.9554613831290476
+      },
+      {
+        "reliability": 316.2277660168379,
+        "gene_gate_mix": 0.625,
+        "scale": 1.4547336408741955,
+        "source_relative_mse": 0.9564665867038529
+      },
+      {
+        "reliability": 316.2277660168379,
+        "gene_gate_mix": 0.75,
+        "scale": 1.2061232346415358,
+        "source_relative_mse": 0.9571386382408212
+      },
+      {
+        "reliability": 316.2277660168379,
+        "gene_gate_mix": 0.875,
+        "scale": 1.0299627260744044,
+        "source_relative_mse": 0.9576195166445207
+      },
+      {
+        "reliability": 316.2277660168379,
+        "gene_gate_mix": 1.0,
+        "scale": 0.8986433341677591,
+        "source_relative_mse": 0.9579805977258796
+      },
+      {
+        "reliability": 421.6965034285822,
+        "gene_gate_mix": 0.0,
+        "scale": 2.0,
+        "source_relative_mse": 0.9944529024863643
+      },
+      {
+        "reliability": 421.6965034285822,
+        "gene_gate_mix": 0.125,
+        "scale": 2.0,
+        "source_relative_mse": 0.9776833299492492
+      },
+      {
+        "reliability": 421.6965034285822,
+        "gene_gate_mix": 0.25,
+        "scale": 2.0,
+        "source_relative_mse": 0.9664714363319559
+      },
+      {
+        "reliability": 421.6965034285822,
+        "gene_gate_mix": 0.375,
+        "scale": 2.0,
+        "source_relative_mse": 0.9608172216344842
+      },
+      {
+        "reliability": 421.6965034285822,
+        "gene_gate_mix": 0.5,
+        "scale": 1.8573795231885977,
+        "source_relative_mse": 0.9604877187717816
+      },
+      {
+        "reliability": 421.6965034285822,
+        "gene_gate_mix": 0.625,
+        "scale": 1.4753548468344875,
+        "source_relative_mse": 0.9612862560297175
+      },
+      {
+        "reliability": 421.6965034285822,
+        "gene_gate_mix": 0.75,
+        "scale": 1.2234562839771235,
+        "source_relative_mse": 0.9618190444102466
+      },
+      {
+        "reliability": 421.6965034285822,
+        "gene_gate_mix": 0.875,
+        "scale": 1.0449382238569742,
+        "source_relative_mse": 0.9621997626085024
+      },
+      {
+        "reliability": 421.6965034285822,
+        "gene_gate_mix": 1.0,
+        "scale": 0.9118380420170693,
+        "source_relative_mse": 0.9624853644116411
+      },
+      {
+        "reliability": 562.341325190349,
+        "gene_gate_mix": 0.0,
+        "scale": 2.0,
+        "source_relative_mse": 0.9958217088709816
+      },
+      {
+        "reliability": 562.341325190349,
+        "gene_gate_mix": 0.125,
+        "scale": 2.0,
+        "source_relative_mse": 0.9809084693067934
+      },
+      {
+        "reliability": 562.341325190349,
+        "gene_gate_mix": 0.25,
+        "scale": 2.0,
+        "source_relative_mse": 0.9708309914998914
+      },
+      {
+        "reliability": 562.341325190349,
+        "gene_gate_mix": 0.375,
+        "scale": 2.0,
+        "source_relative_mse": 0.9655892754502753
+      },
+      {
+        "reliability": 562.341325190349,
+        "gene_gate_mix": 0.5,
+        "scale": 1.879831012836711,
+        "source_relative_mse": 0.9650404604212052
+      },
+      {
+        "reliability": 562.341325190349,
+        "gene_gate_mix": 0.625,
+        "scale": 1.4937388044571673,
+        "source_relative_mse": 0.9656696633933941
+      },
+      {
+        "reliability": 562.341325190349,
+        "gene_gate_mix": 0.75,
+        "scale": 1.2390569200683008,
+        "source_relative_mse": 0.9660888987648192
+      },
+      {
+        "reliability": 562.341325190349,
+        "gene_gate_mix": 0.875,
+        "scale": 1.0585014417059342,
+        "source_relative_mse": 0.9663882073011982
+      },
+      {
+        "reliability": 562.341325190349,
+        "gene_gate_mix": 1.0,
+        "scale": 0.923840702904645,
+        "source_relative_mse": 0.9666125972335207
+      },
+      {
+        "reliability": 749.8942093324558,
+        "gene_gate_mix": 0.0,
+        "scale": 2.0,
+        "source_relative_mse": 0.9968562497325734
+      },
+      {
+        "reliability": 749.8942093324558,
+        "gene_gate_mix": 0.125,
+        "scale": 2.0,
+        "source_relative_mse": 0.9836429204795117
+      },
+      {
+        "reliability": 749.8942093324558,
+        "gene_gate_mix": 0.25,
+        "scale": 2.0,
+        "source_relative_mse": 0.9746332198997661
+      },
+      {
+        "reliability": 749.8942093324558,
+        "gene_gate_mix": 0.375,
+        "scale": 2.0,
+        "source_relative_mse": 0.9698271479933365
+      },
+      {
+        "reliability": 749.8942093324558,
+        "gene_gate_mix": 0.5,
+        "scale": 1.89962697902928,
+        "source_relative_mse": 0.9691385431599308
+      },
+      {
+        "reliability": 749.8942093324558,
+        "gene_gate_mix": 0.625,
+        "scale": 1.510171715700125,
+        "source_relative_mse": 0.9696309210034706
+      },
+      {
+        "reliability": 749.8942093324558,
+        "gene_gate_mix": 0.75,
+        "scale": 1.2531141779148967,
+        "source_relative_mse": 0.9699587048149602
+      },
+      {
+        "reliability": 749.8942093324558,
+        "gene_gate_mix": 0.875,
+        "scale": 1.070786357248053,
+        "source_relative_mse": 0.9701925899264504
+      },
+      {
+        "reliability": 749.8942093324558,
+        "gene_gate_mix": 1.0,
+        "scale": 0.9347512489555817,
+        "source_relative_mse": 0.9703678626100849
+      },
+      {
+        "reliability": 1000.0,
+        "gene_gate_mix": 0.0,
+        "scale": 2.0,
+        "source_relative_mse": 0.9976366130773232
+      },
+      {
+        "reliability": 1000.0,
+        "gene_gate_mix": 0.125,
+        "scale": 2.0,
+        "source_relative_mse": 0.9859647992168855
+      },
+      {
+        "reliability": 1000.0,
+        "gene_gate_mix": 0.25,
+        "scale": 2.0,
+        "source_relative_mse": 0.9779446769348864
+      },
+      {
+        "reliability": 1000.0,
+        "gene_gate_mix": 0.375,
+        "scale": 2.0,
+        "source_relative_mse": 0.9735762462313259
+      },
+      {
+        "reliability": 1000.0,
+        "gene_gate_mix": 0.5,
+        "scale": 1.9171322616917776,
+        "source_relative_mse": 0.9728087032427326
+      },
+      {
+        "reliability": 1000.0,
+        "gene_gate_mix": 0.625,
+        "scale": 1.5248719983165298,
+        "source_relative_mse": 0.9731917683755591
+      },
+      {
+        "reliability": 1000.0,
+        "gene_gate_mix": 0.75,
+        "scale": 1.2657731747840277,
+        "source_relative_mse": 0.9734466486771947
+      },
+      {
+        "reliability": 1000.0,
+        "gene_gate_mix": 0.875,
+        "scale": 1.0818964705139877,
+        "source_relative_mse": 0.9736284538255238
+      },
+      {
+        "reliability": 1000.0,
+        "gene_gate_mix": 1.0,
+        "scale": 0.9446473718520821,
+        "source_relative_mse": 0.9737646662815517
+      }
+    ],
+    "program_grid": [
+      {
+        "rank": 4,
+        "program_reliability": 0.0,
+        "program_gate_mix": 0.0,
+        "program_blend": 0.0,
+        "scale": 1.521530867491047,
+        "source_relative_mse": 0.878413114367274
+      },
+      {
+        "rank": 4,
+        "program_reliability": 0.0,
+        "program_gate_mix": 0.0,
+        "program_blend": 0.25,
+        "scale": 1.3618842819079808,
+        "source_relative_mse": 0.8546506410829351
+      },
+      {
+        "rank": 4,
+        "program_reliability": 0.0,
+        "program_gate_mix": 0.0,
+        "program_blend": 0.5,
+        "scale": 0.9914051360917732,
+        "source_relative_mse": 0.8676053515304603
+      },
+      {
+        "rank": 4,
+        "program_reliability": 0.0,
+        "program_gate_mix": 0.0,
+        "program_blend": 0.75,
+        "scale": 0.7239000304653948,
+        "source_relative_mse": 0.8839166968572848
+      },
+      {
+        "rank": 4,
+        "program_reliability": 0.0,
+        "program_gate_mix": 0.0,
+        "program_blend": 1.0,
+        "scale": 0.5524193577160798,
+        "source_relative_mse": 0.896601478463435
+      },
+      {
+        "rank": 4,
+        "program_reliability": 0.01,
+        "program_gate_mix": 0.0,
+        "program_blend": 0.25,
+        "scale": 1.3638768413376308,
+        "source_relative_mse": 0.8545382036536892
+      },
+      {
+        "rank": 4,
+        "program_reliability": 0.01,
+        "program_gate_mix": 0.0,
+        "program_blend": 0.5,
+        "scale": 0.9941281509986233,
+        "source_relative_mse": 0.8673878165752854
+      },
+      {
+        "rank": 4,
+        "program_reliability": 0.01,
+        "program_gate_mix": 0.0,
+        "program_blend": 0.75,
+        "scale": 0.7263321506251433,
+        "source_relative_mse": 0.8836868056820123
+      },
+      {
+        "rank": 4,
+        "program_reliability": 0.01,
+        "program_gate_mix": 0.0,
+        "program_blend": 1.0,
+        "scale": 0.5544216023144116,
+        "source_relative_mse": 0.8963896726842864
+      },
+      {
+        "rank": 4,
+        "program_reliability": 0.01,
+        "program_gate_mix": 0.5,
+        "program_blend": 0.25,
+        "scale": 1.3640029590724274,
+        "source_relative_mse": 0.8545009634818255
+      },
+      {
+        "rank": 4,
+        "program_reliability": 0.01,
+        "program_gate_mix": 0.5,
+        "program_blend": 0.5,
+        "scale": 0.9942856167523453,
+        "source_relative_mse": 0.8673321290675526
+      },
+      {
+        "rank": 4,
+        "program_reliability": 0.01,
+        "program_gate_mix": 0.5,
+        "program_blend": 0.75,
+        "scale": 0.7264876645428715,
+        "source_relative_mse": 0.8836238904360064
+      },
+      {
+        "rank": 4,
+        "program_reliability": 0.01,
+        "program_gate_mix": 0.5,
+        "program_blend": 1.0,
+        "scale": 0.554565164418545,
+        "source_relative_mse": 0.8963241555333264
+      },
+      {
+        "rank": 4,
+        "program_reliability": 0.01,
+        "program_gate_mix": 1.0,
+        "program_blend": 0.25,
+        "scale": 1.3641184684037713,
+        "source_relative_mse": 0.8544648507007263
+      },
+      {
+        "rank": 4,
+        "program_reliability": 0.01,
+        "program_gate_mix": 1.0,
+        "program_blend": 0.5,
+        "scale": 0.9944250543843496,
+        "source_relative_mse": 0.8672788367018147
+      },
+      {
+        "rank": 4,
+        "program_reliability": 0.01,
+        "program_gate_mix": 1.0,
+        "program_blend": 0.75,
+        "scale": 0.7266251373004825,
+        "source_relative_mse": 0.883563849874922
+      },
+      {
+        "rank": 4,
+        "program_reliability": 0.01,
+        "program_gate_mix": 1.0,
+        "program_blend": 1.0,
+        "scale": 0.5546927101070716,
+        "source_relative_mse": 0.8962616137346432
+      },
+      {
+        "rank": 4,
+        "program_reliability": 0.1,
+        "program_gate_mix": 0.0,
+        "program_blend": 0.25,
+        "scale": 1.3806694989550998,
+        "source_relative_mse": 0.8536344263814261
+      },
+      {
+        "rank": 4,
+        "program_reliability": 0.1,
+        "program_gate_mix": 0.0,
+        "program_blend": 0.5,
+        "scale": 1.0172867071354015,
+        "source_relative_mse": 0.8656059794630571
+      },
+      {
+        "rank": 4,
+        "program_reliability": 0.1,
+        "program_gate_mix": 0.0,
+        "program_blend": 0.75,
+        "scale": 0.7470838929027296,
+        "source_relative_mse": 0.8818038882628922
+      },
+      {
+        "rank": 4,
+        "program_reliability": 0.1,
+        "program_gate_mix": 0.0,
+        "program_blend": 1.0,
+        "scale": 0.5715097937404336,
+        "source_relative_mse": 0.8946652310224009
+      },
+      {
+        "rank": 4,
+        "program_reliability": 0.1,
+        "program_gate_mix": 0.5,
+        "program_blend": 0.25,
+        "scale": 1.3808555496859765,
+        "source_relative_mse": 0.853377838555148
+      },
+      {
+        "rank": 4,
+        "program_reliability": 0.1,
+        "program_gate_mix": 0.5,
+        "program_blend": 0.5,
+        "scale": 1.01743059821364,
+        "source_relative_mse": 0.8652379209078134
+      },
+      {
+        "rank": 4,
+        "program_reliability": 0.1,
+        "program_gate_mix": 0.5,
+        "program_blend": 0.75,
+        "scale": 0.747344106112679,
+        "source_relative_mse": 0.8813781338635942
+      },
+      {
+        "rank": 4,
+        "program_reliability": 0.1,
+        "program_gate_mix": 0.5,
+        "program_blend": 1.0,
+        "scale": 0.5718607295757862,
+        "source_relative_mse": 0.8942081745956263
+      },
+      {
+        "rank": 4,
+        "program_reliability": 0.1,
+        "program_gate_mix": 1.0,
+        "program_blend": 0.25,
+        "scale": 1.3808462485930237,
+        "source_relative_mse": 0.8531419632798298
+      },
+      {
+        "rank": 4,
+        "program_reliability": 0.1,
+        "program_gate_mix": 1.0,
+        "program_blend": 0.5,
+        "scale": 1.0172350560796557,
+        "source_relative_mse": 0.8649148391344998
+      },
+      {
+        "rank": 4,
+        "program_reliability": 0.1,
+        "program_gate_mix": 1.0,
+        "program_blend": 0.75,
+        "scale": 0.7472597902195754,
+        "source_relative_mse": 0.881006974177962
+      },
+      {
+        "rank": 4,
+        "program_reliability": 0.1,
+        "program_gate_mix": 1.0,
+        "program_blend": 1.0,
+        "scale": 0.5719031462129219,
+        "source_relative_mse": 0.8938079230263499
+      },
+      {
+        "rank": 4,
+        "program_reliability": 0.3,
+        "program_gate_mix": 0.0,
+        "program_blend": 0.25,
+        "scale": 1.4122940817161205,
+        "source_relative_mse": 0.8521493428605328
+      },
+      {
+        "rank": 4,
+        "program_reliability": 0.3,
+        "program_gate_mix": 0.0,
+        "program_blend": 0.5,
+        "scale": 1.0619841001928259,
+        "source_relative_mse": 0.8625094884543351
+      },
+      {
+        "rank": 4,
+        "program_reliability": 0.3,
+        "program_gate_mix": 0.0,
+        "program_blend": 0.75,
+        "scale": 0.7874825102644133,
+        "source_relative_mse": 0.8785362561981358
+      },
+      {
+        "rank": 4,
+        "program_reliability": 0.3,
+        "program_gate_mix": 0.0,
+        "program_blend": 1.0,
+        "scale": 0.6047899220057037,
+        "source_relative_mse": 0.8917302035033604
+      },
+      {
+        "rank": 4,
+        "program_reliability": 0.3,
+        "program_gate_mix": 0.5,
+        "program_blend": 0.25,
+        "scale": 1.4111195471205094,
+        "source_relative_mse": 0.8515770855358791
+      },
+      {
+        "rank": 4,
+        "program_reliability": 0.3,
+        "program_gate_mix": 0.5,
+        "program_blend": 0.5,
+        "scale": 1.0599072689985924,
+        "source_relative_mse": 0.8617339962017213
+      },
+      {
+        "rank": 4,
+        "program_reliability": 0.3,
+        "program_gate_mix": 0.5,
+        "program_blend": 0.75,
+        "scale": 0.7859079244660571,
+        "source_relative_mse": 0.8776175436179432
+      },
+      {
+        "rank": 4,
+        "program_reliability": 0.3,
+        "program_gate_mix": 0.5,
+        "program_blend": 1.0,
+        "scale": 0.6038495997902713,
+        "source_relative_mse": 0.8907085442826529
+      },
+      {
+        "rank": 4,
+        "program_reliability": 0.3,
+        "program_gate_mix": 1.0,
+        "program_blend": 0.25,
+        "scale": 1.4092533127763514,
+        "source_relative_mse": 0.8510790799556239
+      },
+      {
+        "rank": 4,
+        "program_reliability": 0.3,
+        "program_gate_mix": 1.0,
+        "program_blend": 0.5,
+        "scale": 1.0565948715161597,
+        "source_relative_mse": 0.8611249950851876
+      },
+      {
+        "rank": 4,
+        "program_reliability": 0.3,
+        "program_gate_mix": 1.0,
+        "program_blend": 0.75,
+        "scale": 0.7830513983556516,
+        "source_relative_mse": 0.8769050054472853
+      },
+      {
+        "rank": 4,
+        "program_reliability": 0.3,
+        "program_gate_mix": 1.0,
+        "program_blend": 1.0,
+        "scale": 0.6017434775805849,
+        "source_relative_mse": 0.8899038881629053
+      },
+      {
+        "rank": 4,
+        "program_reliability": 1.0,
+        "program_gate_mix": 0.0,
+        "program_blend": 0.25,
+        "scale": 1.4897737356533964,
+        "source_relative_mse": 0.8497185636563815
+      },
+      {
+        "rank": 4,
+        "program_reliability": 1.0,
+        "program_gate_mix": 0.0,
+        "program_blend": 0.5,
+        "scale": 1.1786628724780073,
+        "source_relative_mse": 0.8563919563159499
+      },
+      {
+        "rank": 4,
+        "program_reliability": 1.0,
+        "program_gate_mix": 0.0,
+        "program_blend": 0.75,
+        "scale": 0.8953351388973178,
+        "source_relative_mse": 0.8721423381285464
+      },
+      {
+        "rank": 4,
+        "program_reliability": 1.0,
+        "program_gate_mix": 0.0,
+        "program_blend": 1.0,
+        "scale": 0.6936631839903147,
+        "source_relative_mse": 0.8863996809598571
+      },
+      {
+        "rank": 4,
+        "program_reliability": 1.0,
+        "program_gate_mix": 0.5,
+        "program_blend": 0.25,
+        "scale": 1.4810551641744627,
+        "source_relative_mse": 0.8485018111697196
+      },
+      {
+        "rank": 4,
+        "program_reliability": 1.0,
+        "program_gate_mix": 0.5,
+        "program_blend": 0.5,
+        "scale": 1.1631135207643157,
+        "source_relative_mse": 0.8549940136735759
+      },
+      {
+        "rank": 4,
+        "program_reliability": 1.0,
+        "program_gate_mix": 0.5,
+        "program_blend": 0.75,
+        "scale": 0.8811613201159446,
+        "source_relative_mse": 0.8704249111964454
+      },
+      {
+        "rank": 4,
+        "program_reliability": 1.0,
+        "program_gate_mix": 0.5,
+        "program_blend": 1.0,
+        "scale": 0.6827656998386681,
+        "source_relative_mse": 0.8843188828354231
+      },
+      {
+        "rank": 4,
+        "program_reliability": 1.0,
+        "program_gate_mix": 1.0,
+        "program_blend": 0.25,
+        "scale": 1.4699332211963139,
+        "source_relative_mse": 0.8475589829407837
+      },
+      {
+        "rank": 4,
+        "program_reliability": 1.0,
+        "program_gate_mix": 1.0,
+        "program_blend": 0.5,
+        "scale": 1.1432280617632649,
+        "source_relative_mse": 0.8542369626035358
+      },
+      {
+        "rank": 4,
+        "program_reliability": 1.0,
+        "program_gate_mix": 1.0,
+        "program_blend": 0.75,
+        "scale": 0.8623454436954395,
+        "source_relative_mse": 0.8695301784049649
+      },
+      {
+        "rank": 4,
+        "program_reliability": 1.0,
+        "program_gate_mix": 1.0,
+        "program_blend": 1.0,
+        "scale": 0.6674933800655395,
+        "source_relative_mse": 0.8831274737535406
+      },
+      {
+        "rank": 4,
+        "program_reliability": 3.0,
+        "program_gate_mix": 0.0,
+        "program_blend": 0.25,
+        "scale": 1.612542924958714,
+        "source_relative_mse": 0.8490122913876803
+      },
+      {
+        "rank": 4,
+        "program_reliability": 3.0,
+        "program_gate_mix": 0.0,
+        "program_blend": 0.5,
+        "scale": 1.393623680328284,
+        "source_relative_mse": 0.8503865520156386
+      },
+      {
+        "rank": 4,
+        "program_reliability": 3.0,
+        "program_gate_mix": 0.0,
+        "program_blend": 0.75,
+        "scale": 1.1065071856917679,
+        "source_relative_mse": 0.8660262040575849
+      },
+      {
+        "rank": 4,
+        "program_reliability": 3.0,
+        "program_gate_mix": 0.0,
+        "program_blend": 1.0,
+        "scale": 0.8683573307323672,
+        "source_relative_mse": 0.8829449860697745
+      },
+      {
+        "rank": 4,
+        "program_reliability": 3.0,
+        "program_gate_mix": 0.5,
+        "program_blend": 0.25,
+        "scale": 1.5844826869439144,
+        "source_relative_mse": 0.8466988962577269
+      },
+      {
+        "rank": 4,
+        "program_reliability": 3.0,
+        "program_gate_mix": 0.5,
+        "program_blend": 0.5,
+        "scale": 1.3337249718943816,
+        "source_relative_mse": 0.8484993206014775
+      },
+      {
+        "rank": 4,
+        "program_reliability": 3.0,
+        "program_gate_mix": 0.5,
+        "program_blend": 0.75,
+        "scale": 1.044785748193907,
+        "source_relative_mse": 0.8637256993166469
+      },
+      {
+        "rank": 4,
+        "program_reliability": 3.0,
+        "program_gate_mix": 0.5,
+        "program_blend": 1.0,
+        "scale": 0.8178240868711096,
+        "source_relative_mse": 0.8795562672686378
+      },
+      {
+        "rank": 4,
+        "program_reliability": 3.0,
+        "program_gate_mix": 1.0,
+        "program_blend": 0.25,
+        "scale": 1.550072421345266,
+        "source_relative_mse": 0.845194672786199
+      },
+      {
+        "rank": 4,
+        "program_reliability": 3.0,
+        "program_gate_mix": 1.0,
+        "program_blend": 0.5,
+        "scale": 1.2641707259451227,
+        "source_relative_mse": 0.8485162083220699
+      },
+      {
+        "rank": 4,
+        "program_reliability": 3.0,
+        "program_gate_mix": 1.0,
+        "program_blend": 0.75,
+        "scale": 0.973465667794321,
+        "source_relative_mse": 0.8639217308638136
+      },
+      {
+        "rank": 4,
+        "program_reliability": 3.0,
+        "program_gate_mix": 1.0,
+        "program_blend": 1.0,
+        "scale": 0.757603728203486,
+        "source_relative_mse": 0.8789756197661913
+      },
+      {
+        "rank": 4,
+        "program_reliability": 10.0,
+        "program_gate_mix": 0.0,
+        "program_blend": 0.25,
+        "scale": 1.788033929591313,
+        "source_relative_mse": 0.8533712822675648
+      },
+      {
+        "rank": 4,
+        "program_reliability": 10.0,
+        "program_gate_mix": 0.0,
+        "program_blend": 0.5,
+        "scale": 1.8153739742709654,
+        "source_relative_mse": 0.8473266431554372
+      },
+      {
+        "rank": 4,
+        "program_reliability": 10.0,
+        "program_gate_mix": 0.0,
+        "program_blend": 0.75,
+        "scale": 1.5988827350000294,
+        "source_relative_mse": 0.8621844782234556
+      },
+      {
+        "rank": 4,
+        "program_reliability": 10.0,
+        "program_gate_mix": 0.0,
+        "program_blend": 1.0,
+        "scale": 1.2867967476282616,
+        "source_relative_mse": 0.8863892852562408
+      },
+      {
+        "rank": 4,
+        "program_reliability": 10.0,
+        "program_gate_mix": 0.5,
+        "program_blend": 0.25,
+        "scale": 1.727513836427762,
+        "source_relative_mse": 0.8488237488427228
+      },
+      {
+        "rank": 4,
+        "program_reliability": 10.0,
+        "program_gate_mix": 0.5,
+        "program_blend": 0.5,
+        "scale": 1.628862142243371,
+        "source_relative_mse": 0.8450775135835144
+      },
+      {
+        "rank": 4,
+        "program_reliability": 10.0,
+        "program_gate_mix": 0.5,
+        "program_blend": 0.75,
+        "scale": 1.3564264886148432,
+        "source_relative_mse": 0.8606802800552505
+      },
+      {
+        "rank": 4,
+        "program_reliability": 10.0,
+        "program_gate_mix": 0.5,
+        "program_blend": 1.0,
+        "scale": 1.0746399265142401,
+        "source_relative_mse": 0.881455568087012
+      },
+      {
+        "rank": 4,
+        "program_reliability": 10.0,
+        "program_gate_mix": 1.0,
+        "program_blend": 0.25,
+        "scale": 1.6507387782598881,
+        "source_relative_mse": 0.8464545554763351
+      },
+      {
+        "rank": 4,
+        "program_reliability": 10.0,
+        "program_gate_mix": 1.0,
+        "program_blend": 0.5,
+        "scale": 1.4331956767249805,
+        "source_relative_mse": 0.847907117156152
+      },
+      {
+        "rank": 4,
+        "program_reliability": 10.0,
+        "program_gate_mix": 1.0,
+        "program_blend": 0.75,
+        "scale": 1.1289188466085802,
+        "source_relative_mse": 0.8654026034996949
+      },
+      {
+        "rank": 4,
+        "program_reliability": 10.0,
+        "program_gate_mix": 1.0,
+        "program_blend": 1.0,
+        "scale": 0.8761012193351791,
+        "source_relative_mse": 0.8840636674043724
+      },
+      {
+        "rank": 4,
+        "program_reliability": 30.0,
+        "program_gate_mix": 0.0,
+        "program_blend": 0.25,
+        "scale": 1.9241683147624875,
+        "source_relative_mse": 0.8617264479826179
+      },
+      {
+        "rank": 4,
+        "program_reliability": 30.0,
+        "program_gate_mix": 0.0,
+        "program_blend": 0.5,
+        "scale": 2.0,
+        "source_relative_mse": 0.8538052838953737
+      },
+      {
+        "rank": 4,
+        "program_reliability": 30.0,
+        "program_gate_mix": 0.0,
+        "program_blend": 0.75,
+        "scale": 2.0,
+        "source_relative_mse": 0.8660288999115187
+      },
+      {
+        "rank": 4,
+        "program_reliability": 30.0,
+        "program_gate_mix": 0.0,
+        "program_blend": 1.0,
+        "scale": 2.0,
+        "source_relative_mse": 0.8986120565361764
+      },
+      {
+        "rank": 4,
+        "program_reliability": 30.0,
+        "program_gate_mix": 0.5,
+        "program_blend": 0.25,
+        "scale": 1.8492201100099015,
+        "source_relative_mse": 0.8546902862115657
+      },
+      {
+        "rank": 4,
+        "program_reliability": 30.0,
+        "program_gate_mix": 0.5,
+        "program_blend": 0.5,
+        "scale": 1.9784824324476413,
+        "source_relative_mse": 0.8471682776061278
+      },
+      {
+        "rank": 4,
+        "program_reliability": 30.0,
+        "program_gate_mix": 0.5,
+        "program_blend": 0.75,
+        "scale": 1.8001424711213307,
+        "source_relative_mse": 0.8633422354238987
+      },
+      {
+        "rank": 4,
+        "program_reliability": 30.0,
+        "program_gate_mix": 0.5,
+        "program_blend": 1.0,
+        "scale": 1.4376796108667742,
+        "source_relative_mse": 0.8927735432550992
+      },
+      {
+        "rank": 4,
+        "program_reliability": 30.0,
+        "program_gate_mix": 1.0,
+        "program_blend": 0.25,
+        "scale": 1.7418628628165904,
+        "source_relative_mse": 0.8514254202365927
+      },
+      {
+        "rank": 4,
+        "program_reliability": 30.0,
+        "program_gate_mix": 1.0,
+        "program_blend": 0.5,
+        "scale": 1.6152619610666787,
+        "source_relative_mse": 0.8535250559975586
+      },
+      {
+        "rank": 4,
+        "program_reliability": 30.0,
+        "program_gate_mix": 1.0,
+        "program_blend": 0.75,
+        "scale": 1.2975659543832385,
+        "source_relative_mse": 0.8753463018275263
+      },
+      {
+        "rank": 4,
+        "program_reliability": 30.0,
+        "program_gate_mix": 1.0,
+        "program_blend": 1.0,
+        "scale": 0.9882770704448764,
+        "source_relative_mse": 0.8997365126538571
+      },
+      {
+        "rank": 4,
+        "program_reliability": 100.0,
+        "program_gate_mix": 0.0,
+        "program_blend": 0.25,
+        "scale": 1.9986631264830568,
+        "source_relative_mse": 0.8704726937100927
+      },
+      {
+        "rank": 4,
+        "program_reliability": 100.0,
+        "program_gate_mix": 0.0,
+        "program_blend": 0.5,
+        "scale": 2.0,
+        "source_relative_mse": 0.8721093542651404
+      },
+      {
+        "rank": 4,
+        "program_reliability": 100.0,
+        "program_gate_mix": 0.0,
+        "program_blend": 0.75,
+        "scale": 2.0,
+        "source_relative_mse": 0.8953464815000285
+      },
+      {
+        "rank": 4,
+        "program_reliability": 100.0,
+        "program_gate_mix": 0.0,
+        "program_blend": 1.0,
+        "scale": 2.0,
+        "source_relative_mse": 0.9401841333660026
+      },
+      {
+        "rank": 4,
+        "program_reliability": 100.0,
+        "program_gate_mix": 0.5,
+        "program_blend": 0.25,
+        "scale": 1.9376799354216723,
+        "source_relative_mse": 0.8623777353709567
+      },
+      {
+        "rank": 4,
+        "program_reliability": 100.0,
+        "program_gate_mix": 0.5,
+        "program_blend": 0.5,
+        "scale": 2.0,
+        "source_relative_mse": 0.8573996326630088
+      },
+      {
+        "rank": 4,
+        "program_reliability": 100.0,
+        "program_gate_mix": 0.5,
+        "program_blend": 0.75,
+        "scale": 2.0,
+        "source_relative_mse": 0.8750752930131482
+      },
+      {
+        "rank": 4,
+        "program_reliability": 100.0,
+        "program_gate_mix": 0.5,
+        "program_blend": 1.0,
+        "scale": 1.9080530267149167,
+        "source_relative_mse": 0.9153505034238191
+      },
+      {
+        "rank": 4,
+        "program_reliability": 100.0,
+        "program_gate_mix": 1.0,
+        "program_blend": 0.25,
+        "scale": 1.8288153257850062,
+        "source_relative_mse": 0.8587395098369319
+      },
+      {
+        "rank": 4,
+        "program_reliability": 100.0,
+        "program_gate_mix": 1.0,
+        "program_blend": 0.5,
+        "scale": 1.8342947966598113,
+        "source_relative_mse": 0.8632126638095116
+      },
+      {
+        "rank": 4,
+        "program_reliability": 100.0,
+        "program_gate_mix": 1.0,
+        "program_blend": 0.75,
+        "scale": 1.5050048388432928,
+        "source_relative_mse": 0.8917859318299786
+      },
+      {
+        "rank": 4,
+        "program_reliability": 100.0,
+        "program_gate_mix": 1.0,
+        "program_blend": 1.0,
+        "scale": 1.088576203924543,
+        "source_relative_mse": 0.9246341222713487
+      },
+      {
+        "rank": 8,
+        "program_reliability": 0.0,
+        "program_gate_mix": 0.0,
+        "program_blend": 0.25,
+        "scale": 1.2092233090613178,
+        "source_relative_mse": 0.8658722207639109
+      },
+      {
+        "rank": 8,
+        "program_reliability": 0.0,
+        "program_gate_mix": 0.0,
+        "program_blend": 0.5,
+        "scale": 0.8344306804355632,
+        "source_relative_mse": 0.8815689888888032
+      },
+      {
+        "rank": 8,
+        "program_reliability": 0.0,
+        "program_gate_mix": 0.0,
+        "program_blend": 0.75,
+        "scale": 0.601298686299572,
+        "source_relative_mse": 0.896011386689554
+      },
+      {
+        "rank": 8,
+        "program_reliability": 0.0,
+        "program_gate_mix": 0.0,
+        "program_blend": 1.0,
+        "scale": 0.45905246461109417,
+        "source_relative_mse": 0.9063763671797236
+      },
+      {
+        "rank": 8,
+        "program_reliability": 0.01,
+        "program_gate_mix": 0.0,
+        "program_blend": 0.25,
+        "scale": 1.2123762003628957,
+        "source_relative_mse": 0.8657138040067409
+      },
+      {
+        "rank": 8,
+        "program_reliability": 0.01,
+        "program_gate_mix": 0.0,
+        "program_blend": 0.5,
+        "scale": 0.8381568360010895,
+        "source_relative_mse": 0.8813046441412837
+      },
+      {
+        "rank": 8,
+        "program_reliability": 0.01,
+        "program_gate_mix": 0.0,
+        "program_blend": 0.75,
+        "scale": 0.6044698361399842,
+        "source_relative_mse": 0.895749110324407
+      },
+      {
+        "rank": 8,
+        "program_reliability": 0.01,
+        "program_gate_mix": 0.0,
+        "program_blend": 1.0,
+        "scale": 0.46162855119412444,
+        "source_relative_mse": 0.906142341037589
+      },
+      {
+        "rank": 8,
+        "program_reliability": 0.01,
+        "program_gate_mix": 0.5,
+        "program_blend": 0.25,
+        "scale": 1.2128588697419749,
+        "source_relative_mse": 0.8655796214515846
+      },
+      {
+        "rank": 8,
+        "program_reliability": 0.01,
+        "program_gate_mix": 0.5,
+        "program_blend": 0.5,
+        "scale": 0.838735299619662,
+        "source_relative_mse": 0.8811110826145864
+      },
+      {
+        "rank": 8,
+        "program_reliability": 0.01,
+        "program_gate_mix": 0.5,
+        "program_blend": 0.75,
+        "scale": 0.6050191352354622,
+        "source_relative_mse": 0.8955335750245416
+      },
+      {
+        "rank": 8,
+        "program_reliability": 0.01,
+        "program_gate_mix": 0.5,
+        "program_blend": 1.0,
+        "scale": 0.46212291876605766,
+        "source_relative_mse": 0.9059188022164963
+      },
+      {
+        "rank": 8,
+        "program_reliability": 0.01,
+        "program_gate_mix": 1.0,
+        "program_blend": 0.25,
+        "scale": 1.213322009321334,
+        "source_relative_mse": 0.865447540424263
+      },
+      {
+        "rank": 8,
+        "program_reliability": 0.01,
+        "program_gate_mix": 1.0,
+        "program_blend": 0.5,
+        "scale": 0.8392845509877207,
+        "source_relative_mse": 0.8809215117531866
+      },
+      {
+        "rank": 8,
+        "program_reliability": 0.01,
+        "program_gate_mix": 1.0,
+        "program_blend": 0.75,
+        "scale": 0.6055403562336912,
+        "source_relative_mse": 0.8953226741237548
+      },
+      {
+        "rank": 8,
+        "program_reliability": 0.01,
+        "program_gate_mix": 1.0,
+        "program_blend": 1.0,
+        "scale": 0.4625925878885173,
+        "source_relative_mse": 0.9057000349816732
+      },
+      {
+        "rank": 8,
+        "program_reliability": 0.1,
+        "program_gate_mix": 0.0,
+        "program_blend": 0.25,
+        "scale": 1.239147546958468,
+        "source_relative_mse": 0.864436696307538
+      },
+      {
+        "rank": 8,
+        "program_reliability": 0.1,
+        "program_gate_mix": 0.0,
+        "program_blend": 0.5,
+        "scale": 0.8703150635118345,
+        "source_relative_mse": 0.87912192580415
+      },
+      {
+        "rank": 8,
+        "program_reliability": 0.1,
+        "program_gate_mix": 0.0,
+        "program_blend": 0.75,
+        "scale": 0.6320147358933815,
+        "source_relative_mse": 0.8935816236192905
+      },
+      {
+        "rank": 8,
+        "program_reliability": 0.1,
+        "program_gate_mix": 0.0,
+        "program_blend": 1.0,
+        "scale": 0.4840472055431123,
+        "source_relative_mse": 0.9042219934804677
+      },
+      {
+        "rank": 8,
+        "program_reliability": 0.1,
+        "program_gate_mix": 0.5,
+        "program_blend": 0.25,
+        "scale": 1.241324133911436,
+        "source_relative_mse": 0.8634711896540552
+      },
+      {
+        "rank": 8,
+        "program_reliability": 0.1,
+        "program_gate_mix": 0.5,
+        "program_blend": 0.5,
+        "scale": 0.8729615173745332,
+        "source_relative_mse": 0.8777312895153695
+      },
+      {
+        "rank": 8,
+        "program_reliability": 0.1,
+        "program_gate_mix": 0.5,
+        "program_blend": 0.75,
+        "scale": 0.634743085037732,
+        "source_relative_mse": 0.8920063913066625
+      },
+      {
+        "rank": 8,
+        "program_reliability": 0.1,
+        "program_gate_mix": 0.5,
+        "program_blend": 1.0,
+        "scale": 0.48666878235877276,
+        "source_relative_mse": 0.9025625579968255
+      },
+      {
+        "rank": 8,
+        "program_reliability": 0.1,
+        "program_gate_mix": 1.0,
+        "program_blend": 0.25,
+        "scale": 1.2430411832889385,
+        "source_relative_mse": 0.8625539443178164
+      },
+      {
+        "rank": 8,
+        "program_reliability": 0.1,
+        "program_gate_mix": 1.0,
+        "program_blend": 0.5,
+        "scale": 0.8748906972194693,
+        "source_relative_mse": 0.8764357536093306
+      },
+      {
+        "rank": 8,
+        "program_reliability": 0.1,
+        "program_gate_mix": 1.0,
+        "program_blend": 0.75,
+        "scale": 0.6367635640050893,
+        "source_relative_mse": 0.8905432461558821
+      },
+      {
+        "rank": 8,
+        "program_reliability": 0.1,
+        "program_gate_mix": 1.0,
+        "program_blend": 1.0,
+        "scale": 0.4886574270111431,
+        "source_relative_mse": 0.9010190378630577
+      },
+      {
+        "rank": 8,
+        "program_reliability": 0.3,
+        "program_gate_mix": 0.0,
+        "program_blend": 0.25,
+        "scale": 1.290322548883668,
+        "source_relative_mse": 0.862327976848296
+      },
+      {
+        "rank": 8,
+        "program_reliability": 0.3,
+        "program_gate_mix": 0.0,
+        "program_blend": 0.5,
+        "scale": 0.9345451355568641,
+        "source_relative_mse": 0.8752562132409643
+      },
+      {
+        "rank": 8,
+        "program_reliability": 0.3,
+        "program_gate_mix": 0.0,
+        "program_blend": 0.75,
+        "scale": 0.6880091458069182,
+        "source_relative_mse": 0.8897357450902806
+      },
+      {
+        "rank": 8,
+        "program_reliability": 0.3,
+        "program_gate_mix": 0.0,
+        "program_blend": 1.0,
+        "scale": 0.5298524728231052,
+        "source_relative_mse": 0.900890770384982
+      },
+      {
+        "rank": 8,
+        "program_reliability": 0.3,
+        "program_gate_mix": 0.5,
+        "program_blend": 0.25,
+        "scale": 1.291717459138613,
+        "source_relative_mse": 0.8601784043235455
+      },
+      {
+        "rank": 8,
+        "program_reliability": 0.3,
+        "program_gate_mix": 0.5,
+        "program_blend": 0.5,
+        "scale": 0.935971559056477,
+        "source_relative_mse": 0.8721663600910897
+      },
+      {
+        "rank": 8,
+        "program_reliability": 0.3,
+        "program_gate_mix": 0.5,
+        "program_blend": 0.75,
+        "scale": 0.6903337019303454,
+        "source_relative_mse": 0.8861554244915926
+      },
+      {
+        "rank": 8,
+        "program_reliability": 0.3,
+        "program_gate_mix": 0.5,
+        "program_blend": 1.0,
+        "scale": 0.5328023335493385,
+        "source_relative_mse": 0.8970379665656889
+      },
+      {
+        "rank": 8,
+        "program_reliability": 0.3,
+        "program_gate_mix": 1.0,
+        "program_blend": 0.25,
+        "scale": 1.2912057131416779,
+        "source_relative_mse": 0.858233849339086
+      },
+      {
+        "rank": 8,
+        "program_reliability": 0.3,
+        "program_gate_mix": 1.0,
+        "program_blend": 0.5,
+        "scale": 0.93425458449467,
+        "source_relative_mse": 0.8695067277648575
+      },
+      {
+        "rank": 8,
+        "program_reliability": 0.3,
+        "program_gate_mix": 1.0,
+        "program_blend": 0.75,
+        "scale": 0.6894285817528875,
+        "source_relative_mse": 0.8831011218125406
+      },
+      {
+        "rank": 8,
+        "program_reliability": 0.3,
+        "program_gate_mix": 1.0,
+        "program_blend": 1.0,
+        "scale": 0.5327835392211183,
+        "source_relative_mse": 0.89374068437716
+      },
+      {
+        "rank": 8,
+        "program_reliability": 1.0,
+        "program_gate_mix": 0.0,
+        "program_blend": 0.25,
+        "scale": 1.4166638905581104,
+        "source_relative_mse": 0.8588958143177496
+      },
+      {
+        "rank": 8,
+        "program_reliability": 1.0,
+        "program_gate_mix": 0.0,
+        "program_blend": 0.5,
+        "scale": 1.1115952574850114,
+        "source_relative_mse": 0.867391788378264
+      },
+      {
+        "rank": 8,
+        "program_reliability": 1.0,
+        "program_gate_mix": 0.0,
+        "program_blend": 0.75,
+        "scale": 0.8498038533665224,
+        "source_relative_mse": 0.8818877428502819
+      },
+      {
+        "rank": 8,
+        "program_reliability": 1.0,
+        "program_gate_mix": 0.0,
+        "program_blend": 1.0,
+        "scale": 0.6639081332027338,
+        "source_relative_mse": 0.8946511042778325
+      },
+      {
+        "rank": 8,
+        "program_reliability": 1.0,
+        "program_gate_mix": 0.5,
+        "program_blend": 0.25,
+        "scale": 1.405800518174883,
+        "source_relative_mse": 0.854480953636515
+      },
+      {
+        "rank": 8,
+        "program_reliability": 1.0,
+        "program_gate_mix": 0.5,
+        "program_blend": 0.5,
+        "scale": 1.0916200820215234,
+        "source_relative_mse": 0.8612379449711031
+      },
+      {
+        "rank": 8,
+        "program_reliability": 1.0,
+        "program_gate_mix": 0.5,
+        "program_blend": 0.75,
+        "scale": 0.8328734836610173,
+        "source_relative_mse": 0.874470882025687
+      },
+      {
+        "rank": 8,
+        "program_reliability": 1.0,
+        "program_gate_mix": 0.5,
+        "program_blend": 1.0,
+        "scale": 0.6524526775866191,
+        "source_relative_mse": 0.8862641114443368
+      },
+      {
+        "rank": 8,
+        "program_reliability": 1.0,
+        "program_gate_mix": 1.0,
+        "program_blend": 0.25,
+        "scale": 1.3873966629090715,
+        "source_relative_mse": 0.8509610723630338
+      },
+      {
+        "rank": 8,
+        "program_reliability": 1.0,
+        "program_gate_mix": 1.0,
+        "program_blend": 0.5,
+        "scale": 1.0586878620518232,
+        "source_relative_mse": 0.8571448967910358
+      },
+      {
+        "rank": 8,
+        "program_reliability": 1.0,
+        "program_gate_mix": 1.0,
+        "program_blend": 0.75,
+        "scale": 0.8018052345868546,
+        "source_relative_mse": 0.8697479006467943
+      },
+      {
+        "rank": 8,
+        "program_reliability": 1.0,
+        "program_gate_mix": 1.0,
+        "program_blend": 1.0,
+        "scale": 0.6272015062186508,
+        "source_relative_mse": 0.8808561081641787
+      },
+      {
+        "rank": 8,
+        "program_reliability": 3.0,
+        "program_gate_mix": 0.0,
+        "program_blend": 0.25,
+        "scale": 1.6039294986623174,
+        "source_relative_mse": 0.8579769965973103
+      },
+      {
+        "rank": 8,
+        "program_reliability": 3.0,
+        "program_gate_mix": 0.0,
+        "program_blend": 0.5,
+        "scale": 1.4434861563442416,
+        "source_relative_mse": 0.859717781380043
+      },
+      {
+        "rank": 8,
+        "program_reliability": 3.0,
+        "program_gate_mix": 0.0,
+        "program_blend": 0.75,
+        "scale": 1.1906248788604576,
+        "source_relative_mse": 0.8740093198088972
+      },
+      {
+        "rank": 8,
+        "program_reliability": 3.0,
+        "program_gate_mix": 0.0,
+        "program_blend": 1.0,
+        "scale": 0.9548957443486826,
+        "source_relative_mse": 0.8907074301367026
+      },
+      {
+        "rank": 8,
+        "program_reliability": 3.0,
+        "program_gate_mix": 0.5,
+        "program_blend": 0.25,
+        "scale": 1.561866717816572,
+        "source_relative_mse": 0.8504832420414244
+      },
+      {
+        "rank": 8,
+        "program_reliability": 3.0,
+        "program_gate_mix": 0.5,
+        "program_blend": 0.5,
+        "scale": 1.343204569999171,
+        "source_relative_mse": 0.8501680033879967
+      },
+      {
+        "rank": 8,
+        "program_reliability": 3.0,
+        "program_gate_mix": 0.5,
+        "program_blend": 0.75,
+        "scale": 1.0813615880364214,
+        "source_relative_mse": 0.8622704422647582
+      },
+      {
+        "rank": 8,
+        "program_reliability": 3.0,
+        "program_gate_mix": 0.5,
+        "program_blend": 1.0,
+        "scale": 0.8651476854700882,
+        "source_relative_mse": 0.8761234587143301
+      },
+      {
+        "rank": 8,
+        "program_reliability": 3.0,
+        "program_gate_mix": 1.0,
+        "program_blend": 0.25,
+        "scale": 1.5000756406656544,
+        "source_relative_mse": 0.8456240099570832
+      },
+      {
+        "rank": 8,
+        "program_reliability": 3.0,
+        "program_gate_mix": 1.0,
+        "program_blend": 0.5,
+        "scale": 1.2144774693660745,
+        "source_relative_mse": 0.8470810315954254
+      },
+      {
+        "rank": 8,
+        "program_reliability": 3.0,
+        "program_gate_mix": 1.0,
+        "program_blend": 0.75,
+        "scale": 0.9440680958669877,
+        "source_relative_mse": 0.85941444729946
+      },
+      {
+        "rank": 8,
+        "program_reliability": 3.0,
+        "program_gate_mix": 1.0,
+        "program_blend": 1.0,
+        "scale": 0.7449174584846254,
+        "source_relative_mse": 0.8719368604673658
+      },
+      {
+        "rank": 8,
+        "program_reliability": 10.0,
+        "program_gate_mix": 0.0,
+        "program_blend": 0.25,
+        "scale": 1.8192775246760695,
+        "source_relative_mse": 0.8627447198747054
+      },
+      {
+        "rank": 8,
+        "program_reliability": 10.0,
+        "program_gate_mix": 0.0,
+        "program_blend": 0.5,
+        "scale": 2.0,
+        "source_relative_mse": 0.8568517685017742
+      },
+      {
+        "rank": 8,
+        "program_reliability": 10.0,
+        "program_gate_mix": 0.0,
+        "program_blend": 0.75,
+        "scale": 1.9744615845890239,
+        "source_relative_mse": 0.8686725688685571
+      },
+      {
+        "rank": 8,
+        "program_reliability": 10.0,
+        "program_gate_mix": 0.0,
+        "program_blend": 1.0,
+        "scale": 1.6790380113472672,
+        "source_relative_mse": 0.8958205900658012
+      },
+      {
+        "rank": 8,
+        "program_reliability": 10.0,
+        "program_gate_mix": 0.5,
+        "program_blend": 0.25,
+        "scale": 1.7414822372549135,
+        "source_relative_mse": 0.8513855706345019
+      },
+      {
+        "rank": 8,
+        "program_reliability": 10.0,
+        "program_gate_mix": 0.5,
+        "program_blend": 0.5,
+        "scale": 1.7228813852898786,
+        "source_relative_mse": 0.8436228410874309
+      },
+      {
+        "rank": 8,
+        "program_reliability": 10.0,
+        "program_gate_mix": 0.5,
+        "program_blend": 0.75,
+        "scale": 1.513472283454428,
+        "source_relative_mse": 0.8544162148303616
+      },
+      {
+        "rank": 8,
+        "program_reliability": 10.0,
+        "program_gate_mix": 0.5,
+        "program_blend": 1.0,
+        "scale": 1.244899473455957,
+        "source_relative_mse": 0.8734946690512724
+      },
+      {
+        "rank": 8,
+        "program_reliability": 10.0,
+        "program_gate_mix": 1.0,
+        "program_blend": 0.25,
+        "scale": 1.6227379041198458,
+        "source_relative_mse": 0.8454652849093555
+      },
+      {
+        "rank": 8,
+        "program_reliability": 10.0,
+        "program_gate_mix": 1.0,
+        "program_blend": 0.5,
+        "scale": 1.4034984600810638,
+        "source_relative_mse": 0.8448420993495381
+      },
+      {
+        "rank": 8,
+        "program_reliability": 10.0,
+        "program_gate_mix": 1.0,
+        "program_blend": 0.75,
+        "scale": 1.1161895993533355,
+        "source_relative_mse": 0.8595043448062959
+      },
+      {
+        "rank": 8,
+        "program_reliability": 10.0,
+        "program_gate_mix": 1.0,
+        "program_blend": 1.0,
+        "scale": 0.8786746895302912,
+        "source_relative_mse": 0.8759392677278827
+      },
+      {
+        "rank": 8,
+        "program_reliability": 30.0,
+        "program_gate_mix": 0.0,
+        "program_blend": 0.25,
+        "scale": 1.9441293805252888,
+        "source_relative_mse": 0.8694656051273001
+      },
+      {
+        "rank": 8,
+        "program_reliability": 30.0,
+        "program_gate_mix": 0.0,
+        "program_blend": 0.5,
+        "scale": 2.0,
+        "source_relative_mse": 0.8679677923887968
+      },
+      {
+        "rank": 8,
+        "program_reliability": 30.0,
+        "program_gate_mix": 0.0,
+        "program_blend": 0.75,
+        "scale": 2.0,
+        "source_relative_mse": 0.8856198184605202
+      },
+      {
+        "rank": 8,
+        "program_reliability": 30.0,
+        "program_gate_mix": 0.0,
+        "program_blend": 1.0,
+        "scale": 2.0,
+        "source_relative_mse": 0.922529489013334
+      },
+      {
+        "rank": 8,
+        "program_reliability": 30.0,
+        "program_gate_mix": 0.5,
+        "program_blend": 0.25,
+        "scale": 1.8640687014482082,
+        "source_relative_mse": 0.8564953418260198
+      },
+      {
+        "rank": 8,
+        "program_reliability": 30.0,
+        "program_gate_mix": 0.5,
+        "program_blend": 0.5,
+        "scale": 2.0,
+        "source_relative_mse": 0.8459557456325767
+      },
+      {
+        "rank": 8,
+        "program_reliability": 30.0,
+        "program_gate_mix": 0.5,
+        "program_blend": 0.75,
+        "scale": 2.0,
+        "source_relative_mse": 0.8565285869668458
+      },
+      {
+        "rank": 8,
+        "program_reliability": 30.0,
+        "program_gate_mix": 0.5,
+        "program_blend": 1.0,
+        "scale": 1.6861722624956967,
+        "source_relative_mse": 0.8849931187087896
+      },
+      {
+        "rank": 8,
+        "program_reliability": 30.0,
+        "program_gate_mix": 1.0,
+        "program_blend": 0.25,
+        "scale": 1.7245916597428257,
+        "source_relative_mse": 0.850259869148959
+      },
+      {
+        "rank": 8,
+        "program_reliability": 30.0,
+        "program_gate_mix": 1.0,
+        "program_blend": 0.5,
+        "scale": 1.5925441548278905,
+        "source_relative_mse": 0.8507117848556749
+      },
+      {
+        "rank": 8,
+        "program_reliability": 30.0,
+        "program_gate_mix": 1.0,
+        "program_blend": 0.75,
+        "scale": 1.2893089382206275,
+        "source_relative_mse": 0.8702213862451982
+      },
+      {
+        "rank": 8,
+        "program_reliability": 30.0,
+        "program_gate_mix": 1.0,
+        "program_blend": 1.0,
+        "scale": 0.9963262742035843,
+        "source_relative_mse": 0.8928221578553907
+      },
+      {
+        "rank": 8,
+        "program_reliability": 100.0,
+        "program_gate_mix": 0.0,
+        "program_blend": 0.25,
+        "scale": 2.0,
+        "source_relative_mse": 0.874647032916359
+      },
+      {
+        "rank": 8,
+        "program_reliability": 100.0,
+        "program_gate_mix": 0.0,
+        "program_blend": 0.5,
+        "scale": 2.0,
+        "source_relative_mse": 0.8817163933869689
+      },
+      {
+        "rank": 8,
+        "program_reliability": 100.0,
+        "program_gate_mix": 0.0,
+        "program_blend": 0.75,
+        "scale": 2.0,
+        "source_relative_mse": 0.9116447551004512
+      },
+      {
+        "rank": 8,
+        "program_reliability": 100.0,
+        "program_gate_mix": 0.0,
+        "program_blend": 1.0,
+        "scale": 2.0,
+        "source_relative_mse": 0.9644321180568061
+      },
+      {
+        "rank": 8,
+        "program_reliability": 100.0,
+        "program_gate_mix": 0.5,
+        "program_blend": 0.25,
+        "scale": 1.9426572505513426,
+        "source_relative_mse": 0.8632771608439436
+      },
+      {
+        "rank": 8,
+        "program_reliability": 100.0,
+        "program_gate_mix": 0.5,
+        "program_blend": 0.5,
+        "scale": 2.0,
+        "source_relative_mse": 0.8579593635870593
+      },
+      {
+        "rank": 8,
+        "program_reliability": 100.0,
+        "program_gate_mix": 0.5,
+        "program_blend": 0.75,
+        "scale": 2.0,
+        "source_relative_mse": 0.874125904603241
+      },
+      {
+        "rank": 8,
+        "program_reliability": 100.0,
+        "program_gate_mix": 0.5,
+        "program_blend": 1.0,
+        "scale": 2.0,
+        "source_relative_mse": 0.9118959096640649
+      },
+      {
+        "rank": 8,
+        "program_reliability": 100.0,
+        "program_gate_mix": 1.0,
+        "program_blend": 0.25,
+        "scale": 1.8189303092037719,
+        "source_relative_mse": 0.8578476886925516
+      },
+      {
+        "rank": 8,
+        "program_reliability": 100.0,
+        "program_gate_mix": 1.0,
+        "program_blend": 0.5,
+        "scale": 1.816540920080729,
+        "source_relative_mse": 0.8612302480089755
+      },
+      {
+        "rank": 8,
+        "program_reliability": 100.0,
+        "program_gate_mix": 1.0,
+        "program_blend": 0.75,
+        "scale": 1.4991320594979405,
+        "source_relative_mse": 0.8881152532640708
+      },
+      {
+        "rank": 8,
+        "program_reliability": 100.0,
+        "program_gate_mix": 1.0,
+        "program_blend": 1.0,
+        "scale": 1.1015274412357823,
+        "source_relative_mse": 0.9197275927398635
+      },
+      {
+        "rank": 16,
+        "program_reliability": 0.0,
+        "program_gate_mix": 0.0,
+        "program_blend": 0.25,
+        "scale": 1.0420493421174901,
+        "source_relative_mse": 0.8770614851009131
+      },
+      {
+        "rank": 16,
+        "program_reliability": 0.0,
+        "program_gate_mix": 0.0,
+        "program_blend": 0.5,
+        "scale": 0.6853338010089971,
+        "source_relative_mse": 0.8930575145402134
+      },
+      {
+        "rank": 16,
+        "program_reliability": 0.0,
+        "program_gate_mix": 0.0,
+        "program_blend": 0.75,
+        "scale": 0.49025088222304863,
+        "source_relative_mse": 0.9048368524975323
+      },
+      {
+        "rank": 16,
+        "program_reliability": 0.0,
+        "program_gate_mix": 0.0,
+        "program_blend": 1.0,
+        "scale": 0.3757099511953553,
+        "source_relative_mse": 0.9127684666199333
+      },
+      {
+        "rank": 16,
+        "program_reliability": 0.01,
+        "program_gate_mix": 0.0,
+        "program_blend": 0.25,
+        "scale": 1.0457765058978836,
+        "source_relative_mse": 0.8768610787644406
+      },
+      {
+        "rank": 16,
+        "program_reliability": 0.01,
+        "program_gate_mix": 0.0,
+        "program_blend": 0.5,
+        "scale": 0.6891521767110315,
+        "source_relative_mse": 0.8927770898235935
+      },
+      {
+        "rank": 16,
+        "program_reliability": 0.01,
+        "program_gate_mix": 0.0,
+        "program_blend": 0.75,
+        "scale": 0.49338938036528807,
+        "source_relative_mse": 0.9045663569696836
+      },
+      {
+        "rank": 16,
+        "program_reliability": 0.01,
+        "program_gate_mix": 0.0,
+        "program_blend": 1.0,
+        "scale": 0.3782534919612343,
+        "source_relative_mse": 0.9125241510643896
+      },
+      {
+        "rank": 16,
+        "program_reliability": 0.01,
+        "program_gate_mix": 0.5,
+        "program_blend": 0.25,
+        "scale": 1.0464347042447777,
+        "source_relative_mse": 0.8766776493634082
+      },
+      {
+        "rank": 16,
+        "program_reliability": 0.01,
+        "program_gate_mix": 0.5,
+        "program_blend": 0.5,
+        "scale": 0.6898733699233175,
+        "source_relative_mse": 0.8925252142705906
+      },
+      {
+        "rank": 16,
+        "program_reliability": 0.01,
+        "program_gate_mix": 0.5,
+        "program_blend": 0.75,
+        "scale": 0.49404478509806043,
+        "source_relative_mse": 0.9042895537073071
+      },
+      {
+        "rank": 16,
+        "program_reliability": 0.01,
+        "program_gate_mix": 0.5,
+        "program_blend": 1.0,
+        "scale": 0.37883063131957473,
+        "source_relative_mse": 0.9122372889720716
+      },
+      {
+        "rank": 16,
+        "program_reliability": 0.01,
+        "program_gate_mix": 1.0,
+        "program_blend": 0.25,
+        "scale": 1.0470737452081988,
+        "source_relative_mse": 0.8764963463448852
+      },
+      {
+        "rank": 16,
+        "program_reliability": 0.01,
+        "program_gate_mix": 1.0,
+        "program_blend": 0.5,
+        "scale": 0.6905693909301168,
+        "source_relative_mse": 0.8922769733536763
+      },
+      {
+        "rank": 16,
+        "program_reliability": 0.01,
+        "program_gate_mix": 1.0,
+        "program_blend": 0.75,
+        "scale": 0.49467684921363986,
+        "source_relative_mse": 0.904016881203108
+      },
+      {
+        "rank": 16,
+        "program_reliability": 0.01,
+        "program_gate_mix": 1.0,
+        "program_blend": 1.0,
+        "scale": 0.3793873815037792,
+        "source_relative_mse": 0.9119546912664203
+      },
+      {
+        "rank": 16,
+        "program_reliability": 0.1,
+        "program_gate_mix": 0.0,
+        "program_blend": 0.25,
+        "scale": 1.077720493686413,
+        "source_relative_mse": 0.875217195421172
+      },
+      {
+        "rank": 16,
+        "program_reliability": 0.1,
+        "program_gate_mix": 0.0,
+        "program_blend": 0.5,
+        "scale": 0.7224795875733264,
+        "source_relative_mse": 0.8904308136149734
+      },
+      {
+        "rank": 16,
+        "program_reliability": 0.1,
+        "program_gate_mix": 0.0,
+        "program_blend": 0.75,
+        "scale": 0.520984630643943,
+        "source_relative_mse": 0.902299615831885
+      },
+      {
+        "rank": 16,
+        "program_reliability": 0.1,
+        "program_gate_mix": 0.0,
+        "program_blend": 1.0,
+        "scale": 0.4006813132236077,
+        "source_relative_mse": 0.9104864380230995
+      },
+      {
+        "rank": 16,
+        "program_reliability": 0.1,
+        "program_gate_mix": 0.5,
+        "program_blend": 0.25,
+        "scale": 1.0812919781022476,
+        "source_relative_mse": 0.8738504846260629
+      },
+      {
+        "rank": 16,
+        "program_reliability": 0.1,
+        "program_gate_mix": 0.5,
+        "program_blend": 0.5,
+        "scale": 0.7265864863412075,
+        "source_relative_mse": 0.8885269593105285
+      },
+      {
+        "rank": 16,
+        "program_reliability": 0.1,
+        "program_gate_mix": 0.5,
+        "program_blend": 0.75,
+        "scale": 0.5249209673782781,
+        "source_relative_mse": 0.9001732347599606
+      },
+      {
+        "rank": 16,
+        "program_reliability": 0.1,
+        "program_gate_mix": 0.5,
+        "program_blend": 1.0,
+        "scale": 0.4042814859011138,
+        "source_relative_mse": 0.9082566042039201
+      },
+      {
+        "rank": 16,
+        "program_reliability": 0.1,
+        "program_gate_mix": 1.0,
+        "program_blend": 0.25,
+        "scale": 1.0843273082100764,
+        "source_relative_mse": 0.8725405004671132
+      },
+      {
+        "rank": 16,
+        "program_reliability": 0.1,
+        "program_gate_mix": 1.0,
+        "program_blend": 0.5,
+        "scale": 0.7299505891288318,
+        "source_relative_mse": 0.8867238931047823
+      },
+      {
+        "rank": 16,
+        "program_reliability": 0.1,
+        "program_gate_mix": 1.0,
+        "program_blend": 0.75,
+        "scale": 0.5281479146022144,
+        "source_relative_mse": 0.8981628178076052
+      },
+      {
+        "rank": 16,
+        "program_reliability": 0.1,
+        "program_gate_mix": 1.0,
+        "program_blend": 1.0,
+        "scale": 0.4072509492297798,
+        "source_relative_mse": 0.9061467316497004
+      },
+      {
+        "rank": 16,
+        "program_reliability": 0.3,
+        "program_gate_mix": 0.0,
+        "program_blend": 0.25,
+        "scale": 1.1400651554586572,
+        "source_relative_mse": 0.8723787348245726
+      },
+      {
+        "rank": 16,
+        "program_reliability": 0.3,
+        "program_gate_mix": 0.0,
+        "program_blend": 0.5,
+        "scale": 0.7908277081801924,
+        "source_relative_mse": 0.886141948299503
+      },
+      {
+        "rank": 16,
+        "program_reliability": 0.3,
+        "program_gate_mix": 0.0,
+        "program_blend": 0.75,
+        "scale": 0.5787446701956633,
+        "source_relative_mse": 0.8981383562149576
+      },
+      {
+        "rank": 16,
+        "program_reliability": 0.3,
+        "program_gate_mix": 0.0,
+        "program_blend": 1.0,
+        "scale": 0.447995431875307,
+        "source_relative_mse": 0.9068009784683894
+      },
+      {
+        "rank": 16,
+        "program_reliability": 0.3,
+        "program_gate_mix": 0.5,
+        "program_blend": 0.25,
+        "scale": 1.1443122719359977,
+        "source_relative_mse": 0.869283445371265
+      },
+      {
+        "rank": 16,
+        "program_reliability": 0.3,
+        "program_gate_mix": 0.5,
+        "program_blend": 0.5,
+        "scale": 0.7960748822359489,
+        "source_relative_mse": 0.8817413305839734
+      },
+      {
+        "rank": 16,
+        "program_reliability": 0.3,
+        "program_gate_mix": 0.5,
+        "program_blend": 0.75,
+        "scale": 0.5845179101278002,
+        "source_relative_mse": 0.8931075472304941
+      },
+      {
+        "rank": 16,
+        "program_reliability": 0.3,
+        "program_gate_mix": 0.5,
+        "program_blend": 1.0,
+        "scale": 0.45381857941524856,
+        "source_relative_mse": 0.9014335562929103
+      },
+      {
+        "rank": 16,
+        "program_reliability": 0.3,
+        "program_gate_mix": 1.0,
+        "program_blend": 0.25,
+        "scale": 1.1461572955676758,
+        "source_relative_mse": 0.8664486029686064
+      },
+      {
+        "rank": 16,
+        "program_reliability": 0.3,
+        "program_gate_mix": 1.0,
+        "program_blend": 0.5,
+        "scale": 0.7977250678668477,
+        "source_relative_mse": 0.8778434709135645
+      },
+      {
+        "rank": 16,
+        "program_reliability": 0.3,
+        "program_gate_mix": 1.0,
+        "program_blend": 0.75,
+        "scale": 0.5866850612391676,
+        "source_relative_mse": 0.8886816563169382
+      },
+      {
+        "rank": 16,
+        "program_reliability": 0.3,
+        "program_gate_mix": 1.0,
+        "program_blend": 1.0,
+        "scale": 0.45633488299959146,
+        "source_relative_mse": 0.8967079877212953
+      },
+      {
+        "rank": 16,
+        "program_reliability": 1.0,
+        "program_gate_mix": 0.0,
+        "program_blend": 0.25,
+        "scale": 1.2989022149501996,
+        "source_relative_mse": 0.8671945667684982
+      },
+      {
+        "rank": 16,
+        "program_reliability": 1.0,
+        "program_gate_mix": 0.0,
+        "program_blend": 0.5,
+        "scale": 0.98849538628082,
+        "source_relative_mse": 0.8768553782053397
+      },
+      {
+        "rank": 16,
+        "program_reliability": 1.0,
+        "program_gate_mix": 0.0,
+        "program_blend": 0.75,
+        "scale": 0.7555016111822149,
+        "source_relative_mse": 0.8890082628051463
+      },
+      {
+        "rank": 16,
+        "program_reliability": 1.0,
+        "program_gate_mix": 0.0,
+        "program_blend": 1.0,
+        "scale": 0.5959349794334677,
+        "source_relative_mse": 0.8991411074169218
+      },
+      {
+        "rank": 16,
+        "program_reliability": 1.0,
+        "program_gate_mix": 0.5,
+        "program_blend": 0.25,
+        "scale": 1.2909253733227752,
+        "source_relative_mse": 0.86080002867839
+      },
+      {
+        "rank": 16,
+        "program_reliability": 1.0,
+        "program_gate_mix": 0.5,
+        "program_blend": 0.5,
+        "scale": 0.9753621942041354,
+        "source_relative_mse": 0.8675962233205372
+      },
+      {
+        "rank": 16,
+        "program_reliability": 1.0,
+        "program_gate_mix": 0.5,
+        "program_blend": 0.75,
+        "scale": 0.7457535022462829,
+        "source_relative_mse": 0.8779447383630258
+      },
+      {
+        "rank": 16,
+        "program_reliability": 1.0,
+        "program_gate_mix": 0.5,
+        "program_blend": 1.0,
+        "scale": 0.5905979156371497,
+        "source_relative_mse": 0.8868498584443527
+      },
+      {
+        "rank": 16,
+        "program_reliability": 1.0,
+        "program_gate_mix": 1.0,
+        "program_blend": 0.25,
+        "scale": 1.2730432748675495,
+        "source_relative_mse": 0.8556179988357273
+      },
+      {
+        "rank": 16,
+        "program_reliability": 1.0,
+        "program_gate_mix": 1.0,
+        "program_blend": 0.5,
+        "scale": 0.9459245034063587,
+        "source_relative_mse": 0.8610259137116942
+      },
+      {
+        "rank": 16,
+        "program_reliability": 1.0,
+        "program_gate_mix": 1.0,
+        "program_blend": 0.75,
+        "scale": 0.7182306741612805,
+        "source_relative_mse": 0.8704148505723451
+      },
+      {
+        "rank": 16,
+        "program_reliability": 1.0,
+        "program_gate_mix": 1.0,
+        "program_blend": 1.0,
+        "scale": 0.5678215310893353,
+        "source_relative_mse": 0.878527815905611
+      },
+      {
+        "rank": 16,
+        "program_reliability": 3.0,
+        "program_gate_mix": 0.0,
+        "program_blend": 0.25,
+        "scale": 1.5380854706358693,
+        "source_relative_mse": 0.8642425255711107
+      },
+      {
+        "rank": 16,
+        "program_reliability": 3.0,
+        "program_gate_mix": 0.0,
+        "program_blend": 0.5,
+        "scale": 1.3786016230743297,
+        "source_relative_mse": 0.8668036772434232
+      },
+      {
+        "rank": 16,
+        "program_reliability": 3.0,
+        "program_gate_mix": 0.0,
+        "program_blend": 0.75,
+        "scale": 1.1584399314898488,
+        "source_relative_mse": 0.8783985347610923
+      },
+      {
+        "rank": 16,
+        "program_reliability": 3.0,
+        "program_gate_mix": 0.0,
+        "program_blend": 1.0,
+        "scale": 0.9524914560963896,
+        "source_relative_mse": 0.8920607476661758
+      },
+      {
+        "rank": 16,
+        "program_reliability": 3.0,
+        "program_gate_mix": 0.5,
+        "program_blend": 0.25,
+        "scale": 1.492236112126031,
+        "source_relative_mse": 0.8537736191131129
+      },
+      {
+        "rank": 16,
+        "program_reliability": 3.0,
+        "program_gate_mix": 0.5,
+        "program_blend": 0.5,
+        "scale": 1.2731500687357717,
+        "source_relative_mse": 0.8522229114811939
+      },
+      {
+        "rank": 16,
+        "program_reliability": 3.0,
+        "program_gate_mix": 0.5,
+        "program_blend": 0.75,
+        "scale": 1.0397413969774747,
+        "source_relative_mse": 0.8605160181724676
+      },
+      {
+        "rank": 16,
+        "program_reliability": 3.0,
+        "program_gate_mix": 0.5,
+        "program_blend": 1.0,
+        "scale": 0.8493498737866275,
+        "source_relative_mse": 0.8707008088178232
+      },
+      {
+        "rank": 16,
+        "program_reliability": 3.0,
+        "program_gate_mix": 1.0,
+        "program_blend": 0.25,
+        "scale": 1.4221647005393818,
+        "source_relative_mse": 0.8468058879553555
+      },
+      {
+        "rank": 16,
+        "program_reliability": 3.0,
+        "program_gate_mix": 1.0,
+        "program_blend": 0.5,
+        "scale": 1.1347919514506055,
+        "source_relative_mse": 0.8462050017927779
+      },
+      {
+        "rank": 16,
+        "program_reliability": 3.0,
+        "program_gate_mix": 1.0,
+        "program_blend": 0.75,
+        "scale": 0.8897309275533032,
+        "source_relative_mse": 0.8546756918673154
+      },
+      {
+        "rank": 16,
+        "program_reliability": 3.0,
+        "program_gate_mix": 1.0,
+        "program_blend": 1.0,
+        "scale": 0.7127146697013167,
+        "source_relative_mse": 0.8637694393641315
+      },
+      {
+        "rank": 16,
+        "program_reliability": 10.0,
+        "program_gate_mix": 0.0,
+        "program_blend": 0.25,
+        "scale": 1.80200805497346,
+        "source_relative_mse": 0.8673085716727122
+      },
+      {
+        "rank": 16,
+        "program_reliability": 10.0,
+        "program_gate_mix": 0.0,
+        "program_blend": 0.5,
+        "scale": 2.0,
+        "source_relative_mse": 0.8617872477185916
+      },
+      {
+        "rank": 16,
+        "program_reliability": 10.0,
+        "program_gate_mix": 0.0,
+        "program_blend": 0.75,
+        "scale": 2.0,
+        "source_relative_mse": 0.8690671229275573
+      },
+      {
+        "rank": 16,
+        "program_reliability": 10.0,
+        "program_gate_mix": 0.0,
+        "program_blend": 1.0,
+        "scale": 1.9933222032006146,
+        "source_relative_mse": 0.890748830799784
+      },
+      {
+        "rank": 16,
+        "program_reliability": 10.0,
+        "program_gate_mix": 0.5,
+        "program_blend": 0.25,
+        "scale": 1.7123932548154677,
+        "source_relative_mse": 0.8525920459356874
+      },
+      {
+        "rank": 16,
+        "program_reliability": 10.0,
+        "program_gate_mix": 0.5,
+        "program_blend": 0.5,
+        "scale": 1.7053290035990702,
+        "source_relative_mse": 0.8426746740429829
+      },
+      {
+        "rank": 16,
+        "program_reliability": 10.0,
+        "program_gate_mix": 0.5,
+        "program_blend": 0.75,
+        "scale": 1.5378601639354352,
+        "source_relative_mse": 0.8486326841646465
+      },
+      {
+        "rank": 16,
+        "program_reliability": 10.0,
+        "program_gate_mix": 0.5,
+        "program_blend": 1.0,
+        "scale": 1.3077479068244517,
+        "source_relative_mse": 0.8632104279160631
+      },
+      {
+        "rank": 16,
+        "program_reliability": 10.0,
+        "program_gate_mix": 1.0,
+        "program_blend": 0.25,
+        "scale": 1.5772234140055563,
+        "source_relative_mse": 0.8445950843401133
+      },
+      {
+        "rank": 16,
+        "program_reliability": 10.0,
+        "program_gate_mix": 1.0,
+        "program_blend": 0.5,
+        "scale": 1.3533915822677154,
+        "source_relative_mse": 0.8414495053007436
+      },
+      {
+        "rank": 16,
+        "program_reliability": 10.0,
+        "program_gate_mix": 1.0,
+        "program_blend": 0.75,
+        "scale": 1.0879975574011234,
+        "source_relative_mse": 0.8522822468037754
+      },
+      {
+        "rank": 16,
+        "program_reliability": 10.0,
+        "program_gate_mix": 1.0,
+        "program_blend": 1.0,
+        "scale": 0.8714903345317414,
+        "source_relative_mse": 0.8654505188470784
+      },
+      {
+        "rank": 16,
+        "program_reliability": 30.0,
+        "program_gate_mix": 0.0,
+        "program_blend": 0.25,
+        "scale": 1.9423485114780106,
+        "source_relative_mse": 0.8725235551751458
+      },
+      {
+        "rank": 16,
+        "program_reliability": 30.0,
+        "program_gate_mix": 0.0,
+        "program_blend": 0.5,
+        "scale": 2.0,
+        "source_relative_mse": 0.8730799935858198
+      },
+      {
+        "rank": 16,
+        "program_reliability": 30.0,
+        "program_gate_mix": 0.0,
+        "program_blend": 0.75,
+        "scale": 2.0,
+        "source_relative_mse": 0.8917690757929575
+      },
+      {
+        "rank": 16,
+        "program_reliability": 30.0,
+        "program_gate_mix": 0.0,
+        "program_blend": 1.0,
+        "scale": 2.0,
+        "source_relative_mse": 0.9287031061724541
+      },
+      {
+        "rank": 16,
+        "program_reliability": 30.0,
+        "program_gate_mix": 0.5,
+        "program_blend": 0.25,
+        "scale": 1.8514498935053603,
+        "source_relative_mse": 0.8568764760594448
+      },
+      {
+        "rank": 16,
+        "program_reliability": 30.0,
+        "program_gate_mix": 0.5,
+        "program_blend": 0.5,
+        "scale": 2.0,
+        "source_relative_mse": 0.8447849208255618
+      },
+      {
+        "rank": 16,
+        "program_reliability": 30.0,
+        "program_gate_mix": 0.5,
+        "program_blend": 0.75,
+        "scale": 2.0,
+        "source_relative_mse": 0.8513979045924576
+      },
+      {
+        "rank": 16,
+        "program_reliability": 30.0,
+        "program_gate_mix": 0.5,
+        "program_blend": 1.0,
+        "scale": 1.7865888647482573,
+        "source_relative_mse": 0.8758655559799181
+      },
+      {
+        "rank": 16,
+        "program_reliability": 30.0,
+        "program_gate_mix": 1.0,
+        "program_blend": 0.25,
+        "scale": 1.6966762919923493,
+        "source_relative_mse": 0.849034991718989
+      },
+      {
+        "rank": 16,
+        "program_reliability": 30.0,
+        "program_gate_mix": 1.0,
+        "program_blend": 0.5,
+        "scale": 1.5546210812255163,
+        "source_relative_mse": 0.8475804039913651
+      },
+      {
+        "rank": 16,
+        "program_reliability": 30.0,
+        "program_gate_mix": 1.0,
+        "program_blend": 0.75,
+        "scale": 1.2692011052227279,
+        "source_relative_mse": 0.8640572142611813
+      },
+      {
+        "rank": 16,
+        "program_reliability": 30.0,
+        "program_gate_mix": 1.0,
+        "program_blend": 1.0,
+        "scale": 0.9979127306915332,
+        "source_relative_mse": 0.8840675309758146
+      },
+      {
+        "rank": 16,
+        "program_reliability": 100.0,
+        "program_gate_mix": 0.0,
+        "program_blend": 0.25,
+        "scale": 2.0,
+        "source_relative_mse": 0.8762053451463849
+      },
+      {
+        "rank": 16,
+        "program_reliability": 100.0,
+        "program_gate_mix": 0.0,
+        "program_blend": 0.5,
+        "scale": 2.0,
+        "source_relative_mse": 0.8850556444327702
+      },
+      {
+        "rank": 16,
+        "program_reliability": 100.0,
+        "program_gate_mix": 0.0,
+        "program_blend": 0.75,
+        "scale": 2.0,
+        "source_relative_mse": 0.9169875715477775
+      },
+      {
+        "rank": 16,
+        "program_reliability": 100.0,
+        "program_gate_mix": 0.0,
+        "program_blend": 1.0,
+        "scale": 2.0,
+        "source_relative_mse": 0.9720011264914069
+      },
+      {
+        "rank": 16,
+        "program_reliability": 100.0,
+        "program_gate_mix": 0.5,
+        "program_blend": 0.25,
+        "scale": 1.935611493378458,
+        "source_relative_mse": 0.8632534783945018
+      },
+      {
+        "rank": 16,
+        "program_reliability": 100.0,
+        "program_gate_mix": 0.5,
+        "program_blend": 0.5,
+        "scale": 2.0,
+        "source_relative_mse": 0.8572327264539945
+      },
+      {
+        "rank": 16,
+        "program_reliability": 100.0,
+        "program_gate_mix": 0.5,
+        "program_blend": 0.75,
+        "scale": 2.0,
+        "source_relative_mse": 0.8719204575785614
+      },
+      {
+        "rank": 16,
+        "program_reliability": 100.0,
+        "program_gate_mix": 0.5,
+        "program_blend": 1.0,
+        "scale": 2.0,
+        "source_relative_mse": 0.9074679918643819
+      },
+      {
+        "rank": 16,
+        "program_reliability": 100.0,
+        "program_gate_mix": 1.0,
+        "program_blend": 0.25,
+        "scale": 1.8010684562184975,
+        "source_relative_mse": 0.8568752690989414
+      },
+      {
+        "rank": 16,
+        "program_reliability": 100.0,
+        "program_gate_mix": 1.0,
+        "program_blend": 0.5,
+        "scale": 1.7801096369167029,
+        "source_relative_mse": 0.8593317343287927
+      },
+      {
+        "rank": 16,
+        "program_reliability": 100.0,
+        "program_gate_mix": 1.0,
+        "program_blend": 0.75,
+        "scale": 1.4734362750896979,
+        "source_relative_mse": 0.8842204312732787
+      },
+      {
+        "rank": 16,
+        "program_reliability": 100.0,
+        "program_gate_mix": 1.0,
+        "program_blend": 1.0,
+        "scale": 1.1014713533808251,
+        "source_relative_mse": 0.9139380705568232
+      },
+      {
+        "rank": 32,
+        "program_reliability": 0.0,
+        "program_gate_mix": 0.0,
+        "program_blend": 0.25,
+        "scale": 0.94231982069914,
+        "source_relative_mse": 0.8772740017031956
+      },
+      {
+        "rank": 32,
+        "program_reliability": 0.0,
+        "program_gate_mix": 0.0,
+        "program_blend": 0.5,
+        "scale": 0.6185499421423839,
+        "source_relative_mse": 0.8883112653430206
+      },
+      {
+        "rank": 32,
+        "program_reliability": 0.0,
+        "program_gate_mix": 0.0,
+        "program_blend": 0.75,
+        "scale": 0.449521093270166,
+        "source_relative_mse": 0.896208862814218
+      },
+      {
+        "rank": 32,
+        "program_reliability": 0.0,
+        "program_gate_mix": 0.0,
+        "program_blend": 1.0,
+        "scale": 0.35004479056963234,
+        "source_relative_mse": 0.9015604162989337
+      },
+      {
+        "rank": 32,
+        "program_reliability": 0.01,
+        "program_gate_mix": 0.0,
+        "program_blend": 0.25,
+        "scale": 0.9462041745376671,
+        "source_relative_mse": 0.8770812866251089
+      },
+      {
+        "rank": 32,
+        "program_reliability": 0.01,
+        "program_gate_mix": 0.0,
+        "program_blend": 0.5,
+        "scale": 0.6223069314286012,
+        "source_relative_mse": 0.88804482704643
+      },
+      {
+        "rank": 32,
+        "program_reliability": 0.01,
+        "program_gate_mix": 0.0,
+        "program_blend": 0.75,
+        "scale": 0.4526344854037668,
+        "source_relative_mse": 0.8959394441418751
+      },
+      {
+        "rank": 32,
+        "program_reliability": 0.01,
+        "program_gate_mix": 0.0,
+        "program_blend": 1.0,
+        "scale": 0.35261883753683815,
+        "source_relative_mse": 0.9013033840535097
+      },
+      {
+        "rank": 32,
+        "program_reliability": 0.01,
+        "program_gate_mix": 0.5,
+        "program_blend": 0.25,
+        "scale": 0.9467902140169683,
+        "source_relative_mse": 0.8768933979914894
+      },
+      {
+        "rank": 32,
+        "program_reliability": 0.01,
+        "program_gate_mix": 0.5,
+        "program_blend": 0.5,
+        "scale": 0.6229072177963533,
+        "source_relative_mse": 0.8877897791155203
+      },
+      {
+        "rank": 32,
+        "program_reliability": 0.01,
+        "program_gate_mix": 0.5,
+        "program_blend": 0.75,
+        "scale": 0.4531691863936739,
+        "source_relative_mse": 0.8956560419932673
+      },
+      {
+        "rank": 32,
+        "program_reliability": 0.01,
+        "program_gate_mix": 0.5,
+        "program_blend": 1.0,
+        "scale": 0.35308695146847496,
+        "source_relative_mse": 0.9010056490996965
+      },
+      {
+        "rank": 32,
+        "program_reliability": 0.01,
+        "program_gate_mix": 1.0,
+        "program_blend": 0.25,
+        "scale": 0.94734882557213,
+        "source_relative_mse": 0.8767089405664923
+      },
+      {
+        "rank": 32,
+        "program_reliability": 0.01,
+        "program_gate_mix": 1.0,
+        "program_blend": 0.5,
+        "scale": 0.6234732242946709,
+        "source_relative_mse": 0.8875406310091687
+      },
+      {
+        "rank": 32,
+        "program_reliability": 0.01,
+        "program_gate_mix": 1.0,
+        "program_blend": 0.75,
+        "scale": 0.45367194914314846,
+        "source_relative_mse": 0.8953796263653985
+      },
+      {
+        "rank": 32,
+        "program_reliability": 0.01,
+        "program_gate_mix": 1.0,
+        "program_blend": 1.0,
+        "scale": 0.35352675747775486,
+        "source_relative_mse": 0.9007154221081412
+      },
+      {
+        "rank": 32,
+        "program_reliability": 0.1,
+        "program_gate_mix": 0.0,
+        "program_blend": 0.25,
+        "scale": 0.9796232920451569,
+        "source_relative_mse": 0.8755071742720391
+      },
+      {
+        "rank": 32,
+        "program_reliability": 0.1,
+        "program_gate_mix": 0.0,
+        "program_blend": 0.5,
+        "scale": 0.6552158092664332,
+        "source_relative_mse": 0.8858261546034878
+      },
+      {
+        "rank": 32,
+        "program_reliability": 0.1,
+        "program_gate_mix": 0.0,
+        "program_blend": 0.75,
+        "scale": 0.4801182415273225,
+        "source_relative_mse": 0.8936896950236007
+      },
+      {
+        "rank": 32,
+        "program_reliability": 0.1,
+        "program_gate_mix": 0.0,
+        "program_blend": 1.0,
+        "scale": 0.37542522977102283,
+        "source_relative_mse": 0.8991620174650172
+      },
+      {
+        "rank": 32,
+        "program_reliability": 0.1,
+        "program_gate_mix": 0.5,
+        "program_blend": 0.25,
+        "scale": 0.9824969504608473,
+        "source_relative_mse": 0.8740272068226405
+      },
+      {
+        "rank": 32,
+        "program_reliability": 0.1,
+        "program_gate_mix": 0.5,
+        "program_blend": 0.5,
+        "scale": 0.658363338285761,
+        "source_relative_mse": 0.8837836805025056
+      },
+      {
+        "rank": 32,
+        "program_reliability": 0.1,
+        "program_gate_mix": 0.5,
+        "program_blend": 0.75,
+        "scale": 0.4830995536569814,
+        "source_relative_mse": 0.8913851310970713
+      },
+      {
+        "rank": 32,
+        "program_reliability": 0.1,
+        "program_gate_mix": 0.5,
+        "program_blend": 1.0,
+        "scale": 0.37814889060015316,
+        "source_relative_mse": 0.896714206068469
+      },
+      {
+        "rank": 32,
+        "program_reliability": 0.1,
+        "program_gate_mix": 1.0,
+        "program_blend": 0.25,
+        "scale": 0.9846905139945689,
+        "source_relative_mse": 0.8726286896346933
+      },
+      {
+        "rank": 32,
+        "program_reliability": 0.1,
+        "program_gate_mix": 1.0,
+        "program_blend": 0.5,
+        "scale": 0.6606180652153204,
+        "source_relative_mse": 0.8818865473839907
+      },
+      {
+        "rank": 32,
+        "program_reliability": 0.1,
+        "program_gate_mix": 1.0,
+        "program_blend": 0.75,
+        "scale": 0.4852264354461136,
+        "source_relative_mse": 0.8892552802110865
+      },
+      {
+        "rank": 32,
+        "program_reliability": 0.1,
+        "program_gate_mix": 1.0,
+        "program_blend": 1.0,
+        "scale": 0.38010288517052215,
+        "source_relative_mse": 0.8944553879215168
+      },
+      {
+        "rank": 32,
+        "program_reliability": 0.3,
+        "program_gate_mix": 0.0,
+        "program_blend": 0.25,
+        "scale": 1.0454668461337828,
+        "source_relative_mse": 0.87282362473042
+      },
+      {
+        "rank": 32,
+        "program_reliability": 0.3,
+        "program_gate_mix": 0.0,
+        "program_blend": 0.5,
+        "scale": 0.7233114009145455,
+        "source_relative_mse": 0.8818252510487146
+      },
+      {
+        "rank": 32,
+        "program_reliability": 0.3,
+        "program_gate_mix": 0.0,
+        "program_blend": 0.75,
+        "scale": 0.5382340051117295,
+        "source_relative_mse": 0.8896002238909927
+      },
+      {
+        "rank": 32,
+        "program_reliability": 0.3,
+        "program_gate_mix": 0.0,
+        "program_blend": 1.0,
+        "scale": 0.4241496536736716,
+        "source_relative_mse": 0.8952988803157202
+      },
+      {
+        "rank": 32,
+        "program_reliability": 0.3,
+        "program_gate_mix": 0.5,
+        "program_blend": 0.25,
+        "scale": 1.0475703038635067,
+        "source_relative_mse": 0.869379485921533
+      },
+      {
+        "rank": 32,
+        "program_reliability": 0.3,
+        "program_gate_mix": 0.5,
+        "program_blend": 0.5,
+        "scale": 0.7259746192937321,
+        "source_relative_mse": 0.876971150904985
+      },
+      {
+        "rank": 32,
+        "program_reliability": 0.3,
+        "program_gate_mix": 0.5,
+        "program_blend": 0.75,
+        "scale": 0.5413769781580295,
+        "source_relative_mse": 0.8840125383833747
+      },
+      {
+        "rank": 32,
+        "program_reliability": 0.3,
+        "program_gate_mix": 0.5,
+        "program_blend": 1.0,
+        "scale": 0.4274672771377615,
+        "source_relative_mse": 0.8892759688871664
+      },
+      {
+        "rank": 32,
+        "program_reliability": 0.3,
+        "program_gate_mix": 1.0,
+        "program_blend": 0.25,
+        "scale": 1.0467345528873557,
+        "source_relative_mse": 0.8662979759202387
+      },
+      {
+        "rank": 32,
+        "program_reliability": 0.3,
+        "program_gate_mix": 1.0,
+        "program_blend": 0.5,
+        "scale": 0.7244906068698919,
+        "source_relative_mse": 0.8728126923554536
+      },
+      {
+        "rank": 32,
+        "program_reliability": 0.3,
+        "program_gate_mix": 1.0,
+        "program_blend": 0.75,
+        "scale": 0.5403731419405287,
+        "source_relative_mse": 0.8792937559019111
+      },
+      {
+        "rank": 32,
+        "program_reliability": 0.3,
+        "program_gate_mix": 1.0,
+        "program_blend": 1.0,
+        "scale": 0.42694306898412804,
+        "source_relative_mse": 0.8842141749291368
+      },
+      {
+        "rank": 32,
+        "program_reliability": 1.0,
+        "program_gate_mix": 0.0,
+        "program_blend": 0.25,
+        "scale": 1.2162520150515614,
+        "source_relative_mse": 0.8681234584832136
+      },
+      {
+        "rank": 32,
+        "program_reliability": 1.0,
+        "program_gate_mix": 0.0,
+        "program_blend": 0.5,
+        "scale": 0.9237396996998012,
+        "source_relative_mse": 0.8734971984905666
+      },
+      {
+        "rank": 32,
+        "program_reliability": 1.0,
+        "program_gate_mix": 0.0,
+        "program_blend": 0.75,
+        "scale": 0.7199506802223667,
+        "source_relative_mse": 0.8808739981315149
+      },
+      {
+        "rank": 32,
+        "program_reliability": 1.0,
+        "program_gate_mix": 0.0,
+        "program_blend": 1.0,
+        "scale": 0.581002358964518,
+        "source_relative_mse": 0.887296083960433
+      },
+      {
+        "rank": 32,
+        "program_reliability": 1.0,
+        "program_gate_mix": 0.5,
+        "program_blend": 0.25,
+        "scale": 1.2019134487241636,
+        "source_relative_mse": 0.860681750133497
+      },
+      {
+        "rank": 32,
+        "program_reliability": 1.0,
+        "program_gate_mix": 0.5,
+        "program_blend": 0.5,
+        "scale": 0.9035626773762977,
+        "source_relative_mse": 0.8627338889264936
+      },
+      {
+        "rank": 32,
+        "program_reliability": 1.0,
+        "program_gate_mix": 0.5,
+        "program_blend": 0.75,
+        "scale": 0.7022688446660522,
+        "source_relative_mse": 0.8680300899168546
+      },
+      {
+        "rank": 32,
+        "program_reliability": 1.0,
+        "program_gate_mix": 0.5,
+        "program_blend": 1.0,
+        "scale": 0.56715589860424,
+        "source_relative_mse": 0.8730012147645949
+      },
+      {
+        "rank": 32,
+        "program_reliability": 1.0,
+        "program_gate_mix": 1.0,
+        "program_blend": 0.25,
+        "scale": 1.1760118902128438,
+        "source_relative_mse": 0.8548815517270363
+      },
+      {
+        "rank": 32,
+        "program_reliability": 1.0,
+        "program_gate_mix": 1.0,
+        "program_blend": 0.5,
+        "scale": 0.8655949320038737,
+        "source_relative_mse": 0.8555437209501129
+      },
+      {
+        "rank": 32,
+        "program_reliability": 1.0,
+        "program_gate_mix": 1.0,
+        "program_blend": 0.75,
+        "scale": 0.6654678376538942,
+        "source_relative_mse": 0.8600024695812523
+      },
+      {
+        "rank": 32,
+        "program_reliability": 1.0,
+        "program_gate_mix": 1.0,
+        "program_blend": 1.0,
+        "scale": 0.5345362259665987,
+        "source_relative_mse": 0.8643012952582242
+      },
+      {
+        "rank": 32,
+        "program_reliability": 3.0,
+        "program_gate_mix": 0.0,
+        "program_blend": 0.25,
+        "scale": 1.4784596813061044,
+        "source_relative_mse": 0.8659619404173284
+      },
+      {
+        "rank": 32,
+        "program_reliability": 3.0,
+        "program_gate_mix": 0.0,
+        "program_blend": 0.5,
+        "scale": 1.3264666512245962,
+        "source_relative_mse": 0.8654825736235323
+      },
+      {
+        "rank": 32,
+        "program_reliability": 3.0,
+        "program_gate_mix": 0.0,
+        "program_blend": 0.75,
+        "scale": 1.14552465356892,
+        "source_relative_mse": 0.8715178903438965
+      },
+      {
+        "rank": 32,
+        "program_reliability": 3.0,
+        "program_gate_mix": 0.0,
+        "program_blend": 1.0,
+        "scale": 0.9777938921012809,
+        "source_relative_mse": 0.8798195693472531
+      },
+      {
+        "rank": 32,
+        "program_reliability": 3.0,
+        "program_gate_mix": 0.5,
+        "program_blend": 0.25,
+        "scale": 1.4184351827710542,
+        "source_relative_mse": 0.8533890650624583
+      },
+      {
+        "rank": 32,
+        "program_reliability": 3.0,
+        "program_gate_mix": 0.5,
+        "program_blend": 0.5,
+        "scale": 1.2031369535562408,
+        "source_relative_mse": 0.8474287722992474
+      },
+      {
+        "rank": 32,
+        "program_reliability": 3.0,
+        "program_gate_mix": 0.5,
+        "program_blend": 0.75,
+        "scale": 1.0009938952792332,
+        "source_relative_mse": 0.8495893173024807
+      },
+      {
+        "rank": 32,
+        "program_reliability": 3.0,
+        "program_gate_mix": 0.5,
+        "program_blend": 1.0,
+        "scale": 0.8391664233006253,
+        "source_relative_mse": 0.8542271517193828
+      },
+      {
+        "rank": 32,
+        "program_reliability": 3.0,
+        "program_gate_mix": 1.0,
+        "program_blend": 0.25,
+        "scale": 1.332236471829263,
+        "source_relative_mse": 0.845378680772999
+      },
+      {
+        "rank": 32,
+        "program_reliability": 3.0,
+        "program_gate_mix": 1.0,
+        "program_blend": 0.5,
+        "scale": 1.048679792729054,
+        "source_relative_mse": 0.8403783052760556
+      },
+      {
+        "rank": 32,
+        "program_reliability": 3.0,
+        "program_gate_mix": 1.0,
+        "program_blend": 0.75,
+        "scale": 0.8312347533948626,
+        "source_relative_mse": 0.8434264431773119
+      },
+      {
+        "rank": 32,
+        "program_reliability": 3.0,
+        "program_gate_mix": 1.0,
+        "program_blend": 1.0,
+        "scale": 0.6772724453432046,
+        "source_relative_mse": 0.847943397348776
+      },
+      {
+        "rank": 32,
+        "program_reliability": 10.0,
+        "program_gate_mix": 0.0,
+        "program_blend": 0.25,
+        "scale": 1.7709084949044689,
+        "source_relative_mse": 0.8693374505405203
+      },
+      {
+        "rank": 32,
+        "program_reliability": 10.0,
+        "program_gate_mix": 0.0,
+        "program_blend": 0.5,
+        "scale": 2.0,
+        "source_relative_mse": 0.8632108590985643
+      },
+      {
+        "rank": 32,
+        "program_reliability": 10.0,
+        "program_gate_mix": 0.0,
+        "program_blend": 0.75,
+        "scale": 2.0,
+        "source_relative_mse": 0.8654969858883776
+      },
+      {
+        "rank": 32,
+        "program_reliability": 10.0,
+        "program_gate_mix": 0.0,
+        "program_blend": 1.0,
+        "scale": 2.0,
+        "source_relative_mse": 0.878382468734752
+      },
+      {
+        "rank": 32,
+        "program_reliability": 10.0,
+        "program_gate_mix": 0.5,
+        "program_blend": 0.25,
+        "scale": 1.657506810543213,
+        "source_relative_mse": 0.8519788319567001
+      },
+      {
+        "rank": 32,
+        "program_reliability": 10.0,
+        "program_gate_mix": 0.5,
+        "program_blend": 0.5,
+        "scale": 1.631977863087919,
+        "source_relative_mse": 0.8389301162338318
+      },
+      {
+        "rank": 32,
+        "program_reliability": 10.0,
+        "program_gate_mix": 0.5,
+        "program_blend": 0.75,
+        "scale": 1.4947020057183664,
+        "source_relative_mse": 0.8384395498906153
+      },
+      {
+        "rank": 32,
+        "program_reliability": 10.0,
+        "program_gate_mix": 0.5,
+        "program_blend": 1.0,
+        "scale": 1.3142152675376102,
+        "source_relative_mse": 0.8456042148351123
+      },
+      {
+        "rank": 32,
+        "program_reliability": 10.0,
+        "program_gate_mix": 1.0,
+        "program_blend": 0.25,
+        "scale": 1.4994579380203326,
+        "source_relative_mse": 0.8428204736368693
+      },
+      {
+        "rank": 32,
+        "program_reliability": 10.0,
+        "program_gate_mix": 1.0,
+        "program_blend": 0.5,
+        "scale": 1.2625640527725168,
+        "source_relative_mse": 0.8361980033323977
+      },
+      {
+        "rank": 32,
+        "program_reliability": 10.0,
+        "program_gate_mix": 1.0,
+        "program_blend": 0.75,
+        "scale": 1.0237208327403144,
+        "source_relative_mse": 0.8416806361171725
+      },
+      {
+        "rank": 32,
+        "program_reliability": 10.0,
+        "program_gate_mix": 1.0,
+        "program_blend": 1.0,
+        "scale": 0.8358091436553777,
+        "source_relative_mse": 0.849918551946711
+      },
+      {
+        "rank": 32,
+        "program_reliability": 30.0,
+        "program_gate_mix": 0.0,
+        "program_blend": 0.25,
+        "scale": 1.9282791577071041,
+        "source_relative_mse": 0.8738873617330781
+      },
+      {
+        "rank": 32,
+        "program_reliability": 30.0,
+        "program_gate_mix": 0.0,
+        "program_blend": 0.5,
+        "scale": 2.0,
+        "source_relative_mse": 0.8749057501779913
+      },
+      {
+        "rank": 32,
+        "program_reliability": 30.0,
+        "program_gate_mix": 0.0,
+        "program_blend": 0.75,
+        "scale": 2.0,
+        "source_relative_mse": 0.8929684425231643
+      },
+      {
+        "rank": 32,
+        "program_reliability": 30.0,
+        "program_gate_mix": 0.0,
+        "program_blend": 1.0,
+        "scale": 2.0,
+        "source_relative_mse": 0.9282499042686628
+      },
+      {
+        "rank": 32,
+        "program_reliability": 30.0,
+        "program_gate_mix": 0.5,
+        "program_blend": 0.25,
+        "scale": 1.8109928891968514,
+        "source_relative_mse": 0.8561155709886046
+      },
+      {
+        "rank": 32,
+        "program_reliability": 30.0,
+        "program_gate_mix": 0.5,
+        "program_blend": 0.5,
+        "scale": 1.9964475683511402,
+        "source_relative_mse": 0.8423000814724383
+      },
+      {
+        "rank": 32,
+        "program_reliability": 30.0,
+        "program_gate_mix": 0.5,
+        "program_blend": 0.75,
+        "scale": 1.9829572323658002,
+        "source_relative_mse": 0.8442784685269773
+      },
+      {
+        "rank": 32,
+        "program_reliability": 30.0,
+        "program_gate_mix": 0.5,
+        "program_blend": 1.0,
+        "scale": 1.7750206163754394,
+        "source_relative_mse": 0.861424786343763
+      },
+      {
+        "rank": 32,
+        "program_reliability": 30.0,
+        "program_gate_mix": 1.0,
+        "program_blend": 0.25,
+        "scale": 1.6318889090444018,
+        "source_relative_mse": 0.8474191979237155
+      },
+      {
+        "rank": 32,
+        "program_reliability": 30.0,
+        "program_gate_mix": 1.0,
+        "program_blend": 0.5,
+        "scale": 1.4591410323604879,
+        "source_relative_mse": 0.8437433354900133
+      },
+      {
+        "rank": 32,
+        "program_reliability": 30.0,
+        "program_gate_mix": 1.0,
+        "program_blend": 0.75,
+        "scale": 1.1970961750823894,
+        "source_relative_mse": 0.8555383487702953
+      },
+      {
+        "rank": 32,
+        "program_reliability": 30.0,
+        "program_gate_mix": 1.0,
+        "program_blend": 1.0,
+        "scale": 0.9621631515907169,
+        "source_relative_mse": 0.8708148348002708
+      },
+      {
+        "rank": 32,
+        "program_reliability": 100.0,
+        "program_gate_mix": 0.0,
+        "program_blend": 0.25,
+        "scale": 1.9970849988209736,
+        "source_relative_mse": 0.8767906992070731
+      },
+      {
+        "rank": 32,
+        "program_reliability": 100.0,
+        "program_gate_mix": 0.0,
+        "program_blend": 0.5,
+        "scale": 2.0,
+        "source_relative_mse": 0.8860813405208257
+      },
+      {
+        "rank": 32,
+        "program_reliability": 100.0,
+        "program_gate_mix": 0.0,
+        "program_blend": 0.75,
+        "scale": 2.0,
+        "source_relative_mse": 0.9183078101324982
+      },
+      {
+        "rank": 32,
+        "program_reliability": 100.0,
+        "program_gate_mix": 0.0,
+        "program_blend": 1.0,
+        "scale": 2.0,
+        "source_relative_mse": 0.9734703705412177
+      },
+      {
+        "rank": 32,
+        "program_reliability": 100.0,
+        "program_gate_mix": 0.5,
+        "program_blend": 0.25,
+        "scale": 1.9080986393917614,
+        "source_relative_mse": 0.8624986447703642
+      },
+      {
+        "rank": 32,
+        "program_reliability": 100.0,
+        "program_gate_mix": 0.5,
+        "program_blend": 0.5,
+        "scale": 2.0,
+        "source_relative_mse": 0.8548226641253025
+      },
+      {
+        "rank": 32,
+        "program_reliability": 100.0,
+        "program_gate_mix": 0.5,
+        "program_blend": 0.75,
+        "scale": 2.0,
+        "source_relative_mse": 0.8664518231218389
+      },
+      {
+        "rank": 32,
+        "program_reliability": 100.0,
+        "program_gate_mix": 0.5,
+        "program_blend": 1.0,
+        "scale": 2.0,
+        "source_relative_mse": 0.8977050913038394
+      },
+      {
+        "rank": 32,
+        "program_reliability": 100.0,
+        "program_gate_mix": 1.0,
+        "program_blend": 0.25,
+        "scale": 1.750461527651324,
+        "source_relative_mse": 0.8557105442706794
+      },
+      {
+        "rank": 32,
+        "program_reliability": 100.0,
+        "program_gate_mix": 1.0,
+        "program_blend": 0.5,
+        "scale": 1.6775711659878174,
+        "source_relative_mse": 0.8574939077015484
+      },
+      {
+        "rank": 32,
+        "program_reliability": 100.0,
+        "program_gate_mix": 1.0,
+        "program_blend": 0.75,
+        "scale": 1.3847927664081234,
+        "source_relative_mse": 0.8788772235220529
+      },
+      {
+        "rank": 32,
+        "program_reliability": 100.0,
+        "program_gate_mix": 1.0,
+        "program_blend": 1.0,
+        "scale": 1.0628465871477348,
+        "source_relative_mse": 0.9043599155451547
+      },
+      {
+        "rank": 64,
+        "program_reliability": 0.0,
+        "program_gate_mix": 0.0,
+        "program_blend": 0.25,
+        "scale": 0.8482907933459484,
+        "source_relative_mse": 0.8852508752333409
+      },
+      {
+        "rank": 64,
+        "program_reliability": 0.0,
+        "program_gate_mix": 0.0,
+        "program_blend": 0.5,
+        "scale": 0.5476780071257269,
+        "source_relative_mse": 0.8955955582392874
+      },
+      {
+        "rank": 64,
+        "program_reliability": 0.0,
+        "program_gate_mix": 0.0,
+        "program_blend": 0.75,
+        "scale": 0.3978215950929253,
+        "source_relative_mse": 0.9021394073300312
+      },
+      {
+        "rank": 64,
+        "program_reliability": 0.0,
+        "program_gate_mix": 0.0,
+        "program_blend": 1.0,
+        "scale": 0.31058016217464635,
+        "source_relative_mse": 0.906406282995176
+      },
+      {
+        "rank": 64,
+        "program_reliability": 0.01,
+        "program_gate_mix": 0.0,
+        "program_blend": 0.25,
+        "scale": 0.8522227643578097,
+        "source_relative_mse": 0.8850518036703903
+      },
+      {
+        "rank": 64,
+        "program_reliability": 0.01,
+        "program_gate_mix": 0.0,
+        "program_blend": 0.5,
+        "scale": 0.5512604077550626,
+        "source_relative_mse": 0.8953431977759322
+      },
+      {
+        "rank": 64,
+        "program_reliability": 0.01,
+        "program_gate_mix": 0.0,
+        "program_blend": 0.75,
+        "scale": 0.4007582759203137,
+        "source_relative_mse": 0.9018865221453094
+      },
+      {
+        "rank": 64,
+        "program_reliability": 0.01,
+        "program_gate_mix": 0.0,
+        "program_blend": 1.0,
+        "scale": 0.3130094681401815,
+        "source_relative_mse": 0.9061631544087912
+      },
+      {
+        "rank": 64,
+        "program_reliability": 0.01,
+        "program_gate_mix": 0.5,
+        "program_blend": 0.25,
+        "scale": 0.8528148468983856,
+        "source_relative_mse": 0.8848551190357734
+      },
+      {
+        "rank": 64,
+        "program_reliability": 0.01,
+        "program_gate_mix": 0.5,
+        "program_blend": 0.5,
+        "scale": 0.551845296372247,
+        "source_relative_mse": 0.8950809657522433
+      },
+      {
+        "rank": 64,
+        "program_reliability": 0.01,
+        "program_gate_mix": 0.5,
+        "program_blend": 0.75,
+        "scale": 0.4012719600987606,
+        "source_relative_mse": 0.9015958554586648
+      },
+      {
+        "rank": 64,
+        "program_reliability": 0.01,
+        "program_gate_mix": 0.5,
+        "program_blend": 1.0,
+        "scale": 0.31345631568424304,
+        "source_relative_mse": 0.9058574370044363
+      },
+      {
+        "rank": 64,
+        "program_reliability": 0.01,
+        "program_gate_mix": 1.0,
+        "program_blend": 0.25,
+        "scale": 0.8533780606907696,
+        "source_relative_mse": 0.8846621739255495
+      },
+      {
+        "rank": 64,
+        "program_reliability": 0.01,
+        "program_gate_mix": 1.0,
+        "program_blend": 0.5,
+        "scale": 0.5523958435107358,
+        "source_relative_mse": 0.8948249517886563
+      },
+      {
+        "rank": 64,
+        "program_reliability": 0.01,
+        "program_gate_mix": 1.0,
+        "program_blend": 0.75,
+        "scale": 0.40175396874082636,
+        "source_relative_mse": 0.9013125473913649
+      },
+      {
+        "rank": 64,
+        "program_reliability": 0.01,
+        "program_gate_mix": 1.0,
+        "program_blend": 1.0,
+        "scale": 0.3138751059765689,
+        "source_relative_mse": 0.905559671910498
+      },
+      {
+        "rank": 64,
+        "program_reliability": 0.1,
+        "program_gate_mix": 0.0,
+        "program_blend": 0.25,
+        "scale": 0.8862092317335419,
+        "source_relative_mse": 0.8834109045350838
+      },
+      {
+        "rank": 64,
+        "program_reliability": 0.1,
+        "program_gate_mix": 0.0,
+        "program_blend": 0.5,
+        "scale": 0.5827727954791836,
+        "source_relative_mse": 0.8932314921170433
+      },
+      {
+        "rank": 64,
+        "program_reliability": 0.1,
+        "program_gate_mix": 0.0,
+        "program_blend": 0.75,
+        "scale": 0.426792155744739,
+        "source_relative_mse": 0.8997652078610184
+      },
+      {
+        "rank": 64,
+        "program_reliability": 0.1,
+        "program_gate_mix": 0.0,
+        "program_blend": 1.0,
+        "scale": 0.33463081651129667,
+        "source_relative_mse": 0.9041267108612225
+      },
+      {
+        "rank": 64,
+        "program_reliability": 0.1,
+        "program_gate_mix": 0.5,
+        "program_blend": 0.25,
+        "scale": 0.8889427930093021,
+        "source_relative_mse": 0.8818833753795049
+      },
+      {
+        "rank": 64,
+        "program_reliability": 0.1,
+        "program_gate_mix": 0.5,
+        "program_blend": 0.5,
+        "scale": 0.5857288056035297,
+        "source_relative_mse": 0.8911508530764982
+      },
+      {
+        "rank": 64,
+        "program_reliability": 0.1,
+        "program_gate_mix": 0.5,
+        "program_blend": 0.75,
+        "scale": 0.4295565838159085,
+        "source_relative_mse": 0.8974228950267266
+      },
+      {
+        "rank": 64,
+        "program_reliability": 0.1,
+        "program_gate_mix": 0.5,
+        "program_blend": 1.0,
+        "scale": 0.33713610276340505,
+        "source_relative_mse": 0.9016372009174554
+      },
+      {
+        "rank": 64,
+        "program_reliability": 0.1,
+        "program_gate_mix": 1.0,
+        "program_blend": 0.25,
+        "scale": 0.8909397904562839,
+        "source_relative_mse": 0.8804475007117967
+      },
+      {
+        "rank": 64,
+        "program_reliability": 0.1,
+        "program_gate_mix": 1.0,
+        "program_blend": 0.5,
+        "scale": 0.5877636872412775,
+        "source_relative_mse": 0.8892282781303811
+      },
+      {
+        "rank": 64,
+        "program_reliability": 0.1,
+        "program_gate_mix": 1.0,
+        "program_blend": 0.75,
+        "scale": 0.4314485500853222,
+        "source_relative_mse": 0.8952705711454342
+      },
+      {
+        "rank": 64,
+        "program_reliability": 0.1,
+        "program_gate_mix": 1.0,
+        "program_blend": 1.0,
+        "scale": 0.3388561459975134,
+        "source_relative_mse": 0.899354588252787
+      },
+      {
+        "rank": 64,
+        "program_reliability": 0.3,
+        "program_gate_mix": 0.0,
+        "program_blend": 0.25,
+        "scale": 0.9539186847504921,
+        "source_relative_mse": 0.8805423965024594
+      },
+      {
+        "rank": 64,
+        "program_reliability": 0.3,
+        "program_gate_mix": 0.0,
+        "program_blend": 0.5,
+        "scale": 0.648640157481525,
+        "source_relative_mse": 0.8893772196983635
+      },
+      {
+        "rank": 64,
+        "program_reliability": 0.3,
+        "program_gate_mix": 0.0,
+        "program_blend": 0.75,
+        "scale": 0.4824069063834579,
+        "source_relative_mse": 0.8958661577817906
+      },
+      {
+        "rank": 64,
+        "program_reliability": 0.3,
+        "program_gate_mix": 0.0,
+        "program_blend": 1.0,
+        "scale": 0.38133742022924333,
+        "source_relative_mse": 0.9004021091220744
+      },
+      {
+        "rank": 64,
+        "program_reliability": 0.3,
+        "program_gate_mix": 0.5,
+        "program_blend": 0.25,
+        "scale": 0.9552204254876671,
+        "source_relative_mse": 0.8770215852403399
+      },
+      {
+        "rank": 64,
+        "program_reliability": 0.3,
+        "program_gate_mix": 0.5,
+        "program_blend": 0.5,
+        "scale": 0.6507050868505277,
+        "source_relative_mse": 0.884450330151232
+      },
+      {
+        "rank": 64,
+        "program_reliability": 0.3,
+        "program_gate_mix": 0.5,
+        "program_blend": 0.75,
+        "scale": 0.48494244183971036,
+        "source_relative_mse": 0.8902048116470579
+      },
+      {
+        "rank": 64,
+        "program_reliability": 0.3,
+        "program_gate_mix": 0.5,
+        "program_blend": 1.0,
+        "scale": 0.3840304828130517,
+        "source_relative_mse": 0.8942989488277949
+      },
+      {
+        "rank": 64,
+        "program_reliability": 0.3,
+        "program_gate_mix": 1.0,
+        "program_blend": 0.25,
+        "scale": 0.9533574350785391,
+        "source_relative_mse": 0.8739101854305524
+      },
+      {
+        "rank": 64,
+        "program_reliability": 0.3,
+        "program_gate_mix": 1.0,
+        "program_blend": 0.5,
+        "scale": 0.6485026552660521,
+        "source_relative_mse": 0.8802821886054082
+      },
+      {
+        "rank": 64,
+        "program_reliability": 0.3,
+        "program_gate_mix": 1.0,
+        "program_blend": 0.75,
+        "scale": 0.48325558136411695,
+        "source_relative_mse": 0.8854905028887186
+      },
+      {
+        "rank": 64,
+        "program_reliability": 0.3,
+        "program_gate_mix": 1.0,
+        "program_blend": 1.0,
+        "scale": 0.38281673226899005,
+        "source_relative_mse": 0.8892503045306545
+      },
+      {
+        "rank": 64,
+        "program_reliability": 1.0,
+        "program_gate_mix": 0.0,
+        "program_blend": 0.25,
+        "scale": 1.133166683473983,
+        "source_relative_mse": 0.8751404082028823
+      },
+      {
+        "rank": 64,
+        "program_reliability": 1.0,
+        "program_gate_mix": 0.0,
+        "program_blend": 0.5,
+        "scale": 0.8461522573880002,
+        "source_relative_mse": 0.8811477864004168
+      },
+      {
+        "rank": 64,
+        "program_reliability": 1.0,
+        "program_gate_mix": 0.0,
+        "program_blend": 0.75,
+        "scale": 0.6597029854657955,
+        "source_relative_mse": 0.8873639541795028
+      },
+      {
+        "rank": 64,
+        "program_reliability": 1.0,
+        "program_gate_mix": 0.0,
+        "program_blend": 1.0,
+        "scale": 0.5350871182351676,
+        "source_relative_mse": 0.8924405055271493
+      },
+      {
+        "rank": 64,
+        "program_reliability": 1.0,
+        "program_gate_mix": 0.5,
+        "program_blend": 0.25,
+        "scale": 1.115080642086058,
+        "source_relative_mse": 0.8676223773338074
+      },
+      {
+        "rank": 64,
+        "program_reliability": 1.0,
+        "program_gate_mix": 0.5,
+        "program_blend": 0.5,
+        "scale": 0.8239959917093558,
+        "source_relative_mse": 0.8702036665043573
+      },
+      {
+        "rank": 64,
+        "program_reliability": 1.0,
+        "program_gate_mix": 0.5,
+        "program_blend": 0.75,
+        "scale": 0.6402709315416928,
+        "source_relative_mse": 0.8742985291014027
+      },
+      {
+        "rank": 64,
+        "program_reliability": 1.0,
+        "program_gate_mix": 0.5,
+        "program_blend": 1.0,
+        "scale": 0.5192235515249096,
+        "source_relative_mse": 0.8779148173117561
+      },
+      {
+        "rank": 64,
+        "program_reliability": 1.0,
+        "program_gate_mix": 1.0,
+        "program_blend": 0.25,
+        "scale": 1.0850502601362766,
+        "source_relative_mse": 0.8619327275197297
+      },
+      {
+        "rank": 64,
+        "program_reliability": 1.0,
+        "program_gate_mix": 1.0,
+        "program_blend": 0.5,
+        "scale": 0.7840725392507416,
+        "source_relative_mse": 0.86311723850575
+      },
+      {
+        "rank": 64,
+        "program_reliability": 1.0,
+        "program_gate_mix": 1.0,
+        "program_blend": 0.75,
+        "scale": 0.601917130045447,
+        "source_relative_mse": 0.8664265446250397
+      },
+      {
+        "rank": 64,
+        "program_reliability": 1.0,
+        "program_gate_mix": 1.0,
+        "program_blend": 1.0,
+        "scale": 0.48483972907494527,
+        "source_relative_mse": 0.8694581041514339
+      },
+      {
+        "rank": 64,
+        "program_reliability": 3.0,
+        "program_gate_mix": 0.0,
+        "program_blend": 0.25,
+        "scale": 1.415163990972639,
+        "source_relative_mse": 0.8715108382250265
+      },
+      {
+        "rank": 64,
+        "program_reliability": 3.0,
+        "program_gate_mix": 0.0,
+        "program_blend": 0.5,
+        "scale": 1.2513207968458635,
+        "source_relative_mse": 0.8727679693440095
+      },
+      {
+        "rank": 64,
+        "program_reliability": 3.0,
+        "program_gate_mix": 0.0,
+        "program_blend": 0.75,
+        "scale": 1.0842521552615887,
+        "source_relative_mse": 0.8779545863248218
+      },
+      {
+        "rank": 64,
+        "program_reliability": 3.0,
+        "program_gate_mix": 0.0,
+        "program_blend": 1.0,
+        "scale": 0.9363720977610003,
+        "source_relative_mse": 0.8844090920812294
+      },
+      {
+        "rank": 64,
+        "program_reliability": 3.0,
+        "program_gate_mix": 0.5,
+        "program_blend": 0.25,
+        "scale": 1.3441397304729197,
+        "source_relative_mse": 0.8589933026229395
+      },
+      {
+        "rank": 64,
+        "program_reliability": 3.0,
+        "program_gate_mix": 0.5,
+        "program_blend": 0.5,
+        "scale": 1.1212278848331791,
+        "source_relative_mse": 0.8543539644202022
+      },
+      {
+        "rank": 64,
+        "program_reliability": 3.0,
+        "program_gate_mix": 0.5,
+        "program_blend": 0.75,
+        "scale": 0.9334038900903086,
+        "source_relative_mse": 0.855422651218651
+      },
+      {
+        "rank": 64,
+        "program_reliability": 3.0,
+        "program_gate_mix": 0.5,
+        "program_blend": 1.0,
+        "scale": 0.7878853330237091,
+        "source_relative_mse": 0.8582700698222235
+      },
+      {
+        "rank": 64,
+        "program_reliability": 3.0,
+        "program_gate_mix": 1.0,
+        "program_blend": 0.25,
+        "scale": 1.2484383614072632,
+        "source_relative_mse": 0.8514170546144694
+      },
+      {
+        "rank": 64,
+        "program_reliability": 3.0,
+        "program_gate_mix": 1.0,
+        "program_blend": 0.5,
+        "scale": 0.9639024599347165,
+        "source_relative_mse": 0.8475885177320835
+      },
+      {
+        "rank": 64,
+        "program_reliability": 3.0,
+        "program_gate_mix": 1.0,
+        "program_blend": 0.75,
+        "scale": 0.7625145367691205,
+        "source_relative_mse": 0.8496143290264032
+      },
+      {
+        "rank": 64,
+        "program_reliability": 3.0,
+        "program_gate_mix": 1.0,
+        "program_blend": 1.0,
+        "scale": 0.6233003775699179,
+        "source_relative_mse": 0.8526969783484872
+      },
+      {
+        "rank": 64,
+        "program_reliability": 10.0,
+        "program_gate_mix": 0.0,
+        "program_blend": 0.25,
+        "scale": 1.7361725612579542,
+        "source_relative_mse": 0.8726452165525022
+      },
+      {
+        "rank": 64,
+        "program_reliability": 10.0,
+        "program_gate_mix": 0.0,
+        "program_blend": 0.5,
+        "scale": 1.959655918802397,
+        "source_relative_mse": 0.869101592825994
+      },
+      {
+        "rank": 64,
+        "program_reliability": 10.0,
+        "program_gate_mix": 0.0,
+        "program_blend": 0.75,
+        "scale": 2.0,
+        "source_relative_mse": 0.8711497621187371
+      },
+      {
+        "rank": 64,
+        "program_reliability": 10.0,
+        "program_gate_mix": 0.0,
+        "program_blend": 1.0,
+        "scale": 2.0,
+        "source_relative_mse": 0.8815641117587315
+      },
+      {
+        "rank": 64,
+        "program_reliability": 10.0,
+        "program_gate_mix": 0.5,
+        "program_blend": 0.25,
+        "scale": 1.601267774033833,
+        "source_relative_mse": 0.8557863619700765
+      },
+      {
+        "rank": 64,
+        "program_reliability": 10.0,
+        "program_gate_mix": 0.5,
+        "program_blend": 0.5,
+        "scale": 1.5478135639291304,
+        "source_relative_mse": 0.8448882867183045
+      },
+      {
+        "rank": 64,
+        "program_reliability": 10.0,
+        "program_gate_mix": 0.5,
+        "program_blend": 0.75,
+        "scale": 1.4145209008669009,
+        "source_relative_mse": 0.843886815411547
+      },
+      {
+        "rank": 64,
+        "program_reliability": 10.0,
+        "program_gate_mix": 0.5,
+        "program_blend": 1.0,
+        "scale": 1.2543707619177291,
+        "source_relative_mse": 0.8488282793530284
+      },
+      {
+        "rank": 64,
+        "program_reliability": 10.0,
+        "program_gate_mix": 1.0,
+        "program_blend": 0.25,
+        "scale": 1.4283192284900705,
+        "source_relative_mse": 0.8474975481732598
+      },
+      {
+        "rank": 64,
+        "program_reliability": 10.0,
+        "program_gate_mix": 1.0,
+        "program_blend": 0.5,
+        "scale": 1.1777575789596562,
+        "source_relative_mse": 0.8426159706248219
+      },
+      {
+        "rank": 64,
+        "program_reliability": 10.0,
+        "program_gate_mix": 1.0,
+        "program_blend": 0.75,
+        "scale": 0.9516320152068418,
+        "source_relative_mse": 0.8472726569793408
+      },
+      {
+        "rank": 64,
+        "program_reliability": 10.0,
+        "program_gate_mix": 1.0,
+        "program_blend": 1.0,
+        "scale": 0.7796197334926869,
+        "source_relative_mse": 0.8539385605944616
+      },
+      {
+        "rank": 64,
+        "program_reliability": 30.0,
+        "program_gate_mix": 0.0,
+        "program_blend": 0.25,
+        "scale": 1.9125451235107602,
+        "source_relative_mse": 0.8754638445644023
+      },
+      {
+        "rank": 64,
+        "program_reliability": 30.0,
+        "program_gate_mix": 0.0,
+        "program_blend": 0.5,
+        "scale": 2.0,
+        "source_relative_mse": 0.8776466628112756
+      },
+      {
+        "rank": 64,
+        "program_reliability": 30.0,
+        "program_gate_mix": 0.0,
+        "program_blend": 0.75,
+        "scale": 2.0,
+        "source_relative_mse": 0.8962039299488079
+      },
+      {
+        "rank": 64,
+        "program_reliability": 30.0,
+        "program_gate_mix": 0.0,
+        "program_blend": 1.0,
+        "scale": 2.0,
+        "source_relative_mse": 0.9313960454704773
+      },
+      {
+        "rank": 64,
+        "program_reliability": 30.0,
+        "program_gate_mix": 0.5,
+        "program_blend": 0.25,
+        "scale": 1.7701491822280804,
+        "source_relative_mse": 0.8585468640455585
+      },
+      {
+        "rank": 64,
+        "program_reliability": 30.0,
+        "program_gate_mix": 0.5,
+        "program_blend": 0.5,
+        "scale": 1.911474029008241,
+        "source_relative_mse": 0.8472546995575719
+      },
+      {
+        "rank": 64,
+        "program_reliability": 30.0,
+        "program_gate_mix": 0.5,
+        "program_blend": 0.75,
+        "scale": 1.8799433204821403,
+        "source_relative_mse": 0.8497754349861188
+      },
+      {
+        "rank": 64,
+        "program_reliability": 30.0,
+        "program_gate_mix": 0.5,
+        "program_blend": 1.0,
+        "scale": 1.6913357434136662,
+        "source_relative_mse": 0.8648479085799469
+      },
+      {
+        "rank": 64,
+        "program_reliability": 30.0,
+        "program_gate_mix": 1.0,
+        "program_blend": 0.25,
+        "scale": 1.5739190968314096,
+        "source_relative_mse": 0.8509417181314356
+      },
+      {
+        "rank": 64,
+        "program_reliability": 30.0,
+        "program_gate_mix": 1.0,
+        "program_blend": 0.5,
+        "scale": 1.3755337632719025,
+        "source_relative_mse": 0.8493797984272926
+      },
+      {
+        "rank": 64,
+        "program_reliability": 30.0,
+        "program_gate_mix": 1.0,
+        "program_blend": 0.75,
+        "scale": 1.1215764741297634,
+        "source_relative_mse": 0.8605950629943495
+      },
+      {
+        "rank": 64,
+        "program_reliability": 30.0,
+        "program_gate_mix": 1.0,
+        "program_blend": 1.0,
+        "scale": 0.9042372560229927,
+        "source_relative_mse": 0.874231424890042
+      },
+      {
+        "rank": 64,
+        "program_reliability": 100.0,
+        "program_gate_mix": 0.0,
+        "program_blend": 0.25,
+        "scale": 1.991571654042875,
+        "source_relative_mse": 0.8773528886368837
+      },
+      {
+        "rank": 64,
+        "program_reliability": 100.0,
+        "program_gate_mix": 0.0,
+        "program_blend": 0.5,
+        "scale": 2.0,
+        "source_relative_mse": 0.8870976724475661
+      },
+      {
+        "rank": 64,
+        "program_reliability": 100.0,
+        "program_gate_mix": 0.0,
+        "program_blend": 0.75,
+        "scale": 2.0,
+        "source_relative_mse": 0.9196644353331197
+      },
+      {
+        "rank": 64,
+        "program_reliability": 100.0,
+        "program_gate_mix": 0.0,
+        "program_blend": 1.0,
+        "scale": 2.0,
+        "source_relative_mse": 0.9750553738893941
+      },
+      {
+        "rank": 64,
+        "program_reliability": 100.0,
+        "program_gate_mix": 0.5,
+        "program_blend": 0.25,
+        "scale": 1.8814185447727312,
+        "source_relative_mse": 0.863914290046419
+      },
+      {
+        "rank": 64,
+        "program_reliability": 100.0,
+        "program_gate_mix": 0.5,
+        "program_blend": 0.5,
+        "scale": 2.0,
+        "source_relative_mse": 0.8574595999698473
+      },
+      {
+        "rank": 64,
+        "program_reliability": 100.0,
+        "program_gate_mix": 0.5,
+        "program_blend": 0.75,
+        "scale": 2.0,
+        "source_relative_mse": 0.8694508064746849
+      },
+      {
+        "rank": 64,
+        "program_reliability": 100.0,
+        "program_gate_mix": 0.5,
+        "program_blend": 1.0,
+        "scale": 2.0,
+        "source_relative_mse": 0.9004285085556718
+      },
+      {
+        "rank": 64,
+        "program_reliability": 100.0,
+        "program_gate_mix": 1.0,
+        "program_blend": 0.25,
+        "scale": 1.707283394416902,
+        "source_relative_mse": 0.858159237425535
+      },
+      {
+        "rank": 64,
+        "program_reliability": 100.0,
+        "program_gate_mix": 1.0,
+        "program_blend": 0.5,
+        "scale": 1.5978451123779323,
+        "source_relative_mse": 0.8621879208247624
+      },
+      {
+        "rank": 64,
+        "program_reliability": 100.0,
+        "program_gate_mix": 1.0,
+        "program_blend": 0.75,
+        "scale": 1.3059667575150606,
+        "source_relative_mse": 0.8832235613499221
+      },
+      {
+        "rank": 64,
+        "program_reliability": 100.0,
+        "program_gate_mix": 1.0,
+        "program_blend": 1.0,
+        "scale": 1.00492102080418,
+        "source_relative_mse": 0.9069578503482296
+      }
+    ]
+  }
+}

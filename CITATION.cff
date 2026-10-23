@@ -1,7 +1,7 @@
 cff-version: 1.2.0
 message: "If ContextDose contributes to your work, please cite this software and the original data studies."
 title: "ContextDose: source-selected reliability models for cellular response transfer"
-version: 0.2.0
+version: 0.3.0
 date-released: 2026-10-23
 repository-code: "https://github.com/Qiu-Shizheng/PRADO-DT"
 license: MIT

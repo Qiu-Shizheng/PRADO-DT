@@ -40,11 +40,23 @@ def fit_from_arrays(effects,search='standard'):
     All source contexts must contain the same ordered conditions and genes.
     search='extended' uses a wider penalty range and source-fitted continuous
     scaling. The default preserves the original 65-configuration search.
+    search='programs' also selects a source-learned programme basis and the
+    mixture of gene-coordinate and programme-coordinate reliability.
     """
     e=np.asarray(effects,float)
     if e.ndim!=3 or e.shape[0]<3 or min(e.shape[1:])<1 or not np.isfinite(e).all():
         raise ValueError('Supply a finite context-by-condition-by-gene array with at least three source contexts.')
-    if search not in ['standard','extended']:raise ValueError('search must be standard or extended')
+    if search not in ['standard','extended','programs']:raise ValueError('search must be standard, extended or programs')
+    if search=='programs':
+        from .programs import fit,moments
+        selection,basis=fit(e)
+        mean,variance=moments(e);latent_mean,latent_variance=moments(e@basis)
+        return {'mean_effect':mean,'between_context_variance_of_mean':variance,
+                'program_basis':basis,'program_mean':latent_mean,'program_variance':latent_variance,
+                'selected_parameters':selection['gene_families']['gene'],
+                'program_parameters':selection['program_model'],
+                'source_validation_relative_mse':selection['program_model']['source_relative_mse'],
+                'source_selection':selection}
     configs=[{'reliability':t,'gene_gate_mix':g,'scale':s}
              for t,g,s in itertools.product([0.,.25,1.,4.],[0.,.25,.5,1.],[0.,.5,.75,1.,1.25])
              if not(t==0 and g!=0)]
@@ -64,7 +76,7 @@ def fit_from_arrays(effects,search='standard'):
 def main():
     p=argparse.ArgumentParser(description=__doc__);p.add_argument('--source-effects',required=True)
     p.add_argument('--output',required=True);p.add_argument('--input-scale',required=True)
-    p.add_argument('--search',choices=['standard','extended'],default='standard')
+    p.add_argument('--search',choices=['standard','extended','programs'],default='standard')
     a=p.parse_args();out=Path(a.output)
     if out.exists() and any(out.iterdir()):raise ValueError('Choose an empty output directory to preserve existing models.')
     with np.load(a.source_effects,allow_pickle=False) as z:
@@ -76,10 +88,11 @@ def main():
     keys=list(zip(np.char.lower(drugs).tolist(),doses.tolist(),times.tolist()))
     if len(set(keys))!=len(keys):raise ValueError('Drug, dose and time combinations must be unique.')
     fitted=fit_from_arrays(effects,search=a.search);out.mkdir(parents=True,exist_ok=True)
-    np.savez_compressed(out/'model.npz',mean_effect=fitted['mean_effect'],between_context_variance_of_mean=fitted['between_context_variance_of_mean'])
+    np.savez_compressed(out/'model.npz',**{k:v for k,v in fitted.items() if isinstance(v,np.ndarray)})
     metadata={'name':'ContextDose hierarchical response transfer','gene_ids':genes,
       'conditions':[{'drug':str(d),'dose_uM':float(c),'time_hours':float(t)} for d,c,t in zip(drugs,doses,times)],
       'source_context_count':len(effects),'input_scale':a.input_scale,'selected_parameters':fitted['selected_parameters'],'source_search':a.search}
+    if 'program_parameters' in fitted:metadata['program_parameters']=fitted['program_parameters']
     (out/'model.json').write_text(json.dumps(metadata,indent=2))
     (out/'source_validation.json').write_text(json.dumps({k:v for k,v in fitted.items() if not isinstance(v,np.ndarray)},indent=2))
     print('Saved source-selected model to '+str(out))

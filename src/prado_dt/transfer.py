@@ -17,13 +17,27 @@ def predict(control,gene_ids,compounds,doses_uM,times_hours,model_dir):
         key=(str(drug).casefold(),float(dose),float(time))
         if key not in lookup:raise ValueError('Unsupported drug, dose or time: '+str(key))
         indices.append(lookup[key])
-    with np.load(directory/'model.npz',allow_pickle=False) as a:p=a['mean_effect'][indices];v=a['between_context_variance_of_mean'][indices]
+    with np.load(directory/'model.npz',allow_pickle=False) as a:
+        p=a['mean_effect'][indices];v=a['between_context_variance_of_mean'][indices]
+        program={k:a[k] for k in ['program_basis','program_mean','program_variance']} if 'program_parameters' in meta else None
     c=meta['selected_parameters'];t=c['reliability'];mix=c['gene_gate_mix'];signal=p*p
     if t==0:effect=c['scale']*p
     else:
         compound=signal.mean(1)/(signal.mean(1)+t*v.mean(1)+1e-12)
         gene=signal/(signal+t*v+1e-12)
         effect=c['scale']*((1-mix)*compound[:,None]+mix*gene)*p
+    if program is not None:
+        pc=meta['program_parameters'];rank=pc['rank'];u=program['program_basis'][:,:rank]
+        pm=program['program_mean'][indices,:rank];pv=program['program_variance'][indices,:rank]
+        def unscaled(mean,variance,penalty,mixture):
+            if penalty==0:return mean
+            square=mean*mean
+            cg=square.mean(1)/(square.mean(1)+penalty*variance.mean(1)+1e-12)
+            gg=square/(square+penalty*variance+1e-12)
+            return ((1-mixture)*cg[:,None]+mixture*gg)*mean
+        gene_effect=unscaled(p,v,t,mix)
+        program_effect=unscaled(pm,pv,pc['program_reliability'],pc['program_gate_mix'])@u.T
+        effect=pc['scale']*((1-pc['program_blend'])*gene_effect+pc['program_blend']*program_effect)
     return control+effect,effect,np.asarray(expected)
 
 def main():

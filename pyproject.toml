@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "prado-dt"
-version = "0.2.1"
+version = "0.3.0"
 description = "ContextDose: source-selected reliability models for cellular response transfer"
 readme = "README.md"
 requires-python = ">=3.9"
@@ -13,10 +13,11 @@ license = {file = "LICENSE"}
 dependencies = ["numpy>=1.24"]
 
 [project.optional-dependencies]
+programs = ["scipy>=1.10"]
 core = ["numpy>=1.23"]
 data = ["anndata>=0.9", "h5py>=3.8", "numpy>=1.23"]
 torch = ["torch>=2.0"]
-all = ["numpy>=1.23", "anndata>=0.9", "h5py>=3.8", "torch>=2.0"]
+all = ["numpy>=1.23", "scipy>=1.10", "anndata>=0.9", "h5py>=3.8", "torch>=2.0"]
 dev = ["pytest>=7"]
 
 [project.scripts]
