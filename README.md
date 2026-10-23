@@ -36,6 +36,7 @@ The example uses a source control to demonstrate the file format. For your exper
 | Model | Response genes | Fitting and evaluation setting |
 |---|---:|---|
 | [OP3 response transfer](models/response_transfer/op3) | 5,317 | B, T and NK source cells; myeloid evaluation from shared donors |
+| [OP3 refined response transfer](models/response_transfer/op3_refined) | 5,317 | Wider source-only reliability search with analytic response scaling |
 | [Cellarity response transfer](models/response_transfer/primary) | 13,290 | Six cultured source lines; four primary-cell populations |
 | [Glioblastoma expression](models/expression) | 512 | A172 fitting, T98G selection and U87MG evaluation |
 
@@ -95,6 +96,10 @@ The fixed search selects the reliability penalty, compound–gene mixture and re
 ## Evaluation
 
 In the OP3 development task, the hierarchical gate has MSE **0.074658** and mean response Pearson correlation **0.224**, compared with **0.075912** and **0.193** for the separately selected compound-only gate. The comparison uses 127 drugs and the same 5,317 response genes. Cellarity effects vary by population. The [model guide](docs/response_transfer.md) reports the complete population comparison and scope.
+
+The optional refined OP3 model has MSE **0.074393** and response correlation **0.225**, compared with **0.075823** for a compound-only model selected using the same wider search. Use `--search extended` with `contextdose-fit` to apply this fitting procedure to your own source profiles. The original model and default search remain available for reproduction.
+
+The [matched benchmark evidence](docs/benchmark_evidence.md) includes complete scGPT and Nicheformer encoder adaptations, random-initialisation controls, joint donor/cell-type transfer and gene-set response analysis.
 
 Saved models replay the frozen evaluation predictions to numerical precision. Run the software tests with:
 

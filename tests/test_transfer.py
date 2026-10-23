@@ -2,7 +2,7 @@ import unittest
 from pathlib import Path
 import numpy as np
 from prado_dt.transfer import predict
-from prado_dt.transfer_fit import fit_from_arrays
+from prado_dt.transfer_fit import fit_from_arrays,effect_prediction
 
 ROOT=Path(__file__).resolve().parents[1]
 
@@ -42,5 +42,20 @@ class TransferTests(unittest.TestCase):
     def test_source_design_is_required(self):
         for e in [np.ones((2,3,4)),np.zeros((3,3,4)),np.full((3,3,4),np.nan)]:
             with self.assertRaises(ValueError):fit_from_arrays(e)
+
+    def test_extended_scale_minimizes_direct_source_risk(self):
+        e=np.random.default_rng(21).normal(size=(4,6,9))+.5
+        fitted=fit_from_arrays(e,search='extended');cfg=fitted['selected_parameters']
+        def risk(scale):
+            values=[]
+            for held in range(len(e)):
+                source=np.delete(e,held,0)
+                pr=effect_prediction(source.mean(0),source.var(0,ddof=1)/len(source),{**cfg,'scale':scale})
+                values.append(np.mean((pr-e[held])**2)/np.mean(e[held]**2))
+            return np.mean(values)
+        self.assertAlmostEqual(risk(cfg['scale']),fitted['source_validation_relative_mse'],places=12)
+        for scale in np.linspace(0,2,201):self.assertLessEqual(risk(cfg['scale']),risk(scale)+1e-12)
+        for bad in ['unknown',None]:
+            with self.assertRaises(ValueError):fit_from_arrays(e,search=bad)
 
 if __name__=='__main__':unittest.main()

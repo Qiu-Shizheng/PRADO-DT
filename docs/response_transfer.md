@@ -36,6 +36,20 @@ These are development evaluations with models fitted separately within each stud
 
 ## Model files
 
+### Extended source search
+
+The optional `op3_refined` checkpoint uses the same prediction equation with a broader source-only search. The reliability penalty spans 0.001 to 1,000, with a zero-penalty candidate. Nine compound/gene mixtures are tested. Each candidate's response scale is fitted analytically on source validation folds, within [0, 2]. The resulting 442 candidates require no target response profiles.
+
+```bash
+contextdose-fit \
+  --source-effects source_effects.npz \
+  --input-scale log1p_cpm \
+  --search extended \
+  --output fitted_extended_model
+```
+
+Use `models/response_transfer/op3_refined` as the model directory for the supplied refined checkpoint. Its input contract matches the original OP3 checkpoint. The Python API accepts `fit_from_arrays(effects, search="extended")`. The default `standard` search reproduces the original model.
+
 - `model.npz`: shared effects and between-source variance of their mean.
 - `model.json`: gene identities, physical treatment conditions and selected parameters.
 - `example_control.csv`: a source control for checking the input format.

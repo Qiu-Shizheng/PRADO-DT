@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "prado-dt"
-version = "0.2.0"
+version = "0.2.1"
 description = "ContextDose: source-selected reliability models for cellular response transfer"
 readme = "README.md"
 requires-python = ">=3.9"

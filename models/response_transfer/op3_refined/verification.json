@@ -1,0 +1,16 @@
+{
+  "public_fit_reproduces_source_selection": true,
+  "extended_candidate_count": 442,
+  "source_validation_relative_mse": 0.8784131143672741,
+  "selected_parameters": {
+    "reliability": 10.0,
+    "gene_gate_mix": 0.25,
+    "scale": 1.5215308674910466
+  },
+  "replay_max_absolute_error": {
+    "pooled_donors": 1.7763568394002505e-15,
+    "Donor_1": 1.7763568394002505e-15,
+    "Donor_2": 1.7763568394002505e-15,
+    "Donor_3": 1.7763568394002505e-15
+  }
+}

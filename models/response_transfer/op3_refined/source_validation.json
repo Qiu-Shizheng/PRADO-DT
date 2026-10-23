@@ -1,0 +1,3546 @@
+{
+  "selected_parameters": {
+    "reliability": 10.0,
+    "gene_gate_mix": 0.25,
+    "scale": 1.5215308674910466
+  },
+  "source_validation_relative_mse": 0.8784131143672741,
+  "candidate_scores": [
+    {
+      "parameters": {
+        "reliability": 0.0,
+        "gene_gate_mix": 0.0,
+        "scale": 0.2560929138777298
+      },
+      "relative_mse": 0.9178275363066768
+    },
+    {
+      "parameters": {
+        "reliability": 0.001,
+        "gene_gate_mix": 0.0,
+        "scale": 0.25631686420668137
+      },
+      "relative_mse": 0.9178051916057932
+    },
+    {
+      "parameters": {
+        "reliability": 0.001,
+        "gene_gate_mix": 0.125,
+        "scale": 0.25632554342288155
+      },
+      "relative_mse": 0.9177992309410582
+    },
+    {
+      "parameters": {
+        "reliability": 0.001,
+        "gene_gate_mix": 0.25,
+        "scale": 0.256334150343417
+      },
+      "relative_mse": 0.917793293246463
+    },
+    {
+      "parameters": {
+        "reliability": 0.001,
+        "gene_gate_mix": 0.375,
+        "scale": 0.2563426849621151
+      },
+      "relative_mse": 0.9177873785266754
+    },
+    {
+      "parameters": {
+        "reliability": 0.001,
+        "gene_gate_mix": 0.5,
+        "scale": 0.2563511472729251
+      },
+      "relative_mse": 0.917781486786325
+    },
+    {
+      "parameters": {
+        "reliability": 0.001,
+        "gene_gate_mix": 0.625,
+        "scale": 0.25635953726991856
+      },
+      "relative_mse": 0.9177756180300024
+    },
+    {
+      "parameters": {
+        "reliability": 0.001,
+        "gene_gate_mix": 0.75,
+        "scale": 0.2563678549472897
+      },
+      "relative_mse": 0.9177697722622589
+    },
+    {
+      "parameters": {
+        "reliability": 0.001,
+        "gene_gate_mix": 0.875,
+        "scale": 0.25637610029935487
+      },
+      "relative_mse": 0.9177639494876072
+    },
+    {
+      "parameters": {
+        "reliability": 0.001,
+        "gene_gate_mix": 1.0,
+        "scale": 0.25638427332055297
+      },
+      "relative_mse": 0.9177581497105207
+    },
+    {
+      "parameters": {
+        "reliability": 0.001333521432163324,
+        "gene_gate_mix": 0.0,
+        "scale": 0.2563915494207988
+      },
+      "relative_mse": 0.917797746262651
+    },
+    {
+      "parameters": {
+        "reliability": 0.001333521432163324,
+        "gene_gate_mix": 0.125,
+        "scale": 0.2564029744926701
+      },
+      "relative_mse": 0.9177898162149416
+    },
+    {
+      "parameters": {
+        "reliability": 0.001333521432163324,
+        "gene_gate_mix": 0.25,
+        "scale": 0.2564142889966654
+      },
+      "relative_mse": 0.9177819212400505
+    },
+    {
+      "parameters": {
+        "reliability": 0.001333521432163324,
+        "gene_gate_mix": 0.375,
+        "scale": 0.2564254929207495
+      },
+      "relative_mse": 0.9177740613473572
+    },
+    {
+      "parameters": {
+        "reliability": 0.001333521432163324,
+        "gene_gate_mix": 0.5,
+        "scale": 0.2564365862531735
+      },
+      "relative_mse": 0.91776623654615
+    },
+    {
+      "parameters": {
+        "reliability": 0.001333521432163324,
+        "gene_gate_mix": 0.625,
+        "scale": 0.25644756898247395
+      },
+      "relative_mse": 0.9177584468456266
+    },
+    {
+      "parameters": {
+        "reliability": 0.001333521432163324,
+        "gene_gate_mix": 0.75,
+        "scale": 0.25645844109747423
+      },
+      "relative_mse": 0.9177506922548934
+    },
+    {
+      "parameters": {
+        "reliability": 0.001333521432163324,
+        "gene_gate_mix": 0.875,
+        "scale": 0.2564692025872835
+      },
+      "relative_mse": 0.9177429727829658
+    },
+    {
+      "parameters": {
+        "reliability": 0.001333521432163324,
+        "gene_gate_mix": 1.0,
+        "scale": 0.2564798534412971
+      },
+      "relative_mse": 0.9177352884387684
+    },
+    {
+      "parameters": {
+        "reliability": 0.0017782794100389228,
+        "gene_gate_mix": 0.0,
+        "scale": 0.2564911382966257
+      },
+      "relative_mse": 0.9177878232515663
+    },
+    {
+      "parameters": {
+        "reliability": 0.0017782794100389228,
+        "gene_gate_mix": 0.125,
+        "scale": 0.2565061374385364
+      },
+      "relative_mse": 0.9177772830168197
+    },
+    {
+      "parameters": {
+        "reliability": 0.0017782794100389228,
+        "gene_gate_mix": 0.25,
+        "scale": 0.25652096761602516
+      },
+      "relative_mse": 0.9177667962767537
+    },
+    {
+      "parameters": {
+        "reliability": 0.0017782794100389228,
+        "gene_gate_mix": 0.375,
+        "scale": 0.2565356288058797
+      },
+      "relative_mse": 0.9177563630501384
+    },
+    {
+      "parameters": {
+        "reliability": 0.0017782794100389228,
+        "gene_gate_mix": 0.5,
+        "scale": 0.25655012098555563
+      },
+      "relative_mse": 0.9177459833555319
+    },
+    {
+      "parameters": {
+        "reliability": 0.0017782794100389228,
+        "gene_gate_mix": 0.625,
+        "scale": 0.256564444133176
+      },
+      "relative_mse": 0.9177356572112803
+    },
+    {
+      "parameters": {
+        "reliability": 0.0017782794100389228,
+        "gene_gate_mix": 0.75,
+        "scale": 0.2565785982275319
+      },
+      "relative_mse": 0.9177253846355176
+    },
+    {
+      "parameters": {
+        "reliability": 0.0017782794100389228,
+        "gene_gate_mix": 0.875,
+        "scale": 0.2565925832480823
+      },
+      "relative_mse": 0.9177151656461652
+    },
+    {
+      "parameters": {
+        "reliability": 0.0017782794100389228,
+        "gene_gate_mix": 1.0,
+        "scale": 0.25660639917495415
+      },
+      "relative_mse": 0.9177050002609324
+    },
+    {
+      "parameters": {
+        "reliability": 0.0023713737056616554,
+        "gene_gate_mix": 0.0,
+        "scale": 0.2566239324985095
+      },
+      "relative_mse": 0.9177746004985823
+    },
+    {
+      "parameters": {
+        "reliability": 0.0023713737056616554,
+        "gene_gate_mix": 0.125,
+        "scale": 0.2566435597055147
+      },
+      "relative_mse": 0.9177606072144961
+    },
+    {
+      "parameters": {
+        "reliability": 0.0023713737056616554,
+        "gene_gate_mix": 0.25,
+        "scale": 0.25666292894217607
+      },
+      "relative_mse": 0.9177466954242793
+    },
+    {
+      "parameters": {
+        "reliability": 0.0023713737056616554,
+        "gene_gate_mix": 0.375,
+        "scale": 0.2566820401643369
+      },
+      "relative_mse": 0.917732865165317
+    },
+    {
+      "parameters": {
+        "reliability": 0.0023713737056616554,
+        "gene_gate_mix": 0.5,
+        "scale": 0.2567008933293961
+      },
+      "relative_mse": 0.9177191164745012
+    },
+    {
+      "parameters": {
+        "reliability": 0.0023713737056616554,
+        "gene_gate_mix": 0.625,
+        "scale": 0.25671948839630765
+      },
+      "relative_mse": 0.9177054493882306
+    },
+    {
+      "parameters": {
+        "reliability": 0.0023713737056616554,
+        "gene_gate_mix": 0.75,
+        "scale": 0.2567378253255813
+      },
+      "relative_mse": 0.9176918639424096
+    },
+    {
+      "parameters": {
+        "reliability": 0.0023713737056616554,
+        "gene_gate_mix": 0.875,
+        "scale": 0.2567559040792829
+      },
+      "relative_mse": 0.9176783601724492
+    },
+    {
+      "parameters": {
+        "reliability": 0.0023713737056616554,
+        "gene_gate_mix": 1.0,
+        "scale": 0.25677372462103404
+      },
+      "relative_mse": 0.9176649381132653
+    },
+    {
+      "parameters": {
+        "reliability": 0.0031622776601683794,
+        "gene_gate_mix": 0.0,
+        "scale": 0.25680099918324106
+      },
+      "relative_mse": 0.9177569850693331
+    },
+    {
+      "parameters": {
+        "reliability": 0.0031622776601683794,
+        "gene_gate_mix": 0.125,
+        "scale": 0.2568265816295567
+      },
+      "relative_mse": 0.9177384338690336
+    },
+    {
+      "parameters": {
+        "reliability": 0.0031622776601683794,
+        "gene_gate_mix": 0.25,
+        "scale": 0.25685177060319814
+      },
+      "relative_mse": 0.9177200066503682
+    },
+    {
+      "parameters": {
+        "reliability": 0.0031622776601683794,
+        "gene_gate_mix": 0.375,
+        "scale": 0.25687656602166126
+      },
+      "relative_mse": 0.9177017034873773
+    },
+    {
+      "parameters": {
+        "reliability": 0.0031622776601683794,
+        "gene_gate_mix": 0.5,
+        "scale": 0.25690096780605587
+      },
+      "relative_mse": 0.9176835244529571
+    },
+    {
+      "parameters": {
+        "reliability": 0.0031622776601683794,
+        "gene_gate_mix": 0.625,
+        "scale": 0.2569249758811066
+      },
+      "relative_mse": 0.9176654696188576
+    },
+    {
+      "parameters": {
+        "reliability": 0.0031622776601683794,
+        "gene_gate_mix": 0.75,
+        "scale": 0.25694859017515365
+      },
+      "relative_mse": 0.9176475390556827
+    },
+    {
+      "parameters": {
+        "reliability": 0.0031622776601683794,
+        "gene_gate_mix": 0.875,
+        "scale": 0.2569718106201532
+      },
+      "relative_mse": 0.9176297328328884
+    },
+    {
+      "parameters": {
+        "reliability": 0.0031622776601683794,
+        "gene_gate_mix": 1.0,
+        "scale": 0.25699463715167764
+      },
+      "relative_mse": 0.9176120510187824
+    },
+    {
+      "parameters": {
+        "reliability": 0.004216965034285822,
+        "gene_gate_mix": 0.0,
+        "scale": 0.25703709080350207
+      },
+      "relative_mse": 0.9177335253962093
+    },
+    {
+      "parameters": {
+        "reliability": 0.004216965034285822,
+        "gene_gate_mix": 0.125,
+        "scale": 0.25707027753777684
+      },
+      "relative_mse": 0.9177089736461255
+    },
+    {
+      "parameters": {
+        "reliability": 0.004216965034285822,
+        "gene_gate_mix": 0.25,
+        "scale": 0.2571028647670879
+      },
+      "relative_mse": 0.9176846102400257
+    },
+    {
+      "parameters": {
+        "reliability": 0.004216965034285822,
+        "gene_gate_mix": 0.375,
+        "scale": 0.2571348523409495
+      },
+      "relative_mse": 0.9176604353235562
+    },
+    {
+      "parameters": {
+        "reliability": 0.004216965034285822,
+        "gene_gate_mix": 0.5,
+        "scale": 0.2571662401172533
+      },
+      "relative_mse": 0.9176364490397131
+    },
+    {
+      "parameters": {
+        "reliability": 0.004216965034285822,
+        "gene_gate_mix": 0.625,
+        "scale": 0.25719702796227023
+      },
+      "relative_mse": 0.9176126515288385
+    },
+    {
+      "parameters": {
+        "reliability": 0.004216965034285822,
+        "gene_gate_mix": 0.75,
+        "scale": 0.2572272157506515
+      },
+      "relative_mse": 0.9175890429286194
+    },
+    {
+      "parameters": {
+        "reliability": 0.004216965034285822,
+        "gene_gate_mix": 0.875,
+        "scale": 0.25725680336542933
+      },
+      "relative_mse": 0.9175656233740838
+    },
+    {
+      "parameters": {
+        "reliability": 0.004216965034285822,
+        "gene_gate_mix": 1.0,
+        "scale": 0.2572857906980177
+      },
+      "relative_mse": 0.9175423929975991
+    },
+    {
+      "parameters": {
+        "reliability": 0.005623413251903491,
+        "gene_gate_mix": 0.0,
+        "scale": 0.2573518697210428
+      },
+      "relative_mse": 0.9177022962029757
+    },
+    {
+      "parameters": {
+        "reliability": 0.005623413251903491,
+        "gene_gate_mix": 0.125,
+        "scale": 0.25739467519639464
+      },
+      "relative_mse": 0.9176698686604468
+    },
+    {
+      "parameters": {
+        "reliability": 0.005623413251903491,
+        "gene_gate_mix": 0.25,
+        "scale": 0.2574365683057153
+      },
+      "relative_mse": 0.9176377267806068
+    },
+    {
+      "parameters": {
+        "reliability": 0.005623413251903491,
+        "gene_gate_mix": 0.375,
+        "scale": 0.2574775487836315
+      },
+      "relative_mse": 0.9176058708476439
+    },
+    {
+      "parameters": {
+        "reliability": 0.005623413251903491,
+        "gene_gate_mix": 0.5,
+        "scale": 0.25751761638413223
+      },
+      "relative_mse": 0.9175743011396256
+    },
+    {
+      "parameters": {
+        "reliability": 0.005623413251903491,
+        "gene_gate_mix": 0.625,
+        "scale": 0.2575567708805715
+      },
+      "relative_mse": 0.9175430179284915
+    },
+    {
+      "parameters": {
+        "reliability": 0.005623413251903491,
+        "gene_gate_mix": 0.75,
+        "scale": 0.2575950120656692
+      },
+      "relative_mse": 0.9175120214800456
+    },
+    {
+      "parameters": {
+        "reliability": 0.005623413251903491,
+        "gene_gate_mix": 0.875,
+        "scale": 0.2576323397515107
+      },
+      "relative_mse": 0.9174813120539499
+    },
+    {
+      "parameters": {
+        "reliability": 0.005623413251903491,
+        "gene_gate_mix": 1.0,
+        "scale": 0.2576687537695463
+      },
+      "relative_mse": 0.9174508899037169
+    },
+    {
+      "parameters": {
+        "reliability": 0.007498942093324558,
+        "gene_gate_mix": 0.0,
+        "scale": 0.2577715377861248
+      },
+      "relative_mse": 0.917660748521864
+    },
+    {
+      "parameters": {
+        "reliability": 0.007498942093324558,
+        "gene_gate_mix": 0.125,
+        "scale": 0.25782636863270403
+      },
+      "relative_mse": 0.9176180198988938
+    },
+    {
+      "parameters": {
+        "reliability": 0.007498942093324558,
+        "gene_gate_mix": 0.25,
+        "scale": 0.25787981267890353
+      },
+      "relative_mse": 0.9175757238046126
+    },
+    {
+      "parameters": {
+        "reliability": 0.007498942093324558,
+        "gene_gate_mix": 0.375,
+        "scale": 0.2579318694797511
+      },
+      "relative_mse": 0.9175338607881537
+    },
+    {
+      "parameters": {
+        "reliability": 0.007498942093324558,
+        "gene_gate_mix": 0.5,
+        "scale": 0.25798253863487536
+      },
+      "relative_mse": 0.9174924313845609
+    },
+    {
+      "parameters": {
+        "reliability": 0.007498942093324558,
+        "gene_gate_mix": 0.625,
+        "scale": 0.2580318197885047
+      },
+      "relative_mse": 0.9174514361147661
+    },
+    {
+      "parameters": {
+        "reliability": 0.007498942093324558,
+        "gene_gate_mix": 0.75,
+        "scale": 0.2580797126294615
+      },
+      "relative_mse": 0.9174108754855697
+    },
+    {
+      "parameters": {
+        "reliability": 0.007498942093324558,
+        "gene_gate_mix": 0.875,
+        "scale": 0.258126216891153
+      },
+      "relative_mse": 0.9173707499896218
+    },
+    {
+      "parameters": {
+        "reliability": 0.007498942093324558,
+        "gene_gate_mix": 1.0,
+        "scale": 0.2581713323515591
+      },
+      "relative_mse": 0.917331060105404
+    },
+    {
+      "parameters": {
+        "reliability": 0.01,
+        "gene_gate_mix": 0.0,
+        "scale": 0.2583310033071148
+      },
+      "relative_mse": 0.9176055157848632
+    },
+    {
+      "parameters": {
+        "reliability": 0.01,
+        "gene_gate_mix": 0.125,
+        "scale": 0.25840064881340824
+      },
+      "relative_mse": 0.9175493671329668
+    },
+    {
+      "parameters": {
+        "reliability": 0.01,
+        "gene_gate_mix": 0.25,
+        "scale": 0.25846818903847063
+      },
+      "relative_mse": 0.917493872219116
+    },
+    {
+      "parameters": {
+        "reliability": 0.01,
+        "gene_gate_mix": 0.375,
+        "scale": 0.2585336232958275
+      },
+      "relative_mse": 0.9174390320919802
+    },
+    {
+      "parameters": {
+        "reliability": 0.01,
+        "gene_gate_mix": 0.5,
+        "scale": 0.25859695100134783
+      },
+      "relative_mse": 0.9173848477678922
+    },
+    {
+      "parameters": {
+        "reliability": 0.01,
+        "gene_gate_mix": 0.625,
+        "scale": 0.25865817167321004
+      },
+      "relative_mse": 0.9173313202307938
+    },
+    {
+      "parameters": {
+        "reliability": 0.01,
+        "gene_gate_mix": 0.75,
+        "scale": 0.25871728493185603
+      },
+      "relative_mse": 0.9172784504321816
+    },
+    {
+      "parameters": {
+        "reliability": 0.01,
+        "gene_gate_mix": 0.875,
+        "scale": 0.25877429049993234
+      },
+      "relative_mse": 0.9172262392910605
+    },
+    {
+      "parameters": {
+        "reliability": 0.01,
+        "gene_gate_mix": 1.0,
+        "scale": 0.2588291882022199
+      },
+      "relative_mse": 0.9171746876938975
+    },
+    {
+      "parameters": {
+        "reliability": 0.01333521432163324,
+        "gene_gate_mix": 0.0,
+        "scale": 0.25907676002339
+      },
+      "relative_mse": 0.9175321659002496
+    },
+    {
+      "parameters": {
+        "reliability": 0.01333521432163324,
+        "gene_gate_mix": 0.125,
+        "scale": 0.2591643148492021
+      },
+      "relative_mse": 0.9174586113772968
+    },
+    {
+      "parameters": {
+        "reliability": 0.01333521432163324,
+        "gene_gate_mix": 0.25,
+        "scale": 0.25924867769423826
+      },
+      "relative_mse": 0.9173860431650588
+    },
+    {
+      "parameters": {
+        "reliability": 0.01333521432163324,
+        "gene_gate_mix": 0.375,
+        "scale": 0.2593298476611701
+      },
+      "relative_mse": 0.9173144632376561
+    },
+    {
+      "parameters": {
+        "reliability": 0.01333521432163324,
+        "gene_gate_mix": 0.5,
+        "scale": 0.25940782408647306
+      },
+      "relative_mse": 0.9172438734952537
+    },
+    {
+      "parameters": {
+        "reliability": 0.01333521432163324,
+        "gene_gate_mix": 0.625,
+        "scale": 0.259482606540226
+      },
+      "relative_mse": 0.9171742757639194
+    },
+    {
+      "parameters": {
+        "reliability": 0.01333521432163324,
+        "gene_gate_mix": 0.75,
+        "scale": 0.25955419482586994
+      },
+      "relative_mse": 0.9171056717954944
+    },
+    {
+      "parameters": {
+        "reliability": 0.01333521432163324,
+        "gene_gate_mix": 0.875,
+        "scale": 0.25962258897992346
+      },
+      "relative_mse": 0.9170380632674797
+    },
+    {
+      "parameters": {
+        "reliability": 0.01333521432163324,
+        "gene_gate_mix": 1.0,
+        "scale": 0.25968778927165703
+      },
+      "relative_mse": 0.9169714517829335
+    },
+    {
+      "parameters": {
+        "reliability": 0.01778279410038923,
+        "gene_gate_mix": 0.0,
+        "scale": 0.2600707075208959
+      },
+      "relative_mse": 0.9174348891660687
+    },
+    {
+      "parameters": {
+        "reliability": 0.01778279410038923,
+        "gene_gate_mix": 0.125,
+        "scale": 0.26017937755771686
+      },
+      "relative_mse": 0.9173388701246198
+    },
+    {
+      "parameters": {
+        "reliability": 0.01778279410038923,
+        "gene_gate_mix": 0.25,
+        "scale": 0.26028321374011965
+      },
+      "relative_mse": 0.9172443365914478
+    },
+    {
+      "parameters": {
+        "reliability": 0.01778279410038923,
+        "gene_gate_mix": 0.375,
+        "scale": 0.2603822153695913
+      },
+      "relative_mse": 0.9171512922176989
+    },
+    {
+      "parameters": {
+        "reliability": 0.01778279410038923,
+        "gene_gate_mix": 0.5,
+        "scale": 0.2604763822790023
+      },
+      "relative_mse": 0.9170597404859773
+    },
+    {
+      "parameters": {
+        "reliability": 0.01778279410038923,
+        "gene_gate_mix": 0.625,
+        "scale": 0.2605657148316729
+      },
+      "relative_mse": 0.9169696847100164
+    },
+    {
+      "parameters": {
+        "reliability": 0.01778279410038923,
+        "gene_gate_mix": 0.75,
+        "scale": 0.2606502139202966
+      },
+      "relative_mse": 0.916881128034393
+    },
+    {
+      "parameters": {
+        "reliability": 0.01778279410038923,
+        "gene_gate_mix": 0.875,
+        "scale": 0.2607298809657209
+      },
+      "relative_mse": 0.9167940734342918
+    },
+    {
+      "parameters": {
+        "reliability": 0.01778279410038923,
+        "gene_gate_mix": 1.0,
+        "scale": 0.2608047179155871
+      },
+      "relative_mse": 0.916708523715315
+    },
+    {
+      "parameters": {
+        "reliability": 0.023713737056616554,
+        "gene_gate_mix": 0.0,
+        "scale": 0.2613952132277071
+      },
+      "relative_mse": 0.917306114046671
+    },
+    {
+      "parameters": {
+        "reliability": 0.023713737056616554,
+        "gene_gate_mix": 0.125,
+        "scale": 0.2615279298843966
+      },
+      "relative_mse": 0.9171812579611749
+    },
+    {
+      "parameters": {
+        "reliability": 0.023713737056616554,
+        "gene_gate_mix": 0.25,
+        "scale": 0.26165333396090285
+      },
+      "relative_mse": 0.9170586357790427
+    },
+    {
+      "parameters": {
+        "reliability": 0.023713737056616554,
+        "gene_gate_mix": 0.375,
+        "scale": 0.26177142655162955
+      },
+      "relative_mse": 0.9169382541044288
+    },
+    {
+      "parameters": {
+        "reliability": 0.023713737056616554,
+        "gene_gate_mix": 0.5,
+        "scale": 0.261882209951343
+      },
+      "relative_mse": 0.916820119158838
+    },
+    {
+      "parameters": {
+        "reliability": 0.023713737056616554,
+        "gene_gate_mix": 0.625,
+        "scale": 0.2619856876512596
+      },
+      "relative_mse": 0.9167042367804665
+    },
+    {
+      "parameters": {
+        "reliability": 0.023713737056616554,
+        "gene_gate_mix": 0.75,
+        "scale": 0.2620818643346559
+      },
+      "relative_mse": 0.9165906124237044
+    },
+    {
+      "parameters": {
+        "reliability": 0.023713737056616554,
+        "gene_gate_mix": 0.875,
+        "scale": 0.26217074587200306
+      },
+      "relative_mse": 0.9164792511587962
+    },
+    {
+      "parameters": {
+        "reliability": 0.023713737056616554,
+        "gene_gate_mix": 1.0,
+        "scale": 0.26225233931563424
+      },
+      "relative_mse": 0.9163701576716612
+    },
+    {
+      "parameters": {
+        "reliability": 0.03162277660168379,
+        "gene_gate_mix": 0.0,
+        "scale": 0.26315980642124054
+      },
+      "relative_mse": 0.9171360493404476
+    },
+    {
+      "parameters": {
+        "reliability": 0.03162277660168379,
+        "gene_gate_mix": 0.125,
+        "scale": 0.2633185376035629
+      },
+      "relative_mse": 0.9169743916634425
+    },
+    {
+      "parameters": {
+        "reliability": 0.03162277660168379,
+        "gene_gate_mix": 0.25,
+        "scale": 0.26346621562886713
+      },
+      "relative_mse": 0.9168160891487851
+    },
+    {
+      "parameters": {
+        "reliability": 0.03162277660168379,
+        "gene_gate_mix": 0.375,
+        "scale": 0.26360284827147223
+      },
+      "relative_mse": 0.9166611534018967
+    },
+    {
+      "parameters": {
+        "reliability": 0.03162277660168379,
+        "gene_gate_mix": 0.5,
+        "scale": 0.26372844599709017
+      },
+      "relative_mse": 0.9165095951629769
+    },
+    {
+      "parameters": {
+        "reliability": 0.03162277660168379,
+        "gene_gate_mix": 0.625,
+        "scale": 0.2638430219474773
+      },
+      "relative_mse": 0.9163614243061609
+    },
+    {
+      "parameters": {
+        "reliability": 0.03162277660168379,
+        "gene_gate_mix": 0.75,
+        "scale": 0.2639465919235206
+      },
+      "relative_mse": 0.9162166498392141
+    },
+    {
+      "parameters": {
+        "reliability": 0.03162277660168379,
+        "gene_gate_mix": 0.875,
+        "scale": 0.26403917436678315
+      },
+      "relative_mse": 0.9160752799037591
+    },
+    {
+      "parameters": {
+        "reliability": 0.03162277660168379,
+        "gene_gate_mix": 1.0,
+        "scale": 0.26412079033953423
+      },
+      "relative_mse": 0.9159373217760319
+    },
+    {
+      "parameters": {
+        "reliability": 0.042169650342858224,
+        "gene_gate_mix": 0.0,
+        "scale": 0.2655100086967281
+      },
+      "relative_mse": 0.9169121654499308
+    },
+    {
+      "parameters": {
+        "reliability": 0.042169650342858224,
+        "gene_gate_mix": 0.125,
+        "scale": 0.2656946016449691
+      },
+      "relative_mse": 0.9167038324225903
+    },
+    {
+      "parameters": {
+        "reliability": 0.042169650342858224,
+        "gene_gate_mix": 0.25,
+        "scale": 0.26586249638360815
+      },
+      "relative_mse": 0.9165005345890531
+    },
+    {
+      "parameters": {
+        "reliability": 0.042169650342858224,
+        "gene_gate_mix": 0.375,
+        "scale": 0.2660137208130092
+      },
+      "relative_mse": 0.9163022915590835
+    },
+    {
+      "parameters": {
+        "reliability": 0.042169650342858224,
+        "gene_gate_mix": 0.5,
+        "scale": 0.2661483088112773
+      },
+      "relative_mse": 0.916109120994997
+    },
+    {
+      "parameters": {
+        "reliability": 0.042169650342858224,
+        "gene_gate_mix": 0.625,
+        "scale": 0.26626630017682085
+      },
+      "relative_mse": 0.9159210386128601
+    },
+    {
+      "parameters": {
+        "reliability": 0.042169650342858224,
+        "gene_gate_mix": 0.75,
+        "scale": 0.26636774056593615
+      },
+      "relative_mse": 0.9157380581854594
+    },
+    {
+      "parameters": {
+        "reliability": 0.042169650342858224,
+        "gene_gate_mix": 0.875,
+        "scale": 0.26645268142553896
+      },
+      "relative_mse": 0.9155601915470212
+    },
+    {
+      "parameters": {
+        "reliability": 0.042169650342858224,
+        "gene_gate_mix": 1.0,
+        "scale": 0.2665211799211745
+      },
+      "relative_mse": 0.9153874485996586
+    },
+    {
+      "parameters": {
+        "reliability": 0.056234132519034905,
+        "gene_gate_mix": 0.0,
+        "scale": 0.2686389475404162
+      },
+      "relative_mse": 0.9166186542569489
+    },
+    {
+      "parameters": {
+        "reliability": 0.056234132519034905,
+        "gene_gate_mix": 0.125,
+        "scale": 0.26884526248519985
+      },
+      "relative_mse": 0.9163515026020864
+    },
+    {
+      "parameters": {
+        "reliability": 0.056234132519034905,
+        "gene_gate_mix": 0.25,
+        "scale": 0.2690263552884875
+      },
+      "relative_mse": 0.9160919058730818
+    },
+    {
+      "parameters": {
+        "reliability": 0.056234132519034905,
+        "gene_gate_mix": 0.375,
+        "scale": 0.269182308693444
+      },
+      "relative_mse": 0.9158398953667841
+    },
+    {
+      "parameters": {
+        "reliability": 0.056234132519034905,
+        "gene_gate_mix": 0.5,
+        "scale": 0.2693132185556259
+      },
+      "relative_mse": 0.9155954980204822
+    },
+    {
+      "parameters": {
+        "reliability": 0.056234132519034905,
+        "gene_gate_mix": 0.625,
+        "scale": 0.2694191936360267
+      },
+      "relative_mse": 0.9153587364273887
+    },
+    {
+      "parameters": {
+        "reliability": 0.056234132519034905,
+        "gene_gate_mix": 0.75,
+        "scale": 0.2695003553789288
+      },
+      "relative_mse": 0.9151296288578479
+    },
+    {
+      "parameters": {
+        "reliability": 0.056234132519034905,
+        "gene_gate_mix": 0.875,
+        "scale": 0.2695568376751907
+      },
+      "relative_mse": 0.9149081892861478
+    },
+    {
+      "parameters": {
+        "reliability": 0.056234132519034905,
+        "gene_gate_mix": 1.0,
+        "scale": 0.2695887866116187
+      },
+      "relative_mse": 0.9146944274228088
+    },
+    {
+      "parameters": {
+        "reliability": 0.07498942093324558,
+        "gene_gate_mix": 0.0,
+        "scale": 0.27280257497639343
+      },
+      "relative_mse": 0.9162359528402407
+    },
+    {
+      "parameters": {
+        "reliability": 0.07498942093324558,
+        "gene_gate_mix": 0.125,
+        "scale": 0.273019557944028
+      },
+      "relative_mse": 0.9158951557171451
+    },
+    {
+      "parameters": {
+        "reliability": 0.07498942093324558,
+        "gene_gate_mix": 0.25,
+        "scale": 0.2731984336705188
+      },
+      "relative_mse": 0.9155657001625511
+    },
+    {
+      "parameters": {
+        "reliability": 0.07498942093324558,
+        "gene_gate_mix": 0.375,
+        "scale": 0.27333942560917607
+      },
+      "relative_mse": 0.915247631696407
+    },
+    {
+      "parameters": {
+        "reliability": 0.07498942093324558,
+        "gene_gate_mix": 0.5,
+        "scale": 0.273442785486549
+      },
+      "relative_mse": 0.9149409861462032
+    },
+    {
+      "parameters": {
+        "reliability": 0.07498942093324558,
+        "gene_gate_mix": 0.625,
+        "scale": 0.27350879258120964
+      },
+      "relative_mse": 0.9146457897300797
+    },
+    {
+      "parameters": {
+        "reliability": 0.07498942093324558,
+        "gene_gate_mix": 0.75,
+        "scale": 0.2735377529591368
+      },
+      "relative_mse": 0.9143620591578668
+    },
+    {
+      "parameters": {
+        "reliability": 0.07498942093324558,
+        "gene_gate_mix": 0.875,
+        "scale": 0.27352999866870337
+      },
+      "relative_mse": 0.9140898017494204
+    },
+    {
+      "parameters": {
+        "reliability": 0.07498942093324558,
+        "gene_gate_mix": 1.0,
+        "scale": 0.27348588689835135
+      },
+      "relative_mse": 0.9138290155695643
+    },
+    {
+      "parameters": {
+        "reliability": 0.1,
+        "gene_gate_mix": 0.0,
+        "scale": 0.2783395282574276
+      },
+      "relative_mse": 0.9157404871321937
+    },
+    {
+      "parameters": {
+        "reliability": 0.1,
+        "gene_gate_mix": 0.125,
+        "scale": 0.2785447065334356
+      },
+      "relative_mse": 0.9153080413374582
+    },
+    {
+      "parameters": {
+        "reliability": 0.1,
+        "gene_gate_mix": 0.25,
+        "scale": 0.27869226858812934
+      },
+      "relative_mse": 0.9148926448667745
+    },
+    {
+      "parameters": {
+        "reliability": 0.1,
+        "gene_gate_mix": 0.375,
+        "scale": 0.278782784344948
+      },
+      "relative_mse": 0.9144943527262045
+    },
+    {
+      "parameters": {
+        "reliability": 0.1,
+        "gene_gate_mix": 0.5,
+        "scale": 0.2788168832047532
+      },
+      "relative_mse": 0.9141131985694515
+    },
+    {
+      "parameters": {
+        "reliability": 0.1,
+        "gene_gate_mix": 0.625,
+        "scale": 0.27879525161160634
+      },
+      "relative_mse": 0.9137491950555489
+    },
+    {
+      "parameters": {
+        "reliability": 0.1,
+        "gene_gate_mix": 0.75,
+        "scale": 0.27871863050845613
+      },
+      "relative_mse": 0.9134023342601731
+    },
+    {
+      "parameters": {
+        "reliability": 0.1,
+        "gene_gate_mix": 0.875,
+        "scale": 0.2785878126964474
+      },
+      "relative_mse": 0.9130725881373251
+    },
+    {
+      "parameters": {
+        "reliability": 0.1,
+        "gene_gate_mix": 1.0,
+        "scale": 0.27840364011163427
+      },
+      "relative_mse": 0.9127599090279598
+    },
+    {
+      "parameters": {
+        "reliability": 0.1333521432163324,
+        "gene_gate_mix": 0.0,
+        "scale": 0.2856969357403472
+      },
+      "relative_mse": 0.9151048890397758
+    },
+    {
+      "parameters": {
+        "reliability": 0.1333521432163324,
+        "gene_gate_mix": 0.125,
+        "scale": 0.2858495647931011
+      },
+      "relative_mse": 0.9145589925527882
+    },
+    {
+      "parameters": {
+        "reliability": 0.1333521432163324,
+        "gene_gate_mix": 0.25,
+        "scale": 0.28591497900206564
+      },
+      "relative_mse": 0.9140387829482597
+    },
+    {
+      "parameters": {
+        "reliability": 0.1333521432163324,
+        "gene_gate_mix": 0.375,
+        "scale": 0.28589457574406146
+      },
+      "relative_mse": 0.9135442958115622
+    },
+    {
+      "parameters": {
+        "reliability": 0.1333521432163324,
+        "gene_gate_mix": 0.5,
+        "scale": 0.28578987292539687
+      },
+      "relative_mse": 0.9130755202807762
+    },
+    {
+      "parameters": {
+        "reliability": 0.1333521432163324,
+        "gene_gate_mix": 0.625,
+        "scale": 0.2856025010334354
+      },
+      "relative_mse": 0.9126324004228891
+    },
+    {
+      "parameters": {
+        "reliability": 0.1333521432163324,
+        "gene_gate_mix": 0.75,
+        "scale": 0.2853341949764392
+      },
+      "relative_mse": 0.9122148367586399
+    },
+    {
+      "parameters": {
+        "reliability": 0.1333521432163324,
+        "gene_gate_mix": 0.875,
+        "scale": 0.2849867857702578
+      },
+      "relative_mse": 0.9118226879204872
+    },
+    {
+      "parameters": {
+        "reliability": 0.1333521432163324,
+        "gene_gate_mix": 1.0,
+        "scale": 0.2845621921288043
+      },
+      "relative_mse": 0.9114557724278559
+    },
+    {
+      "parameters": {
+        "reliability": 0.1778279410038923,
+        "gene_gate_mix": 0.0,
+        "scale": 0.295463812815557
+      },
+      "relative_mse": 0.9142990515483221
+    },
+    {
+      "parameters": {
+        "reliability": 0.1778279410038923,
+        "gene_gate_mix": 0.125,
+        "scale": 0.2954944948970357
+      },
+      "relative_mse": 0.9136132612052786
+    },
+    {
+      "parameters": {
+        "reliability": 0.1778279410038923,
+        "gene_gate_mix": 0.25,
+        "scale": 0.29539294896251844
+      },
+      "relative_mse": 0.9129662895690799
+    },
+    {
+      "parameters": {
+        "reliability": 0.1778279410038923,
+        "gene_gate_mix": 0.375,
+        "scale": 0.2951625016972687
+      },
+      "relative_mse": 0.9123580575407864
+    },
+    {
+      "parameters": {
+        "reliability": 0.1778279410038923,
+        "gene_gate_mix": 0.5,
+        "scale": 0.2948067096070721
+      },
+      "relative_mse": 0.9117883867730895
+    },
+    {
+      "parameters": {
+        "reliability": 0.1778279410038923,
+        "gene_gate_mix": 0.625,
+        "scale": 0.2943293339998794
+      },
+      "relative_mse": 0.911257004581321
+    },
+    {
+      "parameters": {
+        "reliability": 0.1778279410038923,
+        "gene_gate_mix": 0.75,
+        "scale": 0.2937343159182573
+      },
+      "relative_mse": 0.9107635492132631
+    },
+    {
+      "parameters": {
+        "reliability": 0.1778279410038923,
+        "gene_gate_mix": 0.875,
+        "scale": 0.2930257512497117
+      },
+      "relative_mse": 0.9103075754090502
+    },
+    {
+      "parameters": {
+        "reliability": 0.1778279410038923,
+        "gene_gate_mix": 1.0,
+        "scale": 0.2922078662240073
+      },
+      "relative_mse": 0.9098885601838154
+    },
+    {
+      "parameters": {
+        "reliability": 0.23713737056616552,
+        "gene_gate_mix": 0.0,
+        "scale": 0.3084141626631717
+      },
+      "relative_mse": 0.9132924677965909
+    },
+    {
+      "parameters": {
+        "reliability": 0.23713737056616552,
+        "gene_gate_mix": 0.125,
+        "scale": 0.308209083588726
+      },
+      "relative_mse": 0.9124344976463334
+    },
+    {
+      "parameters": {
+        "reliability": 0.23713737056616552,
+        "gene_gate_mix": 0.25,
+        "scale": 0.30780314547525695
+      },
+      "relative_mse": 0.9116354089077009
+    },
+    {
+      "parameters": {
+        "reliability": 0.23713737056616552,
+        "gene_gate_mix": 0.375,
+        "scale": 0.3072040860555014
+      },
+      "relative_mse": 0.9108947473666968
+    },
+    {
+      "parameters": {
+        "reliability": 0.23713737056616552,
+        "gene_gate_mix": 0.5,
+        "scale": 0.30642003479277286
+      },
+      "relative_mse": 0.910211852074341
+    },
+    {
+      "parameters": {
+        "reliability": 0.23713737056616552,
+        "gene_gate_mix": 0.625,
+        "scale": 0.3054594374864117
+      },
+      "relative_mse": 0.9095858718442382
+    },
+    {
+      "parameters": {
+        "reliability": 0.23713737056616552,
+        "gene_gate_mix": 0.75,
+        "scale": 0.304330983307261
+      },
+      "relative_mse": 0.9090157823675479
+    },
+    {
+      "parameters": {
+        "reliability": 0.23713737056616552,
+        "gene_gate_mix": 0.875,
+        "scale": 0.3030435350127698
+      },
+      "relative_mse": 0.9085004036684854
+    },
+    {
+      "parameters": {
+        "reliability": 0.23713737056616552,
+        "gene_gate_mix": 1.0,
+        "scale": 0.30160606296286546
+      },
+      "relative_mse": 0.9080384176448462
+    },
+    {
+      "parameters": {
+        "reliability": 0.31622776601683794,
+        "gene_gate_mix": 0.0,
+        "scale": 0.3255625990306197
+      },
+      "relative_mse": 0.9120582627459637
+    },
+    {
+      "parameters": {
+        "reliability": 0.31622776601683794,
+        "gene_gate_mix": 0.125,
+        "scale": 0.32493940489640816
+      },
+      "relative_mse": 0.9109882389719781
+    },
+    {
+      "parameters": {
+        "reliability": 0.31622776601683794,
+        "gene_gate_mix": 0.25,
+        "scale": 0.3240104373558104
+      },
+      "relative_mse": 0.9100078921274861
+    },
+    {
+      "parameters": {
+        "reliability": 0.31622776601683794,
+        "gene_gate_mix": 0.375,
+        "scale": 0.3227933541134885
+      },
+      "relative_mse": 0.909115746547336
+    },
+    {
+      "parameters": {
+        "reliability": 0.31622776601683794,
+        "gene_gate_mix": 0.5,
+        "scale": 0.3213063238049143
+      },
+      "relative_mse": 0.9083099115857532
+    },
+    {
+      "parameters": {
+        "reliability": 0.31622776601683794,
+        "gene_gate_mix": 0.625,
+        "scale": 0.31956781099276094
+      },
+      "relative_mse": 0.9075881340546443
+    },
+    {
+      "parameters": {
+        "reliability": 0.31622776601683794,
+        "gene_gate_mix": 0.75,
+        "scale": 0.3175963786584933
+      },
+      "relative_mse": 0.9069478504523535
+    },
+    {
+      "parameters": {
+        "reliability": 0.31622776601683794,
+        "gene_gate_mix": 0.875,
+        "scale": 0.31541050990807834
+      },
+      "relative_mse": 0.9063862380059652
+    },
+    {
+      "parameters": {
+        "reliability": 0.31622776601683794,
+        "gene_gate_mix": 1.0,
+        "scale": 0.31302844989548556
+      },
+      "relative_mse": 0.9059002637128597
+    },
+    {
+      "parameters": {
+        "reliability": 0.4216965034285822,
+        "gene_gate_mix": 0.0,
+        "scale": 0.3482364240666565
+      },
+      "relative_mse": 0.9105790372014514
+    },
+    {
+      "parameters": {
+        "reliability": 0.4216965034285822,
+        "gene_gate_mix": 0.125,
+        "scale": 0.34690688357623095
+      },
+      "relative_mse": 0.9092470164093645
+    },
+    {
+      "parameters": {
+        "reliability": 0.4216965034285822,
+        "gene_gate_mix": 0.25,
+        "scale": 0.3451107876038898
+      },
+      "relative_mse": 0.9080521269835046
+    },
+    {
+      "parameters": {
+        "reliability": 0.4216965034285822,
+        "gene_gate_mix": 0.375,
+        "scale": 0.3428877868115003
+      },
+      "relative_mse": 0.9069903652959141
+    },
+    {
+      "parameters": {
+        "reliability": 0.4216965034285822,
+        "gene_gate_mix": 0.5,
+        "scale": 0.3402776147526117
+      },
+      "relative_mse": 0.9060569397602939
+    },
+    {
+      "parameters": {
+        "reliability": 0.4216965034285822,
+        "gene_gate_mix": 0.625,
+        "scale": 0.33731951964202705
+      },
+      "relative_mse": 0.9052464284495219
+    },
+    {
+      "parameters": {
+        "reliability": 0.4216965034285822,
+        "gene_gate_mix": 0.75,
+        "scale": 0.33405178445327915
+      },
+      "relative_mse": 0.9045529279219661
+    },
+    {
+      "parameters": {
+        "reliability": 0.4216965034285822,
+        "gene_gate_mix": 0.875,
+        "scale": 0.3305113345300357
+      },
+      "relative_mse": 0.9039701905105302
+    },
+    {
+      "parameters": {
+        "reliability": 0.4216965034285822,
+        "gene_gate_mix": 1.0,
+        "scale": 0.32673342887339385
+      },
+      "relative_mse": 0.9034917482530161
+    },
+    {
+      "parameters": {
+        "reliability": 0.5623413251903491,
+        "gene_gate_mix": 0.0,
+        "scale": 0.3781698856572399
+      },
+      "relative_mse": 0.908853985661791
+    },
+    {
+      "parameters": {
+        "reliability": 0.5623413251903491,
+        "gene_gate_mix": 0.125,
+        "scale": 0.37568137736340335
+      },
+      "relative_mse": 0.9071966187746752
+    },
+    {
+      "parameters": {
+        "reliability": 0.5623413251903491,
+        "gene_gate_mix": 0.25,
+        "scale": 0.37247938218695453
+      },
+      "relative_mse": 0.905749691598575
+    },
+    {
+      "parameters": {
+        "reliability": 0.5623413251903491,
+        "gene_gate_mix": 0.375,
+        "scale": 0.36865169356220134
+      },
+      "relative_mse": 0.9045033220236258
+    },
+    {
+      "parameters": {
+        "reliability": 0.5623413251903491,
+        "gene_gate_mix": 0.5,
+        "scale": 0.36428330524739033
+      },
+      "relative_mse": 0.9034462600988153
+    },
+    {
+      "parameters": {
+        "reliability": 0.5623413251903491,
+        "gene_gate_mix": 0.625,
+        "scale": 0.3594550770919402
+      },
+      "relative_mse": 0.902566333792415
+    },
+    {
+      "parameters": {
+        "reliability": 0.5623413251903491,
+        "gene_gate_mix": 0.75,
+        "scale": 0.35424277217295314
+      },
+      "relative_mse": 0.9018508399555449
+    },
+    {
+      "parameters": {
+        "reliability": 0.5623413251903491,
+        "gene_gate_mix": 0.875,
+        "scale": 0.3487164245654348
+      },
+      "relative_mse": 0.9012868764014663
+    },
+    {
+      "parameters": {
+        "reliability": 0.5623413251903491,
+        "gene_gate_mix": 1.0,
+        "scale": 0.34293998972320167
+      },
+      "relative_mse": 0.9008616150778395
+    },
+    {
+      "parameters": {
+        "reliability": 0.7498942093324558,
+        "gene_gate_mix": 0.0,
+        "scale": 0.41762910036315615
+      },
+      "relative_mse": 0.9069057601976
+    },
+    {
+      "parameters": {
+        "reliability": 0.7498942093324558,
+        "gene_gate_mix": 0.125,
+        "scale": 0.4132718504489729
+      },
+      "relative_mse": 0.9048422020366388
+    },
+    {
+      "parameters": {
+        "reliability": 0.7498942093324558,
+        "gene_gate_mix": 0.25,
+        "scale": 0.4078213872066113
+      },
+      "relative_mse": 0.9031023837984604
+    },
+    {
+      "parameters": {
+        "reliability": 0.7498942093324558,
+        "gene_gate_mix": 0.375,
+        "scale": 0.40146963776428696
+      },
+      "relative_mse": 0.901663378392045
+    },
+    {
+      "parameters": {
+        "reliability": 0.7498942093324558,
+        "gene_gate_mix": 0.5,
+        "scale": 0.3943941308168881
+      },
+      "relative_mse": 0.9005002536121417
+    },
+    {
+      "parameters": {
+        "reliability": 0.7498942093324558,
+        "gene_gate_mix": 0.625,
+        "scale": 0.386755509102743
+      },
+      "relative_mse": 0.8995872466415821
+    },
+    {
+      "parameters": {
+        "reliability": 0.7498942093324558,
+        "gene_gate_mix": 0.75,
+        "scale": 0.378696384798836
+      },
+      "relative_mse": 0.8988986896339568
+    },
+    {
+      "parameters": {
+        "reliability": 0.7498942093324558,
+        "gene_gate_mix": 0.875,
+        "scale": 0.3703412293453775
+      },
+      "relative_mse": 0.8984097019684425
+    },
+    {
+      "parameters": {
+        "reliability": 0.7498942093324558,
+        "gene_gate_mix": 1.0,
+        "scale": 0.36179700969392337
+      },
+      "relative_mse": 0.8980966771222471
+    },
+    {
+      "parameters": {
+        "reliability": 1.0,
+        "gene_gate_mix": 0.0,
+        "scale": 0.4695800709826388
+      },
+      "relative_mse": 0.9047846014464864
+    },
+    {
+      "parameters": {
+        "reliability": 1.0,
+        "gene_gate_mix": 0.125,
+        "scale": 0.4622386366464655
+      },
+      "relative_mse": 0.9022121697904524
+    },
+    {
+      "parameters": {
+        "reliability": 1.0,
+        "gene_gate_mix": 0.25,
+        "scale": 0.4532204729351921
+      },
+      "relative_mse": 0.9001381832647084
+    },
+    {
+      "parameters": {
+        "reliability": 1.0,
+        "gene_gate_mix": 0.375,
+        "scale": 0.4429400258510829
+      },
+      "relative_mse": 0.8985118755104715
+    },
+    {
+      "parameters": {
+        "reliability": 1.0,
+        "gene_gate_mix": 0.5,
+        "scale": 0.4317581768674561
+      },
+      "relative_mse": 0.8972806590862792
+    },
+    {
+      "parameters": {
+        "reliability": 1.0,
+        "gene_gate_mix": 0.625,
+        "scale": 0.4199802928164746
+      },
+      "relative_mse": 0.8963929595274096
+    },
+    {
+      "parameters": {
+        "reliability": 1.0,
+        "gene_gate_mix": 0.75,
+        "scale": 0.40785837361826294
+      },
+      "relative_mse": 0.8958001052835791
+    },
+    {
+      "parameters": {
+        "reliability": 1.0,
+        "gene_gate_mix": 0.875,
+        "scale": 0.39559567148080066
+      },
+      "relative_mse": 0.8954574513163132
+    },
+    {
+      "parameters": {
+        "reliability": 1.0,
+        "gene_gate_mix": 1.0,
+        "scale": 0.38335254039848704
+      },
+      "relative_mse": 0.8953249232671096
+    },
+    {
+      "parameters": {
+        "reliability": 1.333521432163324,
+        "gene_gate_mix": 0.0,
+        "scale": 0.5379173600592384
+      },
+      "relative_mse": 0.9025670556673648
+    },
+    {
+      "parameters": {
+        "reliability": 1.333521432163324,
+        "gene_gate_mix": 0.125,
+        "scale": 0.5258308292536921
+      },
+      "relative_mse": 0.8993577304596978
+    },
+    {
+      "parameters": {
+        "reliability": 1.333521432163324,
+        "gene_gate_mix": 0.25,
+        "scale": 0.5111752968739145
+      },
+      "relative_mse": 0.896914656874363
+    },
+    {
+      "parameters": {
+        "reliability": 1.333521432163324,
+        "gene_gate_mix": 0.375,
+        "scale": 0.4948341895469543
+      },
+      "relative_mse": 0.8951297358692775
+    },
+    {
+      "parameters": {
+        "reliability": 1.333521432163324,
+        "gene_gate_mix": 0.5,
+        "scale": 0.4775175552014054
+      },
+      "relative_mse": 0.893897113024024
+    },
+    {
+      "parameters": {
+        "reliability": 1.333521432163324,
+        "gene_gate_mix": 0.625,
+        "scale": 0.4597742534369491
+      },
+      "relative_mse": 0.8931192448760802
+    },
+    {
+      "parameters": {
+        "reliability": 1.333521432163324,
+        "gene_gate_mix": 0.75,
+        "scale": 0.44201376454859637
+      },
+      "relative_mse": 0.8927098795877266
+    },
+    {
+      "parameters": {
+        "reliability": 1.333521432163324,
+        "gene_gate_mix": 0.875,
+        "scale": 0.42453093135747644
+      },
+      "relative_mse": 0.8925949521788457
+    },
+    {
+      "parameters": {
+        "reliability": 1.333521432163324,
+        "gene_gate_mix": 1.0,
+        "scale": 0.4075297350221869
+      },
+      "relative_mse": 0.8927122099728789
+    },
+    {
+      "parameters": {
+        "reliability": 1.7782794100389228,
+        "gene_gate_mix": 0.0,
+        "scale": 0.6277771421463632
+      },
+      "relative_mse": 0.9003478061238812
+    },
+    {
+      "parameters": {
+        "reliability": 1.7782794100389228,
+        "gene_gate_mix": 0.125,
+        "scale": 0.6081489368600159
+      },
+      "relative_mse": 0.8963473599326223
+    },
+    {
+      "parameters": {
+        "reliability": 1.7782794100389228,
+        "gene_gate_mix": 0.25,
+        "scale": 0.5846051572930582
+      },
+      "relative_mse": 0.8935194550092501
+    },
+    {
+      "parameters": {
+        "reliability": 1.7782794100389228,
+        "gene_gate_mix": 0.375,
+        "scale": 0.5590007088420579
+      },
+      "relative_mse": 0.891641985176129
+    },
+    {
+      "parameters": {
+        "reliability": 1.7782794100389228,
+        "gene_gate_mix": 0.5,
+        "scale": 0.5326760823230664
+      },
+      "relative_mse": 0.8905117590284427
+    },
+    {
+      "parameters": {
+        "reliability": 1.7782794100389228,
+        "gene_gate_mix": 0.625,
+        "scale": 0.5065465576248973
+      },
+      "relative_mse": 0.8899552177169033
+    },
+    {
+      "parameters": {
+        "reliability": 1.7782794100389228,
+        "gene_gate_mix": 0.75,
+        "scale": 0.4812019034794045
+      },
+      "relative_mse": 0.8898304868370973
+    },
+    {
+      "parameters": {
+        "reliability": 1.7782794100389228,
+        "gene_gate_mix": 0.875,
+        "scale": 0.45699560813907775
+      },
+      "relative_mse": 0.890024947925453
+    },
+    {
+      "parameters": {
+        "reliability": 1.7782794100389228,
+        "gene_gate_mix": 1.0,
+        "scale": 0.43411648834104005
+      },
+      "relative_mse": 0.8904509920419719
+    },
+    {
+      "parameters": {
+        "reliability": 2.371373705661655,
+        "gene_gate_mix": 0.0,
+        "scale": 0.7459655053742834
+      },
+      "relative_mse": 0.8982256826711896
+    },
+    {
+      "parameters": {
+        "reliability": 2.371373705661655,
+        "gene_gate_mix": 0.125,
+        "scale": 0.7143238367511925
+      },
+      "relative_mse": 0.8932579235849668
+    },
+    {
+      "parameters": {
+        "reliability": 2.371373705661655,
+        "gene_gate_mix": 0.25,
+        "scale": 0.6767919774690935
+      },
+      "relative_mse": 0.8900694534499369
+    },
+    {
+      "parameters": {
+        "reliability": 2.371373705661655,
+        "gene_gate_mix": 0.375,
+        "scale": 0.6371910073178655
+      },
+      "relative_mse": 0.8882196332975981
+    },
+    {
+      "parameters": {
+        "reliability": 2.371373705661655,
+        "gene_gate_mix": 0.5,
+        "scale": 0.5979161659640629
+      },
+      "relative_mse": 0.8873378232409062
+    },
+    {
+      "parameters": {
+        "reliability": 2.371373705661655,
+        "gene_gate_mix": 0.625,
+        "scale": 0.5603368231348892
+      },
+      "relative_mse": 0.8871354842378355
+    },
+    {
+      "parameters": {
+        "reliability": 2.371373705661655,
+        "gene_gate_mix": 0.75,
+        "scale": 0.525145550724573
+      },
+      "relative_mse": 0.8873980007560308
+    },
+    {
+      "parameters": {
+        "reliability": 2.371373705661655,
+        "gene_gate_mix": 0.875,
+        "scale": 0.4926154419859848
+      },
+      "relative_mse": 0.8879701464688784
+    },
+    {
+      "parameters": {
+        "reliability": 2.371373705661655,
+        "gene_gate_mix": 1.0,
+        "scale": 0.46277358992690265
+      },
+      "relative_mse": 0.8887416389617523
+    },
+    {
+      "parameters": {
+        "reliability": 3.1622776601683795,
+        "gene_gate_mix": 0.0,
+        "scale": 0.9015414004383628
+      },
+      "relative_mse": 0.8962875914409554
+    },
+    {
+      "parameters": {
+        "reliability": 3.1622776601683795,
+        "gene_gate_mix": 0.125,
+        "scale": 0.8506846813342015
+      },
+      "relative_mse": 0.890166740441971
+    },
+    {
+      "parameters": {
+        "reliability": 3.1622776601683795,
+        "gene_gate_mix": 0.25,
+        "scale": 0.791208485809947
+      },
+      "relative_mse": 0.8867114362477919
+    },
+    {
+      "parameters": {
+        "reliability": 3.1622776601683795,
+        "gene_gate_mix": 0.375,
+        "scale": 0.7307869358669772
+      },
+      "relative_mse": 0.8850787664657587
+    },
+    {
+      "parameters": {
+        "reliability": 3.1622776601683795,
+        "gene_gate_mix": 0.5,
+        "scale": 0.6733807588142072
+      },
+      "relative_mse": 0.8846300527311441
+    },
+    {
+      "parameters": {
+        "reliability": 3.1622776601683795,
+        "gene_gate_mix": 0.625,
+        "scale": 0.620698153714347
+      },
+      "relative_mse": 0.8849212889050823
+    },
+    {
+      "parameters": {
+        "reliability": 3.1622776601683795,
+        "gene_gate_mix": 0.75,
+        "scale": 0.5732182761214822
+      },
+      "relative_mse": 0.885657476592364
+    },
+    {
+      "parameters": {
+        "reliability": 3.1622776601683795,
+        "gene_gate_mix": 0.875,
+        "scale": 0.5308075846246564
+      },
+      "relative_mse": 0.88664748528384
+    },
+    {
+      "parameters": {
+        "reliability": 3.1622776601683795,
+        "gene_gate_mix": 1.0,
+        "scale": 0.4930614729574839
+      },
+      "relative_mse": 0.8877694013296147
+    },
+    {
+      "parameters": {
+        "reliability": 4.216965034285822,
+        "gene_gate_mix": 0.0,
+        "scale": 1.1066043117760191
+      },
+      "relative_mse": 0.8945952945050949
+    },
+    {
+      "parameters": {
+        "reliability": 4.216965034285822,
+        "gene_gate_mix": 0.125,
+        "scale": 1.0248567974467666
+      },
+      "relative_mse": 0.8871497705487856
+    },
+    {
+      "parameters": {
+        "reliability": 4.216965034285822,
+        "gene_gate_mix": 0.25,
+        "scale": 0.931169946843957
+      },
+      "relative_mse": 0.8836263330848457
+    },
+    {
+      "parameters": {
+        "reliability": 4.216965034285822,
+        "gene_gate_mix": 0.375,
+        "scale": 0.8404340063973101
+      },
+      "relative_mse": 0.8824751029963063
+    },
+    {
+      "parameters": {
+        "reliability": 4.216965034285822,
+        "gene_gate_mix": 0.5,
+        "scale": 0.7584636849406287
+      },
+      "relative_mse": 0.8826649649690412
+    },
+    {
+      "parameters": {
+        "reliability": 4.216965034285822,
+        "gene_gate_mix": 0.625,
+        "scale": 0.6866380779993069
+      },
+      "relative_mse": 0.8835712354219257
+    },
+    {
+      "parameters": {
+        "reliability": 4.216965034285822,
+        "gene_gate_mix": 0.75,
+        "scale": 0.6244702770764855
+      },
+      "relative_mse": 0.8848313829126078
+    },
+    {
+      "parameters": {
+        "reliability": 4.216965034285822,
+        "gene_gate_mix": 0.875,
+        "scale": 0.5708313771301256
+      },
+      "relative_mse": 0.8862397655236754
+    },
+    {
+      "parameters": {
+        "reliability": 4.216965034285822,
+        "gene_gate_mix": 1.0,
+        "scale": 0.5244802502200921
+      },
+      "relative_mse": 0.8876818878072439
+    },
+    {
+      "parameters": {
+        "reliability": 5.62341325190349,
+        "gene_gate_mix": 0.0,
+        "scale": 1.3773503935059772
+      },
+      "relative_mse": 0.8931788602927017
+    },
+    {
+      "parameters": {
+        "reliability": 5.62341325190349,
+        "gene_gate_mix": 0.125,
+        "scale": 1.2456831156688857
+      },
+      "relative_mse": 0.8842894930947723
+    },
+    {
+      "parameters": {
+        "reliability": 5.62341325190349,
+        "gene_gate_mix": 0.25,
+        "scale": 1.0992564525511355
+      },
+      "relative_mse": 0.8810353138457586
+    },
+    {
+      "parameters": {
+        "reliability": 5.62341325190349,
+        "gene_gate_mix": 0.375,
+        "scale": 0.9656321582557731
+      },
+      "relative_mse": 0.8806898342376499
+    },
+    {
+      "parameters": {
+        "reliability": 5.62341325190349,
+        "gene_gate_mix": 0.5,
+        "scale": 0.8516791505552425
+      },
+      "relative_mse": 0.8817101070014015
+    },
+    {
+      "parameters": {
+        "reliability": 5.62341325190349,
+        "gene_gate_mix": 0.625,
+        "scale": 0.7566554938503692
+      },
+      "relative_mse": 0.8833056573217792
+    },
+    {
+      "parameters": {
+        "reliability": 5.62341325190349,
+        "gene_gate_mix": 0.75,
+        "scale": 0.6777175271455748
+      },
+      "relative_mse": 0.8850878801611067
+    },
+    {
+      "parameters": {
+        "reliability": 5.62341325190349,
+        "gene_gate_mix": 0.875,
+        "scale": 0.6118658015761775
+      },
+      "relative_mse": 0.886871389316951
+    },
+    {
+      "parameters": {
+        "reliability": 5.62341325190349,
+        "gene_gate_mix": 1.0,
+        "scale": 0.5565140735320947
+      },
+      "relative_mse": 0.888572034838783
+    },
+    {
+      "parameters": {
+        "reliability": 7.498942093324558,
+        "gene_gate_mix": 0.0,
+        "scale": 1.7354787715350424
+      },
+      "relative_mse": 0.8920378600643383
+    },
+    {
+      "parameters": {
+        "reliability": 7.498942093324558,
+        "gene_gate_mix": 0.125,
+        "scale": 1.52280352692625
+      },
+      "relative_mse": 0.8816923497571925
+    },
+    {
+      "parameters": {
+        "reliability": 7.498942093324558,
+        "gene_gate_mix": 0.25,
+        "scale": 1.2965097953005265
+      },
+      "relative_mse": 0.879200914283012
+    },
+    {
+      "parameters": {
+        "reliability": 7.498942093324558,
+        "gene_gate_mix": 0.375,
+        "scale": 1.104400636026663
+      },
+      "relative_mse": 0.8800020605336437
+    },
+    {
+      "parameters": {
+        "reliability": 7.498942093324558,
+        "gene_gate_mix": 0.5,
+        "scale": 0.9506876297623607
+      },
+      "relative_mse": 0.8819852592090124
+    },
+    {
+      "parameters": {
+        "reliability": 7.498942093324558,
+        "gene_gate_mix": 0.625,
+        "scale": 0.8288873032050158
+      },
+      "relative_mse": 0.8842723913394449
+    },
+    {
+      "parameters": {
+        "reliability": 7.498942093324558,
+        "gene_gate_mix": 0.75,
+        "scale": 0.7316772769569095
+      },
+      "relative_mse": 0.8865169564278553
+    },
+    {
+      "parameters": {
+        "reliability": 7.498942093324558,
+        "gene_gate_mix": 0.875,
+        "scale": 0.6530947836803916
+      },
+      "relative_mse": 0.8885939845239162
+    },
+    {
+      "parameters": {
+        "reliability": 7.498942093324558,
+        "gene_gate_mix": 1.0,
+        "scale": 0.5886704874498957
+      },
+      "relative_mse": 0.8904698908754425
+    },
+    {
+      "parameters": {
+        "reliability": 10.0,
+        "gene_gate_mix": 0.0,
+        "scale": 2.0
+      },
+      "relative_mse": 0.8921318670753041
+    },
+    {
+      "parameters": {
+        "reliability": 10.0,
+        "gene_gate_mix": 0.125,
+        "scale": 1.865678032530912
+      },
+      "relative_mse": 0.8795110464623805
+    },
+    {
+      "parameters": {
+        "reliability": 10.0,
+        "gene_gate_mix": 0.25,
+        "scale": 1.5215308674910466
+      },
+      "relative_mse": 0.8784131143672741
+    },
+    {
+      "parameters": {
+        "reliability": 10.0,
+        "gene_gate_mix": 0.375,
+        "scale": 1.253178371892969
+      },
+      "relative_mse": 0.8806473897009759
+    },
+    {
+      "parameters": {
+        "reliability": 10.0,
+        "gene_gate_mix": 0.5,
+        "scale": 1.0525197185840116
+      },
+      "relative_mse": 0.8836239957021566
+    },
+    {
+      "parameters": {
+        "reliability": 10.0,
+        "gene_gate_mix": 0.625,
+        "scale": 0.9013380951568605
+      },
+      "relative_mse": 0.8865233491346587
+    },
+    {
+      "parameters": {
+        "reliability": 10.0,
+        "gene_gate_mix": 0.75,
+        "scale": 0.7851152193593751
+      },
+      "relative_mse": 0.8891205187807044
+    },
+    {
+      "parameters": {
+        "reliability": 10.0,
+        "gene_gate_mix": 0.875,
+        "scale": 0.6937800303911754
+      },
+      "relative_mse": 0.8913845388528263
+    },
+    {
+      "parameters": {
+        "reliability": 10.0,
+        "gene_gate_mix": 1.0,
+        "scale": 0.620508237641846
+      },
+      "relative_mse": 0.8933438906572082
+    },
+    {
+      "parameters": {
+        "reliability": 13.33521432163324,
+        "gene_gate_mix": 0.0,
+        "scale": 2.0
+      },
+      "relative_mse": 0.9000549398631619
+    },
+    {
+      "parameters": {
+        "reliability": 13.33521432163324,
+        "gene_gate_mix": 0.125,
+        "scale": 2.0
+      },
+      "relative_mse": 0.8798246294785397
+    },
+    {
+      "parameters": {
+        "reliability": 13.33521432163324,
+        "gene_gate_mix": 0.25,
+        "scale": 1.7697656479629178
+      },
+      "relative_mse": 0.8789527947518461
+    },
+    {
+      "parameters": {
+        "reliability": 13.33521432163324,
+        "gene_gate_mix": 0.375,
+        "scale": 1.4070924536091851
+      },
+      "relative_mse": 0.8827709176064314
+    },
+    {
+      "parameters": {
+        "reliability": 13.33521432163324,
+        "gene_gate_mix": 0.5,
+        "scale": 1.1539649007271198
+      },
+      "relative_mse": 0.8866475549851887
+    },
+    {
+      "parameters": {
+        "reliability": 13.33521432163324,
+        "gene_gate_mix": 0.625,
+        "scale": 0.9721310489635007
+      },
+      "relative_mse": 0.8900088535502905
+    },
+    {
+      "parameters": {
+        "reliability": 13.33521432163324,
+        "gene_gate_mix": 0.75,
+        "scale": 0.8369666261344834
+      },
+      "relative_mse": 0.8928180156563984
+    },
+    {
+      "parameters": {
+        "reliability": 13.33521432163324,
+        "gene_gate_mix": 0.875,
+        "scale": 0.7333076784087593
+      },
+      "relative_mse": 0.8951547992369793
+    },
+    {
+      "parameters": {
+        "reliability": 13.33521432163324,
+        "gene_gate_mix": 1.0,
+        "scale": 0.6516514669790372
+      },
+      "relative_mse": 0.8971098279828487
+    },
+    {
+      "parameters": {
+        "reliability": 17.78279410038923,
+        "gene_gate_mix": 0.0,
+        "scale": 2.0
+      },
+      "relative_mse": 0.9128618545263673
+    },
+    {
+      "parameters": {
+        "reliability": 17.78279410038923,
+        "gene_gate_mix": 0.125,
+        "scale": 2.0
+      },
+      "relative_mse": 0.8868887588363907
+    },
+    {
+      "parameters": {
+        "reliability": 17.78279410038923,
+        "gene_gate_mix": 0.25,
+        "scale": 2.0
+      },
+      "relative_mse": 0.881067125250869
+    },
+    {
+      "parameters": {
+        "reliability": 17.78279410038923,
+        "gene_gate_mix": 0.375,
+        "scale": 1.560599732425334
+      },
+      "relative_mse": 0.8863905359873987
+    },
+    {
+      "parameters": {
+        "reliability": 17.78279410038923,
+        "gene_gate_mix": 0.5,
+        "scale": 1.2520170831728752
+      },
+      "relative_mse": 0.8909606339140981
+    },
+    {
+      "parameters": {
+        "reliability": 17.78279410038923,
+        "gene_gate_mix": 0.625,
+        "scale": 1.0397108828905501
+      },
+      "relative_mse": 0.8945906570976705
+    },
+    {
+      "parameters": {
+        "reliability": 17.78279410038923,
+        "gene_gate_mix": 0.75,
+        "scale": 0.8864071953646809
+      },
+      "relative_mse": 0.897464239361512
+    },
+    {
+      "parameters": {
+        "reliability": 17.78279410038923,
+        "gene_gate_mix": 0.875,
+        "scale": 0.7712057834299156
+      },
+      "relative_mse": 0.8997678875215965
+    },
+    {
+      "parameters": {
+        "reliability": 17.78279410038923,
+        "gene_gate_mix": 1.0,
+        "scale": 0.6817924681214136
+      },
+      "relative_mse": 0.9016443353086397
+    },
+    {
+      "parameters": {
+        "reliability": 23.71373705661655,
+        "gene_gate_mix": 0.0,
+        "scale": 2.0
+      },
+      "relative_mse": 0.9270708978390939
+    },
+    {
+      "parameters": {
+        "reliability": 23.71373705661655,
+        "gene_gate_mix": 0.125,
+        "scale": 2.0
+      },
+      "relative_mse": 0.8975718888847715
+    },
+    {
+      "parameters": {
+        "reliability": 23.71373705661655,
+        "gene_gate_mix": 0.25,
+        "scale": 2.0
+      },
+      "relative_mse": 0.8867323523658626
+    },
+    {
+      "parameters": {
+        "reliability": 23.71373705661655,
+        "gene_gate_mix": 0.375,
+        "scale": 1.7083334299639108
+      },
+      "relative_mse": 0.8913862749578387
+    },
+    {
+      "parameters": {
+        "reliability": 23.71373705661655,
+        "gene_gate_mix": 0.5,
+        "scale": 1.3442434601101798
+      },
+      "relative_mse": 0.896370600358104
+    },
+    {
+      "parameters": {
+        "reliability": 23.71373705661655,
+        "gene_gate_mix": 0.625,
+        "scale": 1.1029547109695959
+      },
+      "relative_mse": 0.9000681954253893
+    },
+    {
+      "parameters": {
+        "reliability": 23.71373705661655,
+        "gene_gate_mix": 0.75,
+        "scale": 0.9328703743647287
+      },
+      "relative_mse": 0.9028730765423183
+    },
+    {
+      "parameters": {
+        "reliability": 23.71373705661655,
+        "gene_gate_mix": 0.875,
+        "scale": 0.8071388707755788
+      },
+      "relative_mse": 0.9050573149156813
+    },
+    {
+      "parameters": {
+        "reliability": 23.71373705661655,
+        "gene_gate_mix": 1.0,
+        "scale": 0.7106875349542802
+      },
+      "relative_mse": 0.9067996070186601
+    },
+    {
+      "parameters": {
+        "reliability": 31.622776601683793,
+        "gene_gate_mix": 0.0,
+        "scale": 2.0
+      },
+      "relative_mse": 0.9406959176983478
+    },
+    {
+      "parameters": {
+        "reliability": 31.622776601683793,
+        "gene_gate_mix": 0.125,
+        "scale": 2.0
+      },
+      "relative_mse": 0.9094978628291267
+    },
+    {
+      "parameters": {
+        "reliability": 31.622776601683793,
+        "gene_gate_mix": 0.25,
+        "scale": 2.0
+      },
+      "relative_mse": 0.8953444443368709
+    },
+    {
+      "parameters": {
+        "reliability": 31.622776601683793,
+        "gene_gate_mix": 0.375,
+        "scale": 1.8458811916044522
+      },
+      "relative_mse": 0.8975212686530264
+    },
+    {
+      "parameters": {
+        "reliability": 31.622776601683793,
+        "gene_gate_mix": 0.5,
+        "scale": 1.4289847983236388
+      },
+      "relative_mse": 0.9026226781061977
+    },
+    {
+      "parameters": {
+        "reliability": 31.622776601683793,
+        "gene_gate_mix": 0.625,
+        "scale": 1.1611861760741997
+      },
+      "relative_mse": 0.9062094804580224
+    },
+    {
+      "parameters": {
+        "reliability": 31.622776601683793,
+        "gene_gate_mix": 0.75,
+        "scale": 0.9760244115820749
+      },
+      "relative_mse": 0.9088410794700266
+    },
+    {
+      "parameters": {
+        "reliability": 31.622776601683793,
+        "gene_gate_mix": 0.875,
+        "scale": 0.840889595711903
+      },
+      "relative_mse": 0.9108446029753654
+    },
+    {
+      "parameters": {
+        "reliability": 31.622776601683793,
+        "gene_gate_mix": 1.0,
+        "scale": 0.7381503110475205
+      },
+      "relative_mse": 0.9124169985992644
+    },
+    {
+      "parameters": {
+        "reliability": 42.169650342858226,
+        "gene_gate_mix": 0.0,
+        "scale": 2.0
+      },
+      "relative_mse": 0.9527698370267021
+    },
+    {
+      "parameters": {
+        "reliability": 42.169650342858226,
+        "gene_gate_mix": 0.125,
+        "scale": 2.0
+      },
+      "relative_mse": 0.9212846736132712
+    },
+    {
+      "parameters": {
+        "reliability": 42.169650342858226,
+        "gene_gate_mix": 0.25,
+        "scale": 2.0
+      },
+      "relative_mse": 0.9051973820365945
+    },
+    {
+      "parameters": {
+        "reliability": 42.169650342858226,
+        "gene_gate_mix": 0.375,
+        "scale": 1.9702610588423526
+      },
+      "relative_mse": 0.9044862017615408
+    },
+    {
+      "parameters": {
+        "reliability": 42.169650342858226,
+        "gene_gate_mix": 0.5,
+        "scale": 1.5053719854458418
+      },
+      "relative_mse": 0.9094393293968216
+    },
+    {
+      "parameters": {
+        "reliability": 42.169650342858226,
+        "gene_gate_mix": 0.625,
+        "scale": 1.2141186047491712
+      },
+      "relative_mse": 0.9127790179722461
+    },
+    {
+      "parameters": {
+        "reliability": 42.169650342858226,
+        "gene_gate_mix": 0.75,
+        "scale": 1.0157281441161559
+      },
+      "relative_mse": 0.9151668658439588
+    },
+    {
+      "parameters": {
+        "reliability": 42.169650342858226,
+        "gene_gate_mix": 0.875,
+        "scale": 0.8723362287354441
+      },
+      "relative_mse": 0.9169534832657986
+    },
+    {
+      "parameters": {
+        "reliability": 42.169650342858226,
+        "gene_gate_mix": 1.0,
+        "scale": 0.7640451945592291
+      },
+      "relative_mse": 0.918338299448218
+    },
+    {
+      "parameters": {
+        "reliability": 56.23413251903491,
+        "gene_gate_mix": 0.0,
+        "scale": 2.0
+      },
+      "relative_mse": 0.9629567490686414
+    },
+    {
+      "parameters": {
+        "reliability": 56.23413251903491,
+        "gene_gate_mix": 0.125,
+        "scale": 2.0
+      },
+      "relative_mse": 0.932211948229834
+    },
+    {
+      "parameters": {
+        "reliability": 56.23413251903491,
+        "gene_gate_mix": 0.25,
+        "scale": 2.0
+      },
+      "relative_mse": 0.9152534114842559
+    },
+    {
+      "parameters": {
+        "reliability": 56.23413251903491,
+        "gene_gate_mix": 0.375,
+        "scale": 2.0
+      },
+      "relative_mse": 0.9120811388319074
+    },
+    {
+      "parameters": {
+        "reliability": 56.23413251903491,
+        "gene_gate_mix": 0.5,
+        "scale": 1.5732072976261966
+      },
+      "relative_mse": 0.9165537057289445
+    },
+    {
+      "parameters": {
+        "reliability": 56.23413251903491,
+        "gene_gate_mix": 0.625,
+        "scale": 1.261763490976786
+      },
+      "relative_mse": 0.9195584555476509
+    },
+    {
+      "parameters": {
+        "reliability": 56.23413251903491,
+        "gene_gate_mix": 0.75,
+        "scale": 1.0519817873531356
+      },
+      "relative_mse": 0.9216648225567375
+    },
+    {
+      "parameters": {
+        "reliability": 56.23413251903491,
+        "gene_gate_mix": 0.875,
+        "scale": 0.9014313319712924
+      },
+      "relative_mse": 0.9232201316231672
+    },
+    {
+      "parameters": {
+        "reliability": 56.23413251903491,
+        "gene_gate_mix": 1.0,
+        "scale": 0.7882816336697049
+      },
+      "relative_mse": 0.9244143360161774
+    },
+    {
+      "parameters": {
+        "reliability": 74.98942093324558,
+        "gene_gate_mix": 0.0,
+        "scale": 2.0
+      },
+      "relative_mse": 0.9712739311984784
+    },
+    {
+      "parameters": {
+        "reliability": 74.98942093324558,
+        "gene_gate_mix": 0.125,
+        "scale": 2.0
+      },
+      "relative_mse": 0.9419699236829739
+    },
+    {
+      "parameters": {
+        "reliability": 74.98942093324558,
+        "gene_gate_mix": 0.25,
+        "scale": 2.0
+      },
+      "relative_mse": 0.9249212165689896
+    },
+    {
+      "parameters": {
+        "reliability": 74.98942093324558,
+        "gene_gate_mix": 0.375,
+        "scale": 2.0
+      },
+      "relative_mse": 0.9201278098565255
+    },
+    {
+      "parameters": {
+        "reliability": 74.98942093324558,
+        "gene_gate_mix": 0.5,
+        "scale": 1.6327834594253894
+      },
+      "relative_mse": 0.9237319925790023
+    },
+    {
+      "parameters": {
+        "reliability": 74.98942093324558,
+        "gene_gate_mix": 0.625,
+        "scale": 1.304335637217849
+      },
+      "relative_mse": 0.9263589982567527
+    },
+    {
+      "parameters": {
+        "reliability": 74.98942093324558,
+        "gene_gate_mix": 0.75,
+        "scale": 1.0848833951505958
+      },
+      "relative_mse": 0.9281733051187802
+    },
+    {
+      "parameters": {
+        "reliability": 74.98942093324558,
+        "gene_gate_mix": 0.875,
+        "scale": 0.9281844688878544
+      },
+      "relative_mse": 0.9294997123526032
+    },
+    {
+      "parameters": {
+        "reliability": 74.98942093324558,
+        "gene_gate_mix": 1.0,
+        "scale": 0.8108096837519069
+      },
+      "relative_mse": 0.9305109796587537
+    },
+    {
+      "parameters": {
+        "reliability": 100.0,
+        "gene_gate_mix": 0.0,
+        "scale": 2.0
+      },
+      "relative_mse": 0.9779108782007411
+    },
+    {
+      "parameters": {
+        "reliability": 100.0,
+        "gene_gate_mix": 0.125,
+        "scale": 2.0
+      },
+      "relative_mse": 0.950486288423177
+    },
+    {
+      "parameters": {
+        "reliability": 100.0,
+        "gene_gate_mix": 0.25,
+        "scale": 2.0
+      },
+      "relative_mse": 0.9338943921676766
+    },
+    {
+      "parameters": {
+        "reliability": 100.0,
+        "gene_gate_mix": 0.375,
+        "scale": 2.0
+      },
+      "relative_mse": 0.9281351894342403
+    },
+    {
+      "parameters": {
+        "reliability": 100.0,
+        "gene_gate_mix": 0.5,
+        "scale": 1.6847033199299626
+      },
+      "relative_mse": 0.9307843242090343
+    },
+    {
+      "parameters": {
+        "reliability": 100.0,
+        "gene_gate_mix": 0.625,
+        "scale": 1.3421745691881017
+      },
+      "relative_mse": 0.9330267728632867
+    },
+    {
+      "parameters": {
+        "reliability": 100.0,
+        "gene_gate_mix": 0.75,
+        "scale": 1.1145964013794503
+      },
+      "relative_mse": 0.9345583663948318
+    },
+    {
+      "parameters": {
+        "reliability": 100.0,
+        "gene_gate_mix": 0.875,
+        "scale": 0.952650332717905
+      },
+      "relative_mse": 0.9356698495616533
+    },
+    {
+      "parameters": {
+        "reliability": 100.0,
+        "gene_gate_mix": 1.0,
+        "scale": 0.8316173450342692
+      },
+      "relative_mse": 0.9365128224700806
+    },
+    {
+      "parameters": {
+        "reliability": 133.3521432163324,
+        "gene_gate_mix": 0.0,
+        "scale": 2.0
+      },
+      "relative_mse": 0.9831210974480028
+    },
+    {
+      "parameters": {
+        "reliability": 133.3521432163324,
+        "gene_gate_mix": 0.125,
+        "scale": 2.0
+      },
+      "relative_mse": 0.9578147708046922
+    },
+    {
+      "parameters": {
+        "reliability": 133.3521432163324,
+        "gene_gate_mix": 0.25,
+        "scale": 2.0
+      },
+      "relative_mse": 0.942040984236821
+    },
+    {
+      "parameters": {
+        "reliability": 133.3521432163324,
+        "gene_gate_mix": 0.375,
+        "scale": 2.0
+      },
+      "relative_mse": 0.9357997377443891
+    },
+    {
+      "parameters": {
+        "reliability": 133.3521432163324,
+        "gene_gate_mix": 0.5,
+        "scale": 1.729735562885559
+      },
+      "relative_mse": 0.9375668608397139
+    },
+    {
+      "parameters": {
+        "reliability": 133.3521432163324,
+        "gene_gate_mix": 0.625,
+        "scale": 1.3756891504360786
+      },
+      "relative_mse": 0.9394432136782137
+    },
+    {
+      "parameters": {
+        "reliability": 133.3521432163324,
+        "gene_gate_mix": 0.75,
+        "scale": 1.1413287819740037
+      },
+      "relative_mse": 0.9407143195384793
+    },
+    {
+      "parameters": {
+        "reliability": 133.3521432163324,
+        "gene_gate_mix": 0.875,
+        "scale": 0.9749218971556843
+      },
+      "relative_mse": 0.9416317805491419
+    },
+    {
+      "parameters": {
+        "reliability": 133.3521432163324,
+        "gene_gate_mix": 1.0,
+        "scale": 0.8507295004445286
+      },
+      "relative_mse": 0.9423249328848734
+    },
+    {
+      "parameters": {
+        "reliability": 177.82794100389228,
+        "gene_gate_mix": 0.0,
+        "scale": 2.0
+      },
+      "relative_mse": 0.9871630116907244
+    },
+    {
+      "parameters": {
+        "reliability": 177.82794100389228,
+        "gene_gate_mix": 0.125,
+        "scale": 2.0
+      },
+      "relative_mse": 0.9640676479662063
+    },
+    {
+      "parameters": {
+        "reliability": 177.82794100389228,
+        "gene_gate_mix": 0.25,
+        "scale": 2.0
+      },
+      "relative_mse": 0.9493314227148411
+    },
+    {
+      "parameters": {
+        "reliability": 177.82794100389228,
+        "gene_gate_mix": 0.375,
+        "scale": 2.0
+      },
+      "relative_mse": 0.9429543359366289
+    },
+    {
+      "parameters": {
+        "reliability": 177.82794100389228,
+        "gene_gate_mix": 0.5,
+        "scale": 1.7687140937610197
+      },
+      "relative_mse": 0.9439784478641924
+    },
+    {
+      "parameters": {
+        "reliability": 177.82794100389228,
+        "gene_gate_mix": 0.625,
+        "scale": 1.4053218725498255
+      },
+      "relative_mse": 0.945522534173207
+    },
+    {
+      "parameters": {
+        "reliability": 177.82794100389228,
+        "gene_gate_mix": 0.75,
+        "scale": 1.1653199719339793
+      },
+      "relative_mse": 0.9465623563916474
+    },
+    {
+      "parameters": {
+        "reliability": 177.82794100389228,
+        "gene_gate_mix": 0.875,
+        "scale": 0.9951258097387705
+      },
+      "relative_mse": 0.947309941049981
+    },
+    {
+      "parameters": {
+        "reliability": 177.82794100389228,
+        "gene_gate_mix": 1.0,
+        "scale": 0.8682065867090679
+      },
+      "relative_mse": 0.947873181078905
+    },
+    {
+      "parameters": {
+        "reliability": 237.13737056616552,
+        "gene_gate_mix": 0.0,
+        "scale": 2.0
+      },
+      "relative_mse": 0.9902714171040293
+    },
+    {
+      "parameters": {
+        "reliability": 237.13737056616552,
+        "gene_gate_mix": 0.125,
+        "scale": 2.0
+      },
+      "relative_mse": 0.9693772220668369
+    },
+    {
+      "parameters": {
+        "reliability": 237.13737056616552,
+        "gene_gate_mix": 0.25,
+        "scale": 2.0
+      },
+      "relative_mse": 0.9557932090588404
+    },
+    {
+      "parameters": {
+        "reliability": 237.13737056616552,
+        "gene_gate_mix": 0.375,
+        "scale": 2.0
+      },
+      "relative_mse": 0.9495193780800397
+    },
+    {
+      "parameters": {
+        "reliability": 237.13737056616552,
+        "gene_gate_mix": 0.5,
+        "scale": 1.802471376314188
+      },
+      "relative_mse": 0.949954712470345
+    },
+    {
+      "parameters": {
+        "reliability": 237.13737056616552,
+        "gene_gate_mix": 0.625,
+        "scale": 1.4315239704415863
+      },
+      "relative_mse": 0.9512078169498844
+    },
+    {
+      "parameters": {
+        "reliability": 237.13737056616552,
+        "gene_gate_mix": 0.75,
+        "scale": 1.1868295354180773
+      },
+      "relative_mse": 0.9520481097944615
+    },
+    {
+      "parameters": {
+        "reliability": 237.13737056616552,
+        "gene_gate_mix": 0.875,
+        "scale": 1.013415977440411
+      },
+      "relative_mse": 0.9526505524204388
+    },
+    {
+      "parameters": {
+        "reliability": 237.13737056616552,
+        "gene_gate_mix": 1.0,
+        "scale": 0.8841401158234456
+      },
+      "relative_mse": 0.9531035416012695
+    },
+    {
+      "parameters": {
+        "reliability": 316.2277660168379,
+        "gene_gate_mix": 0.0,
+        "scale": 2.0
+      },
+      "relative_mse": 0.9926466047063877
+    },
+    {
+      "parameters": {
+        "reliability": 316.2277660168379,
+        "gene_gate_mix": 0.125,
+        "scale": 2.0
+      },
+      "relative_mse": 0.9738753035758702
+    },
+    {
+      "parameters": {
+        "reliability": 316.2277660168379,
+        "gene_gate_mix": 0.25,
+        "scale": 2.0
+      },
+      "relative_mse": 0.9614832592198255
+    },
+    {
+      "parameters": {
+        "reliability": 316.2277660168379,
+        "gene_gate_mix": 0.375,
+        "scale": 2.0
+      },
+      "relative_mse": 0.9554704716382533
+    },
+    {
+      "parameters": {
+        "reliability": 316.2277660168379,
+        "gene_gate_mix": 0.5,
+        "scale": 1.8317921828876946
+      },
+      "relative_mse": 0.9554613831290476
+    },
+    {
+      "parameters": {
+        "reliability": 316.2277660168379,
+        "gene_gate_mix": 0.625,
+        "scale": 1.4547336408741953
+      },
+      "relative_mse": 0.9564665867038529
+    },
+    {
+      "parameters": {
+        "reliability": 316.2277660168379,
+        "gene_gate_mix": 0.75,
+        "scale": 1.2061232346415358
+      },
+      "relative_mse": 0.9571386382408212
+    },
+    {
+      "parameters": {
+        "reliability": 316.2277660168379,
+        "gene_gate_mix": 0.875,
+        "scale": 1.0299627260744044
+      },
+      "relative_mse": 0.9576195166445207
+    },
+    {
+      "parameters": {
+        "reliability": 316.2277660168379,
+        "gene_gate_mix": 1.0,
+        "scale": 0.8986433341677591
+      },
+      "relative_mse": 0.9579805977258796
+    },
+    {
+      "parameters": {
+        "reliability": 421.6965034285822,
+        "gene_gate_mix": 0.0,
+        "scale": 2.0
+      },
+      "relative_mse": 0.9944529024863643
+    },
+    {
+      "parameters": {
+        "reliability": 421.6965034285822,
+        "gene_gate_mix": 0.125,
+        "scale": 2.0
+      },
+      "relative_mse": 0.9776833299492492
+    },
+    {
+      "parameters": {
+        "reliability": 421.6965034285822,
+        "gene_gate_mix": 0.25,
+        "scale": 2.0
+      },
+      "relative_mse": 0.9664714363319559
+    },
+    {
+      "parameters": {
+        "reliability": 421.6965034285822,
+        "gene_gate_mix": 0.375,
+        "scale": 2.0
+      },
+      "relative_mse": 0.9608172216344842
+    },
+    {
+      "parameters": {
+        "reliability": 421.6965034285822,
+        "gene_gate_mix": 0.5,
+        "scale": 1.8573795231885977
+      },
+      "relative_mse": 0.9604877187717816
+    },
+    {
+      "parameters": {
+        "reliability": 421.6965034285822,
+        "gene_gate_mix": 0.625,
+        "scale": 1.475354846834488
+      },
+      "relative_mse": 0.9612862560297176
+    },
+    {
+      "parameters": {
+        "reliability": 421.6965034285822,
+        "gene_gate_mix": 0.75,
+        "scale": 1.2234562839771235
+      },
+      "relative_mse": 0.9618190444102466
+    },
+    {
+      "parameters": {
+        "reliability": 421.6965034285822,
+        "gene_gate_mix": 0.875,
+        "scale": 1.0449382238569742
+      },
+      "relative_mse": 0.9621997626085024
+    },
+    {
+      "parameters": {
+        "reliability": 421.6965034285822,
+        "gene_gate_mix": 1.0,
+        "scale": 0.9118380420170694
+      },
+      "relative_mse": 0.9624853644116411
+    },
+    {
+      "parameters": {
+        "reliability": 562.341325190349,
+        "gene_gate_mix": 0.0,
+        "scale": 2.0
+      },
+      "relative_mse": 0.9958217088709816
+    },
+    {
+      "parameters": {
+        "reliability": 562.341325190349,
+        "gene_gate_mix": 0.125,
+        "scale": 2.0
+      },
+      "relative_mse": 0.9809084693067934
+    },
+    {
+      "parameters": {
+        "reliability": 562.341325190349,
+        "gene_gate_mix": 0.25,
+        "scale": 2.0
+      },
+      "relative_mse": 0.9708309914998914
+    },
+    {
+      "parameters": {
+        "reliability": 562.341325190349,
+        "gene_gate_mix": 0.375,
+        "scale": 2.0
+      },
+      "relative_mse": 0.9655892754502753
+    },
+    {
+      "parameters": {
+        "reliability": 562.341325190349,
+        "gene_gate_mix": 0.5,
+        "scale": 1.8798310128367113
+      },
+      "relative_mse": 0.9650404604212051
+    },
+    {
+      "parameters": {
+        "reliability": 562.341325190349,
+        "gene_gate_mix": 0.625,
+        "scale": 1.4937388044571673
+      },
+      "relative_mse": 0.9656696633933941
+    },
+    {
+      "parameters": {
+        "reliability": 562.341325190349,
+        "gene_gate_mix": 0.75,
+        "scale": 1.2390569200683008
+      },
+      "relative_mse": 0.9660888987648192
+    },
+    {
+      "parameters": {
+        "reliability": 562.341325190349,
+        "gene_gate_mix": 0.875,
+        "scale": 1.0585014417059342
+      },
+      "relative_mse": 0.9663882073011982
+    },
+    {
+      "parameters": {
+        "reliability": 562.341325190349,
+        "gene_gate_mix": 1.0,
+        "scale": 0.923840702904645
+      },
+      "relative_mse": 0.9666125972335207
+    },
+    {
+      "parameters": {
+        "reliability": 749.8942093324558,
+        "gene_gate_mix": 0.0,
+        "scale": 2.0
+      },
+      "relative_mse": 0.9968562497325734
+    },
+    {
+      "parameters": {
+        "reliability": 749.8942093324558,
+        "gene_gate_mix": 0.125,
+        "scale": 2.0
+      },
+      "relative_mse": 0.9836429204795117
+    },
+    {
+      "parameters": {
+        "reliability": 749.8942093324558,
+        "gene_gate_mix": 0.25,
+        "scale": 2.0
+      },
+      "relative_mse": 0.9746332198997661
+    },
+    {
+      "parameters": {
+        "reliability": 749.8942093324558,
+        "gene_gate_mix": 0.375,
+        "scale": 2.0
+      },
+      "relative_mse": 0.9698271479933365
+    },
+    {
+      "parameters": {
+        "reliability": 749.8942093324558,
+        "gene_gate_mix": 0.5,
+        "scale": 1.89962697902928
+      },
+      "relative_mse": 0.9691385431599308
+    },
+    {
+      "parameters": {
+        "reliability": 749.8942093324558,
+        "gene_gate_mix": 0.625,
+        "scale": 1.510171715700125
+      },
+      "relative_mse": 0.9696309210034706
+    },
+    {
+      "parameters": {
+        "reliability": 749.8942093324558,
+        "gene_gate_mix": 0.75,
+        "scale": 1.2531141779148964
+      },
+      "relative_mse": 0.9699587048149602
+    },
+    {
+      "parameters": {
+        "reliability": 749.8942093324558,
+        "gene_gate_mix": 0.875,
+        "scale": 1.0707863572480527
+      },
+      "relative_mse": 0.9701925899264504
+    },
+    {
+      "parameters": {
+        "reliability": 749.8942093324558,
+        "gene_gate_mix": 1.0,
+        "scale": 0.9347512489555819
+      },
+      "relative_mse": 0.9703678626100848
+    },
+    {
+      "parameters": {
+        "reliability": 1000.0,
+        "gene_gate_mix": 0.0,
+        "scale": 2.0
+      },
+      "relative_mse": 0.9976366130773232
+    },
+    {
+      "parameters": {
+        "reliability": 1000.0,
+        "gene_gate_mix": 0.125,
+        "scale": 2.0
+      },
+      "relative_mse": 0.9859647992168855
+    },
+    {
+      "parameters": {
+        "reliability": 1000.0,
+        "gene_gate_mix": 0.25,
+        "scale": 2.0
+      },
+      "relative_mse": 0.9779446769348864
+    },
+    {
+      "parameters": {
+        "reliability": 1000.0,
+        "gene_gate_mix": 0.375,
+        "scale": 2.0
+      },
+      "relative_mse": 0.9735762462313259
+    },
+    {
+      "parameters": {
+        "reliability": 1000.0,
+        "gene_gate_mix": 0.5,
+        "scale": 1.9171322616917779
+      },
+      "relative_mse": 0.9728087032427326
+    },
+    {
+      "parameters": {
+        "reliability": 1000.0,
+        "gene_gate_mix": 0.625,
+        "scale": 1.5248719983165298
+      },
+      "relative_mse": 0.9731917683755591
+    },
+    {
+      "parameters": {
+        "reliability": 1000.0,
+        "gene_gate_mix": 0.75,
+        "scale": 1.2657731747840277
+      },
+      "relative_mse": 0.9734466486771947
+    },
+    {
+      "parameters": {
+        "reliability": 1000.0,
+        "gene_gate_mix": 0.875,
+        "scale": 1.081896470513988
+      },
+      "relative_mse": 0.9736284538255238
+    },
+    {
+      "parameters": {
+        "reliability": 1000.0,
+        "gene_gate_mix": 1.0,
+        "scale": 0.944647371852082
+      },
+      "relative_mse": 0.9737646662815517
+    }
+  ]
+}
