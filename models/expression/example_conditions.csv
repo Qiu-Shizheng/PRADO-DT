@@ -1,0 +1,4 @@
+condition_id,drug,dose_level
+vehicle,vehicle,0
+lapatinib_low,lapatinib,1
+trametinib_high,trametinib,10

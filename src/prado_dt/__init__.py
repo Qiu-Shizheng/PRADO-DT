@@ -2,10 +2,11 @@
 
 from .core import (LinearRegressor, conformal_radius, condition_features,
                    feature_map, mse, pearson_rows)
+from .transfer import predict as predict_response
 
 __all__ = [
     "LinearRegressor", "conformal_radius", "condition_features",
-    "feature_map", "mse", "pearson_rows",
+    "feature_map", "mse", "pearson_rows", "predict_response",
 ]
 
 try:

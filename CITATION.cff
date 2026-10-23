@@ -1,8 +1,8 @@
 cff-version: 1.2.0
-message: "If PRADO-DT contributes to your work, please cite this software and the accompanying manuscript."
-title: "PRADO-DT: prior-anchored residual adaptation for dose-time OOD transfer"
-version: 0.1.0
-date-released: 2026-10-17
+message: "If ContextDose contributes to your work, please cite this software and the original data studies."
+title: "ContextDose: source-selected reliability models for cellular response transfer"
+version: 0.2.0
+date-released: 2026-10-23
 repository-code: "https://github.com/Qiu-Shizheng/PRADO-DT"
 license: MIT
 authors:

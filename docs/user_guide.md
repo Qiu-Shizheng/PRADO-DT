@@ -1,6 +1,6 @@
-# PRADO-DT user guide
+# Reference training runner and optional neural modules
 
-This guide explains how to install PRADO-DT, prepare an input screen, run a held-out-environment experiment and inspect the outputs.
+This guide covers the reference experiment runner and optional PyTorch modules. For the fitted ContextDose models and source-context reliability training, start with the [response-transfer guide](response_transfer.md).
 
 ## 1. Installation choices
 

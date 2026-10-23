@@ -1,0 +1,4 @@
+condition_id,drug,dose_uM,time_hours
+example_1,5-(9-Isopropyl-8-methyl-2-morpholino-9H-purin-6-yl)pyrimidin-2-amine,1.0,24.0
+example_2,AMD-070 (hydrochloride),1.0,24.0
+example_3,AT 7867,1.0,24.0

@@ -1,0 +1,7 @@
+{
+  "matched_conditions": 4647,
+  "response_genes": 512,
+  "maximum_prediction_difference": 5.551115123125783e-17,
+  "gene_order_invariance": true,
+  "unknown_compound_rejected": true
+}

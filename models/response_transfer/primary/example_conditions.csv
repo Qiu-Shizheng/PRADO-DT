@@ -1,0 +1,4 @@
+condition_id,drug,dose_uM,time_hours
+example_1,AZ-23,0.3,24.0
+example_2,AZD-3514,1.0,24.0
+example_3,Apilimod,1.0,24.0

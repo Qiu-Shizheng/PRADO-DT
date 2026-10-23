@@ -4,13 +4,13 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "prado-dt"
-version = "0.1.0"
-description = "Prior-anchored residual adaptation for dose-time out-of-distribution response prediction"
+version = "0.2.0"
+description = "ContextDose: source-selected reliability models for cellular response transfer"
 readme = "README.md"
 requires-python = ">=3.9"
 authors = [{name = "Qiu-Shizheng"}]
 license = {file = "LICENSE"}
-dependencies = []
+dependencies = ["numpy>=1.24"]
 
 [project.optional-dependencies]
 core = ["numpy>=1.23"]
@@ -21,6 +21,8 @@ dev = ["pytest>=7"]
 
 [project.scripts]
 prado-dt-smoke = "prado_dt.cli:main"
+contextdose-predict = "prado_dt.transfer:main"
+contextdose-fit = "prado_dt.transfer_fit:main"
 
 [tool.setuptools]
 package-dir = {"" = "src"}

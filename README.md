@@ -1,173 +1,114 @@
-# PRADO-DT
+# ContextDose
 
-**Prior-anchored Residual Adaptation for Dose–Time OOD transfer**
+**Source-selected models for cellular response transfer**
 
-PRADO-DT is a modular reference implementation for predicting transcriptomic responses to genetic and chemical perturbations when the deployment environment—such as a cell line, donor or tissue state—was not treated during model fitting. It separates a transferable perturbation–drug–dose prior from a context-dependent residual and uses untreated context to adapt the prediction.
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![Python](https://img.shields.io/badge/Python-3.9%2B-blue.svg)](pyproject.toml)
 
-The repository is designed for reproducible evaluation. It contains the dependency-light CPU reference runner, optional PyTorch modules, H5AD metadata handling, tests and a user guide. Third-party expression matrices and model checkpoints are intentionally not bundled.
+ContextDose predicts treatment responses by combining shared source responses with evidence about their consistency. It estimates reliability for an entire compound response and for individual response genes, then selects their mixture using held-out source cell types.
 
-## What the model does
+This repository provides runnable CPU models, a NumPy training API, matched input examples and an optional neural reference implementation. The Python package is `prado-dt`.
 
-```mermaid
-flowchart LR
-    C[Untreated target context] --> A[Context adapter]
-    P[Perturbation identity] --> E[Condition encoder]
-    D[Drug, dose, time] --> E
-    E --> R[Residual response head]
-    A --> R
-    T[Transferable prior] --> O[Predicted response]
-    R --> O
-```
+![ContextDose model architecture](docs/architecture.svg)
 
-For a held-out environment, the model can use its untreated/control profile while treated labels remain unopened until final evaluation. The core components are:
-
-- a stable perturbation–drug–dose prior;
-- a context adapter for untreated target state;
-- a dose/time condition encoder with log-stabilized continuous features;
-- a residual head that can be used as a full-response, low-rank or mixture ablation;
-- source-calibrated interval diagnostics.
-
-The default CPU runner is intentionally transparent and small. The PyTorch implementation is an optional module for larger H5AD inputs and frozen transcriptome encoders.
-
-## Installation
-
-Python 3.9 or newer is supported.
+## Install
 
 ```bash
 git clone https://github.com/Qiu-Shizheng/PRADO-DT.git
 cd PRADO-DT
 python -m venv .venv
 source .venv/bin/activate
-python -m pip install --upgrade pip
 python -m pip install -e .
 ```
 
-Install optional H5AD support:
+## Predict with a fitted model
 
 ```bash
-python -m pip install -e ".[data]"
+contextdose-predict \
+  --model-dir models/response_transfer/op3 \
+  --control models/response_transfer/op3/example_control.csv \
+  --conditions models/response_transfer/op3/example_conditions.csv \
+  --output predictions.npz
 ```
 
-Install optional PyTorch modules:
+The example uses a source control to demonstrate the file format. For your experiment, supply an untreated target control on the model's gene axis and expression scale.
 
-```bash
-python -m pip install -e ".[torch]"
+| Model | Response genes | Fitting and evaluation setting |
+|---|---:|---|
+| [OP3 response transfer](models/response_transfer/op3) | 5,317 | B, T and NK source cells; myeloid evaluation from shared donors |
+| [Cellarity response transfer](models/response_transfer/primary) | 13,290 | Six cultured source lines; four primary-cell populations |
+| [Glioblastoma expression](models/expression) | 512 | A172 fitting, T98G selection and U87MG evaluation |
+
+The response-transfer models predict listed drug–dose–time conditions. The expression model has a separate command documented in its [README](models/expression/README.md).
+
+## Input and output
+
+The control CSV contains `gene_id,expression`. All model genes must occur exactly once, in any order. The condition CSV contains:
+
+```csv
+condition_id,drug,dose_uM,time_hours
 ```
 
-## Quick start on CPU
+Choose supported combinations from the model's `model.json` or copy its example condition file. Doses are in micromolar and exposure times are in hours. The software rejects unsupported conditions and mismatched genes.
 
-The following command creates a deterministic synthetic experiment and writes a compact JSON result to `runs/smoke/`:
+The output NumPy archive contains:
 
-```bash
-python scripts/run_experiment.py \
-  --synthetic --seed 7 \
-  --genes 4 --perturbations 3 --drugs 2 \
-  --cells-per-condition 1 --epochs 2 \
-  --out runs/smoke
-```
-
-The installed console entry point is equivalent:
-
-```bash
-prado-dt-smoke --synthetic --genes 4 --perturbations 3 --drugs 2 --cells-per-condition 1 --epochs 2
-```
-
-The command reports baseline and PRADO-DT MSE, per-gene Pearson correlation, a source-derived interval radius and held-out interval coverage. The synthetic example is a software smoke test; it is not a biological benchmark.
-
-Run the tests with:
-
-```bash
-python -m pip install -e ".[dev]"
-python -m unittest discover -s tests -v
-```
-
-## Run on an H5AD dataset
-
-Prepare an AnnData file with expression values in `adata.X` and observation metadata containing a perturbation identifier and an environment identifier. The runner discovers common column names automatically:
-
-| Concept | Accepted column names |
+| Array | Meaning |
 |---|---|
-| Perturbation | `perturbation`, `perturbation_name`, `condition`, `gRNA` |
-| Environment | `cell_line`, `celltype`, `cell_type`, `line` |
-| Drug | `drug`, `drug_name`, `compound` |
-| Dose | `dose`, `perturbation_value`, `concentration` |
-| Time | `time`, `hours`, `perturbation_time` |
+| `prediction` | Predicted expression, conditions × genes |
+| `effect` | Predicted change relative to the supplied control |
+| `gene_ids` | Gene order of both output matrices |
+| `condition_id` | Input condition identifiers |
 
-Untreated context is constructed from non-targeting or control rows at zero dose. Recognized control labels include `NTC`, `control`, `vehicle`, `non-targeting` and `random_region`. A treated row from the held-out environment is never used to construct its context profile.
-
-```bash
-python scripts/run_experiment.py \
-  --h5ad /path/to/prepared_screen.h5ad \
-  --held-out-cell-line U87MG \
-  --max-cells 100000 --max-genes 512 \
-  --out runs/kinome_u87mg
-```
-
-If the dataset uses different metadata names, pass explicit column overrides, for example:
-
-```bash
-python scripts/run_experiment.py \
-  --h5ad /path/to/screen.h5ad \
-  --cell-line-col donor --perturbation-col guide \
-  --drug-col compound_name --dose-col concentration --time-col exposure_hours \
-  --held-out-cell-line donor_3 --out runs/donor_3
-```
-
-The H5AD path is read locally. The package does not download data, upload data or require an external service.
+OP3 inputs use log1p counts per million across the 5,317 released genes. Cellarity inputs use the original released expression scale. See the [model guide](docs/response_transfer.md) for compatible preprocessing and evaluation scope.
 
 ## Python API
 
 ```python
-from prado_dt import LinearRegressor, condition_features, feature_map
+from prado_dt import predict_response
 
-features = condition_features(
-    perturbation=3,
-    n_perturbations=16,
-    dose=1.0,
-    time=24.0,
-    drug=2,
-    n_drugs=8,
+prediction, effect, output_genes = predict_response(
+    control=control_vector,
+    gene_ids=gene_ids,
+    compounds=compound_names,
+    doses_uM=doses,
+    times_hours=exposure_times,
+    model_dir="models/response_transfer/op3",
 )
 ```
 
-The optional PyTorch module is available after installing the `torch` extra:
+The control may be one gene vector or one vector per condition.
 
-```python
-from prado_dt.torch_model import PRADODTModel
+## Fit your own response model
 
-model = PRADODTModel(
-    state_dim=512,
-    output_dim=512,
-    n_perturbations=256,
-    n_drugs=32,
-    width=128,
-)
+Provide a NumPy archive containing `effects` with shape **source contexts × shared conditions × genes**, plus `gene_ids`, `drug`, `dose_uM` and `time_hours`. Each effect is measured relative to its matched untreated source control. At least three source contexts are required.
+
+```bash
+contextdose-fit \
+  --source-effects source_effects.npz \
+  --input-scale "log1p CPM across the declared gene panel" \
+  --output models/my_response_model
 ```
 
-The PyTorch module expects tensors for `cell_state`, `control_state`, perturbation index, drug index, dose and exposure time. See [the user guide](docs/user_guide.md) for a complete input contract and training outline.
+The fixed search selects the reliability penalty, compound–gene mixture and response scale by leaving out source contexts. It writes the fitted model and all candidate validation scores. Target treated expression is not an input to this interface.
 
-## Output files
+## Evaluation
 
-Each run writes:
+In the OP3 development task, the hierarchical gate has MSE **0.074658** and mean response Pearson correlation **0.224**, compared with **0.075912** and **0.193** for the separately selected compound-only gate. The comparison uses 127 drugs and the same 5,317 response genes. Cellarity effects vary by population. The [model guide](docs/response_transfer.md) reports the complete population comparison and scope.
 
-- `metrics.json`: numerical metrics and evaluation semantics;
-- `config.json`: command-line configuration;
-- `runs/` is ignored by Git so that large predictions and checkpoints stay local.
+Saved models replay the frozen evaluation predictions to numerical precision. Run the software tests with:
 
-MSE is averaged over genes and evaluation rows. The interval radius is estimated from source rows and transferred to the held-out environment as a diagnostic. It is not a distribution-free guarantee under arbitrary domain shift.
+```bash
+python -m unittest discover -s tests -v
+```
 
-## Data and model checkpoints
+For H5AD loading, the synthetic training runner and optional PyTorch modules, see the [reference implementation guide](docs/user_guide.md).
 
-No expression matrix, pretrained checkpoint or private dataset is included. Use the original publication or GEO record for data access, check its license and record the accession and preprocessing choices in your own analysis. Keep H5AD, checkpoint and prediction files outside Git or use a data-archive service designed for large files.
+## Data and citation
 
-## Scope and limitations
+The repository includes fitted model parameters and example inputs. Obtain experimental expression matrices from the original studies:
 
-PRADO-DT is a research implementation. It is intended for condition-level response prediction and controlled out-of-distribution evaluation. The package does not claim universal zero-shot accuracy, causal mechanism discovery or superiority over every perturbation foundation model. Results depend on the split definition, control availability, gene axis, dose units and exposure-time protocol. For a publication-quality study, compare against methods on the identical feature axis and split, report external validation separately by estimand, and preserve the full preprocessing manifest.
+- [OP3, NeurIPS 2024](https://doi.org/10.52202/079017-0650)
+- [Cellarity compound-response atlas](https://doi.org/10.1126/science.adi8577)
 
-## Citation
-
-See [CITATION.cff](CITATION.cff). The software is released under the MIT License.
-
-## License
-
-PRADO-DT is distributed under the [MIT License](LICENSE). Third-party data, model weights and gene-set collections retain their own licenses.
+See [CITATION.cff](CITATION.cff) to cite the software. Code is distributed under the [MIT License](LICENSE). Original datasets retain their source licences.

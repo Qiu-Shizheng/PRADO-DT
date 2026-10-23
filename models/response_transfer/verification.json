@@ -1,0 +1,54 @@
+{
+  "checkpoint_replays": [
+    {
+      "cohort": "primary",
+      "target": "PAD",
+      "conditions": 44,
+      "maximum_prediction_error": 0.0
+    },
+    {
+      "cohort": "primary",
+      "target": "CD8plus",
+      "conditions": 4,
+      "maximum_prediction_error": 0.0
+    },
+    {
+      "cohort": "primary",
+      "target": "HBEC",
+      "conditions": 44,
+      "maximum_prediction_error": 0.0
+    },
+    {
+      "cohort": "primary",
+      "target": "CD34plus",
+      "conditions": 44,
+      "maximum_prediction_error": 0.0
+    },
+    {
+      "cohort": "op3",
+      "target": "Donor_1",
+      "conditions": 120,
+      "maximum_prediction_error": 0.0
+    },
+    {
+      "cohort": "op3",
+      "target": "pooled_donors",
+      "conditions": 127,
+      "maximum_prediction_error": 0.0
+    },
+    {
+      "cohort": "op3",
+      "target": "Donor_2",
+      "conditions": 120,
+      "maximum_prediction_error": 0.0
+    },
+    {
+      "cohort": "op3",
+      "target": "Donor_3",
+      "conditions": 124,
+      "maximum_prediction_error": 0.0
+    }
+  ],
+  "gene_order_invariance": true,
+  "unsupported_conditions_rejected": true
+}
