@@ -82,6 +82,26 @@ A follow-up analysis, developed after the frozen evaluation, uses untreated sour
 
 Across the same 32 eligible Hallmark sets, mean-response MSE is 0.003694 and 0.003181, compared with 0.004056 and 0.003462 for the frozen model. Mean response Pearson correlation is 0.3959 and 0.3390. [Complete condition scores](benchmarks/parse_per_condition_metrics.tsv) and [analysis scope](benchmarks/parse_summary.json) accompany the results. Outer folds share source training donors.
 
+### Cytokine specificity and donor consistency
+
+An exact decomposition of fixed predictions separates error in the shared cytokine response from error in differences between cytokines. The cytokine-varying component accounts for 67.0% of the kernel model's MSE gain in CD14 monocytes and 56.7% in CD16 monocytes. MSE improves in eight and seven of twelve donors, respectively. Removing any single donor leaves the overall mean improvement positive in both populations. The paired interval for cytokine-centred MSE excludes zero in CD14 but includes zero in CD16. The donor with one eligible CD16 condition remains in the primary analysis. Its centred error is zero by definition, and its centred correlation is undefined.
+
+[Decomposition by model](benchmarks/parse_specificity_model_decomposition.tsv), [donor results](benchmarks/parse_specificity_donor_decomposition.tsv), [condition-level changes](benchmarks/parse_specificity_condition_improvements.tsv) and [paired uncertainty and sensitivity](benchmarks/parse_specificity_summary.json) accompany this diagnostic. No prediction is refitted for the decomposition.
+
+### Donor-reliability extension
+
+A subsequent development analysis estimates which source cell-type differences recur across donors. It downweights response components with high donor variability and separately calibrates the shared response and the cell-state correction. Every inner donor and cell-type holdout re-estimates these quantities using only its training sources. A two-amplitude kernel without reliability weighting controls for the additional calibration. Cytokine-level and gene-level weighting are both evaluated, and all twelve source selections choose cytokine-level weighting.
+
+| Predictor | CD14 MSE | CD16 MSE | CD14 response Pearson | CD16 response Pearson |
+|---|---:|---:|---:|---:|
+| Gaussian kernel ridge | 0.011450 | 0.017577 | 0.3959 | 0.3390 |
+| Kernel with two amplitudes | 0.011469 | 0.017601 | 0.3938 | 0.3373 |
+| Source-selected donor reliability | 0.011411 | 0.017533 | 0.4039 | 0.3467 |
+
+The source-selected extension reduces MSE by 0.34% and 0.25% relative to Gaussian kernel ridge. The paired differences are −0.0000385 (95% interval −0.0001842 to 0.0001390) and −0.0000441 (−0.0002089 to 0.0001540). Both intervals include zero, as do those for response Pearson gains. The comparison retains the same 2,003 target pairs, source-control gene panels and donor weighting. These results describe follow-up development after the frozen evaluation, rather than an additional independent confirmation.
+
+[All compared variants](benchmarks/parse_replicated_model_metrics.tsv), [donor scores](benchmarks/parse_replicated_donor_metrics.tsv), [condition scores](benchmarks/parse_replicated_per_condition_metrics.tsv), [paired intervals](benchmarks/parse_replicated_paired_intervals.tsv) and [source selections](benchmarks/parse_replicated_source_selections.tsv) provide the full comparison. Source-selected and cytokine-weighted predictions coincide and are not independent replications. This extension is an experimental analysis, not a replacement for the packaged trained transfer model.
+
 The provider distributes the original Parse data under CC BY-NC 4.0. This repository includes analytical summaries, not raw cells. The code licence does not replace third-party data licences.
 
 ## Data verification

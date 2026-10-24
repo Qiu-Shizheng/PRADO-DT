@@ -1,0 +1,532 @@
+{
+  "role": "Fixed-prediction follow-up diagnostic; no refitting or selection",
+  "decomposition_exact": true,
+  "models": [
+    {
+      "cell_type": "CD14 Mono",
+      "role": "followup_context",
+      "model": "calibrated_mean",
+      "mse": 0.01192869,
+      "shared_response_mse": 0.0017529619,
+      "cytokine_centered_mse": 0.0101757281,
+      "cytokine_centered_pearson": 0.381959841,
+      "centered_correlation_defined_conditions": 87.1666666667
+    },
+    {
+      "cell_type": "CD14 Mono",
+      "role": "followup_context",
+      "model": "context_module",
+      "mse": 0.0114499854,
+      "shared_response_mse": 0.0015951516,
+      "cytokine_centered_mse": 0.0098548338,
+      "cytokine_centered_pearson": 0.3937695373,
+      "centered_correlation_defined_conditions": 87.1666666667
+    },
+    {
+      "cell_type": "CD14 Mono",
+      "role": "followup_context",
+      "model": "linear_kernel",
+      "mse": 0.0116141875,
+      "shared_response_mse": 0.0016469213,
+      "cytokine_centered_mse": 0.0099672662,
+      "cytokine_centered_pearson": 0.3876859225,
+      "centered_correlation_defined_conditions": 87.1666666667
+    },
+    {
+      "cell_type": "CD14 Mono",
+      "role": "followup_context",
+      "model": "rbf_kernel",
+      "mse": 0.0114499854,
+      "shared_response_mse": 0.0015951516,
+      "cytokine_centered_mse": 0.0098548338,
+      "cytokine_centered_pearson": 0.3937695373,
+      "centered_correlation_defined_conditions": 87.1666666667
+    },
+    {
+      "cell_type": "CD14 Mono",
+      "role": "frozen_external",
+      "model": "compound",
+      "mse": 0.01192869,
+      "shared_response_mse": 0.0017529619,
+      "cytokine_centered_mse": 0.0101757281,
+      "cytokine_centered_pearson": 0.381959841,
+      "centered_correlation_defined_conditions": 87.1666666667
+    },
+    {
+      "cell_type": "CD14 Mono",
+      "role": "frozen_external",
+      "model": "gene",
+      "mse": 0.0119286912,
+      "shared_response_mse": 0.0017529616,
+      "cytokine_centered_mse": 0.0101757296,
+      "cytokine_centered_pearson": 0.3819600248,
+      "centered_correlation_defined_conditions": 87.1666666667
+    },
+    {
+      "cell_type": "CD14 Mono",
+      "role": "frozen_external",
+      "model": "global",
+      "mse": 0.01192869,
+      "shared_response_mse": 0.0017529619,
+      "cytokine_centered_mse": 0.0101757281,
+      "cytokine_centered_pearson": 0.381959841,
+      "centered_correlation_defined_conditions": 87.1666666667
+    },
+    {
+      "cell_type": "CD14 Mono",
+      "role": "frozen_external",
+      "model": "lowrank",
+      "mse": 0.0119733251,
+      "shared_response_mse": 0.0017530524,
+      "cytokine_centered_mse": 0.0102202727,
+      "cytokine_centered_pearson": 0.3667550263,
+      "centered_correlation_defined_conditions": 87.1666666667
+    },
+    {
+      "cell_type": "CD14 Mono",
+      "role": "frozen_external",
+      "model": "op3_fixed_parameters",
+      "mse": 0.0118012424,
+      "shared_response_mse": 0.0017118768,
+      "cytokine_centered_mse": 0.0100893657,
+      "cytokine_centered_pearson": 0.3832232171,
+      "centered_correlation_defined_conditions": 87.1666666667
+    },
+    {
+      "cell_type": "CD14 Mono",
+      "role": "frozen_external",
+      "model": "op3_refined_parameters",
+      "mse": 0.0128132695,
+      "shared_response_mse": 0.0019378918,
+      "cytokine_centered_mse": 0.0108753778,
+      "cytokine_centered_pearson": 0.3829345167,
+      "centered_correlation_defined_conditions": 87.1666666667
+    },
+    {
+      "cell_type": "CD14 Mono",
+      "role": "frozen_external",
+      "model": "program_gene",
+      "mse": 0.0119286912,
+      "shared_response_mse": 0.0017529616,
+      "cytokine_centered_mse": 0.0101757296,
+      "cytokine_centered_pearson": 0.3819600248,
+      "centered_correlation_defined_conditions": 87.1666666667
+    },
+    {
+      "cell_type": "CD14 Mono",
+      "role": "frozen_external",
+      "model": "source_mean",
+      "mse": 0.0123134175,
+      "shared_response_mse": 0.0018342841,
+      "cytokine_centered_mse": 0.0104791334,
+      "cytokine_centered_pearson": 0.381959841,
+      "centered_correlation_defined_conditions": 87.1666666667
+    },
+    {
+      "cell_type": "CD14 Mono",
+      "role": "frozen_external",
+      "model": "untreated",
+      "mse": 0.0137591027,
+      "shared_response_mse": 0.0018153714,
+      "cytokine_centered_mse": 0.0119437313,
+      "cytokine_centered_pearson": null,
+      "centered_correlation_defined_conditions": 0.0
+    },
+    {
+      "cell_type": "CD16 Mono",
+      "role": "followup_context",
+      "model": "calibrated_mean",
+      "mse": 0.0180941644,
+      "shared_response_mse": 0.0081658895,
+      "cytokine_centered_mse": 0.0099282749,
+      "cytokine_centered_pearson": 0.3231266332,
+      "centered_correlation_defined_conditions": 79.6666666667
+    },
+    {
+      "cell_type": "CD16 Mono",
+      "role": "followup_context",
+      "model": "context_module",
+      "mse": 0.017576746,
+      "shared_response_mse": 0.0079418674,
+      "cytokine_centered_mse": 0.0096348786,
+      "cytokine_centered_pearson": 0.336344388,
+      "centered_correlation_defined_conditions": 79.6666666667
+    },
+    {
+      "cell_type": "CD16 Mono",
+      "role": "followup_context",
+      "model": "linear_kernel",
+      "mse": 0.0177406638,
+      "shared_response_mse": 0.0079892061,
+      "cytokine_centered_mse": 0.0097514577,
+      "cytokine_centered_pearson": 0.3306557325,
+      "centered_correlation_defined_conditions": 79.6666666667
+    },
+    {
+      "cell_type": "CD16 Mono",
+      "role": "followup_context",
+      "model": "rbf_kernel",
+      "mse": 0.017576746,
+      "shared_response_mse": 0.0079418674,
+      "cytokine_centered_mse": 0.0096348786,
+      "cytokine_centered_pearson": 0.336344388,
+      "centered_correlation_defined_conditions": 79.6666666667
+    },
+    {
+      "cell_type": "CD16 Mono",
+      "role": "frozen_external",
+      "model": "compound",
+      "mse": 0.0180941644,
+      "shared_response_mse": 0.0081658895,
+      "cytokine_centered_mse": 0.0099282749,
+      "cytokine_centered_pearson": 0.3231266332,
+      "centered_correlation_defined_conditions": 79.6666666667
+    },
+    {
+      "cell_type": "CD16 Mono",
+      "role": "frozen_external",
+      "model": "gene",
+      "mse": 0.0180941639,
+      "shared_response_mse": 0.0081658894,
+      "cytokine_centered_mse": 0.0099282745,
+      "cytokine_centered_pearson": 0.3231267906,
+      "centered_correlation_defined_conditions": 79.6666666667
+    },
+    {
+      "cell_type": "CD16 Mono",
+      "role": "frozen_external",
+      "model": "global",
+      "mse": 0.0180941644,
+      "shared_response_mse": 0.0081658895,
+      "cytokine_centered_mse": 0.0099282749,
+      "cytokine_centered_pearson": 0.3231266332,
+      "centered_correlation_defined_conditions": 79.6666666667
+    },
+    {
+      "cell_type": "CD16 Mono",
+      "role": "frozen_external",
+      "model": "lowrank",
+      "mse": 0.0181351803,
+      "shared_response_mse": 0.0081600886,
+      "cytokine_centered_mse": 0.0099750917,
+      "cytokine_centered_pearson": 0.3088735407,
+      "centered_correlation_defined_conditions": 79.6666666667
+    },
+    {
+      "cell_type": "CD16 Mono",
+      "role": "frozen_external",
+      "model": "op3_fixed_parameters",
+      "mse": 0.0179586088,
+      "shared_response_mse": 0.0081563908,
+      "cytokine_centered_mse": 0.0098022179,
+      "cytokine_centered_pearson": 0.3241513381,
+      "centered_correlation_defined_conditions": 79.6666666667
+    },
+    {
+      "cell_type": "CD16 Mono",
+      "role": "frozen_external",
+      "model": "op3_refined_parameters",
+      "mse": 0.0190809361,
+      "shared_response_mse": 0.0084294991,
+      "cytokine_centered_mse": 0.010651437,
+      "cytokine_centered_pearson": 0.3239707375,
+      "centered_correlation_defined_conditions": 79.6666666667
+    },
+    {
+      "cell_type": "CD16 Mono",
+      "role": "frozen_external",
+      "model": "program_gene",
+      "mse": 0.0180941639,
+      "shared_response_mse": 0.0081658894,
+      "cytokine_centered_mse": 0.0099282745,
+      "cytokine_centered_pearson": 0.3231267906,
+      "centered_correlation_defined_conditions": 79.6666666667
+    },
+    {
+      "cell_type": "CD16 Mono",
+      "role": "frozen_external",
+      "model": "source_mean",
+      "mse": 0.0185207385,
+      "shared_response_mse": 0.0082589653,
+      "cytokine_centered_mse": 0.0102617732,
+      "cytokine_centered_pearson": 0.3231266332,
+      "centered_correlation_defined_conditions": 79.6666666667
+    },
+    {
+      "cell_type": "CD16 Mono",
+      "role": "frozen_external",
+      "model": "untreated",
+      "mse": 0.0202954694,
+      "shared_response_mse": 0.00899123,
+      "cytokine_centered_mse": 0.0113042394,
+      "cytokine_centered_pearson": null,
+      "centered_correlation_defined_conditions": 0.0
+    }
+  ],
+  "comparisons": [
+    {
+      "cell_type": "CD14 Mono",
+      "model": "program_gene",
+      "reference": "source_mean",
+      "donors": 12,
+      "improved_donors": 11,
+      "mse_difference": -0.0003847262894011482,
+      "ci95": [
+        -0.0006225226174090069,
+        -0.0001707431631095109
+      ],
+      "leave_one_donor_out_mean_range": [
+        -0.00044180537014996843,
+        -0.0003156684863879041
+      ],
+      "shared_response_mse_difference": -8.132251558803688e-05,
+      "shared_response_mse_ci95": [
+        -0.00016354844522047273,
+        -1.8585901163351282e-06
+      ],
+      "cytokine_centered_mse_difference": -0.00030340377381311156,
+      "cytokine_centered_mse_ci95": [
+        -0.0004807761305455008,
+        -0.0001408602845671648
+      ],
+      "centered_pearson_defined_donors": 12,
+      "centered_pearson_difference": 1.83819130319951e-07,
+      "centered_pearson_ci95": [
+        -1.3877787807814457e-17,
+        5.514573909737308e-07
+      ],
+      "cytokine_specific_fraction_of_mse_gain": 0.7886224107153673
+    },
+    {
+      "cell_type": "CD14 Mono",
+      "model": "context_module",
+      "reference": "program_gene",
+      "donors": 12,
+      "improved_donors": 8,
+      "mse_difference": -0.0004787058021210877,
+      "ci95": [
+        -0.001007115935117122,
+        -7.771488075537325e-05
+      ],
+      "leave_one_donor_out_mean_range": [
+        -0.0005404138684415139,
+        -0.00027046146880257954
+      ],
+      "shared_response_mse_difference": -0.0001578099795582212,
+      "shared_response_mse_ci95": [
+        -0.00032577104838105923,
+        -1.1140525367614215e-05
+      ],
+      "cytokine_centered_mse_difference": -0.00032089582256286615,
+      "cytokine_centered_mse_ci95": [
+        -0.0007097210994109179,
+        -3.425350581195842e-05
+      ],
+      "centered_pearson_defined_donors": 12,
+      "centered_pearson_difference": 0.011809512517427226,
+      "centered_pearson_ci95": [
+        -0.003624524248660246,
+        0.03333343835819552
+      ],
+      "cytokine_specific_fraction_of_mse_gain": 0.6703403659220663
+    },
+    {
+      "cell_type": "CD14 Mono",
+      "model": "context_module",
+      "reference": "linear_kernel",
+      "donors": 12,
+      "improved_donors": 7,
+      "mse_difference": -0.00016420212977971867,
+      "ci95": [
+        -0.0003590088402961668,
+        -2.021807593156512e-06
+      ],
+      "leave_one_donor_out_mean_range": [
+        -0.0001912537898395088,
+        -0.00010275249561271846
+      ],
+      "shared_response_mse_difference": -5.176972314670209e-05,
+      "shared_response_mse_ci95": [
+        -0.0001533630213637302,
+        4.0940735469872224e-05
+      ],
+      "cytokine_centered_mse_difference": -0.00011243240663301667,
+      "cytokine_centered_mse_ci95": [
+        -0.00025383128456458516,
+        5.016207429583906e-06
+      ],
+      "centered_pearson_defined_donors": 12,
+      "centered_pearson_difference": 0.006083614836087418,
+      "centered_pearson_ci95": [
+        -0.005760553665634613,
+        0.019892902243453515
+      ],
+      "cytokine_specific_fraction_of_mse_gain": 0.6847195391670474
+    },
+    {
+      "cell_type": "CD14 Mono",
+      "model": "context_module",
+      "reference": "rbf_kernel",
+      "donors": 12,
+      "improved_donors": 0,
+      "mse_difference": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "leave_one_donor_out_mean_range": [
+        0.0,
+        0.0
+      ],
+      "shared_response_mse_difference": 0.0,
+      "shared_response_mse_ci95": [
+        0.0,
+        0.0
+      ],
+      "cytokine_centered_mse_difference": 0.0,
+      "cytokine_centered_mse_ci95": [
+        0.0,
+        0.0
+      ],
+      "centered_pearson_defined_donors": 12,
+      "centered_pearson_difference": 0.0,
+      "centered_pearson_ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "cell_type": "CD16 Mono",
+      "model": "program_gene",
+      "reference": "source_mean",
+      "donors": 12,
+      "improved_donors": 11,
+      "mse_difference": -0.00042657465564101163,
+      "ci95": [
+        -0.0006396362029710231,
+        -0.00021133263785815866
+      ],
+      "leave_one_donor_out_mean_range": [
+        -0.00047958565467766905,
+        -0.0003656334643720573
+      ],
+      "shared_response_mse_difference": -9.30759597924347e-05,
+      "shared_response_mse_ci95": [
+        -0.00016782380137097562,
+        -1.7173271149728294e-05
+      ],
+      "cytokine_centered_mse_difference": -0.0003334986958485779,
+      "cytokine_centered_mse_ci95": [
+        -0.0004946589987690716,
+        -0.0001692904396882478
+      ],
+      "centered_pearson_defined_donors": 11,
+      "centered_pearson_difference": 1.5743009040331496e-07,
+      "centered_pearson_ci95": [
+        -2.0185873175002847e-17,
+        4.722902712351772e-07
+      ],
+      "cytokine_specific_fraction_of_mse_gain": 0.7818061655525012
+    },
+    {
+      "cell_type": "CD16 Mono",
+      "model": "context_module",
+      "reference": "program_gene",
+      "donors": 12,
+      "improved_donors": 7,
+      "mse_difference": -0.000517417916429272,
+      "ci95": [
+        -0.0010941077955992202,
+        -3.750202924773639e-05
+      ],
+      "leave_one_donor_out_mean_range": [
+        -0.0005840230205446839,
+        -0.0002994287692507971
+      ],
+      "shared_response_mse_difference": -0.0002240219931752156,
+      "shared_response_mse_ci95": [
+        -0.0004966326645098607,
+        1.0421254364565428e-06
+      ],
+      "cytokine_centered_mse_difference": -0.0002933959232540556,
+      "cytokine_centered_mse_ci95": [
+        -0.0007138408891758427,
+        2.1222173933813947e-05
+      ],
+      "centered_pearson_defined_donors": 11,
+      "centered_pearson_difference": 0.01321759736545557,
+      "centered_pearson_ci95": [
+        -0.000686905105968751,
+        0.032110481483594626
+      ],
+      "cytokine_specific_fraction_of_mse_gain": 0.5670385851321039
+    },
+    {
+      "cell_type": "CD16 Mono",
+      "model": "context_module",
+      "reference": "linear_kernel",
+      "donors": 12,
+      "improved_donors": 7,
+      "mse_difference": -0.00016391780252109,
+      "ci95": [
+        -0.00036038904470552316,
+        4.3385957676558185e-06
+      ],
+      "leave_one_donor_out_mean_range": [
+        -0.00019256470939571288,
+        -0.00010099850492561216
+      ],
+      "shared_response_mse_difference": -4.7338706093950846e-05,
+      "shared_response_mse_ci95": [
+        -0.00014959955254183367,
+        4.903919121232554e-05
+      ],
+      "cytokine_centered_mse_difference": -0.00011657909642713896,
+      "cytokine_centered_mse_ci95": [
+        -0.00027862956263761214,
+        1.0983318315515342e-05
+      ],
+      "centered_pearson_defined_donors": 11,
+      "centered_pearson_difference": 0.005688655444511387,
+      "centered_pearson_ci95": [
+        -0.004285019846895878,
+        0.017668788741389656
+      ],
+      "cytokine_specific_fraction_of_mse_gain": 0.7112046076394885
+    },
+    {
+      "cell_type": "CD16 Mono",
+      "model": "context_module",
+      "reference": "rbf_kernel",
+      "donors": 12,
+      "improved_donors": 0,
+      "mse_difference": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "leave_one_donor_out_mean_range": [
+        0.0,
+        0.0
+      ],
+      "shared_response_mse_difference": 0.0,
+      "shared_response_mse_ci95": [
+        0.0,
+        0.0
+      ],
+      "cytokine_centered_mse_difference": 0.0,
+      "cytokine_centered_mse_ci95": [
+        0.0,
+        0.0
+      ],
+      "centered_pearson_defined_donors": 11,
+      "centered_pearson_difference": 0.0,
+      "centered_pearson_ci95": [
+        0.0,
+        0.0
+      ]
+    }
+  ],
+  "singleton_policy": "Donor7 CD16 remains in total MSE. Its cytokine-centred correlation is undefined with one eligible cytokine. Centre-sensitive correlation summaries use 11 donors for CD16 and 12 for CD14.",
+  "weight_scope": "Kernel coefficients describe response interpolation/extrapolation, not causal cellular contributions."
+}
