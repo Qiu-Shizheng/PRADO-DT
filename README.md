@@ -117,6 +117,8 @@ The gene and programme model has MSE **0.073151** and response correlation **0.2
 
 The [matched benchmark evidence](docs/benchmark_evidence.md) includes complete scGPT and Nicheformer encoder adaptations, random-initialisation controls, joint donor/cell-type transfer and gene-set response analysis.
 
+The benchmark guide also includes independent interferon and multi-cytokine studies. The twelve-donor cytokine evaluation covers 2,003 response pairs and identifies a setting where the selected model matches simple global response scaling. Complete model comparisons and donor-level source tables are provided.
+
 Saved models replay the frozen evaluation predictions to numerical precision. Run the software tests with:
 
 ```bash

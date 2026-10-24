@@ -61,6 +61,29 @@ ContextDose has lower CD14 MSE than scGen, with a paired donor-bootstrap differe
 
 The eight donor folds share source training donors. Treatment and control were sequenced in separate lanes in the original study. [Complete mean scores](benchmarks/ifnb_summary.tsv), [donor scores](benchmarks/ifnb_donor_results.tsv), [initialisation results](benchmarks/ifnb_native_seed_results.tsv) and [paired intervals](benchmarks/ifnb_paired_intervals.json) accompany this comparison.
 
+## Independent multi-cytokine study
+
+The [Parse PBMC cytokine dataset](https://www.parsebiosciences.com/datasets/10-million-human-pbmcs-in-a-single-experiment/) contains 9,697,974 blood immune cells from twelve healthy donors exposed to 90 cytokines and PBS controls. The evaluation predicts CD14 and CD16 monocyte responses from seven B-cell, T-cell and natural-killer-cell populations. Every outer fold excludes stimulated cells from the held-out donor and all stimulated target monocytes. Source controls determine the 2,000-gene panel. Inner validation jointly holds out a donor and source population.
+
+Fixed minimum support of twenty cells in treatment and matched control yields 1,046 CD14 and 957 CD16 donor–cytokine pairs. Scores first average eligible conditions within each donor, then weight the twelve donors equally. All eligible conditions are retained. One donor has only one eligible CD16 condition. The experiment uses one plate per donor, so donor and plate effects are not separately identifiable.
+
+| Predictor | CD14 MSE | CD16 MSE | CD14 response Pearson | CD16 response Pearson |
+|---|---:|---:|---:|---:|
+| ContextDose, frozen source-selection procedure | 0.011929 | 0.018094 | 0.3963 | 0.3381 |
+| Global response scaling | 0.011929 | 0.018094 | 0.3963 | 0.3381 |
+| Source mean | 0.012313 | 0.018521 | 0.3963 | 0.3381 |
+| Untreated | 0.013759 | 0.020295 | Undefined | Undefined |
+
+The selected model reduces MSE by 3.12% and 2.30% relative to the source mean. All twelve folds select zero programme contribution, and predictions match global scaling to displayed precision. Thus this cohort supports response calibration without establishing an additional programme-model benefit. [All nine frozen comparators and four follow-up variants](benchmarks/parse_model_metrics.tsv) are included, alongside [donor scores](benchmarks/parse_donor_metrics.tsv), [paired intervals](benchmarks/parse_paired_intervals.tsv), [coverage](benchmarks/parse_condition_coverage.tsv) and [all-pair weighting sensitivity](benchmarks/parse_profile_weighted_sensitivity.tsv).
+
+### Cell-state follow-up
+
+A follow-up analysis, developed after the frozen evaluation, uses untreated source states to condition response transfer. Hyperparameters remain selected using source-only donor and cell-type holdouts. The selected module has MSE 0.011450 and 0.017577 in CD14 and CD16 monocytes, respectively. These are reductions of 4.01% and 2.86% relative to the frozen selected model. Its predictions are exactly identical to the Gaussian kernel ridge comparator in every fold. This supports the usefulness of cell-state information within this cohort. It does not establish an advantage beyond that classical comparator or constitute a second untouched validation.
+
+Across the same 32 eligible Hallmark sets, mean-response MSE is 0.003694 and 0.003181, compared with 0.004056 and 0.003462 for the frozen model. Mean response Pearson correlation is 0.3959 and 0.3390. [Complete condition scores](benchmarks/parse_per_condition_metrics.tsv) and [analysis scope](benchmarks/parse_summary.json) accompany the results. Outer folds share source training donors.
+
+The provider distributes the original Parse data under CC BY-NC 4.0. This repository includes analytical summaries, not raw cells. The code licence does not replace third-party data licences.
+
 ## Data verification
 
 ### Perturbation-specific information

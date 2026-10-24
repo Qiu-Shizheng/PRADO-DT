@@ -1,0 +1,915 @@
+{
+  "donors": 12,
+  "target_types": 2,
+  "eligible_donor_type_stimulus_pairs": 2003,
+  "condition_pairs_by_type": {
+    "CD14 Mono": 1046,
+    "CD16 Mono": 957
+  },
+  "common_hallmarks": 32,
+  "hallmarks": [
+    "Adipogenesis",
+    "Allograft Rejection",
+    "Androgen Response",
+    "Apical Junction",
+    "Apoptosis",
+    "Complement",
+    "E2F Targets",
+    "Estrogen Response Early",
+    "Estrogen Response Late",
+    "Fatty Acid Metabolism",
+    "G2-M Checkpoint",
+    "Glycolysis",
+    "Hypoxia",
+    "IL-2/STAT5 Signaling",
+    "IL-6/JAK/STAT3 Signaling",
+    "Inflammatory Response",
+    "Interferon Alpha Response",
+    "Interferon Gamma Response",
+    "KRAS Signaling Dn",
+    "KRAS Signaling Up",
+    "Mitotic Spindle",
+    "Myc Targets V1",
+    "PI3K/AKT/mTOR  Signaling",
+    "Protein Secretion",
+    "TGF-beta Signaling",
+    "TNF-alpha Signaling via NF-kB",
+    "UV Response Dn",
+    "UV Response Up",
+    "Unfolded Protein Response",
+    "heme Metabolism",
+    "mTORC1 Signaling",
+    "p53 Pathway"
+  ],
+  "all_frozen_checkpoint_replays_exact": true,
+  "zero_programme_branch_folds": 12,
+  "models": [
+    {
+      "cell_type": "CD14 Mono",
+      "role": "followup_context",
+      "model": "calibrated_mean",
+      "mse": 0.01192869,
+      "mae": 0.0616341033,
+      "response_pearson": 0.3962911858,
+      "response_spearman": 0.3471435382,
+      "hallmark_mse": 0.0040559413
+    },
+    {
+      "cell_type": "CD14 Mono",
+      "role": "followup_context",
+      "model": "context_module",
+      "mse": 0.0114499854,
+      "mae": 0.0614357925,
+      "response_pearson": 0.3958711514,
+      "response_spearman": 0.332385863,
+      "hallmark_mse": 0.0036936778
+    },
+    {
+      "cell_type": "CD14 Mono",
+      "role": "followup_context",
+      "model": "linear_kernel",
+      "mse": 0.0116141875,
+      "mae": 0.0623470776,
+      "response_pearson": 0.3913487529,
+      "response_spearman": 0.3291389391,
+      "hallmark_mse": 0.0037774316
+    },
+    {
+      "cell_type": "CD14 Mono",
+      "role": "followup_context",
+      "model": "rbf_kernel",
+      "mse": 0.0114499854,
+      "mae": 0.0614357925,
+      "response_pearson": 0.3958711514,
+      "response_spearman": 0.332385863,
+      "hallmark_mse": 0.0036936778
+    },
+    {
+      "cell_type": "CD14 Mono",
+      "role": "frozen_external",
+      "model": "compound",
+      "mse": 0.01192869,
+      "mae": 0.0616341033,
+      "response_pearson": 0.3962911858,
+      "response_spearman": 0.3471435382,
+      "hallmark_mse": 0.0040559413
+    },
+    {
+      "cell_type": "CD14 Mono",
+      "role": "frozen_external",
+      "model": "gene",
+      "mse": 0.0119286912,
+      "mae": 0.0616340534,
+      "response_pearson": 0.3962914387,
+      "response_spearman": 0.347144121,
+      "hallmark_mse": 0.0040559435
+    },
+    {
+      "cell_type": "CD14 Mono",
+      "role": "frozen_external",
+      "model": "global",
+      "mse": 0.01192869,
+      "mae": 0.0616341033,
+      "response_pearson": 0.3962911858,
+      "response_spearman": 0.3471435382,
+      "hallmark_mse": 0.0040559413
+    },
+    {
+      "cell_type": "CD14 Mono",
+      "role": "frozen_external",
+      "model": "lowrank",
+      "mse": 0.0119733251,
+      "mae": 0.061848237,
+      "response_pearson": 0.3834867656,
+      "response_spearman": 0.3320619772,
+      "hallmark_mse": 0.0040569771
+    },
+    {
+      "cell_type": "CD14 Mono",
+      "role": "frozen_external",
+      "model": "op3_fixed_parameters",
+      "mse": 0.0118012424,
+      "mae": 0.0604733146,
+      "response_pearson": 0.3977139482,
+      "response_spearman": 0.3489147418,
+      "hallmark_mse": 0.0040442813
+    },
+    {
+      "cell_type": "CD14 Mono",
+      "role": "frozen_external",
+      "model": "op3_refined_parameters",
+      "mse": 0.0128132695,
+      "mae": 0.0654910111,
+      "response_pearson": 0.3979593806,
+      "response_spearman": 0.3487532123,
+      "hallmark_mse": 0.0044473778
+    },
+    {
+      "cell_type": "CD14 Mono",
+      "role": "frozen_external",
+      "model": "program_gene",
+      "mse": 0.0119286912,
+      "mae": 0.0616340534,
+      "response_pearson": 0.3962914387,
+      "response_spearman": 0.347144121,
+      "hallmark_mse": 0.0040559435
+    },
+    {
+      "cell_type": "CD14 Mono",
+      "role": "frozen_external",
+      "model": "source_mean",
+      "mse": 0.0123134175,
+      "mae": 0.0636062217,
+      "response_pearson": 0.3962911858,
+      "response_spearman": 0.3471435382,
+      "hallmark_mse": 0.0041795354
+    },
+    {
+      "cell_type": "CD14 Mono",
+      "role": "frozen_external",
+      "model": "untreated",
+      "mse": 0.0137591027,
+      "mae": 0.0642345886,
+      "response_pearson": null,
+      "response_spearman": null,
+      "hallmark_mse": 0.0052960745
+    },
+    {
+      "cell_type": "CD16 Mono",
+      "role": "followup_context",
+      "model": "calibrated_mean",
+      "mse": 0.0180941644,
+      "mae": 0.0844089379,
+      "response_pearson": 0.3381035924,
+      "response_spearman": 0.2753874709,
+      "hallmark_mse": 0.0034621133
+    },
+    {
+      "cell_type": "CD16 Mono",
+      "role": "followup_context",
+      "model": "context_module",
+      "mse": 0.017576746,
+      "mae": 0.0840215724,
+      "response_pearson": 0.3390161497,
+      "response_spearman": 0.2653658999,
+      "hallmark_mse": 0.0031808707
+    },
+    {
+      "cell_type": "CD16 Mono",
+      "role": "followup_context",
+      "model": "linear_kernel",
+      "mse": 0.0177406638,
+      "mae": 0.0847051368,
+      "response_pearson": 0.3351832888,
+      "response_spearman": 0.2619279276,
+      "hallmark_mse": 0.0032773351
+    },
+    {
+      "cell_type": "CD16 Mono",
+      "role": "followup_context",
+      "model": "rbf_kernel",
+      "mse": 0.017576746,
+      "mae": 0.0840215724,
+      "response_pearson": 0.3390161497,
+      "response_spearman": 0.2653658999,
+      "hallmark_mse": 0.0031808707
+    },
+    {
+      "cell_type": "CD16 Mono",
+      "role": "frozen_external",
+      "model": "compound",
+      "mse": 0.0180941644,
+      "mae": 0.0844089379,
+      "response_pearson": 0.3381035924,
+      "response_spearman": 0.2753874709,
+      "hallmark_mse": 0.0034621133
+    },
+    {
+      "cell_type": "CD16 Mono",
+      "role": "frozen_external",
+      "model": "gene",
+      "mse": 0.0180941639,
+      "mae": 0.084408893,
+      "response_pearson": 0.3381036533,
+      "response_spearman": 0.2753880587,
+      "hallmark_mse": 0.0034621194
+    },
+    {
+      "cell_type": "CD16 Mono",
+      "role": "frozen_external",
+      "model": "global",
+      "mse": 0.0180941644,
+      "mae": 0.0844089379,
+      "response_pearson": 0.3381035924,
+      "response_spearman": 0.2753874709,
+      "hallmark_mse": 0.0034621133
+    },
+    {
+      "cell_type": "CD16 Mono",
+      "role": "frozen_external",
+      "model": "lowrank",
+      "mse": 0.0181351803,
+      "mae": 0.0845662582,
+      "response_pearson": 0.3279338139,
+      "response_spearman": 0.2648702792,
+      "hallmark_mse": 0.0034623463
+    },
+    {
+      "cell_type": "CD16 Mono",
+      "role": "frozen_external",
+      "model": "op3_fixed_parameters",
+      "mse": 0.0179586088,
+      "mae": 0.0834766513,
+      "response_pearson": 0.3391874918,
+      "response_spearman": 0.2767188264,
+      "hallmark_mse": 0.0034006291
+    },
+    {
+      "cell_type": "CD16 Mono",
+      "role": "frozen_external",
+      "model": "op3_refined_parameters",
+      "mse": 0.0190809361,
+      "mae": 0.0875958283,
+      "response_pearson": 0.3393636439,
+      "response_spearman": 0.2765703608,
+      "hallmark_mse": 0.0040743923
+    },
+    {
+      "cell_type": "CD16 Mono",
+      "role": "frozen_external",
+      "model": "program_gene",
+      "mse": 0.0180941639,
+      "mae": 0.084408893,
+      "response_pearson": 0.3381036533,
+      "response_spearman": 0.2753880587,
+      "hallmark_mse": 0.0034621194
+    },
+    {
+      "cell_type": "CD16 Mono",
+      "role": "frozen_external",
+      "model": "source_mean",
+      "mse": 0.0185207385,
+      "mae": 0.0860126609,
+      "response_pearson": 0.3381035924,
+      "response_spearman": 0.2753874709,
+      "hallmark_mse": 0.0036867506
+    },
+    {
+      "cell_type": "CD16 Mono",
+      "role": "frozen_external",
+      "model": "untreated",
+      "mse": 0.0202954694,
+      "mae": 0.0871689019,
+      "response_pearson": null,
+      "response_spearman": null,
+      "hallmark_mse": 0.0047486815
+    }
+  ],
+  "comparisons": [
+    {
+      "mean": -0.00038472628940114845,
+      "donors": 12,
+      "cytokines": 89,
+      "evaluated_pairs": 1046,
+      "donor_ci95": [
+        -0.0006225226174090068,
+        -0.00017074316310951158
+      ],
+      "donor_valid_bootstrap_draws": 5000,
+      "cytokine_ci95": [
+        -0.0005354026327062812,
+        -0.0002644782257876355
+      ],
+      "cytokine_valid_bootstrap_draws": 5000,
+      "crossed_ci95": [
+        -0.0007057773723008708,
+        -0.0001346147282753313
+      ],
+      "crossed_valid_bootstrap_draws": 5000,
+      "cell_type": "CD14 Mono",
+      "model": "program_gene",
+      "reference": "source_mean",
+      "metric": "mse"
+    },
+    {
+      "mean": -0.00012359192525086514,
+      "donors": 12,
+      "cytokines": 89,
+      "evaluated_pairs": 1046,
+      "donor_ci95": [
+        -0.0003317898461066234,
+        6.452405293708124e-05
+      ],
+      "donor_valid_bootstrap_draws": 5000,
+      "cytokine_ci95": [
+        -0.00020475708149511338,
+        -4.3861734884948094e-05
+      ],
+      "cytokine_valid_bootstrap_draws": 5000,
+      "crossed_ci95": [
+        -0.00036217816129882304,
+        0.00010944616025665461
+      ],
+      "crossed_valid_bootstrap_draws": 5000,
+      "cell_type": "CD14 Mono",
+      "model": "program_gene",
+      "reference": "source_mean",
+      "metric": "hallmark_mse"
+    },
+    {
+      "mean": 1.1404521731264407e-09,
+      "donors": 12,
+      "cytokines": 89,
+      "evaluated_pairs": 1046,
+      "donor_ci95": [
+        0.0,
+        3.4213565193793218e-09
+      ],
+      "donor_valid_bootstrap_draws": 5000,
+      "cytokine_ci95": [
+        -3.874830486837022e-09,
+        6.317238177429949e-09
+      ],
+      "cytokine_valid_bootstrap_draws": 5000,
+      "crossed_ci95": [
+        -5.327575988847614e-09,
+        1.0372376658088473e-08
+      ],
+      "crossed_valid_bootstrap_draws": 5000,
+      "cell_type": "CD14 Mono",
+      "model": "program_gene",
+      "reference": "global",
+      "metric": "mse"
+    },
+    {
+      "mean": 2.2101903949069418e-09,
+      "donors": 12,
+      "cytokines": 89,
+      "evaluated_pairs": 1046,
+      "donor_ci95": [
+        0.0,
+        6.630571184720824e-09
+      ],
+      "donor_valid_bootstrap_draws": 5000,
+      "cytokine_ci95": [
+        -4.990849252348636e-09,
+        9.323016422880294e-09
+      ],
+      "cytokine_valid_bootstrap_draws": 5000,
+      "crossed_ci95": [
+        -6.414845870193415e-09,
+        1.597465613390985e-08
+      ],
+      "crossed_valid_bootstrap_draws": 5000,
+      "cell_type": "CD14 Mono",
+      "model": "program_gene",
+      "reference": "global",
+      "metric": "hallmark_mse"
+    },
+    {
+      "mean": -0.0004787058021210872,
+      "donors": 12,
+      "cytokines": 89,
+      "evaluated_pairs": 1046,
+      "donor_ci95": [
+        -0.0010071159351171212,
+        -7.771488075537238e-05
+      ],
+      "donor_valid_bootstrap_draws": 5000,
+      "cytokine_ci95": [
+        -0.0007866815804473885,
+        -0.00021226946294541552
+      ],
+      "cytokine_valid_bootstrap_draws": 5000,
+      "crossed_ci95": [
+        -0.001155411713062837,
+        -1.3999548720197404e-05
+      ],
+      "crossed_valid_bootstrap_draws": 5000,
+      "cell_type": "CD14 Mono",
+      "model": "context_module",
+      "reference": "program_gene",
+      "metric": "mse"
+    },
+    {
+      "mean": -0.00036226566437649806,
+      "donors": 12,
+      "cytokines": 89,
+      "evaluated_pairs": 1046,
+      "donor_ci95": [
+        -0.0007269814877892468,
+        -8.082559864377606e-05
+      ],
+      "donor_valid_bootstrap_draws": 5000,
+      "cytokine_ci95": [
+        -0.0005881986707202948,
+        -0.00017019711353942366
+      ],
+      "cytokine_valid_bootstrap_draws": 5000,
+      "crossed_ci95": [
+        -0.0008365305225593174,
+        -3.5122985177801514e-05
+      ],
+      "crossed_valid_bootstrap_draws": 5000,
+      "cell_type": "CD14 Mono",
+      "model": "context_module",
+      "reference": "program_gene",
+      "metric": "hallmark_mse"
+    },
+    {
+      "mean": -0.00035125708143586397,
+      "donors": 12,
+      "cytokines": 89,
+      "evaluated_pairs": 1046,
+      "donor_ci95": [
+        -0.0007614636583307656,
+        -3.293644312271594e-05
+      ],
+      "donor_valid_bootstrap_draws": 5000,
+      "cytokine_ci95": [
+        -0.0006616415877189613,
+        -9.654354672964542e-05
+      ],
+      "cytokine_valid_bootstrap_draws": 5000,
+      "crossed_ci95": [
+        -0.0008878857392906123,
+        6.941896079632952e-05
+      ],
+      "crossed_valid_bootstrap_draws": 5000,
+      "cell_type": "CD14 Mono",
+      "model": "context_module",
+      "reference": "op3_fixed_parameters",
+      "metric": "mse"
+    },
+    {
+      "mean": -0.00035060350391455543,
+      "donors": 12,
+      "cytokines": 89,
+      "evaluated_pairs": 1046,
+      "donor_ci95": [
+        -0.0006367810099120185,
+        -0.00011759117127433412
+      ],
+      "donor_valid_bootstrap_draws": 5000,
+      "cytokine_ci95": [
+        -0.0006217415481833604,
+        -0.0001229770225189092
+      ],
+      "cytokine_valid_bootstrap_draws": 5000,
+      "crossed_ci95": [
+        -0.0007689565235199143,
+        -2.319196824441501e-05
+      ],
+      "crossed_valid_bootstrap_draws": 5000,
+      "cell_type": "CD14 Mono",
+      "model": "context_module",
+      "reference": "op3_fixed_parameters",
+      "metric": "hallmark_mse"
+    },
+    {
+      "mean": -0.00016420212977971932,
+      "donors": 12,
+      "cytokines": 89,
+      "evaluated_pairs": 1046,
+      "donor_ci95": [
+        -0.0003590088402961671,
+        -2.02180759315854e-06
+      ],
+      "donor_valid_bootstrap_draws": 5000,
+      "cytokine_ci95": [
+        -0.00022115598283180515,
+        -0.00010631469916365614
+      ],
+      "cytokine_valid_bootstrap_draws": 5000,
+      "crossed_ci95": [
+        -0.00037581467283720417,
+        8.131511159406285e-06
+      ],
+      "crossed_valid_bootstrap_draws": 5000,
+      "cell_type": "CD14 Mono",
+      "model": "context_module",
+      "reference": "linear_kernel",
+      "metric": "mse"
+    },
+    {
+      "mean": -8.375372854161614e-05,
+      "donors": 12,
+      "cytokines": 89,
+      "evaluated_pairs": 1046,
+      "donor_ci95": [
+        -0.00020351221509172474,
+        1.1942577165730633e-05
+      ],
+      "donor_valid_bootstrap_draws": 5000,
+      "cytokine_ci95": [
+        -0.0001269027819212948,
+        -3.7962816098980556e-05
+      ],
+      "cytokine_valid_bootstrap_draws": 5000,
+      "crossed_ci95": [
+        -0.00021462401471823546,
+        2.2800768028492304e-05
+      ],
+      "crossed_valid_bootstrap_draws": 5000,
+      "cell_type": "CD14 Mono",
+      "model": "context_module",
+      "reference": "linear_kernel",
+      "metric": "hallmark_mse"
+    },
+    {
+      "mean": 0.0,
+      "donors": 12,
+      "cytokines": 89,
+      "evaluated_pairs": 1046,
+      "donor_ci95": [
+        0.0,
+        0.0
+      ],
+      "donor_valid_bootstrap_draws": 5000,
+      "cytokine_ci95": [
+        0.0,
+        0.0
+      ],
+      "cytokine_valid_bootstrap_draws": 5000,
+      "crossed_ci95": [
+        0.0,
+        0.0
+      ],
+      "crossed_valid_bootstrap_draws": 5000,
+      "cell_type": "CD14 Mono",
+      "model": "context_module",
+      "reference": "rbf_kernel",
+      "metric": "mse"
+    },
+    {
+      "mean": 0.0,
+      "donors": 12,
+      "cytokines": 89,
+      "evaluated_pairs": 1046,
+      "donor_ci95": [
+        0.0,
+        0.0
+      ],
+      "donor_valid_bootstrap_draws": 5000,
+      "cytokine_ci95": [
+        0.0,
+        0.0
+      ],
+      "cytokine_valid_bootstrap_draws": 5000,
+      "crossed_ci95": [
+        0.0,
+        0.0
+      ],
+      "crossed_valid_bootstrap_draws": 5000,
+      "cell_type": "CD14 Mono",
+      "model": "context_module",
+      "reference": "rbf_kernel",
+      "metric": "hallmark_mse"
+    },
+    {
+      "mean": -0.00042657465564101147,
+      "donors": 12,
+      "cytokines": 89,
+      "evaluated_pairs": 957,
+      "donor_ci95": [
+        -0.0006460720698003149,
+        -0.00022564389206821697
+      ],
+      "donor_valid_bootstrap_draws": 5000,
+      "cytokine_ci95": [
+        -0.0006120084581753301,
+        -0.00028297929956741936
+      ],
+      "cytokine_valid_bootstrap_draws": 3200,
+      "crossed_ci95": [
+        -0.0007824016040021466,
+        -0.000201646067853865
+      ],
+      "crossed_valid_bootstrap_draws": 3802,
+      "cell_type": "CD16 Mono",
+      "model": "program_gene",
+      "reference": "source_mean",
+      "metric": "mse"
+    },
+    {
+      "mean": -0.00022463116530906408,
+      "donors": 12,
+      "cytokines": 89,
+      "evaluated_pairs": 957,
+      "donor_ci95": [
+        -0.00039611761672073733,
+        -6.674670573209832e-05
+      ],
+      "donor_valid_bootstrap_draws": 5000,
+      "cytokine_ci95": [
+        -0.0003234624924379796,
+        -0.00014463789812683918
+      ],
+      "cytokine_valid_bootstrap_draws": 3200,
+      "crossed_ci95": [
+        -0.0004643052751671762,
+        -5.761465477292603e-05
+      ],
+      "crossed_valid_bootstrap_draws": 3802,
+      "cell_type": "CD16 Mono",
+      "model": "program_gene",
+      "reference": "source_mean",
+      "metric": "hallmark_mse"
+    },
+    {
+      "mean": -5.669716650321322e-10,
+      "donors": 12,
+      "cytokines": 89,
+      "evaluated_pairs": 957,
+      "donor_ci95": [
+        -1.7009149950963964e-09,
+        0.0
+      ],
+      "donor_valid_bootstrap_draws": 5000,
+      "cytokine_ci95": [
+        -6.725988488345946e-09,
+        6.0416352511713e-09
+      ],
+      "cytokine_valid_bootstrap_draws": 3200,
+      "crossed_ci95": [
+        -1.0695164848371822e-08,
+        8.23396824891634e-09
+      ],
+      "crossed_valid_bootstrap_draws": 3802,
+      "cell_type": "CD16 Mono",
+      "model": "program_gene",
+      "reference": "global",
+      "metric": "mse"
+    },
+    {
+      "mean": 6.046992860518716e-09,
+      "donors": 12,
+      "cytokines": 89,
+      "evaluated_pairs": 957,
+      "donor_ci95": [
+        0.0,
+        1.814097858155615e-08
+      ],
+      "donor_valid_bootstrap_draws": 5000,
+      "cytokine_ci95": [
+        3.3190657954298753e-10,
+        1.2571722140169157e-08
+      ],
+      "cytokine_valid_bootstrap_draws": 3200,
+      "crossed_ci95": [
+        0.0,
+        2.4961483338223e-08
+      ],
+      "crossed_valid_bootstrap_draws": 3802,
+      "cell_type": "CD16 Mono",
+      "model": "program_gene",
+      "reference": "global",
+      "metric": "hallmark_mse"
+    },
+    {
+      "mean": -0.0005174179164292711,
+      "donors": 12,
+      "cytokines": 89,
+      "evaluated_pairs": 957,
+      "donor_ci95": [
+        -0.0010911203847299917,
+        -5.7377178339122736e-05
+      ],
+      "donor_valid_bootstrap_draws": 5000,
+      "cytokine_ci95": [
+        -0.0008095241609250226,
+        -0.000286634184379736
+      ],
+      "cytokine_valid_bootstrap_draws": 3200,
+      "crossed_ci95": [
+        -0.0012383101014523557,
+        8.773233804424616e-06
+      ],
+      "crossed_valid_bootstrap_draws": 3802,
+      "cell_type": "CD16 Mono",
+      "model": "context_module",
+      "reference": "program_gene",
+      "metric": "mse"
+    },
+    {
+      "mean": -0.0002812486690446173,
+      "donors": 12,
+      "cytokines": 89,
+      "evaluated_pairs": 957,
+      "donor_ci95": [
+        -0.000710831214972463,
+        3.5770441877498545e-05
+      ],
+      "donor_valid_bootstrap_draws": 5000,
+      "cytokine_ci95": [
+        -0.00046741590224482095,
+        -0.0001406197921868207
+      ],
+      "cytokine_valid_bootstrap_draws": 3200,
+      "crossed_ci95": [
+        -0.0007990070589901322,
+        4.997503222528293e-05
+      ],
+      "crossed_valid_bootstrap_draws": 3802,
+      "cell_type": "CD16 Mono",
+      "model": "context_module",
+      "reference": "program_gene",
+      "metric": "hallmark_mse"
+    },
+    {
+      "mean": -0.00038186280240430805,
+      "donors": 12,
+      "cytokines": 89,
+      "evaluated_pairs": 957,
+      "donor_ci95": [
+        -0.0008843754252010875,
+        1.7821440444749273e-05
+      ],
+      "donor_valid_bootstrap_draws": 5000,
+      "cytokine_ci95": [
+        -0.0006120611308436959,
+        -0.0002025994817321791
+      ],
+      "cytokine_valid_bootstrap_draws": 3200,
+      "crossed_ci95": [
+        -0.0009385677482847943,
+        8.91776281176525e-05
+      ],
+      "crossed_valid_bootstrap_draws": 3802,
+      "cell_type": "CD16 Mono",
+      "model": "context_module",
+      "reference": "op3_fixed_parameters",
+      "metric": "mse"
+    },
+    {
+      "mean": -0.0002197584073836285,
+      "donors": 12,
+      "cytokines": 89,
+      "evaluated_pairs": 957,
+      "donor_ci95": [
+        -0.0005223098766474331,
+        -6.894992682618172e-07
+      ],
+      "donor_valid_bootstrap_draws": 5000,
+      "cytokine_ci95": [
+        -0.00039798383801126506,
+        -8.848725470144297e-05
+      ],
+      "cytokine_valid_bootstrap_draws": 3200,
+      "crossed_ci95": [
+        -0.0006069644540506839,
+        4.5427671951554597e-05
+      ],
+      "crossed_valid_bootstrap_draws": 3802,
+      "cell_type": "CD16 Mono",
+      "model": "context_module",
+      "reference": "op3_fixed_parameters",
+      "metric": "hallmark_mse"
+    },
+    {
+      "mean": -0.00016391780252109005,
+      "donors": 12,
+      "cytokines": 89,
+      "evaluated_pairs": 957,
+      "donor_ci95": [
+        -0.00035690746328804384,
+        -4.5805664704187093e-07
+      ],
+      "donor_valid_bootstrap_draws": 5000,
+      "cytokine_ci95": [
+        -0.00020427903890681695,
+        -0.0001223593909760175
+      ],
+      "cytokine_valid_bootstrap_draws": 3200,
+      "crossed_ci95": [
+        -0.00037446480368823323,
+        8.165020595582034e-06
+      ],
+      "crossed_valid_bootstrap_draws": 3802,
+      "cell_type": "CD16 Mono",
+      "model": "context_module",
+      "reference": "linear_kernel",
+      "metric": "mse"
+    },
+    {
+      "mean": -9.646433941875301e-05,
+      "donors": 12,
+      "cytokines": 89,
+      "evaluated_pairs": 957,
+      "donor_ci95": [
+        -0.0002091966199988417,
+        -4.843928655302791e-06
+      ],
+      "donor_valid_bootstrap_draws": 5000,
+      "cytokine_ci95": [
+        -0.000125616163414916,
+        -6.639041287913094e-05
+      ],
+      "cytokine_valid_bootstrap_draws": 3200,
+      "crossed_ci95": [
+        -0.0002216774879754104,
+        2.034519157947874e-06
+      ],
+      "crossed_valid_bootstrap_draws": 3802,
+      "cell_type": "CD16 Mono",
+      "model": "context_module",
+      "reference": "linear_kernel",
+      "metric": "hallmark_mse"
+    },
+    {
+      "mean": 0.0,
+      "donors": 12,
+      "cytokines": 89,
+      "evaluated_pairs": 957,
+      "donor_ci95": [
+        0.0,
+        0.0
+      ],
+      "donor_valid_bootstrap_draws": 5000,
+      "cytokine_ci95": [
+        0.0,
+        0.0
+      ],
+      "cytokine_valid_bootstrap_draws": 3200,
+      "crossed_ci95": [
+        0.0,
+        0.0
+      ],
+      "crossed_valid_bootstrap_draws": 3802,
+      "cell_type": "CD16 Mono",
+      "model": "context_module",
+      "reference": "rbf_kernel",
+      "metric": "mse"
+    },
+    {
+      "mean": 0.0,
+      "donors": 12,
+      "cytokines": 89,
+      "evaluated_pairs": 957,
+      "donor_ci95": [
+        0.0,
+        0.0
+      ],
+      "donor_valid_bootstrap_draws": 5000,
+      "cytokine_ci95": [
+        0.0,
+        0.0
+      ],
+      "cytokine_valid_bootstrap_draws": 3200,
+      "crossed_ci95": [
+        0.0,
+        0.0
+      ],
+      "crossed_valid_bootstrap_draws": 3802,
+      "cell_type": "CD16 Mono",
+      "model": "context_module",
+      "reference": "rbf_kernel",
+      "metric": "hallmark_mse"
+    }
+  ],
+  "primary_weighting": "Equal donor means, then equal weighting of eligible conditions within each donor",
+  "coverage_note": "One donor has only one eligible CD16 cytokine response. It is retained in the primary donor-weighted analysis and all-profile weighting is provided as a sensitivity analysis.",
+  "context_role": "Follow-up source-selected analysis after inspection of the frozen external results; not a new untouched confirmation",
+  "context_architecture_scope": "The selected context module equals the Gaussian kernel ridge comparator. Its improvement supports context information, not a new advantage beyond that baseline.",
+  "native_parse_fits_included": false
+}
