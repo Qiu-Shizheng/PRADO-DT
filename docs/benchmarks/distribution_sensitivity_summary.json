@@ -1,0 +1,151 @@
+{
+  "comparisons": [
+    {
+      "cell_type": "CD14+ Monocytes",
+      "metric": "energy_distance",
+      "reference": "compound",
+      "settings": 6,
+      "lower_point_estimate_settings": 6,
+      "interval_below_zero_settings": 6
+    },
+    {
+      "cell_type": "CD14+ Monocytes",
+      "metric": "energy_distance",
+      "reference": "scgen",
+      "settings": 6,
+      "lower_point_estimate_settings": 6,
+      "interval_below_zero_settings": 6
+    },
+    {
+      "cell_type": "CD14+ Monocytes",
+      "metric": "energy_distance",
+      "reference": "scvidr",
+      "settings": 6,
+      "lower_point_estimate_settings": 6,
+      "interval_below_zero_settings": 6
+    },
+    {
+      "cell_type": "CD14+ Monocytes",
+      "metric": "mmd_biased",
+      "reference": "compound",
+      "settings": 18,
+      "lower_point_estimate_settings": 18,
+      "interval_below_zero_settings": 18
+    },
+    {
+      "cell_type": "CD14+ Monocytes",
+      "metric": "mmd_biased",
+      "reference": "scgen",
+      "settings": 18,
+      "lower_point_estimate_settings": 18,
+      "interval_below_zero_settings": 18
+    },
+    {
+      "cell_type": "CD14+ Monocytes",
+      "metric": "mmd_biased",
+      "reference": "scvidr",
+      "settings": 18,
+      "lower_point_estimate_settings": 18,
+      "interval_below_zero_settings": 18
+    },
+    {
+      "cell_type": "CD14+ Monocytes",
+      "metric": "mmd_unbiased",
+      "reference": "compound",
+      "settings": 18,
+      "lower_point_estimate_settings": 18,
+      "interval_below_zero_settings": 18
+    },
+    {
+      "cell_type": "CD14+ Monocytes",
+      "metric": "mmd_unbiased",
+      "reference": "scgen",
+      "settings": 18,
+      "lower_point_estimate_settings": 18,
+      "interval_below_zero_settings": 18
+    },
+    {
+      "cell_type": "CD14+ Monocytes",
+      "metric": "mmd_unbiased",
+      "reference": "scvidr",
+      "settings": 18,
+      "lower_point_estimate_settings": 18,
+      "interval_below_zero_settings": 18
+    },
+    {
+      "cell_type": "FCGR3A+ Monocytes",
+      "metric": "energy_distance",
+      "reference": "compound",
+      "settings": 6,
+      "lower_point_estimate_settings": 6,
+      "interval_below_zero_settings": 6
+    },
+    {
+      "cell_type": "FCGR3A+ Monocytes",
+      "metric": "energy_distance",
+      "reference": "scgen",
+      "settings": 6,
+      "lower_point_estimate_settings": 6,
+      "interval_below_zero_settings": 6
+    },
+    {
+      "cell_type": "FCGR3A+ Monocytes",
+      "metric": "energy_distance",
+      "reference": "scvidr",
+      "settings": 6,
+      "lower_point_estimate_settings": 6,
+      "interval_below_zero_settings": 6
+    },
+    {
+      "cell_type": "FCGR3A+ Monocytes",
+      "metric": "mmd_biased",
+      "reference": "compound",
+      "settings": 18,
+      "lower_point_estimate_settings": 18,
+      "interval_below_zero_settings": 14
+    },
+    {
+      "cell_type": "FCGR3A+ Monocytes",
+      "metric": "mmd_biased",
+      "reference": "scgen",
+      "settings": 18,
+      "lower_point_estimate_settings": 18,
+      "interval_below_zero_settings": 18
+    },
+    {
+      "cell_type": "FCGR3A+ Monocytes",
+      "metric": "mmd_biased",
+      "reference": "scvidr",
+      "settings": 18,
+      "lower_point_estimate_settings": 18,
+      "interval_below_zero_settings": 18
+    },
+    {
+      "cell_type": "FCGR3A+ Monocytes",
+      "metric": "mmd_unbiased",
+      "reference": "compound",
+      "settings": 18,
+      "lower_point_estimate_settings": 18,
+      "interval_below_zero_settings": 14
+    },
+    {
+      "cell_type": "FCGR3A+ Monocytes",
+      "metric": "mmd_unbiased",
+      "reference": "scgen",
+      "settings": 18,
+      "lower_point_estimate_settings": 18,
+      "interval_below_zero_settings": 18
+    },
+    {
+      "cell_type": "FCGR3A+ Monocytes",
+      "metric": "mmd_unbiased",
+      "reference": "scvidr",
+      "settings": 18,
+      "lower_point_estimate_settings": 18,
+      "interval_below_zero_settings": 18
+    }
+  ],
+  "scope": "Eighteen prespecified MMD settings and six unique energy-distance settings, since energy distance has no kernel bandwidth. Five subsamples are averaged within each biological donor, never treated as independent replicates. Native predictions average per-fit distribution metrics. All original donor/type groups retained. Unbiased MMD estimates can be negative.",
+  "models_refitted": false,
+  "source_only_pca_and_bandwidth": true
+}

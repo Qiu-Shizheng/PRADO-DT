@@ -1,0 +1,35 @@
+{
+  "n_repeated_partitions": 10,
+  "target_cells": 36722,
+  "target_profiles": 421,
+  "n_compounds": 127,
+  "count_reconstruction_exact": true,
+  "minimum_cells_per_half": 10,
+  "control_halves_are_disjoint": true,
+  "same_condition_axes_all_partitions": true,
+  "scope": "Repeated random partitions of the same myeloid cells, separately splitting every treatment and matched control profile. Diagnostic technical repeatability, not independent biological replication or a rigorous predictive upper bound.",
+  "means": {
+    "mse_between_halves": 0.13214811346373065,
+    "response_pearson": 0.3538817481842277,
+    "centered_response_pearson": 0.3597900097975378,
+    "centered_mse_between_halves": 0.12899471178659683
+  },
+  "partition_ranges": {
+    "mse_between_halves": [
+      0.1307415063954381,
+      0.13312625737707898
+    ],
+    "response_pearson": [
+      0.34918475415587896,
+      0.3584816890500182
+    ],
+    "centered_response_pearson": [
+      0.35657197958135756,
+      0.36352702490712857
+    ],
+    "centered_mse_between_halves": [
+      0.12769308123456882,
+      0.1300832656794118
+    ]
+  }
+}

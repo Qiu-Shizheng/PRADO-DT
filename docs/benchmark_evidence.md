@@ -63,6 +63,28 @@ The eight donor folds share source training donors. Treatment and control were s
 
 ## Data verification
 
+### Perturbation-specific information
+
+Removing each gene's average response across drugs gives a correlation of 0.273 for the programme model, compared with 0.203 for the compound-only gate, 0.236 for the gene-only gate, 0.189 for fine-tuned scGPT and 0.190 for frozen Nicheformer. This diagnostic evaluates differences between drugs after removing a shared expression pattern. All predictions remain fixed.
+
+The programme model lowers MSE for 110 of 127 drugs relative to compound-only weighting. Its paired mean difference is −0.002672, with a 95% compound-bootstrap interval of −0.003722 to −0.001700. The drug-varying component accounts for 84.0% of this improvement. Removing any single drug leaves the average difference negative. Randomly permuting complete predicted vectors across drug labels increases programme-model MSE from 0.073151 to 0.091463 on average. All drug-aware comparator families also outperform their shuffled predictions.
+
+[Model diagnostics](benchmarks/specificity_model_metrics.tsv), [per-drug values](benchmarks/specificity_per_drug_metrics.tsv) and [paired comparisons](benchmarks/specificity_summary.json) include every compared model and all drugs. The three donor-stratified analyses retain shared source training donors and are distinct from the joint donor holdouts above.
+
+### Technical repeatability
+
+Ten disjoint-half partitions within each eligible treatment and control profile use 36,722 original myeloid cells across 421 profiles. Summing the two count halves exactly reconstructs every original profile. All 127 drugs are retained, with at least ten cells per half. Mean response correlation between halves is 0.354, or 0.360 after removing the shared response. These partitions measure cell-sampling repeatability within the same experiments. They are not independent biological replicates or a strict model-performance ceiling. [Partition scores](benchmarks/split_half_partition_metrics.tsv) and [drug-level repeatability](benchmarks/split_half_per_drug_repeatability.tsv) are provided.
+
+### Distribution-metric sensitivity
+
+The interferon comparison retains fixed predictions and source-only PCA transforms. Eighteen MMD settings combine 20 or 50 principal components, bandwidth multipliers of 0.5, 1 or 2, and requested sample sizes of 64, 128 or 256 cells per arm. Available cells cap each sample size equally across models. Five subsamples are averaged within each donor. Native-model distribution scores also average their three fits.
+
+ContextDose has lower biased and unbiased squared MMD than scGen and scVIDR in both monocyte populations under all 18 settings, with every paired donor interval below zero. Energy distance gives the same direction across its six unique settings. This evidence concerns cell distributions. scVIDR retains lower CD16 mean-response MSE. Sensitivity settings are not independent replications.
+
+[Setting means](benchmarks/distribution_sensitivity_setting_means.tsv), [donor scores](benchmarks/distribution_sensitivity_donor_results.tsv), [paired intervals](benchmarks/distribution_sensitivity_paired_intervals.tsv) and [summary](benchmarks/distribution_sensitivity_summary.json) accompany the analysis. Energy values repeat across bandwidths in the detailed tables, but the summary counts each of the six unique energy settings once.
+
+### Original count reconstruction
+
 Reaggregation of the released 298,087 single cells exactly reproduces all 1,813 published pseudobulk count profiles and their cell counts on the evaluation panel. The 21,265-gene original release stores raw counts in `AnnData.raw.X`; `AnnData.X` contains processed expression.
 
 The task is a development evaluation on a public study. It does not establish clinical or unseen-compound performance. Primary data: [OP3 benchmark](https://doi.org/10.52202/079017-0650). Model sources: [scGPT](https://github.com/bowang-lab/scGPT) and [Nicheformer](https://github.com/theislab/nicheformer). Gene sets: [MSigDB Hallmarks](https://doi.org/10.1016/j.cels.2015.12.004).
