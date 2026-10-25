@@ -1,0 +1,29 @@
+{
+  "role": "Control-only covariate-shift diagnostic; no parameter or prediction changes",
+  "target_treated_values_used": false,
+  "donor_effect_interpretation": "Donor-associated control variation; donor and plate are confounded",
+  "populations": [
+    {
+      "cell_type": "CD14 Mono",
+      "median_distance_ratio": 2.328034402447873,
+      "range_distance_ratio": [
+        2.209313885303513,
+        2.562888478512744
+      ],
+      "donors_beyond_all_source_holdout_distances": 12,
+      "median_source_donor_variance_fraction": 0.224235332702939,
+      "median_source_type_variance_fraction": 0.7196770433591504
+    },
+    {
+      "cell_type": "CD16 Mono",
+      "median_distance_ratio": 2.2527079345605534,
+      "range_distance_ratio": [
+        2.1338120114409334,
+        2.4869552750811863
+      ],
+      "donors_beyond_all_source_holdout_distances": 12,
+      "median_source_donor_variance_fraction": 0.224235332702939,
+      "median_source_type_variance_fraction": 0.7196770433591504
+    }
+  ]
+}

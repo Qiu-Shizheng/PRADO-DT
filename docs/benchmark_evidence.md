@@ -104,6 +104,20 @@ The source-selected extension reduces MSE by 0.34% and 0.25% relative to Gaussia
 
 The provider distributes the original Parse data under CC BY-NC 4.0. This repository includes analytical summaries, not raw cells. The code licence does not replace third-party data licences.
 
+### Control-state coverage and donor directions
+
+Untreated monocyte states lie farther from their nearest source state than the queries used in source validation. Across twelve outer folds, the median target-to-validation distance ratios are 2.33 for CD14 and 2.25 for CD16 monocytes. Every target exceeds the largest nearest-source distance observed in its source donor–cell-type validation folds. These distances use the same measured gene panels and no treated target values. [Donor-level geometry](benchmarks/parse_geometry_donor_geometry.tsv) and [summary](benchmarks/parse_geometry_summary.json) provide the measurements.
+
+A controlled follow-up attenuates donor-associated directions in untreated expression before computing kernel similarities. Each inner validation fold re-estimates these directions using its training donors and cell types. The original representation, three projection ranks and two attenuation strengths share the previously source-selected Gaussian kernel parameters. Shared-response and residual amplitudes use the same source calibration in all variants.
+
+| Predictor | CD14 MSE | CD16 MSE |
+|---|---:|---:|
+| Gaussian kernel ridge | 0.011450 | 0.017577 |
+| Unmodified representation, two amplitudes | 0.011469 | 0.017601 |
+| All donor directions removed | 0.011824 | 0.017914 |
+
+All twelve source selections retain the unmodified representation. This ablation does not support adding donor-direction removal to the model. Donor-associated variation includes both biology and plate effects in this experiment. [All model scores](benchmarks/parse_projection_model_metrics.tsv), [paired intervals](benchmarks/parse_projection_paired_intervals.tsv), [source selections](benchmarks/parse_projection_source_selections.tsv) and [donor results](benchmarks/parse_projection_donor_metrics.tsv) retain the full comparison. The unmodified comparator reproduces the previous two-amplitude model, and the 2,003 evaluation pairs remain unchanged.
+
 ## Data verification
 
 ### Perturbation-specific information

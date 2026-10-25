@@ -1,0 +1,957 @@
+{
+  "role": "Source-selected development follow-up; original external evaluation remains frozen",
+  "donors": 12,
+  "evaluated_pairs": 2003,
+  "checkpoint_replay_exact": true,
+  "source_validation_boundaries_verified": true,
+  "all_target_axes_match": true,
+  "models": [
+    {
+      "cell_type": "CD14 Mono",
+      "model": "full_donor_projection",
+      "mse": 0.0118236135,
+      "mae": 0.0613577914,
+      "response_pearson": 0.4007735739,
+      "response_spearman": 0.3411105772,
+      "hallmark_mse": 0.0040464958
+    },
+    {
+      "cell_type": "CD14 Mono",
+      "model": "linear_kernel",
+      "mse": 0.0116141875,
+      "mae": 0.0623470776,
+      "response_pearson": 0.3913487529,
+      "response_spearman": 0.3291389391,
+      "hallmark_mse": 0.0037774316
+    },
+    {
+      "cell_type": "CD14 Mono",
+      "model": "op3_fixed_parameters",
+      "mse": 0.0118012424,
+      "mae": 0.0604733146,
+      "response_pearson": 0.3977139482,
+      "response_spearman": 0.3489147418,
+      "hallmark_mse": 0.0040442813
+    },
+    {
+      "cell_type": "CD14 Mono",
+      "model": "program_gene",
+      "mse": 0.0119286912,
+      "mae": 0.0616340534,
+      "response_pearson": 0.3962914387,
+      "response_spearman": 0.347144121,
+      "hallmark_mse": 0.0040559435
+    },
+    {
+      "cell_type": "CD14 Mono",
+      "model": "rbf_kernel",
+      "mse": 0.0114499854,
+      "mae": 0.0614357925,
+      "response_pearson": 0.3958711514,
+      "response_spearman": 0.332385863,
+      "hallmark_mse": 0.0036936778
+    },
+    {
+      "cell_type": "CD14 Mono",
+      "model": "source_selected_projected_kernel",
+      "mse": 0.0114690624,
+      "mae": 0.0614811536,
+      "response_pearson": 0.3937850308,
+      "response_spearman": 0.3296137258,
+      "hallmark_mse": 0.0037077629
+    },
+    {
+      "cell_type": "CD14 Mono",
+      "model": "unprojected_calibrated_kernel",
+      "mse": 0.0114690624,
+      "mae": 0.0614811536,
+      "response_pearson": 0.3937850308,
+      "response_spearman": 0.3296137258,
+      "hallmark_mse": 0.0037077629
+    },
+    {
+      "cell_type": "CD16 Mono",
+      "model": "full_donor_projection",
+      "mse": 0.0179143412,
+      "mae": 0.0839833607,
+      "response_pearson": 0.3429944833,
+      "response_spearman": 0.2727246652,
+      "hallmark_mse": 0.0034630745
+    },
+    {
+      "cell_type": "CD16 Mono",
+      "model": "linear_kernel",
+      "mse": 0.0177406638,
+      "mae": 0.0847051368,
+      "response_pearson": 0.3351832888,
+      "response_spearman": 0.2619279276,
+      "hallmark_mse": 0.0032773351
+    },
+    {
+      "cell_type": "CD16 Mono",
+      "model": "op3_fixed_parameters",
+      "mse": 0.0179586088,
+      "mae": 0.0834766513,
+      "response_pearson": 0.3391874918,
+      "response_spearman": 0.2767188264,
+      "hallmark_mse": 0.0034006291
+    },
+    {
+      "cell_type": "CD16 Mono",
+      "model": "program_gene",
+      "mse": 0.0180941639,
+      "mae": 0.084408893,
+      "response_pearson": 0.3381036533,
+      "response_spearman": 0.2753880587,
+      "hallmark_mse": 0.0034621194
+    },
+    {
+      "cell_type": "CD16 Mono",
+      "model": "rbf_kernel",
+      "mse": 0.017576746,
+      "mae": 0.0840215724,
+      "response_pearson": 0.3390161497,
+      "response_spearman": 0.2653658999,
+      "hallmark_mse": 0.0031808707
+    },
+    {
+      "cell_type": "CD16 Mono",
+      "model": "source_selected_projected_kernel",
+      "mse": 0.0176010458,
+      "mae": 0.0840830727,
+      "response_pearson": 0.3372626524,
+      "response_spearman": 0.2632270921,
+      "hallmark_mse": 0.0031960029
+    },
+    {
+      "cell_type": "CD16 Mono",
+      "model": "unprojected_calibrated_kernel",
+      "mse": 0.0176010458,
+      "mae": 0.0840830727,
+      "response_pearson": 0.3372626524,
+      "response_spearman": 0.2632270921,
+      "hallmark_mse": 0.0031960029
+    }
+  ],
+  "comparisons": [
+    {
+      "cell_type": "CD14 Mono",
+      "model": "source_selected_projected_kernel",
+      "reference": "rbf_kernel",
+      "metric": "mse",
+      "difference": 1.9076998329023143e-05,
+      "ci95_lower": 8.50803664069613e-06,
+      "ci95_upper": 3.112378126265343e-05
+    },
+    {
+      "cell_type": "CD14 Mono",
+      "model": "source_selected_projected_kernel",
+      "reference": "rbf_kernel",
+      "metric": "mae",
+      "difference": 4.536113611204364e-05,
+      "ci95_lower": -8.810160021106182e-06,
+      "ci95_upper": 0.00011417232327655596
+    },
+    {
+      "cell_type": "CD14 Mono",
+      "model": "source_selected_projected_kernel",
+      "reference": "rbf_kernel",
+      "metric": "response_pearson",
+      "difference": -0.002086120622531306,
+      "ci95_lower": -0.0032122364330471526,
+      "ci95_upper": -0.0010852920365152002
+    },
+    {
+      "cell_type": "CD14 Mono",
+      "model": "source_selected_projected_kernel",
+      "reference": "rbf_kernel",
+      "metric": "response_spearman",
+      "difference": -0.0027721371774557225,
+      "ci95_lower": -0.004274040004558288,
+      "ci95_upper": -0.00148637590733877
+    },
+    {
+      "cell_type": "CD14 Mono",
+      "model": "source_selected_projected_kernel",
+      "reference": "rbf_kernel",
+      "metric": "hallmark_mse",
+      "difference": 1.408508031647672e-05,
+      "ci95_lower": 7.843268500718281e-06,
+      "ci95_upper": 2.033105872314693e-05
+    },
+    {
+      "cell_type": "CD14 Mono",
+      "model": "source_selected_projected_kernel",
+      "reference": "unprojected_calibrated_kernel",
+      "metric": "mse",
+      "difference": 0.0,
+      "ci95_lower": 0.0,
+      "ci95_upper": 0.0
+    },
+    {
+      "cell_type": "CD14 Mono",
+      "model": "source_selected_projected_kernel",
+      "reference": "unprojected_calibrated_kernel",
+      "metric": "mae",
+      "difference": 0.0,
+      "ci95_lower": 0.0,
+      "ci95_upper": 0.0
+    },
+    {
+      "cell_type": "CD14 Mono",
+      "model": "source_selected_projected_kernel",
+      "reference": "unprojected_calibrated_kernel",
+      "metric": "response_pearson",
+      "difference": 0.0,
+      "ci95_lower": 0.0,
+      "ci95_upper": 0.0
+    },
+    {
+      "cell_type": "CD14 Mono",
+      "model": "source_selected_projected_kernel",
+      "reference": "unprojected_calibrated_kernel",
+      "metric": "response_spearman",
+      "difference": 0.0,
+      "ci95_lower": 0.0,
+      "ci95_upper": 0.0
+    },
+    {
+      "cell_type": "CD14 Mono",
+      "model": "source_selected_projected_kernel",
+      "reference": "unprojected_calibrated_kernel",
+      "metric": "hallmark_mse",
+      "difference": 0.0,
+      "ci95_lower": 0.0,
+      "ci95_upper": 0.0
+    },
+    {
+      "cell_type": "CD14 Mono",
+      "model": "source_selected_projected_kernel",
+      "reference": "program_gene",
+      "metric": "mse",
+      "difference": -0.0004596288037920647,
+      "ci95_lower": -0.000987430540456928,
+      "ci95_upper": -6.044068922231154e-05
+    },
+    {
+      "cell_type": "CD14 Mono",
+      "model": "source_selected_projected_kernel",
+      "reference": "program_gene",
+      "metric": "mae",
+      "difference": -0.00015289980044075162,
+      "ci95_lower": -0.001602822655004081,
+      "ci95_upper": 0.0009483112851934692
+    },
+    {
+      "cell_type": "CD14 Mono",
+      "model": "source_selected_projected_kernel",
+      "reference": "program_gene",
+      "metric": "response_pearson",
+      "difference": -0.0025064079232273023,
+      "ci95_lower": -0.01809168995279503,
+      "ci95_upper": 0.01704836890001042
+    },
+    {
+      "cell_type": "CD14 Mono",
+      "model": "source_selected_projected_kernel",
+      "reference": "program_gene",
+      "metric": "response_spearman",
+      "difference": -0.017530395129063344,
+      "ci95_lower": -0.03347427129669284,
+      "ci95_upper": 0.00030444325178801676
+    },
+    {
+      "cell_type": "CD14 Mono",
+      "model": "source_selected_projected_kernel",
+      "reference": "program_gene",
+      "metric": "hallmark_mse",
+      "difference": -0.000348180584060021,
+      "ci95_lower": -0.0007113288476740713,
+      "ci95_upper": -6.694760788954752e-05
+    },
+    {
+      "cell_type": "CD14 Mono",
+      "model": "unprojected_calibrated_kernel",
+      "reference": "rbf_kernel",
+      "metric": "mse",
+      "difference": 1.9076998329023143e-05,
+      "ci95_lower": 8.50803664069613e-06,
+      "ci95_upper": 3.112378126265343e-05
+    },
+    {
+      "cell_type": "CD14 Mono",
+      "model": "unprojected_calibrated_kernel",
+      "reference": "rbf_kernel",
+      "metric": "mae",
+      "difference": 4.536113611204364e-05,
+      "ci95_lower": -8.810160021106182e-06,
+      "ci95_upper": 0.00011417232327655596
+    },
+    {
+      "cell_type": "CD14 Mono",
+      "model": "unprojected_calibrated_kernel",
+      "reference": "rbf_kernel",
+      "metric": "response_pearson",
+      "difference": -0.002086120622531306,
+      "ci95_lower": -0.0032122364330471526,
+      "ci95_upper": -0.0010852920365152002
+    },
+    {
+      "cell_type": "CD14 Mono",
+      "model": "unprojected_calibrated_kernel",
+      "reference": "rbf_kernel",
+      "metric": "response_spearman",
+      "difference": -0.0027721371774557225,
+      "ci95_lower": -0.004274040004558288,
+      "ci95_upper": -0.00148637590733877
+    },
+    {
+      "cell_type": "CD14 Mono",
+      "model": "unprojected_calibrated_kernel",
+      "reference": "rbf_kernel",
+      "metric": "hallmark_mse",
+      "difference": 1.408508031647672e-05,
+      "ci95_lower": 7.843268500718281e-06,
+      "ci95_upper": 2.033105872314693e-05
+    },
+    {
+      "cell_type": "CD14 Mono",
+      "model": "unprojected_calibrated_kernel",
+      "reference": "program_gene",
+      "metric": "mse",
+      "difference": -0.0004596288037920647,
+      "ci95_lower": -0.000987430540456928,
+      "ci95_upper": -6.044068922231154e-05
+    },
+    {
+      "cell_type": "CD14 Mono",
+      "model": "unprojected_calibrated_kernel",
+      "reference": "program_gene",
+      "metric": "mae",
+      "difference": -0.00015289980044075162,
+      "ci95_lower": -0.001602822655004081,
+      "ci95_upper": 0.0009483112851934692
+    },
+    {
+      "cell_type": "CD14 Mono",
+      "model": "unprojected_calibrated_kernel",
+      "reference": "program_gene",
+      "metric": "response_pearson",
+      "difference": -0.0025064079232273023,
+      "ci95_lower": -0.01809168995279503,
+      "ci95_upper": 0.01704836890001042
+    },
+    {
+      "cell_type": "CD14 Mono",
+      "model": "unprojected_calibrated_kernel",
+      "reference": "program_gene",
+      "metric": "response_spearman",
+      "difference": -0.017530395129063344,
+      "ci95_lower": -0.03347427129669284,
+      "ci95_upper": 0.00030444325178801676
+    },
+    {
+      "cell_type": "CD14 Mono",
+      "model": "unprojected_calibrated_kernel",
+      "reference": "program_gene",
+      "metric": "hallmark_mse",
+      "difference": -0.000348180584060021,
+      "ci95_lower": -0.0007113288476740713,
+      "ci95_upper": -6.694760788954752e-05
+    },
+    {
+      "cell_type": "CD14 Mono",
+      "model": "full_donor_projection",
+      "reference": "rbf_kernel",
+      "metric": "mse",
+      "difference": 0.00037362810149185944,
+      "ci95_lower": 2.3714693587102377e-05,
+      "ci95_upper": 0.0008324803077837704
+    },
+    {
+      "cell_type": "CD14 Mono",
+      "model": "full_donor_projection",
+      "reference": "rbf_kernel",
+      "metric": "mae",
+      "difference": -7.800104515439873e-05,
+      "ci95_lower": -0.0010904778517130751,
+      "ci95_upper": 0.0012520212920361581
+    },
+    {
+      "cell_type": "CD14 Mono",
+      "model": "full_donor_projection",
+      "reference": "rbf_kernel",
+      "metric": "response_pearson",
+      "difference": 0.004902422478027403,
+      "ci95_lower": -0.012193676757181929,
+      "ci95_upper": 0.01849954983352169
+    },
+    {
+      "cell_type": "CD14 Mono",
+      "model": "full_donor_projection",
+      "reference": "rbf_kernel",
+      "metric": "response_spearman",
+      "difference": 0.008724714144919973,
+      "ci95_lower": -0.006232580738896327,
+      "ci95_upper": 0.02233976632419313
+    },
+    {
+      "cell_type": "CD14 Mono",
+      "model": "full_donor_projection",
+      "reference": "rbf_kernel",
+      "metric": "hallmark_mse",
+      "difference": 0.0003528179749328752,
+      "ci95_lower": 9.239121365998629e-05,
+      "ci95_upper": 0.0006790902809536882
+    },
+    {
+      "cell_type": "CD14 Mono",
+      "model": "full_donor_projection",
+      "reference": "unprojected_calibrated_kernel",
+      "metric": "mse",
+      "difference": 0.00035455110316283633,
+      "ci95_lower": 4.9510688846185095e-06,
+      "ci95_upper": 0.0008126519616220063
+    },
+    {
+      "cell_type": "CD14 Mono",
+      "model": "full_donor_projection",
+      "reference": "unprojected_calibrated_kernel",
+      "metric": "mae",
+      "difference": -0.00012336218126644238,
+      "ci95_lower": -0.0011681429681694383,
+      "ci95_upper": 0.0012171245281729077
+    },
+    {
+      "cell_type": "CD14 Mono",
+      "model": "full_donor_projection",
+      "reference": "unprojected_calibrated_kernel",
+      "metric": "response_pearson",
+      "difference": 0.00698854310055871,
+      "ci95_lower": -0.010918188783039271,
+      "ci95_upper": 0.021441357517813616
+    },
+    {
+      "cell_type": "CD14 Mono",
+      "model": "full_donor_projection",
+      "reference": "unprojected_calibrated_kernel",
+      "metric": "response_spearman",
+      "difference": 0.011496851322375696,
+      "ci95_lower": -0.004526727074151593,
+      "ci95_upper": 0.026294091996511497
+    },
+    {
+      "cell_type": "CD14 Mono",
+      "model": "full_donor_projection",
+      "reference": "unprojected_calibrated_kernel",
+      "metric": "hallmark_mse",
+      "difference": 0.0003387328946163985,
+      "ci95_lower": 7.959223569425489e-05,
+      "ci95_upper": 0.000665687831278205
+    },
+    {
+      "cell_type": "CD14 Mono",
+      "model": "full_donor_projection",
+      "reference": "program_gene",
+      "metric": "mse",
+      "difference": -0.00010507770062922839,
+      "ci95_lower": -0.00019791230579439188,
+      "ci95_upper": -2.5248314749224127e-05
+    },
+    {
+      "cell_type": "CD14 Mono",
+      "model": "full_donor_projection",
+      "reference": "program_gene",
+      "metric": "mae",
+      "difference": -0.000276261981707194,
+      "ci95_lower": -0.00043044620364505776,
+      "ci95_upper": -0.00014510849049694056
+    },
+    {
+      "cell_type": "CD14 Mono",
+      "model": "full_donor_projection",
+      "reference": "program_gene",
+      "metric": "response_pearson",
+      "difference": 0.004482135177331407,
+      "ci95_lower": 0.0018849780769980408,
+      "ci95_upper": 0.00731535673497292
+    },
+    {
+      "cell_type": "CD14 Mono",
+      "model": "full_donor_projection",
+      "reference": "program_gene",
+      "metric": "response_spearman",
+      "difference": -0.0060335438066876496,
+      "ci95_lower": -0.008100009027085596,
+      "ci95_upper": -0.0037972840302276044
+    },
+    {
+      "cell_type": "CD14 Mono",
+      "model": "full_donor_projection",
+      "reference": "program_gene",
+      "metric": "hallmark_mse",
+      "difference": -9.44768944362252e-06,
+      "ci95_lower": -7.060543373752557e-05,
+      "ci95_upper": 4.674916525831756e-05
+    },
+    {
+      "cell_type": "CD16 Mono",
+      "model": "source_selected_projected_kernel",
+      "reference": "rbf_kernel",
+      "metric": "mse",
+      "difference": 2.4299807440536286e-05,
+      "ci95_lower": 8.543530121179953e-06,
+      "ci95_upper": 4.363773535780219e-05
+    },
+    {
+      "cell_type": "CD16 Mono",
+      "model": "source_selected_projected_kernel",
+      "reference": "rbf_kernel",
+      "metric": "mae",
+      "difference": 6.150033857314369e-05,
+      "ci95_lower": -2.751826794334383e-06,
+      "ci95_upper": 0.00014730796189725722
+    },
+    {
+      "cell_type": "CD16 Mono",
+      "model": "source_selected_projected_kernel",
+      "reference": "rbf_kernel",
+      "metric": "response_pearson",
+      "difference": -0.0017534972840651992,
+      "ci95_lower": -0.0030664918727961953,
+      "ci95_upper": -0.0006736406029305176
+    },
+    {
+      "cell_type": "CD16 Mono",
+      "model": "source_selected_projected_kernel",
+      "reference": "rbf_kernel",
+      "metric": "response_spearman",
+      "difference": -0.0021388078067483968,
+      "ci95_lower": -0.003767866464146651,
+      "ci95_upper": -0.0008255826257975657
+    },
+    {
+      "cell_type": "CD16 Mono",
+      "model": "source_selected_projected_kernel",
+      "reference": "rbf_kernel",
+      "metric": "hallmark_mse",
+      "difference": 1.5132227497401617e-05,
+      "ci95_lower": 7.954492865230635e-06,
+      "ci95_upper": 2.2063634675372203e-05
+    },
+    {
+      "cell_type": "CD16 Mono",
+      "model": "source_selected_projected_kernel",
+      "reference": "unprojected_calibrated_kernel",
+      "metric": "mse",
+      "difference": 0.0,
+      "ci95_lower": 0.0,
+      "ci95_upper": 0.0
+    },
+    {
+      "cell_type": "CD16 Mono",
+      "model": "source_selected_projected_kernel",
+      "reference": "unprojected_calibrated_kernel",
+      "metric": "mae",
+      "difference": 0.0,
+      "ci95_lower": 0.0,
+      "ci95_upper": 0.0
+    },
+    {
+      "cell_type": "CD16 Mono",
+      "model": "source_selected_projected_kernel",
+      "reference": "unprojected_calibrated_kernel",
+      "metric": "response_pearson",
+      "difference": 0.0,
+      "ci95_lower": 0.0,
+      "ci95_upper": 0.0
+    },
+    {
+      "cell_type": "CD16 Mono",
+      "model": "source_selected_projected_kernel",
+      "reference": "unprojected_calibrated_kernel",
+      "metric": "response_spearman",
+      "difference": 0.0,
+      "ci95_lower": 0.0,
+      "ci95_upper": 0.0
+    },
+    {
+      "cell_type": "CD16 Mono",
+      "model": "source_selected_projected_kernel",
+      "reference": "unprojected_calibrated_kernel",
+      "metric": "hallmark_mse",
+      "difference": 0.0,
+      "ci95_lower": 0.0,
+      "ci95_upper": 0.0
+    },
+    {
+      "cell_type": "CD16 Mono",
+      "model": "source_selected_projected_kernel",
+      "reference": "program_gene",
+      "metric": "mse",
+      "difference": -0.0004931181089887345,
+      "ci95_lower": -0.0010685018281074558,
+      "ci95_upper": -2.956370082034494e-05
+    },
+    {
+      "cell_type": "CD16 Mono",
+      "model": "source_selected_projected_kernel",
+      "reference": "program_gene",
+      "metric": "mae",
+      "difference": -0.00032582029652459404,
+      "ci95_lower": -0.0017596069802433354,
+      "ci95_upper": 0.000817819844186675
+    },
+    {
+      "cell_type": "CD16 Mono",
+      "model": "source_selected_projected_kernel",
+      "reference": "program_gene",
+      "metric": "response_pearson",
+      "difference": -0.0008410008161442231,
+      "ci95_lower": -0.016075092340825117,
+      "ci95_upper": 0.01708139244559839
+    },
+    {
+      "cell_type": "CD16 Mono",
+      "model": "source_selected_projected_kernel",
+      "reference": "program_gene",
+      "metric": "response_spearman",
+      "difference": -0.012160966629243639,
+      "ci95_lower": -0.02891751801745819,
+      "ci95_upper": 0.00542763276309749
+    },
+    {
+      "cell_type": "CD16 Mono",
+      "model": "source_selected_projected_kernel",
+      "reference": "program_gene",
+      "metric": "hallmark_mse",
+      "difference": -0.00026611644154721583,
+      "ci95_lower": -0.0006948609992529125,
+      "ci95_upper": 4.966192065720104e-05
+    },
+    {
+      "cell_type": "CD16 Mono",
+      "model": "unprojected_calibrated_kernel",
+      "reference": "rbf_kernel",
+      "metric": "mse",
+      "difference": 2.4299807440536286e-05,
+      "ci95_lower": 8.543530121179953e-06,
+      "ci95_upper": 4.363773535780219e-05
+    },
+    {
+      "cell_type": "CD16 Mono",
+      "model": "unprojected_calibrated_kernel",
+      "reference": "rbf_kernel",
+      "metric": "mae",
+      "difference": 6.150033857314369e-05,
+      "ci95_lower": -2.751826794334383e-06,
+      "ci95_upper": 0.00014730796189725722
+    },
+    {
+      "cell_type": "CD16 Mono",
+      "model": "unprojected_calibrated_kernel",
+      "reference": "rbf_kernel",
+      "metric": "response_pearson",
+      "difference": -0.0017534972840651992,
+      "ci95_lower": -0.0030664918727961953,
+      "ci95_upper": -0.0006736406029305176
+    },
+    {
+      "cell_type": "CD16 Mono",
+      "model": "unprojected_calibrated_kernel",
+      "reference": "rbf_kernel",
+      "metric": "response_spearman",
+      "difference": -0.0021388078067483968,
+      "ci95_lower": -0.003767866464146651,
+      "ci95_upper": -0.0008255826257975657
+    },
+    {
+      "cell_type": "CD16 Mono",
+      "model": "unprojected_calibrated_kernel",
+      "reference": "rbf_kernel",
+      "metric": "hallmark_mse",
+      "difference": 1.5132227497401617e-05,
+      "ci95_lower": 7.954492865230635e-06,
+      "ci95_upper": 2.2063634675372203e-05
+    },
+    {
+      "cell_type": "CD16 Mono",
+      "model": "unprojected_calibrated_kernel",
+      "reference": "program_gene",
+      "metric": "mse",
+      "difference": -0.0004931181089887345,
+      "ci95_lower": -0.0010685018281074558,
+      "ci95_upper": -2.956370082034494e-05
+    },
+    {
+      "cell_type": "CD16 Mono",
+      "model": "unprojected_calibrated_kernel",
+      "reference": "program_gene",
+      "metric": "mae",
+      "difference": -0.00032582029652459404,
+      "ci95_lower": -0.0017596069802433354,
+      "ci95_upper": 0.000817819844186675
+    },
+    {
+      "cell_type": "CD16 Mono",
+      "model": "unprojected_calibrated_kernel",
+      "reference": "program_gene",
+      "metric": "response_pearson",
+      "difference": -0.0008410008161442231,
+      "ci95_lower": -0.016075092340825117,
+      "ci95_upper": 0.01708139244559839
+    },
+    {
+      "cell_type": "CD16 Mono",
+      "model": "unprojected_calibrated_kernel",
+      "reference": "program_gene",
+      "metric": "response_spearman",
+      "difference": -0.012160966629243639,
+      "ci95_lower": -0.02891751801745819,
+      "ci95_upper": 0.00542763276309749
+    },
+    {
+      "cell_type": "CD16 Mono",
+      "model": "unprojected_calibrated_kernel",
+      "reference": "program_gene",
+      "metric": "hallmark_mse",
+      "difference": -0.00026611644154721583,
+      "ci95_lower": -0.0006948609992529125,
+      "ci95_upper": 4.966192065720104e-05
+    },
+    {
+      "cell_type": "CD16 Mono",
+      "model": "full_donor_projection",
+      "reference": "rbf_kernel",
+      "metric": "mse",
+      "difference": 0.0003375952208813598,
+      "ci95_lower": -5.8338013539242945e-05,
+      "ci95_upper": 0.000838585741138805
+    },
+    {
+      "cell_type": "CD16 Mono",
+      "model": "full_donor_projection",
+      "reference": "rbf_kernel",
+      "metric": "mae",
+      "difference": -3.8211658091019556e-05,
+      "ci95_lower": -0.0010629720169852237,
+      "ci95_upper": 0.001273471111648934
+    },
+    {
+      "cell_type": "CD16 Mono",
+      "model": "full_donor_projection",
+      "reference": "rbf_kernel",
+      "metric": "response_pearson",
+      "difference": 0.003978333538752971,
+      "ci95_lower": -0.010975613277559405,
+      "ci95_upper": 0.01671056873507119
+    },
+    {
+      "cell_type": "CD16 Mono",
+      "model": "full_donor_projection",
+      "reference": "rbf_kernel",
+      "metric": "response_spearman",
+      "difference": 0.007358765317275251,
+      "ci95_lower": -0.007059193448890741,
+      "ci95_upper": 0.020902102144335064
+    },
+    {
+      "cell_type": "CD16 Mono",
+      "model": "full_donor_projection",
+      "reference": "rbf_kernel",
+      "metric": "hallmark_mse",
+      "difference": 0.00028220376607905774,
+      "ci95_lower": 1.5142585675582612e-05,
+      "ci95_upper": 0.0006362104257814636
+    },
+    {
+      "cell_type": "CD16 Mono",
+      "model": "full_donor_projection",
+      "reference": "unprojected_calibrated_kernel",
+      "metric": "mse",
+      "difference": 0.0003132954134408235,
+      "ci95_lower": -8.576361159120147e-05,
+      "ci95_upper": 0.000815210884224281
+    },
+    {
+      "cell_type": "CD16 Mono",
+      "model": "full_donor_projection",
+      "reference": "unprojected_calibrated_kernel",
+      "metric": "mae",
+      "difference": -9.971199666416325e-05,
+      "ci95_lower": -0.0011747883312908033,
+      "ci95_upper": 0.0012225910988168612
+    },
+    {
+      "cell_type": "CD16 Mono",
+      "model": "full_donor_projection",
+      "reference": "unprojected_calibrated_kernel",
+      "metric": "response_pearson",
+      "difference": 0.005731830822818171,
+      "ci95_lower": -0.009939574129303715,
+      "ci95_upper": 0.0193194594893856
+    },
+    {
+      "cell_type": "CD16 Mono",
+      "model": "full_donor_projection",
+      "reference": "unprojected_calibrated_kernel",
+      "metric": "response_spearman",
+      "difference": 0.009497573124023648,
+      "ci95_lower": -0.005965168027097577,
+      "ci95_upper": 0.024187974002731035
+    },
+    {
+      "cell_type": "CD16 Mono",
+      "model": "full_donor_projection",
+      "reference": "unprojected_calibrated_kernel",
+      "metric": "hallmark_mse",
+      "difference": 0.0002670715385816561,
+      "ci95_lower": 1.2610072893853703e-06,
+      "ci95_upper": 0.0006212158683179839
+    },
+    {
+      "cell_type": "CD16 Mono",
+      "model": "full_donor_projection",
+      "reference": "program_gene",
+      "metric": "mse",
+      "difference": -0.0001798226955479109,
+      "ci95_lower": -0.0002775432691512916,
+      "ci95_upper": -9.728506320416964e-05
+    },
+    {
+      "cell_type": "CD16 Mono",
+      "model": "full_donor_projection",
+      "reference": "program_gene",
+      "metric": "mae",
+      "difference": -0.0004255322931887573,
+      "ci95_lower": -0.0005990113554611999,
+      "ci95_upper": -0.0002794945845295492
+    },
+    {
+      "cell_type": "CD16 Mono",
+      "model": "full_donor_projection",
+      "reference": "program_gene",
+      "metric": "response_pearson",
+      "difference": 0.0048908300066739475,
+      "ci95_lower": 0.0025710859203111483,
+      "ci95_upper": 0.007452793318868448
+    },
+    {
+      "cell_type": "CD16 Mono",
+      "model": "full_donor_projection",
+      "reference": "program_gene",
+      "metric": "response_spearman",
+      "difference": -0.002663393505219991,
+      "ci95_lower": -0.005088360043134559,
+      "ci95_upper": -2.7041432944148455e-05
+    },
+    {
+      "cell_type": "CD16 Mono",
+      "model": "full_donor_projection",
+      "reference": "program_gene",
+      "metric": "hallmark_mse",
+      "difference": 9.55097034440327e-07,
+      "ci95_lower": -9.252335242619438e-05,
+      "ci95_upper": 0.00010369025971814425
+    }
+  ],
+  "selection": [
+    {
+      "donor": "Donor1",
+      "rank": 0,
+      "strength": 0.0,
+      "shared_amplitude": 0.8509850082926729,
+      "residual_amplitude": 0.9721689871479522,
+      "source_relative_mse": 0.6222518706611709
+    },
+    {
+      "donor": "Donor2",
+      "rank": 0,
+      "strength": 0.0,
+      "shared_amplitude": 0.8421002939380526,
+      "residual_amplitude": 0.9026546100137774,
+      "source_relative_mse": 0.6519111414234263
+    },
+    {
+      "donor": "Donor3",
+      "rank": 0,
+      "strength": 0.0,
+      "shared_amplitude": 0.8559636830213765,
+      "residual_amplitude": 0.8417372217138824,
+      "source_relative_mse": 0.6385994565413995
+    },
+    {
+      "donor": "Donor4",
+      "rank": 0,
+      "strength": 0.0,
+      "shared_amplitude": 0.8368361512935272,
+      "residual_amplitude": 0.8270315383783935,
+      "source_relative_mse": 0.6402852814972557
+    },
+    {
+      "donor": "Donor5",
+      "rank": 0,
+      "strength": 0.0,
+      "shared_amplitude": 0.8506648099178853,
+      "residual_amplitude": 0.8965747530612028,
+      "source_relative_mse": 0.6577994626501547
+    },
+    {
+      "donor": "Donor6",
+      "rank": 0,
+      "strength": 0.0,
+      "shared_amplitude": 0.8313379429298018,
+      "residual_amplitude": 0.8773878998842732,
+      "source_relative_mse": 0.6570238455228885
+    },
+    {
+      "donor": "Donor7",
+      "rank": 0,
+      "strength": 0.0,
+      "shared_amplitude": 0.8277020561165916,
+      "residual_amplitude": 0.8610925137982725,
+      "source_relative_mse": 0.6654245740503857
+    },
+    {
+      "donor": "Donor8",
+      "rank": 0,
+      "strength": 0.0,
+      "shared_amplitude": 0.8315725230226548,
+      "residual_amplitude": 0.8814232310772661,
+      "source_relative_mse": 0.6603283156382087
+    },
+    {
+      "donor": "Donor9",
+      "rank": 0,
+      "strength": 0.0,
+      "shared_amplitude": 0.8291171403483412,
+      "residual_amplitude": 0.8818179715752834,
+      "source_relative_mse": 0.662641922258019
+    },
+    {
+      "donor": "Donor10",
+      "rank": 0,
+      "strength": 0.0,
+      "shared_amplitude": 0.8352395304790569,
+      "residual_amplitude": 0.8863076399881288,
+      "source_relative_mse": 0.646110878683994
+    },
+    {
+      "donor": "Donor11",
+      "rank": 0,
+      "strength": 0.0,
+      "shared_amplitude": 0.831307729068889,
+      "residual_amplitude": 0.8909458423006302,
+      "source_relative_mse": 0.6537023181380024
+    },
+    {
+      "donor": "Donor12",
+      "rank": 0,
+      "strength": 0.0,
+      "shared_amplitude": 0.8309565335180088,
+      "residual_amplitude": 0.9081734255800167,
+      "source_relative_mse": 0.6576350214756652
+    }
+  ],
+  "common_hallmarks": 32
+}
