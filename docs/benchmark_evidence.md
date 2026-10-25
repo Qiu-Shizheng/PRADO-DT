@@ -118,6 +118,27 @@ A controlled follow-up attenuates donor-associated directions in untreated expre
 
 All twelve source selections retain the unmodified representation. This ablation does not support adding donor-direction removal to the model. Donor-associated variation includes both biology and plate effects in this experiment. [All model scores](benchmarks/parse_projection_model_metrics.tsv), [paired intervals](benchmarks/parse_projection_paired_intervals.tsv), [source selections](benchmarks/parse_projection_source_selections.tsv) and [donor results](benchmarks/parse_projection_donor_metrics.tsv) retain the full comparison. The unmodified comparator reproduces the previous two-amplitude model, and the 2,003 evaluation pairs remain unchanged.
 
+### Receptor context with matched information
+
+A source-selected development experiment tests whether receptor context improves transfer beyond expression similarity. The [CellPhoneDB v5 resource](https://doi.org/10.1038/s41596-024-01137-1) provides curated ligand–receptor directions and complete subunit annotations. Conservative, unique name matching covers 34 of the 90 stimuli, with 36 receptor entities and 43 receptor genes. Their features are measured in untreated control populations. Four receptor genes occur in each original 2,000-gene panel.
+
+The comparison includes an expression kernel, a kernel using all 36 receptor features, a stimulus-specific receptor kernel and an assignment-shuffled control. Pooled and stimulus-specific models receive the same additional control information. Unmapped conditions remain in the evaluation and use expression-based weights. Hyperparameters and amplitudes are selected only in joint source donor–cell-type holdouts. Transcript abundance is a proxy for receptor context, not a direct measurement of receptor activity.
+
+Source validation selects receptor information in 2/12 folds. The complete evaluation retains all 2,003 eligible response pairs. Scores weight donors equally.
+
+| Predictor | CD14 MSE | CD16 MSE | CD14 response Pearson | CD16 response Pearson |
+|---|---:|---:|---:|---:|
+| Gaussian kernel ridge | 0.011450 | 0.017577 | 0.3959 | 0.3390 |
+| Expression kernel, two amplitudes | 0.011469 | 0.017601 | 0.3938 | 0.3373 |
+| Pooled receptor features | 0.011469 | 0.017601 | 0.3938 | 0.3373 |
+| Stimulus-specific receptors | 0.011488 | 0.017623 | 0.3932 | 0.3368 |
+| Shuffled receptor assignments | 0.011478 | 0.017616 | 0.3935 | 0.3370 |
+| Source-selected receptor model | 0.011488 | 0.017623 | 0.3932 | 0.3368 |
+
+For the source-selected model compared with Gaussian kernel ridge, the paired MSE differences are 0.0000379 (95% donor interval 0.0000125 to 0.0000703) and 0.0000464 (95% donor interval 0.0000161 to 0.0000838) in CD14 and CD16 monocytes, respectively. The folds share source donors. This is model development within the Parse study, not an additional independent cohort. Coincident source-selected variants are not independent model replications.
+
+[Complete scores](benchmarks/parse_receptor_model_metrics.tsv), [donor results](benchmarks/parse_receptor_donor_metrics.tsv), [condition results](benchmarks/parse_receptor_per_condition_metrics.tsv), [paired intervals](benchmarks/parse_receptor_paired_intervals.tsv), [source selections](benchmarks/parse_receptor_source_selections.tsv), [mapping coverage](benchmarks/parse_receptor_stimulus_coverage.tsv) and [analysis scope](benchmarks/parse_receptor_summary.json) accompany the comparison. The receptor variant remains an experimental analysis and does not replace the packaged trained model.
+
 ## Data verification
 
 ### Perturbation-specific information
