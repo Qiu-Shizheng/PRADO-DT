@@ -185,6 +185,42 @@ The paired tables also include pathway error and cytokine-centred response accur
 
 [All 21 variants](benchmarks/parse_matched_context_model_metrics.tsv), [donor scores](benchmarks/parse_matched_context_donor_metrics.tsv), [publication paired intervals, including the high-precision MSE check](benchmarks/parse_matched_context_paired_intervals.tsv) and [source selections](benchmarks/parse_matched_context_source_selections.tsv) provide the completed evidence. `NA` denotes undefined or inapplicable values in the new result tables. These experimental variants do not change the packaged model or software API.
 
+### Source-context selection of training duration
+
+A separate completed experiment tests training-budget selection on three prespecified source donor–population pairs. It contains six fits and 48 checkpoint snapshots. Each fit excludes treated cells from either held-out source axis. All original monocytes and the outer evaluation donor are absent. Each source pair contains 87 cytokines. The criterion averages response MSE relative to the unchanged-control predictor equally across the three pairs.
+
+| Model | Output | Selected snapshot epoch | Source MSE | Source MSE under the 100-epoch reconstruction rule | Reduction |
+|---|---|---:|---:|---:|---:|
+| scGen | anchored | 25 | 0.017677 | 0.018054 | 2.08% |
+| scGen | native | 50 | 0.011399 | 0.011563 | 1.42% |
+| scVIDR | anchored | 25 | 0.017548 | 0.017846 | 1.67% |
+| scVIDR | native | 150 | 0.011467 | 0.011632 | 1.42% |
+
+Reconstruction favours checkpoints at epochs 289–300, whereas response-transfer validation selects 50 epochs for native scGen, 150 for native scVIDR and 25 for both anchored outputs. The anchored choice is the earliest tested budget, rather than an unconstrained optimum. These are source-selection scores from the same environments used for tuning. They do not revise the twelve-donor monocyte benchmark or establish an unbiased gain in target performance.
+
+A separately frozen Donor 1 follow-up uses these budgets and requires exact reproduction of each original 100-epoch checkpoint before scoring. Its results remain pending. Extending the selection procedure to other donor holdouts requires new nested source validation.
+
+[All source curves](benchmarks/parse_source_validation_curves.tsv), [selected budgets](benchmarks/parse_source_budget_selections.tsv), [source score comparisons](benchmarks/parse_source_selection_comparisons.tsv) and [selection sensitivity to leaving out one source pair](benchmarks/parse_source_selection_stability.tsv) provide the completed diagnostic evidence.
+
+### Pilot-stimulation calibration
+
+A separate task measures responses to 4, 8 or 16 pilot stimuli in a new donor and monocyte population, then predicts a fixed set of remaining stimuli. Stimulus identities and their responses in source contexts are known. This supervised calibration task uses additional target observations and is separate from the zero-shot comparisons above. All model settings are selected within nine source donor–population holdouts. The primary analysis averages three fixed random panels within each donor, then weights donors equally. It contains twelve CD14 and eleven CD16 donor groups. The one-condition CD16 donor remains in the original zero-shot evaluation.
+
+| Predictor, 16 pilot stimuli unless indicated | CD14 MSE | CD16 MSE | CD14 response Pearson | CD16 response Pearson |
+|---|---:|---:|---:|---:|
+| Shared-response prior, no pilot observations | 0.018727 | 0.019278 | 0.238 | 0.226 |
+| Shared residual calibration | 0.011317 | 0.011845 | 0.736 | 0.705 |
+| Gaussian kernel ridge | 0.009863 | 0.010726 | 0.772 | 0.733 |
+| Source-covariance kernel ridge | 0.009210 | 0.010268 | 0.775 | 0.734 |
+| Independent-noise Gaussian process | 0.009218 | 0.010271 | 0.776 | 0.734 |
+| Shared-control-noise Gaussian process | 0.009275 | 0.010292 | 0.776 | 0.735 |
+
+At sixteen observations, source-covariance kernel ridge reduces MSE by 50.82% and 46.74% relative to the same prior on identical query sets. Its additional reduction over shared-residual calibration is 18.62% and 13.31%. Centred and Hallmark response errors also improve, identifying stimulus-specific information beyond a common response offset. A Gaussian process and kernel ridge using identical covariance and regularisation produce the same predictions and count as one method.
+
+Shared-control modelling includes control sampling variance in both the support–support and query–support covariance. This model does not improve mean MSE over source-covariance kernel ridge or independent-noise conditioning in any of the six nonzero-budget/population settings. At sixteen observations it raises centred response correlation slightly, while Hallmark error is higher. The results support the value of pilot observations and source covariance without establishing a performance advantage for the added noise structure. These development analyses have not been confirmed in a separate cohort, and native perturbation models have not yet been adapted to this pilot-stimulation task.
+
+[All model and budget scores](benchmarks/parse_fewshot_model_metrics.tsv), [donor scores](benchmarks/parse_fewshot_donor_metrics.tsv), [paired donor intervals](benchmarks/parse_fewshot_paired_intervals.tsv), and [independently recomputed noise-model comparisons](benchmarks/parse_fewshot_noise_comparisons.tsv) include the primary random-panel analysis and secondary source-coverage design. Independent verification recomputed all seven metrics for every saved condition-level prediction and checked source, support and query boundaries. This experimental analysis is not a replacement for the stable packaged model.
+
 ## Data verification
 
 ### Perturbation-specific information
