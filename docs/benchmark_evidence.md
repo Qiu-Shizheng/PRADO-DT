@@ -139,6 +139,52 @@ For the source-selected model compared with Gaussian kernel ridge, the paired MS
 
 [Complete scores](benchmarks/parse_receptor_model_metrics.tsv), [donor results](benchmarks/parse_receptor_donor_metrics.tsv), [condition results](benchmarks/parse_receptor_per_condition_metrics.tsv), [paired intervals](benchmarks/parse_receptor_paired_intervals.tsv), [source selections](benchmarks/parse_receptor_source_selections.tsv), [mapping coverage](benchmarks/parse_receptor_stimulus_coverage.tsv) and [analysis scope](benchmarks/parse_receptor_summary.json) accompany the comparison. The receptor variant remains an experimental analysis and does not replace the packaged trained model.
 
+### Native perturbation models on a matched cell panel
+
+The completed Parse comparison contains **72/72 native fits**: scGen and scVIDR, twelve donor folds and three initialisations per family. Training inputs and target controls use the same frozen samples of at most 64 cells per donor–population–condition group for every method. The source-selected 2,000-gene axes and all 2,003 eligible target pairs remain fixed. Mean-response truth uses all eligible treated cells. Distribution truth uses the sampled cell panel. These scores are a separate matched-input comparison and must not be compared directly with the full-source Parse scores above.
+
+| Predictor | CD14 MSE | CD16 MSE | CD14 response Pearson | CD16 response Pearson |
+|---|---:|---:|---:|---:|
+| ContextDose, gene and programme procedure | 0.019294 | 0.024343 | 0.2431 | 0.2428 |
+| Global response scaling | 0.019302 | 0.024340 | 0.2418 | 0.2417 |
+| Fixed OP3 gene gate | 0.019174 | 0.024235 | 0.2435 | 0.2431 |
+| scGen, native output | 0.022112 | 0.026689 | 0.3605 | 0.3490 |
+| scGen, control-anchored output | 0.020190 | 0.024836 | 0.1571 | 0.1801 |
+| scVIDR, native output | 0.024065 | 0.027593 | 0.3501 | 0.3462 |
+| scVIDR, control-anchored output | 0.021693 | 0.025401 | 0.1461 | 0.1766 |
+
+Native outputs are decoded perturbed profiles. Control-anchored outputs add the decoded perturbed-minus-control change to the observed target control, using the same fitted models. Anchoring lowers mean expression error but also lowers response correlation. The fixed OP3 gate outperforms the gene-and-programme procedure on MSE in both populations. Native scGen and scVIDR retain higher overall response correlations. Mean-response scores use the three-fit prediction ensemble; distribution scores average the three individual-fit metrics.
+
+All 72 fits passed training-boundary and checkpoint-replay checks. Mean metrics were independently recomputed for every model and eligible condition. The single-condition CD16 donor remains included. [All 13 variants](benchmarks/parse_native_panel_model_metrics.tsv), [donor scores](benchmarks/parse_native_panel_donor_metrics.tsv), [paired intervals](benchmarks/parse_native_panel_paired_intervals.tsv) and [fit coverage and boundary checks](benchmarks/parse_native_panel_fit_audit.tsv) are available.
+
+### Training-budget sensitivity
+
+Six additional fits extend the two native families to a maximum of 300 epochs for three prespecified donors, with one initialisation per family. The saved weights selected within the first 100 epochs exactly match the original fits. Checkpoint selection uses source reconstruction validation throughout. Five fits reach the 300-epoch limit and one stops early, so the experiment does not establish full convergence.
+
+Source reconstruction loss improves, while mean target-response MSE increases for both families, both populations and both output conventions. For example, native scGen CD14 MSE changes from 0.022143 to 0.023310, and native scVIDR from 0.023405 to 0.024441. This three-donor sensitivity analysis is separate from the twelve-donor, three-initialisation comparison. [Model scores](benchmarks/parse_native_budget_model_metrics.tsv), [donor scores](benchmarks/parse_native_budget_donor_metrics.tsv), [paired budget effects](benchmarks/parse_native_budget_paired_effects.tsv) and [training convergence](benchmarks/parse_native_budget_convergence.tsv) retain every completed fit.
+
+### Distribution representation sensitivity
+
+Fixed predictions from all 13 original panel variants are evaluated in three 50-dimensional representations: source-control principal components, source-response principal components and a fixed random orthogonal projection. The same twelve donors and 2,003 target pairs are retained in each view. Both learned transforms use source information only.
+
+The gene-and-programme procedure has lower squared MMD and energy distance than the native outputs of scGen and scVIDR in both populations across all three views. Comparisons with control-anchored outputs have narrower differences and some intervals include zero. The procedure does not consistently outperform global scaling or the fixed OP3 gate. Absolute distances should be compared within a representation because the three views use different scales. [View-level scores](benchmarks/parse_native_distribution_view_metrics.tsv), [donor scores](benchmarks/parse_native_distribution_view_donor_metrics.tsv) and [paired intervals](benchmarks/parse_native_distribution_view_paired_intervals.tsv) accompany this check.
+
+### Matched cell-state and donor-reliability comparison
+
+The matched-input analysis now includes **21 variants**, adding cell-state kernels and donor-reliability weighting to the same source cells, genes, target controls and evaluation pairs. Every new variant selects its parameters in source-only validation. Coincident selected variants are retained in the tables and are not independent replications.
+
+| Predictor | CD14 MSE | CD16 MSE | CD14 response Pearson | CD16 response Pearson |
+|---|---:|---:|---:|---:|
+| Gaussian kernel ridge | 0.018999 | 0.023911 | 0.2373 | 0.2415 |
+| Source-selected donor reliability | 0.018915 | 0.023843 | 0.2441 | 0.2477 |
+| Fixed OP3 gene gate | 0.019174 | 0.024235 | 0.2435 | 0.2431 |
+
+Relative to Gaussian kernel ridge, donor reliability changes MSE by −0.44% in CD14 and −0.28% in CD16 monocytes. The paired mean differences are −0.00008371 and −0.00006716. With 100,000 donor resamples, the respective 95% intervals are [−0.000166993, +0.00000008244] and [−0.000158197, +0.000024467]. **Both MSE intervals include zero.** Response Pearson correlation increases by 0.0068 and 0.0062, with paired 95% intervals of [0.0029, 0.0109] and [0.0020, 0.0104]. These are small incremental changes, and native scGen and scVIDR still have higher overall response correlations.
+
+The paired tables also include pathway error and cytokine-centred response accuracy. Centred correlation is defined for twelve CD14 donors and eleven CD16 donors; the one-condition CD16 donor remains in all uncentred metrics. Other paired intervals use 5,000 donor resamples. All intervals describe donor variability conditional on fitted predictors with overlapping source folds. This remains model development within the existing Parse study, not a new independent cohort. Additional external-cohort acquisition has not yet produced a validation result.
+
+[All 21 variants](benchmarks/parse_matched_context_model_metrics.tsv), [donor scores](benchmarks/parse_matched_context_donor_metrics.tsv), [publication paired intervals, including the high-precision MSE check](benchmarks/parse_matched_context_paired_intervals.tsv) and [source selections](benchmarks/parse_matched_context_source_selections.tsv) provide the completed evidence. `NA` denotes undefined or inapplicable values in the new result tables. These experimental variants do not change the packaged model or software API.
+
 ## Data verification
 
 ### Perturbation-specific information

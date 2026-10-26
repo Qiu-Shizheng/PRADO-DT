@@ -1,0 +1,7 @@
+donor	donor_index	family	epochs_completed	prefix_selected_epoch	extended_selected_epoch	prefix_validation_loss	extended_validation_loss	relative_validation_improvement_percent	last_20_epoch_best_loss_improvement_percent	best_epoch_in_last_25	early_stop_triggered	original_100_log_rows_compared	prefix_log_field	prefix_weight_tensors_exact
+Donor1	0	scgen	300	99	287	662.2345581054688	651.8245239257812	1.5719557447241517	0.038591802625631555	True	False	100	best_source_validation_loss	True
+Donor6	5	scgen	296	98	270	658.3525390625	648.2538452148438	1.5339340624457631	0.0	False	True	100	best_source_validation_loss	True
+Donor12	11	scgen	300	99	291	649.8406372070312	639.9827270507812	1.5169734842404692	0.024294373821576176	True	False	100	best_source_validation_loss	True
+Donor1	0	scvidr	300	99	296	661.9478759765625	651.7701416015625	1.5375431728646194	0.03647087039004848	True	False	100	best_source_validation_loss	True
+Donor6	5	scvidr	300	98	299	658.5580444335938	648.2417602539062	1.5664958110959248	0.0390966656116043	True	False	100	best_source_validation_loss	True
+Donor12	11	scvidr	300	99	289	650.8237915039062	641.2872314453125	1.465305998810662	0.06502001296214699	True	False	100	best_source_validation_loss	True
