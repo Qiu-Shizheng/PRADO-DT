@@ -198,7 +198,7 @@ A separate completed experiment tests training-budget selection on three prespec
 
 Reconstruction favours checkpoints at epochs 289–300, whereas response-transfer validation selects 50 epochs for native scGen, 150 for native scVIDR and 25 for both anchored outputs. The anchored choice is the earliest tested budget, rather than an unconstrained optimum. These are source-selection scores from the same environments used for tuning. They do not revise the twelve-donor monocyte benchmark or establish an unbiased gain in target performance.
 
-A separately frozen Donor 1 follow-up uses these budgets and requires exact reproduction of each original 100-epoch checkpoint before scoring. Its results remain pending. Extending the selection procedure to other donor holdouts requires new nested source validation.
+The frozen Donor 1 confirmation is complete, with all six original 100-epoch weight checks reproduced exactly. Source-selected durations increase native-output MSE in all four model/population settings. The 25-epoch anchored outputs reduce MSE by 1.85–2.11%, while response Pearson decreases. This is one biological donor with three training repetitions per model. [Frozen-budget scores](benchmarks/parse_frozen_budget_model_metrics.tsv) and [paired duration comparisons](benchmarks/parse_frozen_budget_paired_budget_comparisons.tsv) retain all outcomes. Extending the selection procedure to other donor holdouts requires new nested source validation.
 
 [All source curves](benchmarks/parse_source_validation_curves.tsv), [selected budgets](benchmarks/parse_source_budget_selections.tsv), [source score comparisons](benchmarks/parse_source_selection_comparisons.tsv) and [selection sensitivity to leaving out one source pair](benchmarks/parse_source_selection_stability.tsv) provide the completed diagnostic evidence.
 
@@ -217,9 +217,48 @@ A separate task measures responses to 4, 8 or 16 pilot stimuli in a new donor an
 
 At sixteen observations, source-covariance kernel ridge reduces MSE by 50.82% and 46.74% relative to the same prior on identical query sets. Its additional reduction over shared-residual calibration is 18.62% and 13.31%. Centred and Hallmark response errors also improve, identifying stimulus-specific information beyond a common response offset. A Gaussian process and kernel ridge using identical covariance and regularisation produce the same predictions and count as one method.
 
-Shared-control modelling includes control sampling variance in both the support–support and query–support covariance. This model does not improve mean MSE over source-covariance kernel ridge or independent-noise conditioning in any of the six nonzero-budget/population settings. At sixteen observations it raises centred response correlation slightly, while Hallmark error is higher. The results support the value of pilot observations and source covariance without establishing a performance advantage for the added noise structure. These development analyses have not been confirmed in a separate cohort, and native perturbation models have not yet been adapted to this pilot-stimulation task.
+Shared-control modelling includes control sampling variance in both the support–support and query–support covariance. This model does not improve mean MSE over source-covariance kernel ridge or independent-noise conditioning in any of the six nonzero-budget/population settings. At sixteen observations it raises centred response correlation slightly, while Hallmark error is higher. The results support the value of pilot observations and source covariance without establishing a performance advantage for the added noise structure. The independent Wood study below tests the same calibration task with source-only refitting. Native pretrained perturbation comparisons are still being prepared. Independent-control sensitivity below shows why the shared-reference improvements cannot be interpreted as reference-independent response recovery.
 
 [All model and budget scores](benchmarks/parse_fewshot_model_metrics.tsv), [donor scores](benchmarks/parse_fewshot_donor_metrics.tsv), [paired donor intervals](benchmarks/parse_fewshot_paired_intervals.tsv), and [independently recomputed noise-model comparisons](benchmarks/parse_fewshot_noise_comparisons.tsv) include the primary random-panel analysis and secondary source-coverage design. Independent verification recomputed all seven metrics for every saved condition-level prediction and checked source, support and query boundaries. This experimental analysis is not a replacement for the stable packaged model.
+
+### Independent blood-cell stimulation cohort
+
+The [Wood study](https://doi.org/10.1186/s13073-026-01721-y) contains 153,443 cells from twelve donors. Five donors qualify for a four-stimulus calibration panel and six for a separate seven-stimulus panel. The batches have different donors and stimuli and are reported separately. A fixed twenty-cell threshold excludes one donor from the complete four-stimulus task, while retaining its three supported responses in a zero-support diagnostic. Raw count identities, library sizes, detected-gene counts and independently recalculated metrics passed verification.
+
+| Maximum-support comparison | Batch A: one support | Batch B: two supports |
+|---|---:|---:|
+| Shared-response prior MSE | 0.085538 | 0.044565 |
+| Shared residual MSE | 0.052706 | 0.037449 |
+| Gaussian KRR MSE | 0.052891 | 0.037653 |
+| Source-covariance KRR MSE | 0.053467 | 0.037354 |
+| Shared-control-noise GP MSE | 0.053504 | 0.037496 |
+
+Source-covariance KRR reduces MSE relative to the prior by 37.49% and 16.18%. Simple calibration is competitive, and explicit shared-control noise has no consistent advantage. These are independently collected experimental data with within-cohort source refitting, not predictions from unchanged Parse-trained weights. Repeated support designs are averaged within donor. [All scores](benchmarks/wood_calibration_model_metrics.tsv), [donor scores](benchmarks/wood_calibration_donor_metrics.tsv) and [exact empirical donor-bootstrap intervals](benchmarks/wood_calibration_paired_donor_intervals_exact_bootstrap.tsv) retain every eligible comparison. GP and KRR with identical covariance coincide numerically. The low-rank covariance also coincides with full covariance on these short panels.
+
+### Shared and independent control references
+
+A separate Parse technical sensitivity splits the fixed target cell panels into disjoint halves. Predictions use only control half A. After all predictions are fixed, evaluation responses subtract either half A or half B. Two support-cell halves and three stimulus designs are averaged within donor. Source-only validation selects predictors separately for the two reference conditions.
+
+| Sixteen pilot stimuli | CD14 MSE | CD16 MSE |
+|---|---:|---:|
+| Shared reference, covariance KRR | 0.009895 | 0.010981 |
+| Independent reference, prior | 0.025845 | 0.026440 |
+| Independent reference, covariance KRR | 0.027007 | 0.027625 |
+| Independent reference, control-noise model | 0.025041 | 0.025803 |
+
+The control-noise model improves independent-reference MSE over the prior by 3.11% and 2.41%. Its Hallmark advantage over KRR is uncertain. Source validation selects zero shared-residual correction in every independent-reference selection. Holding shared-regime KRR predictions and cell inputs fixed, changing only the evaluation reference increases MSE by 0.026647 and 0.025782. Stimulus-centred metrics remain unchanged under this reference change. This isolates sensitivity to the measured control. The split-cell scores use smaller target panels than the original benchmark and are not pooled with those scores.
+
+The noise search includes zero noise and the full KRR penalty grid, preserving KRR as an exact special case. Source selection still chooses positive noise, so repairing the grid nesting does not itself explain a performance change. [All model scores](benchmarks/parse_control_split_model_metrics.tsv), [donor values](benchmarks/parse_control_split_donor_metrics.tsv), [paired intervals](benchmarks/parse_control_split_paired_model_intervals.tsv) and [fixed-prediction reference comparisons](benchmarks/parse_control_split_identical_prediction_control_reuse.tsv) provide the complete sensitivity results.
+
+The same frozen technical-sensitivity design is now complete in the independent Wood study. With independent query controls, covariance KRR gives MSE 0.072615 in batch A and 0.050590 in batch B, against priors of 0.092876 and 0.051450. The control-noise model gives 0.073580 in batch A. In batch B, source validation selects zero noise contribution, making its predictions identical to KRR. Thus, the additional noise-model gain in Parse does not replicate here. With shared-regime KRR predictions fixed, changing only the query control increases MSE by 0.010916 and 0.016605. This confirms control-reference sensitivity across studies. [Wood split-control scores](benchmarks/wood_control_split_model_metrics.tsv), [donor scores](benchmarks/wood_control_split_donor_metrics.tsv), [paired intervals](benchmarks/wood_control_split_paired_model_intervals.tsv) and [fixed-prediction reference comparisons](benchmarks/wood_control_split_identical_prediction_control_reuse.tsv) retain all outcomes. This technical split is separate from the original full-panel Wood validation above.
+
+### Numerically stable native-model comparisons
+
+The centred scVIDR regression has at most six source directions in Parse and three in Kang. A fixed double-precision minimum-norm solver removes amplification of rounding errors in nearly zero singular directions. All 36 Parse and 24 Kang checkpoints are retained without retraining. Original outputs remain separately available.
+
+Stable scVIDR native MSE is 0.024118/0.027611 in Parse CD14/CD16 monocytes and 0.053393/0.038559 in Kang CD14/FCGR3A monocytes. The main rankings are unchanged. In Kang FCGR3A cells, scVIDR retains lower mean-response MSE than the fixed refined reliability model. These corrections strengthen numerical reproducibility and are not model-architecture contributions.
+
+[Parse stable scores](benchmarks/parse_stable_scvidr_model_metrics.tsv), [Parse paired comparisons](benchmarks/parse_stable_scvidr_paired_comparisons.tsv), [Kang stable scores](benchmarks/kang_stable_scvidr_model_metrics.tsv) and [Kang paired comparisons](benchmarks/kang_stable_scvidr_paired_comparisons.tsv) report the corrected variants. The original figures use the published regression implementation. Experimental benchmark extensions do not change the stable packaged prediction API.
 
 ## Data verification
 
