@@ -1,6 +1,6 @@
 # Gene and programme response transfer
 
-This ContextDose model combines gene-level reliability with coordinated response programmes learned from B, T and natural killer cells in the OP3 screen. It predicts the listed 127 drug conditions on 5,317 genes.
+This PRADO model combines gene-level reliability with coordinated response programmes learned from B, T and natural killer cells in the OP3 screen. It predicts the listed 127 drug conditions on 5,317 genes.
 
 Supply an untreated target profile transformed to log1p counts per million across the released gene panel. Gene identities must match the model exactly. The target control supplies the expression background. The model supplies the predicted treatment-induced change.
 

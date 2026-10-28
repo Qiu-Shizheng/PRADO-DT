@@ -1,6 +1,6 @@
 # Reference training runner and optional neural modules
 
-This guide covers the reference experiment runner and optional PyTorch modules. For the fitted ContextDose models and source-context reliability training, start with the [response-transfer guide](response_transfer.md).
+This guide covers the reference experiment runner and optional PyTorch modules. For the fitted PRADO models and source-context reliability training, start with the [response-transfer guide](response_transfer.md).
 
 ## 1. Installation choices
 

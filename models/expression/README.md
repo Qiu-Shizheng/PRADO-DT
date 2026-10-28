@@ -1,4 +1,4 @@
-# ContextDose expression model
+# PRADO expression model
 
 A frozen, CPU-compatible expression predictor fitted to the glioblastoma gene-by-drug screen. It combines the source expression mean, an untreated target-control adjustment and a drug-dose offset. It predicts 512 gene-expression values per condition.
 
@@ -21,4 +21,4 @@ The output archive contains `prediction`, `expression_gene_ids` and `condition_i
 
 ## Model scope
 
-The selected model was fitted on A172 conditions and selected using T98G. Its U87MG evaluation is a development analysis. Genetic main effects and interaction terms received zero contribution in validation, so this frozen model does not distinguish genetic targets at the same drug-dose condition. Other ContextDose tasks use separately fitted models. This package contains the whole-profile glioblastoma model only.
+The selected model was fitted on A172 conditions and selected using T98G. Its U87MG evaluation is a development analysis. Genetic main effects and interaction terms received zero contribution in validation, so this frozen model does not distinguish genetic targets at the same drug-dose condition. Other PRADO tasks use separately fitted models. This package contains the whole-profile glioblastoma model only.

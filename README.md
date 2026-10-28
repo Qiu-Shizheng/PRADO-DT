@@ -1,17 +1,17 @@
-# ContextDose
+# PRADO
 
-**Statistical machine learning for cellular perturbation responses**
+**Single-cell perturbation response modelling**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Python](https://img.shields.io/badge/Python-3.9%2B-blue.svg)](pyproject.toml)
 
-ContextDose predicts how a cell population's gene expression changes after a perturbation. It learns from experiments in source cell types or donors, then transfers their responses to a target population. The research tasks cover drug responses, immune stimulation, dose changes and genetic perturbations across cellular backgrounds.
+PRADO models changes in gene expression caused by chemical, immune and genetic perturbations. It combines gene-level responses with coordinated gene programmes to predict cellular responses under different cell identities, donor backgrounds and treatment conditions. The research evaluation covers drug responses, immune stimulation, dose dependence and genetic interventions.
 
-The main response-transfer model uses **statistical machine learning**: it combines shared responses, reliability weighting and a learned low-dimensional representation. Held-out source contexts select how much each component contributes. The released predictor runs on a CPU with NumPy. Optional neural reference code is provided separately. The Python package is `prado-dt`.
-
-![ContextDose model architecture](docs/architecture.svg)
+![PRADO model architecture](docs/architecture.svg)
 
 ## How the response model works
+
+The main model uses **statistical machine learning**: it combines shared responses, reliability weighting and a learned low-dimensional representation. Held-out training contexts select how much each component contributes. The released predictor runs on a CPU with NumPy. Optional neural reference code is provided separately.
 
 For each treatment, the model estimates a shared response and measures how consistently that response occurs across source contexts. It combines estimates at the treatment, gene and response-programme levels. A programme is a low-dimensional direction learned from coordinated variation in source responses. Hallmark gene sets are used separately to interpret and evaluate biological responses.
 
@@ -20,6 +20,8 @@ The released response-transfer checkpoints return a treatment-induced change, `e
 See [data and prediction tasks](docs/data_and_tasks.md) for the biological meaning of each dataset, its training and evaluation roles, and the distinction between the released checkpoints and the broader research evaluation.
 
 ## Install
+
+The Python package is `prado-dt` (`prado_dt` for imports). Its command-line tools are `contextdose-fit` and `contextdose-predict`.
 
 ```bash
 git clone https://github.com/Qiu-Shizheng/PRADO-DT.git
