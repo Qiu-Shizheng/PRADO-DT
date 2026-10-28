@@ -258,7 +258,7 @@ The centred scVIDR regression has at most six source directions in Parse and thr
 
 Stable scVIDR native MSE is 0.024118/0.027611 in Parse CD14/CD16 monocytes and 0.053393/0.038559 in Kang CD14/FCGR3A monocytes. The main rankings are unchanged. In Kang FCGR3A cells, scVIDR retains lower mean-response MSE than the fixed refined reliability model. These corrections strengthen numerical reproducibility and are not model-architecture contributions.
 
-[Parse stable scores](benchmarks/parse_stable_scvidr_model_metrics.tsv), [Parse paired comparisons](benchmarks/parse_stable_scvidr_paired_comparisons.tsv), [Kang stable scores](benchmarks/kang_stable_scvidr_model_metrics.tsv) and [Kang paired comparisons](benchmarks/kang_stable_scvidr_paired_comparisons.tsv) report the corrected variants. The original figures use the published regression implementation. Experimental benchmark extensions do not change the stable packaged prediction API.
+[Parse stable scores](benchmarks/parse_stable_scvidr_model_metrics.tsv), [Parse paired comparisons](benchmarks/parse_stable_scvidr_paired_comparisons.tsv), [Kang stable scores](benchmarks/kang_stable_scvidr_model_metrics.tsv) and [Kang paired comparisons](benchmarks/kang_stable_scvidr_paired_comparisons.tsv) report the corrected variants. Original-regression and stable-regression results remain separately identified. Experimental benchmark extensions do not change the stable packaged prediction API.
 
 ## Data verification
 
@@ -287,3 +287,47 @@ ContextDose has lower biased and unbiased squared MMD than scGen and scVIDR in b
 Reaggregation of the released 298,087 single cells exactly reproduces all 1,813 published pseudobulk count profiles and their cell counts on the evaluation panel. The 21,265-gene original release stores raw counts in `AnnData.raw.X`; `AnnData.X` contains processed expression.
 
 The task is a development evaluation on a public study. It does not establish clinical or unseen-compound performance. Primary data: [OP3 benchmark](https://doi.org/10.52202/079017-0650). Model sources: [scGPT](https://github.com/bowang-lab/scGPT) and [Nicheformer](https://github.com/theislab/nicheformer). Gene sets: [MSigDB Hallmarks](https://doi.org/10.1016/j.cels.2015.12.004).
+
+## Native pretrained generation in the Wood study
+
+We next evaluated the pretrained Stack-Large-Aligned model in the independent Wood study. This comparison supplied no treated target cells. It included 65 eligible stimulus responses across twelve held-out donors, with six donors in each of two stimulation batches. Stack and the classical models used a common 14,748-gene count denominator and the same source-selected evaluation genes. These results form a separate comparison from the full-library pilot experiment.
+
+In batch A, native Stack gave MSE 0.098221, compared with 0.113308 for a source-calibrated mean response. Subtracting Stack's generated control and adding the observed target control reduced MSE to 0.089598. In batch B, native MSE was 0.101268 and control anchoring reduced it to 0.052368, close to the classical linear model's 0.051891. Native Stack had higher response correlations than the classical models in both batches, reaching 0.560 and 0.374. Its stimulus-centred correlations were also higher, indicating improved agreement with differences between stimuli. Complete errors, correlations, pathway metrics and paired donor intervals are reported in Supplementary Information. These results distinguish useful pretrained response information from errors in reconstructing the target's untreated background.
+
+### Stimulation batch A
+
+Six biological donors contribute equally.
+
+| Predictor | MSE | MAE | Pearson | Spearman | Centred MSE | Centred Pearson | Pathway MSE |
+|---|---|---|---|---|---|---|---|
+| Calibrated source mean | 0.113308 | 0.236042 | 0.294372 | 0.164723 | 0.032851 | 0.270401 | 0.026297 |
+| Gaussian kernel ridge | 0.113805 | 0.236920 | 0.294630 | 0.164615 | 0.033039 | 0.269485 | 0.026411 |
+| Linear ridge | 0.119680 | 0.245135 | 0.274705 | 0.148169 | 0.034538 | 0.238161 | 0.029006 |
+| Source mean | 0.118037 | 0.242331 | 0.294372 | 0.164723 | 0.036387 | 0.270401 | 0.026436 |
+| Stack, control-anchored | 0.089598 | 0.209672 | 0.512831 | 0.395303 | 0.027847 | 0.417341 | 0.018578 |
+| Stack, native | 0.098221 | 0.218160 | 0.560453 | 0.550383 | 0.027847 | 0.417341 | 0.012687 |
+| Unchanged control | 0.124607 | 0.245642 | — | — | 0.035594 | — | 0.035986 |
+
+### Stimulation batch B
+
+Six biological donors contribute equally.
+
+| Predictor | MSE | MAE | Pearson | Spearman | Centred MSE | Centred Pearson | Pathway MSE |
+|---|---|---|---|---|---|---|---|
+| Calibrated source mean | 0.052771 | 0.159654 | 0.173433 | 0.143411 | 0.030302 | 0.241802 | 0.014323 |
+| Gaussian kernel ridge | 0.052708 | 0.159758 | 0.178502 | 0.147337 | 0.030282 | 0.244715 | 0.014024 |
+| Linear ridge | 0.051891 | 0.158203 | 0.186704 | 0.147898 | 0.029922 | 0.252438 | 0.013538 |
+| Source mean | 0.058438 | 0.171724 | 0.173433 | 0.143411 | 0.033663 | 0.241802 | 0.014710 |
+| Stack, control-anchored | 0.052368 | 0.160703 | 0.251050 | 0.178092 | 0.029291 | 0.344642 | 0.011997 |
+| Stack, native | 0.101268 | 0.229656 | 0.374318 | 0.366247 | 0.029291 | 0.344642 | 0.023449 |
+| Unchanged control | 0.053644 | 0.158862 | — | — | 0.031719 | — | 0.015943 |
+
+The [official Stack model](https://huggingface.co/arcinstitute/Stack-Large-Aligned) uses pretrained weights and its native masked-denoising generator. Each held-out donor receives source lymphoid context from five other donors in the same batch. Stimulated target monocytes and stimulated cells from the target donor are excluded. The permitted panel and output gene axis are shared with classical models. Native attention samples a subset of the available context, while classical methods use panel means. Thirty-six generations comprise three technical draws for each of twelve biological donors. Draw-level metrics are averaged within donors. They are not scored as an ensemble mean.
+
+The common-vocabulary denominator contains 14,748 genes, and 2,000 genes are selected from source controls within each fold. These scores must be compared within this table. The earlier Wood pilot analysis uses a different expression denominator and target-information budget. Parse was part of Stack's alignment data. Wood overlap with pretraining is unknown. The comparison assesses the released pretrained model under this explicit input design.
+
+[Complete scores](benchmarks/wood_stack_model_metrics.tsv), [donor scores](benchmarks/wood_stack_donor_metrics.tsv), [condition scores](benchmarks/wood_stack_condition_metrics.tsv) and [exact paired-donor intervals](benchmarks/wood_stack_paired_donor_intervals.tsv) provide all seven evaluation metrics. Independent recomputation from raw counts reproduces reported metrics to numerical precision.
+
+## Scope of baseline comparisons
+
+The [comparison-scope table](data/baseline_comparison_scope.tsv) records 22 model/task comparisons. It distinguishes common input and scoring conditions from model-specific optimisation and adaptation. Source-selected classical models, pretrained representation adapters, native cell-level models and task-adapted neural models answer different questions. The State dose comparison trains its architecture from scratch. It is not a pretrained-State result. Reconstruction-selected and source-response-selected native checkpoints are reported separately. Folds share source training donors, and technical repeats do not increase the biological sample size.

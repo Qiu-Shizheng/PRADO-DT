@@ -1,15 +1,23 @@
 # ContextDose
 
-**Source-selected models for cellular response transfer**
+**Statistical machine learning for cellular perturbation responses**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Python](https://img.shields.io/badge/Python-3.9%2B-blue.svg)](pyproject.toml)
 
-ContextDose predicts treatment responses by combining shared source responses with evidence about their consistency. It estimates reliability for compounds, individual genes and coordinated response programmes learned from the source data. Held-out source contexts select how much each component contributes.
+ContextDose predicts how a cell population's gene expression changes after a perturbation. It learns from experiments in source cell types or donors, then transfers their responses to a target population. The research tasks cover drug responses, immune stimulation, dose changes and genetic perturbations across cellular backgrounds.
 
-This repository provides runnable CPU models, a NumPy training API, matched input examples and an optional neural reference implementation. The Python package is `prado-dt`.
+The main response-transfer model uses **statistical machine learning**: it combines shared responses, reliability weighting and a learned low-dimensional representation. Held-out source contexts select how much each component contributes. The released predictor runs on a CPU with NumPy. Optional neural reference code is provided separately. The Python package is `prado-dt`.
 
 ![ContextDose model architecture](docs/architecture.svg)
+
+## How the response model works
+
+For each treatment, the model estimates a shared response and measures how consistently that response occurs across source contexts. It combines estimates at the treatment, gene and response-programme levels. A programme is a low-dimensional direction learned from coordinated variation in source responses. Hallmark gene sets are used separately to interpret and evaluate biological responses.
+
+The released response-transfer checkpoints return a treatment-induced change, `effect`, and an absolute expression prediction, `prediction = target_control + effect`. The supplied untreated target profile supplies the final expression baseline. Changing that profile changes the absolute prediction while leaving the core model's treatment effect unchanged. The separately evaluated target-context kernel extension uses untreated cell-state information to change the predicted effect itself. Its study-level analyses are described in the [benchmark guide](docs/benchmark_evidence.md).
+
+See [data and prediction tasks](docs/data_and_tasks.md) for the biological meaning of each dataset, its training and evaluation roles, and the distinction between the released checkpoints and the broader research evaluation.
 
 ## Install
 
@@ -31,7 +39,7 @@ contextdose-predict \
   --output predictions.npz
 ```
 
-The example uses a source control to demonstrate the file format. For your experiment, supply an untreated target control on the model's gene axis and expression scale.
+The example uses a source control to demonstrate the file format. For your experiment, supply an untreated target control on the model's gene axis and expression scale. These checkpoints predict the drug, dose and exposure-time combinations listed in their model files.
 
 | Model | Response genes | Fitting and evaluation setting |
 |---|---:|---|
@@ -39,7 +47,7 @@ The example uses a source control to demonstrate the file format. For your exper
 | [OP3 refined response transfer](models/response_transfer/op3_refined) | 5,317 | Wider source-only reliability search with analytic response scaling |
 | [OP3 gene and programme model](models/response_transfer/op3_programs) | 5,317 | Parallel gene and learned-programme reliability, with source-only selection |
 | [Cellarity response transfer](models/response_transfer/primary) | 13,290 | Six cultured source lines; four primary-cell populations |
-| [Glioblastoma expression](models/expression) | 512 | A172 fitting, T98G selection and U87MG evaluation |
+| [Glioblastoma expression](models/expression) | 512 | A172 fitting, T98G selection and U87MG development evaluation |
 
 The response-transfer models predict listed drug–dose–time conditions. The expression model has a separate command documented in its [README](models/expression/README.md).
 
@@ -105,7 +113,23 @@ contextdose-fit \
   --output models/my_programme_model
 ```
 
-The programme basis is learned anew inside each source-validation fold. Selection includes a gene-only option. Saved programme models use the same `contextdose-predict` command and require only NumPy for inference.
+The programme basis is learned anew inside each source-validation fold. Selection includes a gene-only option. Saved programme models use the same `contextdose-predict` command and require only NumPy for inference. At inference, the gene panel, expression transformation, drug identity, dose and exposure time must match the fitted model's input contract.
+
+## Research tasks and data
+
+The research evaluation includes **11 experiments from 10 original studies**: 10 are derived from single-cell measurements and one is a bulk RNA-sequencing auxiliary experiment. Most endpoints are average expression responses for a cell population under a defined treatment.
+
+| Task | Datasets | Prediction target |
+|---|---|---|
+| Drug responses across cell contexts | OP3, Cellarity | Treated myeloid or primary-cell populations |
+| Immune responses across donors and cell types | Kang interferon-beta, Parse cytokines, Wood stimulation | Monocyte responses in a held-out donor |
+| Dose response | sci-Plex2, sci-Plex3 | Responses at held-out concentrations |
+| Genetic perturbations across environments | Glioblastoma kinome screen, PerturbFate, primary CD4 T-cell panel | Responses in a held-out cell background, target-gene group or donor |
+| Prediction after a small pilot experiment | Parse, Wood | Remaining stimuli after observing a few target-context responses |
+
+The pilot task reuses two studies. The diffuse midline glioma PLATE-seq screen provides a separate bulk-expression check. sci-Plex2 and sci-Plex3 come from the same original study.
+
+In most external-study evaluations, a model is fitted to permitted source cells from that study and predicts its held-out targets. Transferring a fixed parameter-selection rule still allows source-response coefficients to be fitted in the new study. These roles are recorded in the [dataset guide](docs/data_and_tasks.md) and [downloadable cohort table](docs/data/cohort_roles_20261028.tsv). Immune-stimulation experiments measure cellular responses to immune signals. Clinical treatment outcomes require a separate evaluation design.
 
 ## Evaluation
 
@@ -117,7 +141,7 @@ The gene and programme model has MSE **0.073151** and response correlation **0.2
 
 The [matched benchmark evidence](docs/benchmark_evidence.md) includes complete scGPT and Nicheformer encoder adaptations, random-initialisation controls, joint donor/cell-type transfer and gene-set response analysis.
 
-The benchmark guide also includes independent interferon and multi-cytokine studies. The twelve-donor cytokine evaluation covers 2,003 response pairs and identifies a setting where the selected model matches simple global response scaling. Complete model comparisons and donor-level source tables are provided.
+The benchmark guide also includes independent interferon and multi-cytokine studies. The twelve-donor cytokine evaluation covers 2,003 response pairs and identifies a setting where the selected model matches simple global response scaling. Complete model comparisons and donor-level source tables are provided. Compare models within a matched task: gene panels, normalisation, available target information and evaluation units differ between datasets.
 
 Saved models replay the frozen evaluation predictions to numerical precision. Run the software tests with:
 
@@ -134,4 +158,4 @@ The repository includes fitted model parameters and example inputs. Obtain exper
 - [OP3, NeurIPS 2024](https://doi.org/10.52202/079017-0650)
 - [Cellarity compound-response atlas](https://doi.org/10.1126/science.adi8577)
 
-See [CITATION.cff](CITATION.cff) to cite the software. Code is distributed under the [MIT License](LICENSE). Original datasets retain their source licences.
+The [dataset guide](docs/data_and_tasks.md) links every study in the research evaluation and explains the analysed subset. See [CITATION.cff](CITATION.cff) to cite the software. Code is distributed under the [MIT License](LICENSE). Original datasets retain their source licences.
