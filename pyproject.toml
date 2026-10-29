@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "prado-dt"
 version = "0.3.0"
-description = "PRADO: single-cell perturbation response modelling"
+description = "scPerturbMix: single-cell perturbation response modelling"
 readme = "README.md"
 requires-python = ">=3.9"
 authors = [{name = "Qiu-Shizheng"}]

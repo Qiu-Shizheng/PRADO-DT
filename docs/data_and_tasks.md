@@ -1,6 +1,6 @@
 # Data and prediction tasks
 
-PRADO studies a practical question: can responses measured in some cell types, donors or treatment conditions help predict a response that has not yet been measured? Its output is a gene-expression change for a cell population. The evaluated interventions include drugs, immune signals and gene repression.
+scPerturbMix studies a practical question: can responses measured in some cell types, donors or treatment conditions help predict a response that has not yet been measured? Its output is a gene-expression change for a cell population. The evaluated interventions include drugs, immune signals and gene repression.
 
 The evaluation contains **11 experiments from 10 original studies**. Ten experiments are derived from single-cell RNA measurements. The diffuse midline glioma screen uses bulk RNA measurements from whole wells. The two sci-Plex experiments share one original publication. Multiple prediction tasks, cell populations or pilot budgets from the same study do not create additional independent datasets.
 

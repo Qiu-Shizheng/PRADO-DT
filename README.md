@@ -1,13 +1,13 @@
-# PRADO
+# scPerturbMix
 
 **Single-cell perturbation response modelling**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Python](https://img.shields.io/badge/Python-3.9%2B-blue.svg)](pyproject.toml)
 
-PRADO models changes in gene expression caused by chemical, immune and genetic perturbations. It combines gene-level responses with coordinated gene programmes to predict cellular responses under different cell identities, donor backgrounds and treatment conditions. The research evaluation covers drug responses, immune stimulation, dose dependence and genetic interventions.
+scPerturbMix models changes in gene expression caused by chemical, immune and genetic perturbations. It combines gene-level responses with coordinated gene programmes to predict cellular responses under different cell identities, donor backgrounds and treatment conditions. The research evaluation covers drug responses, immune stimulation, dose dependence and genetic interventions.
 
-![PRADO model architecture](docs/architecture.svg)
+![scPerturbMix model architecture](docs/architecture.svg)
 
 ## How the response model works
 

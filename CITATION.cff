@@ -1,6 +1,6 @@
 cff-version: 1.2.0
-message: "If PRADO contributes to your work, please cite this software and the original data studies."
-title: "PRADO: single-cell perturbation response modelling"
+message: "If scPerturbMix contributes to your work, please cite this software and the original data studies."
+title: "scPerturbMix: single-cell perturbation response modelling"
 version: 0.3.0
 date-released: 2026-10-23
 repository-code: "https://github.com/Qiu-Shizheng/PRADO-DT"

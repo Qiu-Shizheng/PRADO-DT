@@ -1,6 +1,6 @@
 # Reference training runner and optional neural modules
 
-This guide covers the reference experiment runner and optional PyTorch modules. For the fitted PRADO models and source-context reliability training, start with the [response-transfer guide](response_transfer.md).
+This guide covers the reference experiment runner and optional PyTorch modules. For the fitted scPerturbMix models and source-context reliability training, start with the [response-transfer guide](response_transfer.md).
 
 ## 1. Installation choices
 
@@ -22,7 +22,7 @@ For the neural modules, install a PyTorch build appropriate for the host:
 python -m pip install -e ".[torch]"
 ```
 
-On a CUDA system, install PyTorch from the command recommended for that CUDA version, then install PRADO-DT with `--no-deps` if you want to keep the environment solver from replacing the existing PyTorch build.
+On a CUDA system, install PyTorch from the command recommended for that CUDA version, then install the scPerturbMix package with `--no-deps` if you want to keep the environment solver from replacing the existing PyTorch build.
 
 ## 2. Input contract
 
@@ -78,7 +78,7 @@ The split is a simple held-out-environment evaluation. For a publication benchma
 
 ## 4. Understanding the metrics
 
-`baseline_mse` is the reference feature model without the context-conditioned feature block. `proposed_mse` is the PRADO-DT reference model with untreated context and dose/time features. `proposed_pearson` is the mean per-gene Pearson correlation across evaluation rows. `source_radius_90` is the 90th-percentile absolute residual on source rows. `test_interval_coverage` is the fraction of held-out expression entries inside that transferred interval.
+`baseline_mse` is the reference feature model without the context-conditioned feature block. `proposed_mse` is the reference model with untreated context and dose/time features. `proposed_pearson` is the mean per-gene Pearson correlation across evaluation rows. `source_radius_90` is the 90th-percentile absolute residual on source rows. `test_interval_coverage` is the fraction of held-out expression entries inside that transferred interval.
 
 Use MSE and treatment-contrast MSE as separate estimands when studying perturbation effects. A low absolute-expression error can coexist with a weak treatment-effect error when the untreated context explains most of the variance.
 
